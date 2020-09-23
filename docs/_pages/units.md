@@ -4,13 +4,14 @@ title: Course Units
 permalink: /units.html
 sidebar:
         nav: "units"
+
 feature_row:
   - image_path: assets/images/unit_images/u01/grid.png
     alt: "Unit 1"
     title: "Unit 01: Introduction to R"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit01/unit01-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u02/grid.png
@@ -18,15 +19,15 @@ feature_row:
     title: "Unit 02: Data Input"
     excerpt: "First own steps with R: from scalar to table."
     url: "/unit02/unit02-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u03/grid.png
     alt: "Unit 3"
     title: "Unit 03: Types of Data"
     excerpt: "You will learn about different levels of measurements."
-    url: "/unit03/unit02-03_Intro.html"
-    btn_label: "Show me"
+    url: "/unit03/unit03-01_Intro.html"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u04/grid.png
@@ -34,7 +35,7 @@ feature_row:
     title: "Unit 04: Types of Objects"
     excerpt: "You will learn about different types of data storing in objects."
     url: "/unit04/unit04-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u05/grid.png
@@ -42,7 +43,7 @@ feature_row:
     title: "Unit 05: Operations"
     excerpt: "You will learn what operators and loops do and how to write a if-then-else construct."
     url: "/unit05/unit05-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u06/grid.png
@@ -50,7 +51,7 @@ feature_row:
     title: "Unit 06: In- & Output"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "/unit06/unit06-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"  
 
   - image_path: assets/images/unit_images/u07/grid.png
@@ -58,7 +59,7 @@ feature_row:
     title: "Unit 07: Indexing"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit07/unit07-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u08/grid.png
@@ -66,7 +67,7 @@ feature_row:
     title: "Unit 08: Environment"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit08/unit08-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u09/grid.png
@@ -74,7 +75,7 @@ feature_row:
     title: "Unit 09: Partial Data"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit09/unit09-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u10/grid.png
@@ -82,7 +83,7 @@ feature_row:
     title: "Unit 10: Sorting Data"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit10/unit10-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u11/grid.png
@@ -90,7 +91,7 @@ feature_row:
     title: "Unit 11: Simple Graphics"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit11/unit11-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u12/grid.png
@@ -98,7 +99,7 @@ feature_row:
     title: "Unit 12: Combining Data"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit12/unit12-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u13/grid.png
@@ -106,7 +107,7 @@ feature_row:
     title: "Unit 13: Converting Data"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit13/unit13-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u14/grid.png
@@ -114,7 +115,7 @@ feature_row:
     title: "Unit 14: Functions"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit14/unit14-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u15/grid.png
@@ -122,7 +123,7 @@ feature_row:
     title: "Unit 15: Ext. Graphics"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit15/unit15-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u16/grid.png
@@ -130,7 +131,7 @@ feature_row:
     title: "Unit 16: Exam"
     excerpt: "Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck."
     url: "/unit16/unit16-01_Intro.html"
-    btn_label: "Show me"
+    btn_label: "Show me more"
     btn_class: "btn--primary"
 
 ---

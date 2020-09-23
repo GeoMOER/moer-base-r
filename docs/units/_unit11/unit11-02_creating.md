@@ -1,17 +1,20 @@
 ---
-title: Simple Graphics
+title: Visualization
 ---
 
-Visualize your data  your time series data and have a look on some hints and other libraries.
+Do not wait until the very final analysis stage to produce some publication quality graphics but produce fast (not necessarily nice) visualizations all the way through your data analysis. Otherwise you will not utilize the best neural network infrastructure you have available: your brain and it's ability to identify patterns.
 
-<!--more-->
+## Basic plots in R
 
-## Learning objectives
-At the end of this session you should be able to
-* adapt axis labeling in plots
-* decide which library might be helpful for your task
-* create some visualizations using ggplot or lattice
+```yaml
+# Pseudocode
+<plotting function>(<x-axis data>, <y-axis data>,…)
+```
 
 
-## More on this topic
-The examples in this unit are specifically related to the assignment. To get a much broader idea on visualization, please refer to our online book on [Creating Publication Quality Graphics in R](https://oer.uni-marburg.de/data/mriliasmooc/lm_data/lm_1901/index.html) by our former group members Tim Appelhans and Florian Detsch which is also available at Marburg Open Educational Ressources.
+## Visualizations 101
+
+No matter if you produce publication quality graphics or quick and dirty visualizations, remember some guiding principles and traps illustrated in the figures below.
+
+
+For further reading, have a look at e.g. [Kelleher & Wagner 2011](https://www.sciencedirect.com/science/article/pii/S1364815210003270){:target="_blank"}. To get some inspiration, the [R Graph Gallery](https://www.r-graph-gallery.com/){:target="_blank"} is also a good place to start (but it relies on the ggplot2 library, not on the basic R plotting functions).

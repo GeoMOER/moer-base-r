@@ -9,9 +9,9 @@ header:
 #  caption: 'Photo: [**Environmental Informatics Marburg**](https://www.flickr.com/environmentalinformatics-marburg/)'
   cta_label: Go to course units
   cta_url: "/units.html"
-excerpt: Get an overview of CRAN-R and RStudio techniques, use R for handling, modelling and visualizing geo-datasets
+excerpt: Get an overview of CRAN-R and RStudio basic techniques.
 feature_row_intro:
-- excerpt: The number of participants is limited to 30, mainly students of the biology department.
+- excerpt: The number of participants is limited to 30, mainly students of the biology department and other natural sciences.
 feature_row_ilos:
 - image_path: "/assets/images/envobs_ilos.jpg"
   alt: PC monitor laying in the garden of the institute.
@@ -61,37 +61,33 @@ Each course aims to create ...
 
 | Session | Topic | Content |
 |---------|-------|---------|
-| 01 | Overview and the very basics | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 02 | Data input                   | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 03 | Types of Data                | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 04 | Types of Objects             | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 05 | Operations                   | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 06 | Data input and output        | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 07 | Indexing                     | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 08 | Work environment             | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 09 | Partial Data                 | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 10 | Sorting                      | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 11 | Simple Graphics              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 12 | Combining Data               | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 13 | Converting Data              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 14 | Simple Functions             | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 15 | Extended Graphics            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
-| 16 | Exam                         | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed |
+| 01 | Overview and the very basics | You will learn about the set up of the program and its auxiliary programs for operating R and you will be introduced to a few tools if you get stuck. |
+| 02 | Data input                   | You will take your first own steps in R: from scalar to table. |
+| 03 | Types of Data                | You will learn about different levels of measurements. |
+| 04 | Types of Objects             | You will learn about different types of data storing in objects. |
+| 05 | Operations                   | You will learn what operators and loops do and how to write a if-then-else construct. |
+| 06 | Data input and output        | You will learn about tabulated data and what are csv-files for. |
+| 07 | Indexing                     | You will learn how to control variables in a dataframe. |
+| 08 | Work Environment             | You will learn more about your workspace and and the r environment.  |
+| 09 | Partial Data                 | You will learn to generate and work with partial data.  |
+| 10 | Sorting                      | You will learn how to sort your data. |
+| 11 | Simple Visualizations        | You will learn how to visualize your data in simple diagrams. |
+| 12 | Combining Data               | You will learn how to combine different datasets. |
+| 13 | Converting Data              | You will learn how to convert data into different data types. |
+| 14 | Simple Functions             | You will learn to write some basic funtions. |
+| 15 | Advanced Visualizations      | You will learn how to visualize your data in advanced diagrams. |
+| 16 | Exam                         | At the end you will be properly prepared to take an exam to test yourself. |
 
 
 
 
 # Deliverables
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
-
+In the near future, the exam from unit 16 will serve as a kind of certificate and prerequisite for certain courses to ensure that everyone has the same base of information about R.
 
 # Preparation and prerequisites
 
-* Lorem ipsum dolor sit amet,
-* consetetur sadipscing elitr,
-* sed diam nonumy eirmod tempor
-* invidunt ut labore et dolore magna aliquyam erat,
+There are no preparation or prerequisites for this course. The course itself will be a preperation for other courses.
 
 
 # Instructor
