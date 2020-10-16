@@ -125,9 +125,6 @@ collections:
   unit16:
     output: true
     permalink: /:collection/:title.html
-  unit17:
-    output: true
-    permalink: /:collection/:title.html
   worksheets:
     output: true
     permalink: /:collection/:title.html
@@ -304,6 +301,7 @@ defaults:
       layout: single
       sidebar:
         nav: "units"
+
   # pages
   - scope:
       path: "_pages"

@@ -77,7 +77,7 @@ Each course aims to create ...
 | 14 | Simple Functions             | You will learn to write some basic funtions. |
 | 15 | Advanced Visualizations      | You will learn how to visualize your data in advanced diagrams. |
 | 16 | Exam                         | At the end you will be properly prepared to take an exam to test yourself. |
-
+| 17 | Cheat sheet                  | In this final chapter you will find a collection of useful code snippets. |
 
 
 

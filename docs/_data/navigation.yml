@@ -10,8 +10,10 @@ main:
     url: https://oer.uni-marburg.de/goto.php?target=crs_326&client_id=mriliasmooc
   - title: "Sitemap"
     url: /sitemap.html
-    
-    
+  - title: "Cheat Sheet"
+    url: /cheatsheet.html
+
+
 docs:
   - title: Ways out
     children:
@@ -21,3 +23,5 @@ docs:
         url: /index.html
       - title: "OER home"
         url: https://oer.uni-marburg.de/goto.php?target=crs_326&client_id=mriliasmooc
+      - title: "Cheat Sheet"
+        url: /cheatsheet.html
