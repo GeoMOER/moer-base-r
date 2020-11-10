@@ -10,11 +10,11 @@ You may like to store information of various data types like character, integer,
 In contrast to other programming languages like C and java in R, the variables are not declared as some data type. The variables are assigned with R-Objects and the data type of the R-object becomes the data type of the variable. There are many types of R-objects. The frequently used ones are:
 
 *	Vectors
-*	Lists
+*	Data Frames
 *	Matrices
 *	Arrays
-*	Factors
-*	Data Frames
+*	Lists
+*	Factors	
 
 The simplest of these objects is the vector object and there are six data types of these atomic vectors, also termed as six classes of vectors. The other R-Objects are built upon the atomic vectors.
 
