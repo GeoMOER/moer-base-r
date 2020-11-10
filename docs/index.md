@@ -11,7 +11,7 @@ header:
   cta_url: "/units.html"
 excerpt: Get an overview of CRAN-R and RStudio basic techniques.
 feature_row_intro:
-- excerpt: The number of participants is limited to 30, mainly students of the biology department and other natural sciences.
+- excerpt: This course is currently under construction as part of the "digLL" initiative funded by the Hessian Ministry of Higher Education, Research, Science and the Arts.
 feature_row_ilos:
 - image_path: "/assets/images/envobs_ilos.jpg"
   alt: PC monitor laying in the garden of the institute.
