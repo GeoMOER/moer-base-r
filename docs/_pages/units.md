@@ -133,14 +133,6 @@ feature_row:
     url: "/unit16/unit16-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"
-
-  - image_path: assets/images/unit_images/u17/grid.jpg
-    alt: "Unit 17"
-    title: "Unit 17: Cheat sheet"
-    excerpt: "In this chapter you will find a collection of useful code snippets."
-    url: "/unit17/unit17-01_Intro.html"
-    btn_label: "Show me more"
-    btn_class: "btn--primary"
 ---
 
 # Overview of Course Units

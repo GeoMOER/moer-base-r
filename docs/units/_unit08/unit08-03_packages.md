@@ -94,11 +94,11 @@ div {
 </head>
 <body>
 <div class="info">
-  <p><strong>Hint: Mind the order: first install - then activate.</strong></p>
+  <p><strong>Hint:</strong> Mind the order: first install - then activate.</p>
 </div>
 </body>
 </html>
 
 # Working with a package
 
-Make sure you read the documentation of the package. This gives a brief overview of the functions and some comments about the features of the methods. Note that if you click on a package the package window will move to the Help window. There you can find a description of the method and which arguments are necessary to run the function. 
+Make sure you read the documentation of the package. This gives a brief overview of the functions and some comments about the features of the methods. Note that if you click on a package the package window will move to the Help window. There you can find a description of the method and which arguments are necessary to run the function.
