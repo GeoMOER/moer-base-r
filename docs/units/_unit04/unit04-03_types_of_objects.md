@@ -77,8 +77,7 @@ When you want to create a vector with more than one element, you need to use the
 ```r
 apple <- c("red", "green","yellow")
 apple
-```
-```r
+
 [1] "red"    "green"  "yellow"
 ```
 
@@ -88,8 +87,7 @@ A vector’s type can be checked with the `typeof()` function. apple is a word n
 # Ask for the class of the vector
 apple <- c("red", "green","yellow")
 typeof(apple)
-```
-```r
+
 [1] "character"
 ```
 
@@ -99,8 +97,7 @@ Another important property of a vector is its length. This is the number of elem
 #Ask for the length of the vector
 apple <- c("red", "green","yellow")
 length(apple)
-```
-```r
+
 [1] 3
 ```
 
@@ -178,6 +175,13 @@ my.array
 ```
 
 This array has three dimensions. Notice that, although the rows are given as the first dimension, the tables are filled column-wise. So, for arrays, R fills the columns, then the rows, and then the rest.
+
+----
+**Visualized difference between vector, matrix and array:**
+
+{% include figure image_path="/assets/images/unit_images/u04/Array.png" caption="Note the structural difference between vectors, matrices and arrays." %}
+
+A vector is one-dimensional, a matrix is two-dimensional and an array is more than two dimensional.
 
 ----
 

@@ -94,7 +94,7 @@ div {
 </head>
 <body>
 <div class="info">
-  <p><strong>Hint:</strong> Mind the order: first install - then activate.</p>
+  <p><strong>Hint:</strong> Mind the order: first install - then activate through library.</p>
 </div>
 </body>
 </html>
