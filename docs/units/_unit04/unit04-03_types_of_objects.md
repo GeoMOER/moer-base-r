@@ -145,12 +145,15 @@ print(M)
 ```
 
 When we execute the above code, it produces the following result −
+Notice that the columns are filled first, then the rows.
 
 ```r
      [,1] [,2] [,3]
 [1,] "a"  "a"  "b"
 [2,] "c"  "b"  "a"
 ```
+
+---
 
 # Array
 Arrays are the objects which can store data in more than two dimensions. For example − If we create an array of dimension (2, 3, 4) then it creates 4 rectangular matrices each with 2 rows and 3 columns. Arrays can store only one data type.
