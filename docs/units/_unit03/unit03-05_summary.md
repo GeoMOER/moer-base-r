@@ -1,5 +1,5 @@
 ---
-title: "Summary & Test"
+title: "Summary"
 toc: true
 toc_float: true
 header:
@@ -16,7 +16,7 @@ header:
 
 Remember that the top-level category is either *quantitative or qualitative* (numerical or not). From there, quantitative data can be grouped into “discrete” or “continuous” data. That covers most of it. From there, further classification on data scales is possible and there are of course other types of data categories to talk about, like univariate, bivariate, multivariate; percentages and ratios, and so on. But this is a topic for another time.
 
-In summary, nominal variables are used to “name,” or label a series of values.  Ordinal scales provide good information about the order of choices, such as in a customer satisfaction survey.  Interval scales give us the order of values + the ability to quantify the difference between each one.  Finally, Ratio scales give us the ultimate–order, interval values, plus the ability to calculate ratios since a “true zero” can be defined.
+In summary, nominal variables are used to “name,” or label a series of values.  Ordinal scales provide good information about the order of choices, such as in a customer satisfaction survey.  Interval scales give us the order of values AND the ability to quantify the difference between each one.  Finally, Ratio scales give us the ultimate–order, interval values, plus the ability to calculate ratios since a “true zero” can be defined.
 
 
 | Provides                      | Nominal | Ordinal | Interval |  Ratio
@@ -29,13 +29,14 @@ In summary, nominal variables are used to “name,” or label a series of value
 | Can quantify the difference between each value  |         |         |     X    |    X    |
 | Can add or substract values  |         |         |     X    |    X    |
 | Can multiply and divide values  |         |         |          |    X    |
-
+| has a true zero  |         |         |          |    X    |
 
 -----
+
 ## Test
 *Now test your knowledge about types of data.*
 
-<iframe src="https://h5p.org/h5p/embed/956482" width="899" height="233" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<iframe src="https://h5p.org/h5p/embed/956482" width="1090" height="325" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 Let's move on...
 

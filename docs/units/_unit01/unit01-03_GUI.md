@@ -15,9 +15,9 @@ header:
 {% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp.png" caption="RStudio User Interface" %}
 
 This is the Integrated Development Environment (IDE). It contains
-* a syntax-highlighting text editor *(1. Script)*
-* a console to execute code *(2. Console)*,
-* a workspace and history management *(3. Environment)*,
+* a syntax-highlighting text editor *(1. Script)* - this is where the code is written.
+* a console to execute code *(2. Console)*, - this is where results and errors are displayed.
+* a workspace and history management *(3. Environment)*, - this is where stored variables, dataframes etc. are shown.
 * tools for plotting and exporting images *(4. Graphical Output)* but also browsing the workspace, managing packages and information about the help functions within RStudio.
 
 

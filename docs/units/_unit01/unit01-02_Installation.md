@@ -21,7 +21,7 @@ Go and visit [cran.r-project.org](https://cran.r-project.org/) to learn more abo
 
 ## RStudio
 
-Then go to [rstudio.com](https://rstudio.com/) and learn more about Rstudio. Alternatively you can also **[click here](https://rstudio.com/products/rstudio/download/#download){:target="_blank"}** and you will be taken directly to the download area of RStudo. If you scroll down you will also find other operating systems than Windows.
+Then go to [rstudio.com](https://rstudio.com/) and learn more about Rstudio. Alternatively you can also **[click here](https://rstudio.com/products/rstudio/download/#download){:target="_blank"}** and you will be taken directly to the download area of RStudio (Windows).
 
 <!--
 ## Further reading

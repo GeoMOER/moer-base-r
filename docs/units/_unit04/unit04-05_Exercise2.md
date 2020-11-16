@@ -1,9 +1,12 @@
 ---
 title: "Exercise 2"
 ---
-DATA CAMP exercise
+It is time for DATA CAMP exercises!
 
 <!--more-->
+To test your knowledge up to know you can test yourself in the following exercises. Write directly in the script.R window. The comments are telling you what to do. When you are ready press Submit and you see if your code is right. Press Hint for tips.
+Be patient: this may take some time to load.
+
 
 <html>
 <head>
@@ -23,27 +26,6 @@ DATA CAMP exercise
   <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
 </head>
 <body>
-  <div class="exercise">
-    <div class="title">
-      <h2>This is an python exercise with a plot</h2>
-    </div>
-
-    <div data-datacamp-exercise data-lang="python" data-height="auto">
-      <code data-type="pre-exercise-code"></code>
-      <code data-type="sample-code">
-        import numpy as np
-        import matplotlib.pyplot as plt
-
-        x = np.arange(0, 5, 0.1);
-        y = np.sin(x)
-        plt.plot(x, y)
-        plt.show()
-      </code>
-      <code data-type="solution"></code>
-      <code data-type="sct"></code>
-      <div data-type="hint">Just press 'Run'.</div>
-    </div>
-  </div>
   <div class="exercise">
     <div class="title">
       <h2>How it works</h2>
@@ -78,19 +60,6 @@ DATA CAMP exercise
     </div>
   </div>
 
-  <div class="exercise">
-    <div class="title">
-      <h2>Shell Exercise</h2>
-    </div>
-    <div data-datacamp-exercise data-lang="shell" data-height="500" id="shell-example">
-      <div data-type="hint">Type <code>cd [directory]</code> to go to [directory].</div>
-      <code data-type="sct">
-          Ex() >> test_student_typed(r'\s*cd(\s+(\.\.|\~))?\s*',
-                                    fixed=False,
-                                    msg='Use `cd ..` to go up a level or `cd ~` to return home.')
-      </code>
-    </div>
-  </div>
 
   <div class="exercise">
     <div class="title">

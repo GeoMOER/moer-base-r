@@ -1,5 +1,5 @@
 ---
-title: "Types of Objects"
+title: "Object Types"
 toc: true
 ---
 
@@ -14,7 +14,7 @@ In contrast to other programming languages like C and java in R, the variables a
 *	Matrices
 *	Arrays
 *	Lists
-*	Factors	
+*	Factors
 
 The simplest of these objects is the vector object and there are six data types of these atomic vectors, also termed as six classes of vectors. The other R-Objects are built upon the atomic vectors.
 
@@ -26,12 +26,13 @@ The simplest of these objects is the vector object and there are six data types 
 | logical    |true  ;   false         | boolean |
 
 ------
+
 # Variables
 Variables are the core of any R program. They contain the information we calculate with and also the calculated results. They also offer the possibility to label data with meaningful names, so that the code is easier to understand. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data which  then can be used across the code.
 
 **How to name a variable?**
 
-Even though data is very diverse, variables cannot take every name. This is because variables must be unique to the computer. They can contain letters, numbers and underscores (_)_. All other characters are not allowed (no spaces). This restriction is important because R has to understand the input data furthermore it has to be unique for the program. For example, if minus signs (-) were allowed for variables (which they are not!), there would be an ambiguity with the variable name `all-animals`. R would not know whether we meant the variable `all-animals` or whether we wanted to subtract the variable `animals` from the variable `all`.
+Even though data is very diverse, variables cannot take every name. This is because variables must be unique to the computer. They can contain letters, numbers and underscores ( _ )_. All other characters and spaces are not allowed. This restriction is important because R has to understand the input data, furthermore it has to be unique for the program. For example, if minus signs (-) were allowed for variables (which they are not!), there would be an ambiguity with the variable name `all-animals`. R would not know whether we meant the variable `all-animals` or whether we wanted to subtract the variable `animals` from the variable `all`.
 
 Instead, we could call our variable `all_animals`, `AllAnimals`, `allanimals`, `Allanimals` or `allAnimals`.
 
@@ -98,6 +99,33 @@ length(apple)
 ```
 
 -----
+# Dataframe
+
+*information coming soon*
+
+
+# Matrix
+A matrix is a two-dimensional rectangular data set. It can be created using a vector input to the `matrix()` function.
+`nrow` stands for 2 rows and `ncol` for 3 columns.
+
+```r
+# Create a matrix.
+M = matrix(c('a','a','b','c','b','a'), nrow = 2, ncol = 3, byrow = TRUE)
+print(M)
+```
+
+When we execute the above code, it produces the following result −
+
+```r
+     [,1] [,2] [,3]
+[1,] "a"  "a"  "b"
+[2,] "c"  "b"  "a"
+```
+
+# Array
+
+*information coming soon*
+
 
 # Lists
 A list is an R-object which can contain many different types of elements inside it like vectors, a matrix, functions and even another list inside it.
@@ -123,41 +151,18 @@ When we execute the above code, it produces the following result:
 [[3]]
 function (x)  .Primitive("sin")
 ```
+It prints one list with three elements. The first element  [[1]] is an vector containing values. The second element [[2]] is a value and the third [[3]] is a function.
+
+
+# Factors
+
+*information coming soon*
 
 -----
 
-# Matrix
-A matrix is a two-dimensional rectangular data set. It can be created using a vector input to the matrix function.
+{% include figure image_path="/assets/images/unit_images/u04/types_objects.png" caption="Visualisation of your Knowledge so far." %}
 
-{% include figure image_path="/assets/images/unit_images/u01/u04\Matrix.png" caption="A Matrix." %}
-C:\Users\Mandy\Google Drive\Uni\HiWi\PROJECT\base_r_simple\docs\assets\images\unit_images\
-
-```r
-# Create a matrix.
-M = matrix( c('a','a','b','c','b','a'), nrow = 2, ncol = 3, byrow = TRUE)
-print(M)
-```
-
-When we execute the above code, it produces the following result −
-
-```r
-     [,1] [,2] [,3]
-[1,] "a"  "a"  "b"
-[2,] "c"  "b"  "a"
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
+Raw data is categorized in different scales, which are different data types which can be stored in different object types.
 
 
 
@@ -165,6 +170,7 @@ Let's move on...
 
 <!--
 ## Further reading
+{% include figure image_path="/assets/images/unit_images/u04/grid.png" caption="A Matrix by [?](?)" %}
 
 add some day
 -->

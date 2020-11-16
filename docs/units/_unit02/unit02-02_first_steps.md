@@ -10,19 +10,20 @@ header:
 
 <!--more-->
 
-## # Hashtag and Run!
+## #Hashtag and Run!
 
-R treats the hashtag character, **#**, in a special way. It will not compile anything that follows a *#* on a line. This makes hashtags very useful for adding comments and annotations to your code. You will be able to read the comments, but your computer will pass over them.
+R treats the hashtag character, **#**, in a special way. It will not compile anything that follows a # on a line. This makes hashtags very useful for adding comments and annotations to your code. You will be able to read the comments, but your computer will pass over them.
 
 ```r
 # This is a comment. Comments are very helpful
 # when you want to describe what's going on in your code.
 # Use them often!
+This is not a comment anymore. Be careful.
 
-hello <- "Welcome to R"
+hello <- "Welcome to R" #the variable "hello" is storing the information "Welcome to R"
 ```
 
-To run a chunk, you can hit the "Run" arrow to the right in the first Window (red box), or put your cursor inside the chunk and then hit CTRL + ENTER (CMD + ENTER on a Mac).
+To run a chunk, you can hit the "Run" arrow to the right in the first Window (following picture, red box), or put your cursor inside the chunk and then hit `CTRL + ENTER` on Windows/Linux or `CMD + ENTER` on a Mac.
 
 {% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp2.png" caption="Hit the Run-Button." %}
 
@@ -40,7 +41,7 @@ print(hello)
 
 The basic arithmetic operations are addition, subtraction, multiplication and division, furthmore square roots, exponentiation and some other.
 
-Examples of arithmetic operations in R
+Examples of arithmetic operations in R. This is using R like a calculator.
 ```r
 1 + 2
 [1] 3
@@ -67,8 +68,8 @@ That [1] next to your result is a reminder that this line begins with the first 
 ## Assigning values to objects
 ```r
 # Assign values to objects
-a <- 1+2 # addition/allocation
-a
+a <- 1+2 # addition/allocation, calculation is stored in object "a"
+a <- print the result
 [1] 3
 ```
 
@@ -85,3 +86,5 @@ c <- (a + b) * 2 # brackets
 c
 [1] 8
 ```
+And that is how information is stored in objects.
+Let's move to unit 3.

@@ -2,7 +2,7 @@
 title: "Data Types"
 toc: true
 ---
-Data Types of Data
+
 <!--more-->
 
 > “You can have data without information, but you cannot have information without data”  —  Daniel Keys Moran
@@ -50,8 +50,8 @@ characters basically behave like words. They can be stringed together, they can 
 Examples of characters include letters, numerical digits, common punctuation marks (such as "." or "-"), and whitespace. The concept also includes control characters, which do not correspond to visible symbols but rather to instructions to format or process the text. Examples of control characters include carriage return or tab, as well as instructions to printers or other devices that display or otherwise process text.
 
 ### String
-Characters are typically combined into strings. A string is a sequence of characters eg, "Hello World."
-It is used to represent text rather than numbers. It is comprised of a set of characters that can also contain spaces and numbers. For example, the word "hamburger" and the phrase "I ate 3 hamburgers" are both strings.
+Characters are typically combined into strings. A string is a sequence of characters, e.g. "Hello World."
+It is used to represent text rather than numbers. It is comprised of a set of characters that can also contain spaces and numbers. For example, the word "hamburger" and the phrase "I ate 3 hamburgers" are both strings, consisting of characters.
 
 ### Boolean
 boolean can only contain either the value **true** or **false**.

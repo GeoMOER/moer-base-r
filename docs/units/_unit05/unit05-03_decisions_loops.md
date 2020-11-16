@@ -1,14 +1,6 @@
 ---
 title: Decisions and Loops
 ---
-
-## Loops
-Except for the lapply-loop (representative for R's entire *apply* family), the following loops exist in all programming languages.
-
-
-## What loop to choose?
-{% include figure image_path="/assets/images/unit_images/u05/which-loop-to-choose.jpg" alt="Flow chart showing a decision tree which helps to choose the right loop." %}
-
 Decision structures are like junctions in the analysis workflow and decide which way to go during runtime. Loops are the workhorses for repeating the same computations on different subsets of the data.
 
 ## If-then-else
@@ -52,3 +44,10 @@ while("<some logical expression with iteration variable>"){
     <do something using iteration variable and update it>
 }
 ```
+------
+
+## What loop to choose?
+
+{% include figure image_path="/assets/images/unit_images/u05/which-loop-to-choose.jpg" alt="Flow chart showing a decision tree which helps to choose the right loop." %}
+
+*in development*

@@ -8,7 +8,7 @@ header:
 ---
 *Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck.*
 <!--more-->
-C:\Users\mandy\Google Drive\Uni\HiWi\PROJECT\moer-base-r\docs\assets\images\unit_images\u01
+
 ## Getting to know R
 {% include figure image_path="/assets/images/unit_images/u01/gui_r.png" caption="User Interface of R" %}
 
