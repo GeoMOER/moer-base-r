@@ -1,5 +1,9 @@
 ---
 title: "Exercise 1"
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 Try yourself in Exercise 1!
 
@@ -21,22 +25,52 @@ Summarize in your own words what these functions do and how they work:
 * range()
 * sum()
 * summary()
-* cor()
 * plot()
 * boxplot()
 
-*Hint: You can use THE help*
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+</style>
+</head>
+<body>
+<div class="info">
+  <p><strong>Hint</strong>
+  <br>
+      You may need some ?help...
+  </p>
+</div>
+</body>
+</html>
+
 
 ### Task 2: Root Square
-Root square of 10 + 6
-(10+6)^(1/2)
+Calculate the root square of 10 + 6
+
 
 ### Task 3: Data about size and weight
 Create objects for size, height and states
 
-size: 1.67, 1.8, 1.58, 1.83, 1.65, 1.74, 1.8, 1.6, 1.76, 1.8
-weight:62, 78, 56, 85, 58, 70, 70, 120, 62, 90)
-state: NRW, Bayern, Hessen, Hessen, Hessen, MV, Hessen, Hessen, Hessen, Berlin
+size: 1.67, 1.8, 1.58, 1.83, 1.65, 1.74, 1.8, 1.6, 1.76, 1.8 <br>
+weight: 62, 78, 56, 85, 58, 70, 70, 120, 62, 90) <br>
+state: NRW, Bayern, Sachsen, Hessen, Hessen, MV, Hessen, Brandenburg, Hessen, Berlin
 
-*Hint:
-Common denomination: all letters small, do not use umlauts, numbers or special characters. Keep in mind the different syntax between strings and integers!*
+<body>
+<div class="info">
+  <p><strong>Hint</strong>
+  <br>
+      Common denomination: all letters small, do not use umlauts, numbers or special characters. Keep in mind the different syntax between strings and integers!
+  </p>
+</div>
+</body>

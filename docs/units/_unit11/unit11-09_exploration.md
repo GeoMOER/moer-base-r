@@ -2,6 +2,10 @@
 title: "Example: Visual Data Exploration"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
@@ -122,22 +126,22 @@ If you want to use any other distribution, use `qqplot` instead and provide the 
 par(mfrow = c(2,2))
 dist <- rnorm(ppoints(length(lu$Settlement)))
 qqplot(dist, lu$Settlement, main = "Normal")
-abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~ 
+abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~
      quantile(dist, probs = c(0.25, 0.75))), col = "red", lwd = 2)
 
 dist <- rchisq(ppoints(length(lu$Settlement)), df = 2)
 qqplot(dist, lu$Settlement, main = "Chi squared")
-abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~ 
+abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~
      quantile(dist, probs = c(0.25, 0.75))), col = "red", lwd = 2)
 
 dist <- rgamma(length(lu$Settlement), shape = 0.6)
 qqplot(dist, lu$Settlement, main = "Gamma")
-abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~ 
+abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~
      quantile(dist, probs = c(0.25, 0.75))), col = "red", lwd = 2)
 
 dist <- rweibull(length(lu$Settlement), shape = 1)
 qqplot(dist, lu$Settlement, main = "Weibull")
-abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~ 
+abline(lm(quantile(lu$Settlement, na.rm = TRUE, probs = c(0.25, 0.75)) ~
      quantile(dist, probs = c(0.25, 0.75))), col = "red", lwd = 2)
 ```
 
@@ -184,5 +188,3 @@ coplot(Forest ~ Agriculture | Settlement, data = lu)
 ```
 
 ![]({{ site.baseurl }}/assets/images/rmd_images/vis_dat_expl/unnamed-chunk-13-1.png)<!-- -->
- 
-

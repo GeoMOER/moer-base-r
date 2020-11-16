@@ -2,6 +2,10 @@
 title: "Example: Merging"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
@@ -120,7 +124,7 @@ dfc
 ## 4 D   4 4.0 400  40
 ## 5 E   5 5.5 300  36
 ```
-Since both data frames have identical column names, X and Y is added to the 
+Since both data frames have identical column names, X and Y is added to the
 column names in the resulting data frame to indicate if the column is from the
 first (i.e. X) or second (i.e. Y) data frame. You can easily rename the columns
 using the `colnames` function.

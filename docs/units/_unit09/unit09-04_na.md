@@ -2,6 +2,10 @@
 title: "Example: Missing Values"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
@@ -13,7 +17,7 @@ it is not a string but a special type of logical data type.
 ```r
 x <- c("A", "B", NA, "D")
 ```
-To check, if the vector has one or more "not available" values, use the 
+To check, if the vector has one or more "not available" values, use the
 `is.na` function.
 
 ```r
@@ -23,7 +27,7 @@ is.na(x)
 ```
 ## [1] FALSE FALSE  TRUE FALSE
 ```
-It returns another vector which gives a TRUE/FALSE answer of the question for 
+It returns another vector which gives a TRUE/FALSE answer of the question for
 each value in the data structure.
 
 If, for any reason, we want to assign the term "no value" to NAs, the scripting

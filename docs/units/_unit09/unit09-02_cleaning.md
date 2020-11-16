@@ -2,10 +2,14 @@
 title: "Example: Cleaning Columns"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
-Cleaning data frames involves quite different aspects like splitting cell entries, converting data types or the conversion of "wide" to "long" format. 
+Cleaning data frames involves quite different aspects like splitting cell entries, converting data types or the conversion of "wide" to "long" format.
 In general, the aim is to come up with a data frame, that has [Wickham 2014](https://www.jstatsoft.org/article/view/v040i01):
 
 * a separate column for each variable (which has exactly one kind of information, e.g. not major and minor subject)
@@ -77,7 +81,7 @@ str(lu)
 ##  $ Anteil.Waldfläche.an.Gesamtfläche                : Factor w/ 592 levels ".","0,6","0,7",..: 217 586 522 226 44 227 224 169 230 583 ...
 ```
 
-As one can see, 
+As one can see,
 
 * the column names are far from optimal,
 * the numerical values are stored as factors because there are not numbers in each cell but also - and this can not be seen from the view rows printed above - some "." as the only cell content; as a consequence, the `data.frame` function uses factors during the initialization of the data frame which basically means that the values are reprsented by some kind of special character data type,
@@ -89,7 +93,7 @@ Please remember: this is just one example out of an almoust infinite amount of d
 Let's start with renaming the column names:
 
 ```r
-names(lu) <- c("Year", "ID", "Place", "Settlement", "Recreation", 
+names(lu) <- c("Year", "ID", "Place", "Settlement", "Recreation",
                "Agriculture", "Forest")
 str(lu)
 ```
@@ -167,19 +171,19 @@ head(place)
 ```
 ## [[1]]
 ## [1] "Deutschland"
-## 
+##
 ## [[2]]
 ## [1] "  Schleswig-Holstein"
-## 
+##
 ## [[3]]
 ## [1] "      Flensburg"   " Kreisfreie Stadt"
-## 
+##
 ## [[4]]
 ## [1] "      Kiel"        " Landeshauptstadt" " Kreisfreie Stadt"
-## 
+##
 ## [[5]]
 ## [1] "      Lübeck"      " Hansestadt"       " Kreisfreie Stadt"
-## 
+##
 ## [[6]]
 ## [1] "      Neumünster"  " Kreisfreie Stadt"
 ```
@@ -191,7 +195,7 @@ max(sapply(place, length))
 ```
 ## [1] 3
 ```
-As one can see, splitting by comma is a good option to separate the content. However, the original information obvioulsy is comprised  by either one, two or three (see result of the `max` function) information parts. Hence, an appropriate next step would be the compilation of a data frame with three columns and a fill-up strategy which makes sure that if 
+As one can see, splitting by comma is a good option to separate the content. However, the original information obvioulsy is comprised  by either one, two or three (see result of the `max` function) information parts. Hence, an appropriate next step would be the compilation of a data frame with three columns and a fill-up strategy which makes sure that if
 
 * one information part is stored in the cell, the part is saved in the first column of the target data frame,
 * two information parts are stored in the cell, they are saved in the first and second column of the target data frame,
@@ -217,7 +221,7 @@ place_df <- lapply(place, function(i){
              C = p3)
 })
 place_df <- do.call("rbind", place_df)
-place_df$ID <- lu$ID 
+place_df$ID <- lu$ID
 place_df$Year <- lu$Year
 head(place_df)
 ```
@@ -240,7 +244,7 @@ unique(place_df[, 2])
 ```
 
 ```
-##  [1] NA                  "Kreisfreie Stadt"  "Landeshauptstadt" 
+##  [1] NA                  "Kreisfreie Stadt"  "Landeshauptstadt"
 ##  [4] "Hansestadt"        "Landkreis"         "Stat. Region"     
 ##  [7] "Regierungsbezirk"  "Kreis"             "krfr. Stadt"      
 ## [10] "Universitätsstadt" "Regionalverband"   "Stadt"            
@@ -263,7 +267,7 @@ unique(place_df$B[!is.na(place_df$C)])
 ```
 ## [1] "Landeshauptstadt"  "Hansestadt"        "Universitätsstadt"
 ```
-OK, if the place is one of "Landeshauptstadt", "Hansestadt" or "Universitaetsstadt", then the third column contains the information "Kreisfreie Stadt". Hence, if we want to group by "Kreisfreie Stadt", we actually would need the third column. 
+OK, if the place is one of "Landeshauptstadt", "Hansestadt" or "Universitaetsstadt", then the third column contains the information "Kreisfreie Stadt". Hence, if we want to group by "Kreisfreie Stadt", we actually would need the third column.
 
 One strategy could be to make a structure which shows the name in the first column, the general type of the place in the second column and additional (not mandatory information) in the third column. If one follows this strategy, the content of column two and three has to be switched for the rows with a non-NA entry in the third column:
 

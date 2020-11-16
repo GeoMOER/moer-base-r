@@ -2,6 +2,10 @@
 title: "Example: Sorting"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
@@ -30,9 +34,9 @@ sort(l[[1]])
 
 #### Sorting data frames
 The logic of sorting data frames is different from the `sort` function shown
-above. Instead of directly getting a sorted output, one has to get the 
-permutation of the ordering i.e. a vector which gives the position of the 
-elements in ascending or descending order. This is realized by the `order` 
+above. Instead of directly getting a sorted output, one has to get the
+permutation of the ordering i.e. a vector which gives the position of the
+elements in ascending or descending order. This is realized by the `order`
 function, which can also be applied to vectors or lists.
 
 ```r
@@ -120,7 +124,7 @@ Please note that the above examples are not the only way and that you might
 find other solutions for the same problem - this is something quite typical for
 very high level programming languages. Just to illustrate it, here comes the
 `with` function which evaluates an expression for the given data structure which
-requires that e. g. for a data frame it is placed at the position of the 
+requires that e. g. for a data frame it is placed at the position of the
 respective dimension inside the square brackets.
 
 ```r
@@ -177,7 +181,7 @@ str(df)
 ```
 
 ```r
-levels(df$Y) 
+levels(df$Y)
 ```
 
 ```
@@ -217,7 +221,7 @@ df$Y
 ## Levels: A D O R Z
 ```
 Obviously, the value ordering in column Y has changed but not the ordering of
-its levels. To actually change the ordering of factor levels, we have to sort 
+its levels. To actually change the ordering of factor levels, we have to sort
 them explicitly.
 
 ```r
@@ -239,6 +243,6 @@ df$Y
 ```
 
 
-For more information have a look at e.g. the respective 
-[sorting](http://www.statmethods.net/management/sorting.html) site at Quick R, 
+For more information have a look at e.g. the respective
+[sorting](http://www.statmethods.net/management/sorting.html) site at Quick R,
 have a look into the package documentation or search the web.

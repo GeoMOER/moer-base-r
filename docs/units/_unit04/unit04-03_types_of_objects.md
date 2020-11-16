@@ -1,6 +1,10 @@
 ---
 title: "Object Types"
 toc: true
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 <!--more-->
@@ -16,6 +20,7 @@ In contrast to other programming languages like C and java in R, the variables a
 *	Lists
 *	Factors
 
+
 The simplest of these objects is the vector object and there are six data types of these atomic vectors, also termed as six classes of vectors. The other R-Objects are built upon the atomic vectors.
 
 | Data Type in R   | Example | Data Type from previous lesson |
@@ -28,7 +33,7 @@ The simplest of these objects is the vector object and there are six data types 
 ------
 
 # Variables
-Variables are the core of any R program. They contain the information we calculate with and also the calculated results. They also offer the possibility to label data with meaningful names, so that the code is easier to understand. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data which  then can be used across the code.
+Variables are the core of any R program. They contain the information we calculate with and also the calculated results. They also offer the possibility to label data with meaningful names, so that the code is easier to understand. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data which then can be used across the code.
 
 **How to name a variable?**
 
@@ -59,6 +64,7 @@ greeting <- "Hello World."
 greeting
 [1] Hello World.
 ```
+In variables it is possible to mix data types.
 
 -----
 
@@ -98,15 +104,42 @@ length(apple)
 [1] 3
 ```
 
+A vector can only contain values of the same data type.
+
 -----
+
 # Dataframe
+A data frame is a two dimensional data structure. It is a special case of a list which has each component of __equal length__.
+Each component form the column and contents of the component form the rows. Data frames are build with the `data.frame()` function. The same data type within each column is necessary.
+For example: A data frame is build through several vectors. Within each vector the same data type must be present (see below).
 
-*information coming soon*
+```r
+a <- c("A", "B", "C", "A", "B", "A", "A") # create a vector called a
+b <- c("X", "X", "X", "X", "Y", "Y", "Y") # create a vector called b
+c <- c(1, 2, 3, 4, 5, 6, 7) # create a vector called c
+d <- c(10, 20, 30, 40, 50, 60, 70) # create a vector called d
 
+# create a data frame from previous vectors with assigned column names to vectors.
+df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
+
+print(df)
+
+   Cat1 Cat2 Val1 Val2
+1    A    X    1   10
+2    B    X    2   20
+3    C    X    3   30
+4    A    X    4   40
+5    B    Y    5   50
+6    A    Y    6   60
+7    A    Y    7   70
+>
+```
+
+-----
 
 # Matrix
 A matrix is a two-dimensional rectangular data set. It can be created using a vector input to the `matrix()` function.
-`nrow` stands for 2 rows and `ncol` for 3 columns.
+`nrow` stands for 2 rows and `ncol` for 3 columns. All data within a matrix must be of the same data type.
 
 ```r
 # Create a matrix.
@@ -123,13 +156,34 @@ When we execute the above code, it produces the following result −
 ```
 
 # Array
+Arrays are the objects which can store data in more than two dimensions. For example − If we create an array of dimension (2, 3, 4) then it creates 4 rectangular matrices each with 2 rows and 3 columns. Arrays can store only one data type.
 
-*information coming soon*
+An array is created using the array() function. It takes vectors as input and uses the values in the dim parameter to create an array.
 
+```r
+# create an array with numbers from 1 to 24 with the dimensions of 3 rows, 4 columns and 2 "tables".
+my.array <- array(1:24, dim=c(3,4,2))
+
+my.array
+, , 1
+   [,1] [,2] [,3] [,4]
+[1,]  1  4  7  10
+[2,]  2  5  8  11
+[3,]  3  6  9  12
+, , 2
+   [,1] [,2] [,3] [,4]
+[1,]  13  16  19  22
+[2,]  14  17  20  23
+[3,]  15  18  21  24
+```
+
+This array has three dimensions. Notice that, although the rows are given as the first dimension, the tables are filled column-wise. So, for arrays, R fills the columns, then the rows, and then the rest.
+
+----
 
 # Lists
-A list is an R-object which can contain many different types of elements inside it like vectors, a matrix, functions and even another list inside it.
-The list is created using the `list()` function.
+A list is an object which can contain many different types of elements inside it like vectors, a matrix, functions and even another list inside it.
+The list is created using the `list()` function. Unlike matrices list elements do not need equal length and same data types.
 
 ```r
 # Create a list.
@@ -153,20 +207,56 @@ function (x)  .Primitive("sin")
 ```
 It prints one list with three elements. The first element  [[1]] is an vector containing values. The second element [[2]] is a value and the third [[3]] is a function.
 
+----
 
 # Factors
+Factor is a data structure used for fields that takes only predefined, finite number of values (categorical data). For example: a data field such as marital status may contain only values from single, married, separated, divorced or widowed.
 
-*information coming soon*
+In such case, we know the possible values beforehand and these predefined, distinct values are called levels.
+
+A factor is created using the function `factor()`. Levels of a factor are inferred from the data if not provided.
+
+```r
+marital_status <- factor(c("single", "married", "married", "single"))
+marital_status
+
+[1] single  married married single
+Levels: married single
+```
+
+Here, we can see that factor *marital_status* has four elements and two levels. We can check if a variable is a factor or not using `class()` function.
+
+Similarly, levels of a factor can be checked using the `levels()` function.
+
+```r
+class(marital_status)
+[1] "factor"
+
+> levels(marital_status)
+[1] "married" "single"
+```
+
+Factors are also created when non-numerical columns are read into a data frame. By default, `data.frame()` function converts character vector into factor.
 
 -----
 
-{% include figure image_path="/assets/images/unit_images/u04/types_objects.png" caption="Visualisation of your Knowledge so far." %}
+# What we learned so far:
 
-Raw data is categorized in different scales, which are different data types which can be stored in different object types.
+{% include figure image_path="/assets/images/unit_images/u04/types_objects.png" caption="Visualization of the connection of data types and objects." %}
 
+Raw data is categorized in different scales, which are expressed in different data types, which can be stored in different object types.
 
+{% include figure image_path="/assets/images/unit_images/u04/objects.png" caption="Note the different data types which can be stored in the objects." %}
 
-Let's move on...
+Note the data types:
+* Variables can contain different data types.
+* Vectors must be of the same data type.
+* Matrices must be of the same data type.
+* Data frames must be arranged that columns are of the same data type.
+* Lists can contain any data type.
+* Factors can contain only strings.
+
+Let's move on to Loops...
 
 <!--
 ## Further reading

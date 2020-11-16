@@ -1,5 +1,9 @@
 ---
 title: Operators
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 Control structures require arithmetic, logical or also boolean operators which test simple relationships between two or more variables.
@@ -65,5 +69,3 @@ div {
 </div>
 </body>
 </html>
-
-------

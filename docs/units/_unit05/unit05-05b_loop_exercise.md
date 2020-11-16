@@ -2,6 +2,10 @@
 title: "Exercise: Loop and Conquer"
 toc: true
 toc_label: In this worksheet
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 This worksheet provides some control structure and loop examples to help you getting familiar with these probably most important properties of any programming language.
@@ -24,5 +28,3 @@ Please write an R script as an Rmd file with html output for the following task 
 1. Finally change the above variable (i.e. do not modify the loop anymore but just include one more line) in such a way that the content is not printed as a nested list but a vector (i.e. flatten the list).
 
 Save your Rmd file in your course repository, knitr it, update (i.e. commit) your local repository and publish (i.e. push) it to the GitHub classroom. Make sure that the created html file is also part of your GitHub repository.
-
-

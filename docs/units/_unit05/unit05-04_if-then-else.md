@@ -2,10 +2,13 @@
 title: "Example: If-then-else"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
-If-then-else statements are the controlling structures in each program. The most
-simplest form is:
+If-then-else statements are the controlling structures in each program. The simplest form is:
 
 ```r
 a <- 5.0
@@ -18,9 +21,8 @@ if (a < b) {
 ```
 ## [1] "a is smaller than b"
 ```
-Such an if-statement can be extended by n if-else statements and - optionally -
-an else-statement. To illustrate this, we start with another if-statement as the
-one above but include it later:
+
+Such an if-statement can be extended by *n* if-else statements and - optionally - an else-statement. To illustrate this, let us start with another if-statement as the one above but include it later:
 
 ```r
 if (a < b/2) {
@@ -35,14 +37,10 @@ if (a < b/2) {
 ```
 ## [1] "a is smaller than b"
 ```
-In such a structure, the first if-statment is evaluated. If it is true, all
-following else-if- (or else-)statements are skiped and the execution continues
-below the decission structure.
 
-The above example would not print anything if a is larger than b. For this case,
-other else-if-statements could be used but if no differentiation should be made
-for any case of a larger than b, this can also be solved by a final
-else-statement.
+In such a structure, the first if-statment is evaluated. If it is true, all following else-if- (or else-)statements are skipped and the execution continues below the decision structure.
+
+The above example would not print anything if a is larger than b. For this case, other else-if statements could be used but if no differentiation should be made for any case of a larger than b, this can also be solved by a final else-statement.
 
 ```r
 a <- 15.0
@@ -61,6 +59,7 @@ if (a < b/2) {
 ```
 ## [1] "a is larger than b."
 ```
+
 Of course, boolean expressions could also be used within such structures:
 
 ```r
@@ -77,9 +76,8 @@ if (a < b & a == c) {
 ```
 ## [1] "a non-equal to c."
 ```
-The above examples document if-statements which are executed if the condition is
-true since this is the default action for something like `a < b`. Of course,
-one can also check if a condition is false:
+
+The above examples document if-statements which are executed if the condition is true since this is the default action for something like `a < b`. Of course, one can also check if a condition is false:
 
 ```r
 test <- a < b
@@ -97,6 +95,7 @@ if (test == FALSE) {
 
 ## If-then-else
 If-then-else decisions are useful if your computation needs different workflows for different variable values.
+
 ```yaml
 # Pseudocode
 if("<some logical (and boolean) expression>"){
