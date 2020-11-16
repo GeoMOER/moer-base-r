@@ -1,10 +1,14 @@
 ---
 title: Tabulated Data I/O
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 Reading or writing tabulated data into or from a data frame is a quite common task in data analysis. You could use the read.table function for this.
 ```yaml
-df <- read.table(<file>, header = FALSE, sep = “”, 
+df <- read.table(<file>, header = FALSE, sep = “”,
                  dec = “.”, skip = 0, ...)
 
 write.table(df, file = <file>, sep = “ “, dec = “.”, ...)
@@ -17,4 +21,3 @@ saveRDS(df, file = <file>)
 df = readRDS(<file>)
 ```
 See the respective help pages for more details.
-

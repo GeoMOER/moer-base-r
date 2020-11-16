@@ -2,6 +2,10 @@
 title: "Example: Date/Time"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
@@ -71,7 +75,7 @@ class(lt)
 ## [1] "POSIXlt" "POSIXt"
 ```
 This function is faster than `as.POSIXlt` if the time format
-is supplied the ISO way. Otherwise (and maybe even in this case), just forget 
+is supplied the ISO way. Otherwise (and maybe even in this case), just forget
 about it.
 
 Aside from theory, a pratical difference between the POSIXct and POSIXlt class
@@ -86,7 +90,7 @@ ct + 60 * 30  # add 30 minutes to ct
 ```
 ## [1] "2014-01-01 14:00:35 CET"
 ```
-While this can also be used for POSIXlt, one can also access the individual 
+While this can also be used for POSIXlt, one can also access the individual
 time information directly:
 
 ```r
@@ -123,7 +127,7 @@ Please note that the time zone conversion only works for POSIXct.
 
 Finally, if you want to substract two date/time values, you can use the
 resoectuve arithmetic operation or the difftime function to control the layout of
-the result (see the help pages of `strptime` for an overview of the layout 
+the result (see the help pages of `strptime` for an overview of the layout
 specifications).
 
 ```r

@@ -2,6 +2,10 @@
 title: "Example: CSV I/O"
 toc: true
 toc_label: In this example
+header:
+  image: /assets/images/unit_images/u03/u3_header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
 
@@ -18,7 +22,7 @@ df <- read.table(paste0(envrmt$path_data_csv, "/AI001_gebiet_flaeche.csv"),
                  skip = 4, header = TRUE, sep = ";", dec = ",")
 ```
 
-As you can see, the `read.table` function gets several arguments (which is common for many functions). The first one gives the filename inclducing the path to the file. 
+As you can see, the `read.table` function gets several arguments (which is common for many functions). The first one gives the filename inclducing the path to the file.
 * `skip = 4` tells the function to skip the first four lines (which are plain text lines in this case and not tabulated values)
 * `header = TRUE` tells the function, that the csv file has a header line which is used by `read.table` to name the columns of the returning data frame
 * `sep = ";"` defines the separator of the individual columns in the data frame
@@ -26,13 +30,13 @@ As you can see, the `read.table` function gets several arguments (which is commo
 
 A note on the sequence of the arguments: the sequence of the arguments does
 not matter as long as you name them explicetly. If you do not use the argument
-identfier as it is the case for the first argument, the filename, in the example 
-then the sequence matters. To get information on the default sequence and of 
+identfier as it is the case for the first argument, the filename, in the example
+then the sequence matters. To get information on the default sequence and of
 course the general application of the each R function, type `?<function name>`
 (e.g. `?read.table`) in an R console.
 
 After you executing the `read.table` function above, the content of the csv file is
-stored into a two dimensional data frame called `df` in the example above. 
+stored into a two dimensional data frame called `df` in the example above.
 
 A quick way to check if everything is fine is to display the first few lines of
 the data file using the `head` function (without the 2, it will print 5 lines as a standard setting).
@@ -63,12 +67,12 @@ head(df,2)
 Writing data is as easy as reading it. Just use the `write.table` function.
 
 ```r
-write.table(df, file = paste0(envrmt$path_data_tmp, "new.csv"), 
+write.table(df, file = paste0(envrmt$path_data_tmp, "new.csv"),
             sep = ",", dec = ".")
 ```
 As you can see, you can define any column or decimal separator.
 
-For more information have a look at e.g. the respective [data importing](http://www.statmethods.net/input/importingdata.html) and [data exporting](http://www.statmethods.net/input/exportingdata.html) site at Quick R, have a look into the package 
+For more information have a look at e.g. the respective [data importing](http://www.statmethods.net/input/importingdata.html) and [data exporting](http://www.statmethods.net/input/exportingdata.html) site at Quick R, have a look into the package
 documentation or search the web.
 
 
