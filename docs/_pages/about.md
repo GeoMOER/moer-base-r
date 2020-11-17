@@ -31,10 +31,10 @@ The responsibility for the content rests with the instructors. Statements, opini
 | *Header*  |                       |        |
 | **Unit 05**        |            |        |
 | *Grid*    |  <img src="assets/images/unit_images/u05/grid.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">    |   Image by [Dean Norris](https://pixabay.com/de/users/Deans_Icons-2620543/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1426891) from [Pixabay](https://pixabay.com)    |
-| *Header*  |                       |        |
+| *Header*  |                                                        |                                 |
 | **Unit 06**        |            |        |
 | *Grid*    |   <img src="assets/images/unit_images/u06/grid.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">     | Image by [István Böcsödi](https://pixabay.com/de/users/huncoder-2102012/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015356) from [Pixabay](https://pixabay.com), edited |
-| *Header*  |                       |        |
+| *Header*  |  <img src="assets/images/unit_images/u06/u6_header_full.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">    |  Photo by [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373) [Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373) |
 | **Unit 07**        |            |        |
 | *Grid*    |  <img src="assets/images/unit_images/u07/grid.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">  | Photo by [Maksym Kaharlytskyi](https://unsplash.com/@qwitka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) from [Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) |
 | *Header*  |                       |        |
