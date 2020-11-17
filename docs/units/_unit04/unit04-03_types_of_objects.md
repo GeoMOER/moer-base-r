@@ -9,9 +9,9 @@ header:
 
 <!--more-->
 
-You may like to store information of various data types like character, integer, floating point, Boolean etc. Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.
+You may like to store information of various data types like character, integer, floating point, Boolean etc. Based on the data type of a object, the operating system allocates memory and decides what can be stored in the reserved memory.
 
-In contrast to other programming languages like C and java in R, the variables are not declared as some data type. The variables are assigned with R-Objects and the data type of the R-object becomes the data type of the variable. There are many types of R-objects. The frequently used ones are:
+In contrast to other programming languages like C and java in R, the objects are not declared as some data type. The objects are assigned with R-Objects and the data type of the R-object becomes the data type of the object. There are many types of R-objects. The frequently used ones are:
 
 *	Vectors
 *	Data Frames
@@ -32,44 +32,44 @@ The simplest of these objects is the vector object and there are six data types 
 
 ------
 
-# Variables
-Variables are the core of any R program. They contain the information we calculate with and also the calculated results. They also offer the possibility to label data with meaningful names, so that the code is easier to understand. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data which then can be used across the code.
+# Objects
+Objects are the core of any R program. They contain the information we calculate with and also the calculated results. They also offer the possibility to label data with meaningful names, so that the code is easier to understand. It is helpful to think of objects as containers that hold information. Their sole purpose is to label and store data which then can be used across the code.
 
-**How to name a variable?**
+**How to name an object?**
 
-Even though data is very diverse, variables cannot take every name. This is because variables must be unique to the computer. They can contain letters, numbers and underscores ( _ )_. All other characters and spaces are not allowed. This restriction is important because R has to understand the input data, furthermore it has to be unique for the program. For example, if minus signs (-) were allowed for variables (which they are not!), there would be an ambiguity with the variable name `all-animals`. R would not know whether we meant the variable `all-animals` or whether we wanted to subtract the variable `animals` from the variable `all`.
+Even though data is very diverse, objects cannot take every name. This is because they must be unique to the computer. They can contain letters, numbers and underscores ( _ )_. All other characters and spaces are not allowed. This restriction is important because R has to understand the input data, furthermore it has to be unique for the program. For example, if minus signs (-) were allowed for naming (which they are not!), there would be an ambiguity with the name `all-animals`. R would not know whether we meant the object `all-animals` or whether we wanted to subtract the object `animals` from the object `all`.
 
-Instead, we could call our variable `all_animals`, `AllAnimals`, `allanimals`, `Allanimals` or `allAnimals`.
+Instead, we could call it `all_animals`, `AllAnimals`, `allanimals`, `Allanimals` or `allAnimals`.
 
-Note that R distinguishes between upper and lower case for variable names. `allAnimals` and `AllAnimals` are not the same variable and it is not possible to switch them.
+Note that R distinguishes between upper and lower case for names. `allAnimals` and `AllAnimals` are not the same object and it is not possible to switch them.
 
-**How to define variables?**
+**How to define objects?**
 
-The assignment operator looks like an arrow (<-) and is used to assign values to variables. It is built through a smaller-than (or greater-than)-symbol and a minus.
-In R there are several possibilities to define a variable:
+The assignment operator looks like an arrow (<-) and is used to assign values to objects. It is built through a smaller-than (or greater-than)-symbol and a minus.
+In R there are several possibilities to define an object:
 
 ```r
-# Assign the value y to variable x
+# Assign the value y to object x
 x <- value y
 value y -> x
 ```
-These two do the same: they assign a value to the variable x, but the first variant is used much more often than the second.
+These two do the same: they assign a value to the object x, but the first variant is used much more often than the second.
 
 Second Example:
 ```r
-# Assign the value "Hello World" to variable "greeting"
+# Assign the value "Hello World" to object "greeting"
 greeting <- "Hello World."
 
-#show content of variable "greeting"
+#show content of object "greeting"
 greeting
 [1] Hello World.
 ```
-In variables it is possible to mix data types.
+In objects it is possible to mix data types.
 
 -----
 
 # Vectors
-If you want to store more than one value to a variable you need a vector. It is a basic data structure and contains elements of the same type. The data types can be logical, integer, double and character.
+If you want to store more than one value to a object you need a vector. It is a basic data structure and contains elements of the same type. The data types can be logical, integer, double and character.
 
 When you want to create a vector with more than one element, you need to use the `c()` function which means to combine the elements into a vector (c for combine).
 
@@ -231,7 +231,7 @@ marital_status
 Levels: married single
 ```
 
-Here, we can see that factor *marital_status* has four elements and two levels. We can check if a variable is a factor or not using `class()` function.
+Here, we can see that factor *marital_status* has four elements and two levels. We can check if a object is a factor or not using `class()` function.
 
 Similarly, levels of a factor can be checked using the `levels()` function.
 
@@ -257,7 +257,7 @@ Raw data is categorized in different scales, which are expressed in different da
 {% include figure image_path="/assets/images/unit_images/u04/objects.PNG" caption="Note the different data types which can be stored in the objects." %}
 
 Note the data types:
-* Variables can contain different data types.
+* objects can contain different data types.
 * Vectors must be of the same data type.
 * Matrices must be of the same data type.
 * Data frames must be arranged that columns are of the same data type.
