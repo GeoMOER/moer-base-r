@@ -177,6 +177,7 @@ df
 ```
 
 ##Building a data type in a loop
+
 The above examples show how to modify an existing variable. If you want to keep your original values but safe the results in a new variable, you have to to define it first outside the loop. Afterwards you modify it within the loop so
 it is similar to the task above.
 

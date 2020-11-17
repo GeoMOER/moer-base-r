@@ -17,6 +17,8 @@ The responsibility for the content rests with the instructors. Statements, opini
 |------ | ----------------------|--------|
 | **Home Screen**      |        |        |
 |       | <img src="assets/images/teaser.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">  |  Image by <a href="https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4448891">Gerd Altmann</a> from <a href="https://pixabay.com">Pixabay</a>  |
+| **Spotlights**      |            |        |
+| *Grid* <br> & <br> Header  | <img src="assets/images/spotlights/spotlights_full.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">          | Image by [Julia Schwab](https://pixabay.com/de/users/sweetaholic-296788/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=802634){:target="_blank"} from [Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=802634){:target="_blank"}      |
 | **Unit 01**      |            |        |
 | *Grid*  | <img src="assets/images/unit_images/u01/grid.png" title="teaser" alt="teaser_welcome" height="200px" width="200px">          | Logo by [RStudio Community](https://community.rstudio.com/t/rstudio-community-site-assets/55363){:target="_blank"}      |
 | *Header*| <img src="assets/images/unit_images/u01/u1_header_full.png" title="teaser" alt="teaser_welcome" height="200px" width="200px"> | StatCounter. *Mobile Android Operating System Market Share by Version Worldwide from January 2018 to January 2020*. [Statista](https://www.statista.com/statistics/921152/mobile-android-version-share-worldwide/){:target="_blank"} |

@@ -6,6 +6,9 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
+> “Data is the new oil.” — Clive Humby
+---
+
 Control structures require arithmetic, logical or also boolean operators which test simple relationships between two or more variables.
 Depending on the test results, control structures can be used to decide how the program should go on.
 Common simple examples include arithmetic (e.g. addition), comparison (e.g. "greater than" with >), and logical operations (e.g. AND, also written && in some languages).
@@ -69,3 +72,11 @@ div {
 </div>
 </body>
 </html>
+
+
+
+<!--
+## Further reading
+
+add some day
+-->

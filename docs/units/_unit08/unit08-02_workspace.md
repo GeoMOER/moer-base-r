@@ -8,6 +8,10 @@ header:
 ---
 <!--more-->
 
+> “Data is the new oil.” — Clive Humby
+
+---
+
 # What does workspace mean?**
 > “A workspace is (often) a file or directory that allows a user to gather various source code files and resources and work with them as a cohesive unit.[1] Often these files and resources represent the complete state of an integrated development environment (IDE) at a given time, a snapshot. Workspaces are very helpful in cases of complex projects when maintenance can be challenging.” — [Wikipedia](https://en.wikipedia.org/wiki/Workspace)
 
@@ -148,3 +152,10 @@ By contrast, a relative path starts from some given working directory `(C:/geomo
 </html>
 
 Now move to the packages...
+
+
+<!--
+## Further reading
+
+add some day
+-->

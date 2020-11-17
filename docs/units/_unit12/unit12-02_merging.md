@@ -7,6 +7,11 @@ header:
   image_description: "neon data"
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
+<!--more-->
+
+> “In God we trust, all others bring data.” — W Edwards Deming
+
+---
 
 
 When thinking about combining two data frames one has to distinguish between
@@ -149,3 +154,10 @@ dfc
 ```
 Since not only the names of the columns used for merging but all column names are
 different, no X or Y is added in the output column names.
+
+
+<!--
+## Further reading
+
+add some day
+-->

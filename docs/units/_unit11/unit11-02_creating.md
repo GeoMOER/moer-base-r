@@ -5,6 +5,11 @@ header:
   image_description: "neon data"
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
+<!--more-->
+
+> “No design works unless it embodies ideas that are held common by the people for whom the object is intended.” - Adrian Forty
+
+---
 
 Do not wait until the very final analysis stage to produce some publication quality graphics but produce fast (not necessarily nice) visualizations all the way through your data analysis. Otherwise you will not utilize the best neural network infrastructure you have available: your brain and it's ability to identify patterns.
 
@@ -22,3 +27,10 @@ No matter if you produce publication quality graphics or quick and dirty visuali
 
 
 For further reading, have a look at e.g. [Kelleher & Wagner 2011](https://www.sciencedirect.com/science/article/pii/S1364815210003270){:target="_blank"}. To get some inspiration, the [R Graph Gallery](https://www.r-graph-gallery.com/){:target="_blank"} is also a good place to start (but it relies on the ggplot2 library, not on the basic R plotting functions).
+
+
+<!--
+## Further reading
+
+add some day
+-->

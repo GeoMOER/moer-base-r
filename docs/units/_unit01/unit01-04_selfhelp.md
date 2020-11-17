@@ -1,6 +1,9 @@
 ---
 title: "Help?!"
-toc: true
+number_sections: TRUE
+toc: TRUE
+toc_depth: 3
+toc_float: TRUE
 header:
   image: /assets/images/unit_images/u01/u1_header.png
   image_description: "Android Market-share Worldwide 2018-2020"

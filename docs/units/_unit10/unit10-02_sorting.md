@@ -7,6 +7,11 @@ header:
   image_description: "neon data"
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
+<!--more-->
+
+> “It is a capital mistake to theorize before one has data.” — Sherlock Holmes
+
+---
 
 
 #### Sorting vectors or lists
@@ -246,3 +251,10 @@ df$Y
 For more information have a look at e.g. the respective
 [sorting](http://www.statmethods.net/management/sorting.html) site at Quick R,
 have a look into the package documentation or search the web.
+
+
+<!--
+## Further reading
+
+add some day
+-->

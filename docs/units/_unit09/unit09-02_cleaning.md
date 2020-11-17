@@ -7,6 +7,11 @@ header:
   image_description: "neon data"
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
+<!--more-->
+
+> “Without a systematic way to start and keep data clean, bad data will happen.” — Donato Diorio
+
+---
 
 
 Cleaning data frames involves quite different aspects like splitting cell entries, converting data types or the conversion of "wide" to "long" format.
@@ -572,3 +577,9 @@ lu_long_final[c(1,50, 600),]
 ## 50  01001 2004 Agriculture  28.0          Flensburg Kreisfreie Stadt <NA>
 ## 600 01061 2014      Forest   9.4          Steinburg        Landkreis <NA>
 ```
+
+<!--
+## Further reading
+
+add some day
+-->
