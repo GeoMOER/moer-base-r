@@ -28,7 +28,7 @@ baseurl: "/moer-base-r"
 
 ##### Title ###################################################################
 title: Pure Base R
-name: &name "Pure Base R" # &name is a YAML anchor which can be *referenced later
+name: &name "Lab of Environmental Informatics" # &name is a YAML anchor which can be *referenced later
 email: dirk.zeuss@uni-marburg.de
 description: >- # this means to ignore newlines until next item
   course course-materials geography remote-sensing marburg-open-educational-resource
