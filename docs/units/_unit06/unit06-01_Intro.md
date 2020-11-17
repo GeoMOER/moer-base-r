@@ -1,9 +1,9 @@
 ---
 title: "Intoduction to Input and Output of Data"
 header:
-  image: /assets/images/unit_images/u03/u3_header.png
+  image: /assets/images/unit_images/u06/u6_header.png
   image_description: "neon data"
-  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
+  caption: "Photo by [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373) [Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373)"
 ---
 *You will learn what operators and loops do and how to write a if-then-else construct.*
 

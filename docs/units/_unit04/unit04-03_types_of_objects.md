@@ -256,8 +256,7 @@ Raw data is categorized in different scales, which are expressed in different da
 
 {% include figure image_path="/assets/images/unit_images/u04/objects.PNG" caption="Note the different data types which can be stored in the objects." %}
 
-Note the data types:
-* objects can contain different data types.
+Note the specific data types of objects:
 * Vectors must be of the same data type.
 * Matrices must be of the same data type.
 * Data frames must be arranged that columns are of the same data type.
