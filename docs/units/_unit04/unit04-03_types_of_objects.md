@@ -249,11 +249,12 @@ Factors are also created when non-numerical columns are read into a data frame. 
 
 # What we learned so far:
 
-{% include figure image_path="/assets/images/unit_images/u04/types_objects.png" caption="Visualization of the connection of data types and objects." %}
+
+{% include figure image_path="/assets/images/unit_images/u04/types_objects.PNG" caption="Visualization of the connection of data types and objects." %}
 
 Raw data is categorized in different scales, which are expressed in different data types, which can be stored in different object types.
 
-{% include figure image_path="/assets/images/unit_images/u04/objects.png" caption="Note the different data types which can be stored in the objects." %}
+{% include figure image_path="/assets/images/unit_images/u04/objects.PNG" caption="Note the different data types which can be stored in the objects." %}
 
 Note the data types:
 * Variables can contain different data types.
