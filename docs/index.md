@@ -9,7 +9,7 @@ header:
 #  caption: 'Photo: [**Environmental Informatics Marburg**](https://www.flickr.com/environmentalinformatics-marburg/)'
   cta_label: Go to course units
   cta_url: "/units.html"
-excerpt: Get an overview of CRAN-R and RStudio basic techniques.
+excerpt: Learn the essentials for working with R.
 feature_row_intro:
 - excerpt: This course is currently under construction as part of the "digLL" initiative funded by the Hessian Ministry of Higher Education, Research, Science and the Arts.
 feature_row_ilos:
@@ -61,22 +61,22 @@ Each course aims to create ...
 
 | Session | Topic | Content |
 |---------|-------|---------|
-| 01 | Overview and the very basics | You will learn about the set up of the program and its auxiliary programs for operating R and you will be introduced to a few tools if you get stuck. |
-| 02 | Data input                   | You will take your first own steps in R: from scalar to table. |
-| 03 | Types of Data                | You will learn about different levels of measurements. |
-| 04 | Types of Objects             | You will learn about different types of data storing in objects. |
-| 05 | Operations                   | You will learn what operators and loops do and how to write a if-then-else construct. |
-| 06 | Data input and output        | You will learn about tabulated data and what are csv-files for. |
-| 07 | Indexing                     | You will learn how to control variables in a dataframe. |
-| 08 | Work Environment             | You will learn more about your workspace and and the r environment.  |
-| 09 | Partial Data                 | You will learn to generate and work with partial data.  |
-| 10 | Sorting                      | You will learn how to sort your data. |
-| 11 | Simple Visualizations        | You will learn how to visualize your data in simple diagrams. |
-| 12 | Combining Data               | You will learn how to combine different datasets. |
-| 13 | Converting Data              | You will learn how to convert data into different data types. |
-| 14 | Simple Functions             | You will learn to write some basic funtions. |
-| 15 | Advanced Visualizations      | You will learn how to visualize your data in advanced diagrams. |
-| 16 | Exam                         | At the end you will be properly prepared to take an exam to test yourself. |
+| 01 | Overview and the very basics | Set up everything for operating R and learn to get help. |
+| 02 | Data input                   | Take your first own steps in R: from scalar to table. |
+| 03 | Types of Data                | Different levels of measurements. |
+| 04 | Types of Objects             | Different types of data storing in objects. |
+| 05 | Operations                   | What operators and loops do and how to write an if-then-else construct. |
+| 06 | Data input and output        | Tabulated data and what are csv-files for. |
+| 07 | Indexing                     | Access data in objects. |
+| 08 | Work Environment             | Set up your workspace and and the R environment.  |
+| 09 | Partial Data                 | Generate and work with partial data.  |
+| 10 | Sorting                      | Sort your data. |
+| 11 | Simple Visualizations        | Visualize your data in simple diagrams. |
+| 12 | Combining Data               | Combine different datasets. |
+| 13 | Converting Data              | Convert data into different data types. |
+| 14 | Simple Functions             | Write some basic funtions. |
+| 15 | Advanced Visualizations      | Visualize your data in advanced diagrams. |
+| 16 | Exam                         | Pass an exam to test yourself. |
 
 
 
