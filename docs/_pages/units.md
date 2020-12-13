@@ -6,14 +6,6 @@ sidebar:
         nav: "units"
 
 feature_row:
-  - image_path: assets/images/spotlights/grid.png
-    alt: "Spotlights"
-    title: "Spotlights"
-    excerpt: "Some Spotlights to make your life easier."
-    url: "/spotlights/sl_01_Intro.html"
-    btn_label: "Show me more"
-    btn_class: "btn--danger"
-
   - image_path: assets/images/unit_images/u01/grid.png
     alt: "Unit 1"
     title: "Unit 01: Introduction to R"
@@ -141,6 +133,14 @@ feature_row:
     url: "/unit16/unit16-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"
+
+  - image_path: assets/images/spotlights/grid.png
+    alt: "Spotlights"
+    title: "Spotlights"
+    excerpt: "Some Spotlights to make your life easier."
+    url: "/spotlights/sl01_Intro.html"
+    btn_label: "Show me more"
+    btn_class: "btn--danger"
 ---
 
 # Overview of Course Units

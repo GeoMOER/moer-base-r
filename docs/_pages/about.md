@@ -73,3 +73,4 @@ The responsibility for the content rests with the instructors. Statements, opini
 | *Header*  |                       |        |
 | **404 landing page**        |            |        |
 |   | <img src="assets/images/other/404.jpg" title="404 error" alt="error 404" height="200px" width="200px">        |    created by [pikisuperstar](https://de.freepik.com/pikisuperstar) on [freepik.com](https://de.freepik.com/vektoren-kostenlos/fehler-404-konzept-fuer-zielseite_4660853.htm)     |
+|   | <img src="assets/images/other/404.jpg" title="404 error" alt="error 404" height="200px" width="200px">        |    created by [pikisuperstar](https://de.freepik.com/pikisuperstar) on [freepik.com](https://de.freepik.com/vektoren-kostenlos/fehler-404-konzept-fuer-zielseite_4660853.htm)     |

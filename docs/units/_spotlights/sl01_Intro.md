@@ -1,0 +1,20 @@
+---
+title: "Introduction to Spotlights"
+toc: TRUE
+header:
+  image: /assets/images/spotlights/header.png
+  image_description: "A spotlight"
+  caption: "Image by [Julia Schwab](https://pixabay.com/de/users/sweetaholic-296788/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=802634) [on Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=802634)"
+---
+
+<!--more-->
+
+* Spotlight 1: [Introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/spotlights/sl02_github.html)
+* Spotlight 2: [Introduction CSS in rMarkdown](/spotlights/sl03_css.html)
+* Spotlight 3: [Difference between long and wide](/spotlights/sl03_longwide.html)
+* to be continued...
+<!--
+## Further reading
+
+add some day
+-->
