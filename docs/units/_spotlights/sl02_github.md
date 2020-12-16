@@ -204,7 +204,7 @@ That's it. All you need to know about Git, Git Desktop, Github, Git Bash and Git
 
 {% include figure image_path="/assets/images/spotlights/github_austinpowers.jpg" caption="Live dangerously." %}
 
-See you in the next Spotlight *Introduction to CSS in rMarkdown*.
+See you in the next Spotlight *Introduction to CSS in R Markdown*.
 
 <!--
 ## Further reading

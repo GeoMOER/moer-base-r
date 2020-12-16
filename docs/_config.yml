@@ -143,16 +143,6 @@ defaults:
       layout: single
       sidebar:
         nav: "units"
-    # Spotlights
-  - scope:
-      path: ""
-      type: spotlights
-    values:
-      category: "Spotlights"
-      tags: "Unit 01"
-      layout: single
-      sidebar:
-        nav: "units"
   # unit01
   - scope:
       path: ""
@@ -310,6 +300,16 @@ defaults:
     values:
       category: "16 Exam"
       tags: "Unit 16"
+      layout: single
+      sidebar:
+        nav: "units"
+  # Spotlights
+  - scope:
+      path: ""
+      type: spotlights
+    values:
+      category: "Spotlights"
+      tags: "Spotlights"
       layout: single
       sidebar:
         nav: "units"

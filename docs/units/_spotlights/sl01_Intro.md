@@ -9,10 +9,12 @@ header:
 
 <!--more-->
 
-* Spotlight 1: [Introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/spotlights/sl02_github.html)
-* Spotlight 2: [Introduction CSS in rMarkdown](/spotlights/sl03_css.html)
-* Spotlight 3: [Difference between long and wide](/spotlights/sl03_longwide.html)
+* Spotlight 1: [Introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/moer-base-r/spotlights/sl02_github.html)
+* Spotlight 2: [Introduction CSS in rMarkdown](/moer-base-r/spotlights/sl03_css.html)
+* Spotlight 3: Coming soon: [Difference between long and wide](/moer-base-r/spotlights/spotlights/sl03_longwide.html)
 * to be continued...
+
+
 <!--
 ## Further reading
 
