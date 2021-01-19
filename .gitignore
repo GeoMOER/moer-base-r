@@ -2,3 +2,11 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+
+## Environment normalization:
+/.bundle/
+/vendor/bundle/
+/docs/vendor/
+/docs/.bundle/
+/docs/_site/
