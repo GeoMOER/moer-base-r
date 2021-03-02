@@ -1,26 +1,18 @@
 ---
-title: "Intoduction to operators, loops and if–then constructs"
+title: Working Environment
 header:
-  image: /assets/images/unit_images/u05/u5_header.png
-  image_description: "loop"
-  caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
+  image: /assets/images/unit_images/u05/header.png
+  image_description: "work environment"
+  caption: "Image by [Lukas Bieri](https://pixabay.com/de/users/lukasbieri-4664461/) from [Pixabay](https://pixabay.com/)"
 ---
-*You will learn what operators and loops do and how to write a if-then-else construct.*
+*You will learn how to set up the working environment*
 
 <!--more-->
-
 At the end of this unit you should know
 
-* what arithmetic, relational and logical operators are
-* what for-loops, lapply-loops and while-loops are and how to choose the right one
-* and how to build if-then-else constructs.
-
-Let's start...
-
-
-<!--
-## Further reading
-
-add some day
--->
-Bild von <a href="https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537">Christopher Kuszajewski</a> auf <a href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537">Pixabay</a>
+* what a workspace is and how to set up your working environment
+* what a root directory is
+* how directory structures work
+* what the differences between relative and absolute paths are
+* what packages are
+* what information you can find an the session info window.

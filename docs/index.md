@@ -22,15 +22,15 @@ feature_row_ilos:
 {% include feature_row id="feature_row_intro" type="center" %}
 
 A life without the free programming language R is no longer imaginable for many people and those who do not know R often do not know what they are missing.
-Unfortunately, the widespread believe that R is difficult to learn still exists, 
-which makes it unnecessarily difficult for many newcomers to enter the world of R. 
+Unfortunately, the widespread believe that R is difficult to learn still exists,
+which makes it unnecessarily difficult for many newcomers to enter the world of R.
 We would like to change this with this course.
 
 
 
 
 # Intended learning outcomes
-At the end of this course you should 
+At the end of this course you should
 
 * know and understand the basic properties of an object-oriented programming language,
 * flexibly use your knowledge and understanding in various programming contexts, and
@@ -39,7 +39,7 @@ At the end of this course you should
 
 # Course features
 
-This course is intended as a blended learning module in the study program of the Department of Geography at the University of Marburg, 
+This course is intended as a blended learning module in the study program of the Department of Geography at the University of Marburg,
 although the provided introductions, explanations and examples can also be used independently.
 
 
@@ -51,22 +51,17 @@ although the provided introductions, explanations and examples can also be used 
 
 | Unit | Topic | Content |
 |---------|-------|---------|
-| 01 | Overview and the very Basics | Set up everything for operating R and learn to get help. |
-| 02 | Data Input                   | Take your first own steps in R: from scalar to table. |
-| 03 | Types of Data                | Different levels of measurements. |
-| 04 | Types of Objects             | Different types of data storing in objects. |
-| 05 | Operations                   | What operators and loops do and how to write an if-then-else construct. |
+| 01 | Overview and the very Basics | Set up everything for operating R and learn to get help and take your own first steps in R. |
+| 02 | Types of Data                | Different levels of measurements. |
+| 03 | Types of Objects             | Different types of data storing in objects. |
+| 04 | Operations                   | What operators and loops do and how to write an if-then-else construct. |
+| 05 | Work Environment             | Set up your workspace and the R environment.  |
 | 06 | Data Input and Output        | Tabulated data and what csv-files are for. |
-| 07 | Indexing                     | Access data in objects. |
-| 08 | Work Environment             | Set up your workspace and the R environment.  |
-| 09 | Partial Data                 | Generate and work with partial data.  |
-| 10 | Sorting                      | Sort your data. |
-| 11 | Simple Visualizations        | Quickly and simply visualize your data. |
-| 12 | Combining Data               | Combine different datasets. |
-| 13 | Converting Data              | Convert data into different data types. |
-| 14 | Simple Functions             | Write some basic funtions. |
-| 15 | Advanced Visualizations      | Visualize your data in advanced diagrams. |
-| 16 | Exam                         | Pass an exam to test yourself. |
+| 07 | Simple Visualizations        | Quickly and simply visualize your data. |
+| 08 | Indexing                     | Access data in objects. |
+| 09 | Sorting                      | Sort your data. |
+| 10 | Combining Data               | Combine different datasets. |
+| 11 | Advanced Visualizations      | Visualize your data in advanced diagrams. 
 |    | Spotlights                   | Additional resources on selected topics. |
 
 
@@ -99,5 +94,3 @@ Course contents are among other things:
 
 ("digital literacy")
 -->
-
-

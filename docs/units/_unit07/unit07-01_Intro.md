@@ -1,26 +1,19 @@
 ---
-title: Indexing
+title: Simple Graphics
 header:
-  image: /assets/images/unit_images/u03/u3_header.png
+  image: /assets/images/unit_images/u07/header.png
   image_description: "neon data"
-  caption: "Photo by [Maksym Kaharlytskyi](https://unsplash.com/@qwitka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) from [Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
-*You will learn how to access the indices.*
 
 <!--more-->
 
-At the end of this unit you should know how to
-
-* find
-* address and
-* change
-
-specific datum in vectors, lists, matrices and data.frames.
-
-Let's start...
+## Learning objectives
+At the end of this session you should be able to
+* create historgrams, dotplots, barplots, boxplots, linecharts, piecharts and scatterplots
+* and adapt labeling in plots
 
 
-<!--more-->
 
-
-_work in progress_
+## More on this topic
+The examples in this unit are specifically related to the assignment. To get a much broader idea on visualization, please refer to our online book on [Creating Publication Quality Graphics in R](https://oer.uni-marburg.de/data/mriliasmooc/lm_data/lm_1901/index.html) by our former group members Tim Appelhans and Florian Detsch which is also available at Marburg Open Educational Resources.

@@ -1,20 +1,20 @@
 ---
-title: "Data input"
+title: "Types of Data"
 header:
-  image: /assets/images/unit_images/u02/u2_header.png
-  image_description: "confused"
-  caption: "Image by [slon_pics](https://pixabay.com/de/users/www_slon_pics-5203613/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2261021) [from pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2261021)"
+  image: /assets/images/unit_images/u02/header.png
+  image_description: "neon data"
+  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
-*First own steps with R: from scalar to table*
+*You will learn about different levels of measurements.*
 
 <!--more-->
 
 At the End of this unit you should know
 
-* what a comment is
-* how direct data entries work
-* how scalar objects and arithmetic operations work
-* how to assign values to objects
+* what qualitative and quantitative data is
+* what nominal, ordinal, interval and ratio scale data is
+* the differences between the said scales
+* a nice Terry Pratchett quote.
 
 Let's start...
 

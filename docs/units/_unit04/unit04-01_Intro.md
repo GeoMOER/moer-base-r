@@ -1,25 +1,19 @@
 ---
-title: "Intoduction to data types and objects"
+title: "Intoduction to operators, loops and if–then constructs"
 header:
-  image: /assets/images/unit_images/u03/u3_header.png
-  image_description: "neon data"
-  caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
+  image: /assets/images/unit_images/u04/header.png
+  image_description: "loop"
+  caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
-
-*You will learn about different types of data storing in objects.*
+*You will learn what operators and loops do and how to write a if-then-else construct.*
 
 <!--more-->
 
-Data types are used within type systems, which offer various ways of defining, implementing and using them. Different type systems ensure varying degrees of type safety. Almost all programming languages explicitly include the notion of data type, though different languages may use different terminology.
-
-In computer science, type safety is the extent to which a programming language discourages or prevents type errors. A type error is erroneous or undesirable program behaviour caused by a discrepancy between differing data types for the program's constants, variables, and methods (functions), e.g., treating an integer (int) as a floating-point number (float).
-
 At the end of this unit you should know
 
-* what integer, character, string, float, boolean and NULL/NA mean
-* the differences between the data types mentioned above
-* what variables, arrays, matrices, data frames and lists are
-* and how the data types are stored in them
+* what arithmetic, relational and logical operators are
+* what for-loops, lapply-loops and while-loops are and how to choose the right one
+* and how to build if-then-else constructs.
 
 Let's start...
 
@@ -29,3 +23,4 @@ Let's start...
 
 add some day
 -->
+Bild von <a href="https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537">Christopher Kuszajewski</a> auf <a href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537">Pixabay</a>
