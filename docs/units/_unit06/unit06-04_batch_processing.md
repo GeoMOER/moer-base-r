@@ -1,7 +1,7 @@
 ---
 title: "Example: Batch processing"
 header:
-  image: /assets/images/unit_images/u06/u6_header.png
+  image: /assets/images/unit_images/u06/header.png
   image_description: "computer"
   caption: "Photo by [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373) [Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373)"
 ---
@@ -9,10 +9,10 @@ header:
 <!--more-->
 
 Below is an example for batch processing of multiple files in a for-loop.
-Each file in the "input" directory is sequentially processed (in this example getting the file size) 
+Each file in the "input" directory is sequentially processed (in this example getting the file size)
 and the result is written into a corresponding file with the same file name in the "output" directory.
 
-Note that the management of file names and file paths is crucial for batch processing. 
+Note that the management of file names and file paths is crucial for batch processing.
 So know the path to your working directory, the paths to your input and output folders, the paths to your files, the names of your files and their extention.
 
 <!-- some nice graphic showing root, path, working directory, filename, and file extension -->
@@ -46,7 +46,7 @@ for (file_path in file_paths){
 }
 ```
 
-This is all it takes for also performing more complex operations using multiple input files. 
+This is all it takes for also performing more complex operations using multiple input files.
 
 ###  Functions you should know
 
@@ -66,5 +66,3 @@ file_path_as_absolute(file_path) # get full file path
 # The regex way for getting the pure file name without path and extension
 sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(file_path))
 ```
-
-

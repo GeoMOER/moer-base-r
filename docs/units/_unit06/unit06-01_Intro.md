@@ -1,7 +1,7 @@
 ---
 title: "Intoduction to Input and Output of Data"
 header:
-  image: /assets/images/unit_images/u06/u6_header.png
+  image: /assets/images/unit_images/u06/header.png
   image_description: "neon data"
   caption: "Photo by [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373) [Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373)"
 ---
