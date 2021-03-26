@@ -1,5 +1,5 @@
 ---
-title: Bar plot
+title: Barplot
 toc: true
 toc_float: true
 header:
