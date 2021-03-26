@@ -115,7 +115,23 @@ legend(1, max_range[2], c("Sport","Family"), cex=0.8,
 
 {% include figure image_path="/assets/data/data/plot8.png" caption="Print of Code chunk above" %}
 
-Your output in the plot-window will look like this:
+In total this is the code and the output in the plot-window will look like this with each line:
+```
+sport_cars <- c(1, 2, 4, 2, 6, 7, 10)
+family_cars <- c(3, 6, 6, 8, 6, 5, 2)
+max_range <- range(0, sport_cars, family_cars)
+plot(sport_cars, type="o", col="blue", ylim=max_range,
+     axes=FALSE, ann=FALSE)
+axis(1, at=1:7, lab=c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
+axis(2, las=1, at=4*0:max_range[2])
+box()
+lines(family_cars, type="o", pch=22, lty=2, col="red")
+title(main="Car Types on Streets", col.main="red", font.main=4)
+title(xlab="Days", col.lab=rgb(0,0.5,0))
+title(ylab="Total", col.lab=rgb(0,0.5,0))
+legend(1, max_range[2], c("Sport","Family"), cex=0.8,
+       col=c("blue","red"), pch=21:22, lty=1:2);
+```       
 {% include figure image_path="/assets/data/data/plot.gif" caption="Animation of the plot process" %}
 
 ## Visualizations 101
