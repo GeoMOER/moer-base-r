@@ -54,14 +54,12 @@ although the provided introductions, explanations and examples can also be used 
 | 01 | Overview and the very Basics | Set up everything for operating R and learn to get help and take your own first steps in R. |
 | 02 | Types of Data                | Different levels of measurements. |
 | 03 | Types of Objects             | Different types of data storing in objects. |
-| 04 | Operations                   | What operators and loops do and how to write an if-then-else construct. |
+| 04 | Indexing                     | Access data in objects. |
 | 05 | Work Environment             | Set up your workspace and the R environment.  |
 | 06 | Data Input and Output        | Tabulated data and what csv-files are for. |
-| 07 | Simple Visualizations        | Quickly and simply visualize your data. |
-| 08 | Indexing                     | Access data in objects. |
-| 09 | Sorting                      | Sort your data. |
-| 10 | Combining Data               | Combine different datasets. |
-| 11 | Advanced Visualizations      | Visualize your data in advanced diagrams. 
+| 07 | Operations                   | What operators and loops do and how to write an if-then-else construct. |
+| 08 | Sorting & Combining Data       | Combine and sort different datasets through sorting, binding, merging |
+| 09 | Simple Visualizations        | Quickly and simply visualize your data. |
 |    | Spotlights                   | Additional resources on selected topics. |
 
 
