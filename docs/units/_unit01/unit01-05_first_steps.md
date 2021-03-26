@@ -1,6 +1,7 @@
 ---
 title: "First Steps in R"
-toc: true
+toc: TRUE
+toc_float: TRUE
 header:
   image: /assets/images/unit_images/u01/header.png
   image_description: "confused"

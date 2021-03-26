@@ -1,5 +1,7 @@
 ---
 title: "Example: Batch processing"
+toc: TRUE
+toc_float: TRUE
 header:
   image: /assets/images/unit_images/u06/header.png
   image_description: "computer"

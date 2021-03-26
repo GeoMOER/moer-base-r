@@ -103,16 +103,7 @@ collections:
   unit09:
     output: true
     permalink: /:collection/:title.html
-  unit10:
-    output: true
-    permalink: /:collection/:title.html
-  unit11:
-    output: true
-    permalink: /:collection/:title.html
-  worksheets:
-    output: true
-    permalink: /:collection/:title.html
-  spotlights:
+  unit99:
     output: true
     permalink: /:collection/:title.html
 
@@ -163,7 +154,7 @@ defaults:
       path: ""
       type: unit04
     values:
-      category: "04 Operations"
+      category: "04 Indexing"
       tags: "Unit 04"
       layout: single
       sidebar:
@@ -173,7 +164,7 @@ defaults:
       path: ""
       type: unit05
     values:
-      category: "05 Workspace"
+      category: "05 Work Environment"
       tags: "Unit 05"
       layout: single
       sidebar:
@@ -193,7 +184,7 @@ defaults:
       path: ""
       type: unit07
     values:
-      category: "07 Simple Visualizations"
+      category: "07 Operations"
       tags: "Unit 07"
       layout: single
       sidebar:
@@ -203,7 +194,7 @@ defaults:
       path: ""
       type: unit08
     values:
-      category: "08 Indexing"
+      category: "08 Sorting and Combining Data"
       tags: "Unit 08"
       layout: single
       sidebar:
@@ -213,36 +204,16 @@ defaults:
       path: ""
       type: unit09
     values:
-      category: "09 Sorting"
+      category: "09 Simple Visualizations"
       tags: "Unit 09"
       layout: single
       sidebar:
         nav: "units"
-  # unit10
-  - scope:
-      path: ""
-      type: unit10
-    values:
-      category: "10 Combining Data"
-      tags: "Unit 10"
-      layout: single
-      sidebar:
-        nav: "units"
-  # unit11
-  - scope:
-      path: ""
-      type: unit11
-    values:
-      category: "11 Advanced Visualizations"
-      tags: "Unit 11"
-      layout: single
-      sidebar:
-        nav: "units"
-  
+
   # Spotlights
   - scope:
       path: ""
-      type: spotlights
+      type: unit99
     values:
       category: "Spotlights"
       tags: "Spotlights"

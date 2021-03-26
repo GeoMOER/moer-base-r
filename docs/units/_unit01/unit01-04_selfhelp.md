@@ -1,8 +1,6 @@
 ---
 title: "Help?!"
-number_sections: TRUE
 toc: TRUE
-toc_depth: 3
 toc_float: TRUE
 header:
   image: /assets/images/unit_images/u01/header.png

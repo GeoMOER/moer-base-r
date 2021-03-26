@@ -1,26 +1,13 @@
 ---
-title: Indexing
+title: Intoduction to Sorting, Binding & Merging
 header:
   image: /assets/images/unit_images/u08/header.png
-  image_description: "index"
-  caption: "Photo by [Maksym Kaharlytskyi](https://unsplash.com/@qwitka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) from [Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
+  image_description: "noodle"
+  caption: "Photo by [congerdesign](https://pixabay.com/de/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384)"
 ---
-*You will learn how to access the indices.*
-
-<!--more-->
 
 At the end of this unit you should know how to
-
-* find
-* address and
-* change
-
+* sort
+* bind
+* merge
 specific datum in vectors, lists, matrices and data.frames.
-
-Let's start...
-
-
-<!--more-->
-
-
-_work in progress_
