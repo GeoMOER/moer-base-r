@@ -9,12 +9,12 @@ header:
 ---
 
 ## What is a Dotplot?
-
-<body>
+<style>.unit p {text-align: justify;}</style>
+<div class="unit">
 <img src="dotplot4.png" width="515" height="283" align="right" vspace="10" hspace="20">
 <p><b>Short Version:</b> A dot plot is just a bar chart that uses dots to represent individual quanta. <br> <br>
 <b>Long Version:</b> A Dot Plot, also called a dot chart or strip plot, is a type of simple histogram-like chart used in statistics for relatively small data sets where values fall into a number of discrete bins (categories). A dot plot is similar to a bar graph because the height of each “bar” of dots is equal to the number of items in a particular category. To draw one, count the number of data points falling in each bin (What is a BIN in statistics?) and draw a stack of dots that number high for each bin.
-</p></body>
+</p></div>
 
 Create dotplots with the `dotchart(x, labels=)` function, where x is a numeric vector and labels is a vector of labels for each point. You can add a `groups=` option to designate a factor specifying how the elements of x are grouped. If so, the option `gcolor=` controls the color of the groups label. cex controls the size of the labels.
 

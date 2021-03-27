@@ -12,10 +12,11 @@ header:
 
 
 ## What is a Histogram?
-<body>
+<style>.unit p {text-align: justify;}</style>
+<div class="unit">
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Histogram_of_arrivals_per_minute.svg" width="400" height="338" align="right" vspace="10" hspace="20">
-<p>A histogram is a graphical representation of the frequency distribution of cardinally scaled characteristics. It requires the division of the data into bins (classes), which can have a constant or variable width (see image on the right by DanielPenfield on wikimedia.org). Directly adjacent rectangles of the width of the respective class are drawn, the area of which represents the (relative or absolute) class frequencies. The height of each rectangle then represents the (relative or absolute) frequency density, i.e. the (relative or absolute) frequency divided by the width of the corresponding class.
-</p></body>
+<p>A histogram is a graphical representation of the frequency distribution of cardinally scaled characteristics. It requires the division of the data into bins (classes), which can have a constant or variable width (see image on the right by <i>DanielPenfield on wikimedia.org</i>). Directly adjacent rectangles of the width of the respective class are drawn, the area of which represents the (relative or absolute) class frequencies. The height of each rectangle then represents the (relative or absolute) frequency density, i.e. the (relative or absolute) frequency divided by the width of the corresponding class.
+</p></div>
 
 ## Build in Datasets
 R comes with several built-in data sets, which are generally used as demo data for playing with R functions. These built-in data sets are ideal for practising plotting. To see the list of pre-loaded data, type the function `data():`
@@ -27,9 +28,34 @@ R comes with several built-in data sets, which are generally used as demo data f
 * "USArrests": statistics about violent crime rates by us state
 * and many many more...
 
-__Reminder__:
-* Load a built-in R data set: `data(“dataset_name”)`
-* Inspect the data set: `head(dataset_name)`
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+</style>
+</head>
+<body>
+<div class="info">
+  <p><strong>Reminder</strong>  <br>
+  <ol>
+      <li>Load a built-in R data set: <code class="language-plaintext highlighter-rouge">data(“dataset_name”)</code></li>
+      <li>Inspect the data set: <code class="language-plaintext highlighter-rouge">head(dataset_name)</code></li>
+  </ol>
+  </p>
+</div>
+</body>
+</html>
 
 ## Theory
 You can create histograms with the function `hist(x)` where x is a numeric vector of values to be plotted. The option `freq=FALSE` plots probability densities instead of frequencies. The option `breaks=` controls the number of bins.

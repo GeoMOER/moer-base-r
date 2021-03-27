@@ -10,10 +10,11 @@ header:
 
 <!--more-->
 ## What is a Barplot?
-<body>
+<style>.unit p {text-align: justify;}</style>
+<div class="unit">
 <img src="https://www.webdonuts.com/comics/2009-08-28-Bar-Chart.jpg" width="432" height="362" align="right" vspace="10" hspace="20">
 <p>The barplot is for <b>comparative representation</b> that illustrates the <b>frequency distribution</b> of a discrete (random) variable by means of non-contiguous columns standing vertically on the x-axis. The bar chart is particularly suitable for illustrating up to approx. 15 characteristics. With more categories, the clarity suffers and line charts are to be preferred. The bar chart is also not suitable in the case of metrically continuous data; then a histogram is preferable.
-</p></body>
+</p></div>
 
 Create barplots with the `barplot(values)` function, where *values* is a vector or matrix.
 * If *values* is a vector, the values determine the heights of the bars in the plot.
