@@ -1,5 +1,5 @@
 ---
-title: Pure Base R - no statistics, no fancy packages, just plain R
+title: Base R - no statistics, no fancy packages, just plain R
 layout: splash
 date: '2020-06-30 13:00:00 +0100'
 header:
@@ -63,10 +63,10 @@ although the provided introductions, explanations and examples can also be used 
 |    | Spotlights                   | Additional resources on selected topics. |
 
 
-
+<!--
 # Deliverables
 The exam in unit 16 will be used for self-assessment and as a prerequisite for more subject-specific courses.
-
+-->
 
 # Preparation and prerequisites
 No preparation or prerequisites are needed for this course.
