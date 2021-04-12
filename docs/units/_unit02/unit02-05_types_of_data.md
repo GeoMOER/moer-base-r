@@ -16,10 +16,10 @@ That means when programming, the variables generally have a specific type, and t
 
 Common data types include:
 * integer
-* floating-point number
+* double or floating-point number
 * character
 * string
-* boolean
+* logical or boolean
 * NULL and/or NA
 
 Data types are used within type systems, which offer various ways of defining, implementing and using them. Different type systems ensure varying degrees of type safety.
@@ -27,7 +27,7 @@ Data types are used within type systems, which offer various ways of defining, i
 ### Integer
 int is short for "integer", which means whole numbers. It is used to specify that the variable contains only whole numbers. For example, 3 is an integer but 3.25 is not an integer. The range goes from -2,147,483,648 to 2,147,483,647.
 
-### Floating-point number
+### Double or Floating-point number
 float is short for "floating-point number", which is a fractional number, eg, 3.25907. This can be a number between roughly 1.5 x 10^45 to 3.4 10^38, in floating point format.
 
 **Note: Watch your decimal separator!**
@@ -57,8 +57,8 @@ Examples of characters include letters, numerical digits, common punctuation mar
 Characters are typically combined into strings. A string is a sequence of characters, e.g. "Hello World."
 It is used to represent text rather than numbers. It is comprised of a set of characters that can also contain spaces and numbers. For example, the word "hamburger" and the phrase "I ate 3 hamburgers" are both strings, consisting of characters.
 
-### Boolean
-boolean can only contain either the value **true** or **false**.
+### Logical or boolean
+Logical values or boolean values can only contain either the value **true** or **false**.
 
 ### NULL or NA
 Both are used to represent missing or undefined values.
@@ -72,9 +72,9 @@ The R language has two closely related NULL-like values, NA and NULL.  Both are 
 
 | Data Type  | Examples |
 |------------|----------|
-| int        |1; 15 ; 1984297       |
+| integer        |1; 15 ; 1984297       |
 | float      |1.15 ; 1007.28 ; 0.0001       |
-| character  |© ; H ; π         |
+| character  |© ; H ; π ; A; B; C        |
 | string     |"Hello World"  ;   "Ursus maritimus"  ;   "black" |  
 | boolean    |true  ;   false         |
 | NULL       |  NULL       |
