@@ -1,5 +1,6 @@
 ---
 title: Simple Functions
+published: FALSE
 toc: TRUE
 toc_float: TRUE
 header:

@@ -8,11 +8,14 @@ header:
 
 <!--more-->
 
-* Spotlight 1: [Introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/moer-base-r/spotlights/sl02_github.html)
-* Spotlight 2: [Introduction CSS in rMarkdown](/moer-base-r/spotlights/sl03_css.html)
-* Spotlight 3: Coming soon: [Difference between long and wide](/moer-base-r/spotlights/spotlights/sl03_longwide.html)
-* Spotlight 4: Coming soon: [How to create functions?](/moer-base-r/spotlights/spotlights/sl05_functions.html)
-* Spotlight 3: Coming soon: [Partial Data](/moer-base-r/spotlights/spotlights/sl06-01_Intro.html)
+The spotlights will focus on topics unrelated yet important to the previous units.
+
+* [A quick introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/moer-base-r/unit99/sl02_github.html)
+* [An introduction to CSS in general and CSS in rMarkdown](/moer-base-r/unit99/sl03_css.html)
+* Coming soon: [The difference between long and wide](/moer-base-r/unit99/sl04_longwide.html)
+* Coming soon: [A guide on how to create functions](/moer-base-r/unit99/sl05_functions.html)
+* Coming soon: [A guide on how to work with partial data](/moer-base-r/unit99/sl06_partialdata.html)
+* Coming soon: [A guide on how to work with N/A data](/moer-base-r/unit99/sl07_na.html) <br> <br>
 to be continued...
 
 
