@@ -88,4 +88,4 @@ c
 [1] 8
 ```
 And that is how information is stored in objects.
-Let's move to unit 3.
+Let's move to the next unit.
