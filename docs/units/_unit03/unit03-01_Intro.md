@@ -1,5 +1,5 @@
 ---
-title: "Intoduction to data types and objects"
+title: "Intoduction"
 header:
   image: /assets/images/unit_images/u03/header.png
   image_description: "neon data"

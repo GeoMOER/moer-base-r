@@ -1,5 +1,5 @@
 ---
-title: "Intoduction to operators, loops and if–then constructs"
+title: "Intoduction"
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"

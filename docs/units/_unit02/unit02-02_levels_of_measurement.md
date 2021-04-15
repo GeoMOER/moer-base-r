@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Measurement"
+title: "Levels of Measurement"
 toc: true
 toc_float: true
 header:

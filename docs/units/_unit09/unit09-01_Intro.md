@@ -1,5 +1,5 @@
 ---
-title: Intoduction to Simple Graphics
+title: Intoduction
 header:
   image: /assets/images/unit_images/u09/header.png
   image_description: "statistics"

@@ -34,14 +34,8 @@ In summary, nominal variables are used to “name,” or label a series of value
 -----
 
 ## Test
-*Now test your knowledge about types of data.*
+*Now test your knowledge on types of data.*
 
 <iframe src="https://h5p.org/h5p/embed/956482" width="1090" height="325" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
-Let's move on...
-
-<!--
-## Further reading
-
-add some day
--->
+Let's organize those data types in objects in the next unit...
