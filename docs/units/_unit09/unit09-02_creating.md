@@ -1,5 +1,5 @@
 ---
-title: Creating
+title: Creating graphs
 toc: true
 toc_float: true
 header:

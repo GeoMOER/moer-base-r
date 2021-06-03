@@ -1,5 +1,5 @@
 ---
-title: "Intoduction"
+title: "Introduction to CSV"
 header:
   image: /assets/images/unit_images/u06/header.png
   image_description: "neon data"

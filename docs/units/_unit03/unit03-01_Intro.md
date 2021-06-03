@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "Introduction to data types and objects"
-=======
-title: "Intoduction"
->>>>>>> 1454309f6ba95e2ec9662428afae40c61b5ee34d
 header:
   image: /assets/images/unit_images/u03/header.png
   image_description: "neon data"
