@@ -5,7 +5,7 @@ header:
   image_description: "Android Market-share Worldwide 2018-2020"
   caption: "Mobile Android operating system market share by version worldwide from 2018 to 2020: [StatCounter](https://gs.statcounter.com/android-version-market-share/mobile/worldwide/#monthly-201907-202001) [via Statista](https://www.statista.com/statistics/921152/mobile-android-version-share-worldwide/)"
 ---
-*Setting up the program and auxiliary programs for operating R and introduce a few tools if you get stuck.*
+*Setting up R and auxiliary programs for operating R and introducing a few tools if you get stuck.*
 <!--more-->
 
 ## Getting to know R

@@ -91,8 +91,4 @@ Take the test, to check if you understand everything correctly:
 
 Let's move on...
 
-<!--
-## Further reading
 
-add some day
--->

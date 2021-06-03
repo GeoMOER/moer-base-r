@@ -36,7 +36,7 @@ The `help()` function and `?` operator are useful *only if you already know* the
 
 
 
-## Online-Ressources
+## Online Ressources
 
 There are internet search sites that are specialized for R searches, including [search.r-project.org](search.r-project.org) (which is the site used by RSiteSearch) and [Rseek.org](rseek.org).
 

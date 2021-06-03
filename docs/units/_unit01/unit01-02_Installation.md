@@ -7,11 +7,11 @@ header:
   image_description: "Android Market-share Worldwide 2018-2020"
   caption: "Mobile Android operating system market share by version worldwide from 2018 to 2020: [StatCounter](https://gs.statcounter.com/android-version-market-share/mobile/worldwide/#monthly-201907-202001) [via Statista](https://www.statista.com/statistics/921152/mobile-android-version-share-worldwide/)"
 ---
-*How to install Cran R and RStudio?*
+*How to install R and RStudio?*
 <!--more-->
 
 
-## Installing Cran R
+## Installing R
 Go and visit [cran.r-project.org](https://cran.r-project.org/) to learn more about R or choose your operating system and go directly to the download page. Cran R is available for following systems:
 
 

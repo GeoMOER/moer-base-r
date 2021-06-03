@@ -1,5 +1,5 @@
 ---
-title: "Introduction to operators, loops and if–then constructs"
+title: "Introduction to loops"
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"

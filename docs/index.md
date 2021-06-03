@@ -39,28 +39,24 @@ At the end of this course you should
 
 # Course features
 
-This course is intended as a blended learning module in the study program of the Department of Geography at the University of Marburg,
-although the provided introductions, explanations and examples can also be used independently.
-
-
-
-
+This course is intended as a blended learning module in the study program of the Department of Geography at the University of Marburg.
+However, the provided units and spotlights can also be used independently. 
 
 
 # Syllabus
 
 | Unit | Topic | Content |
-|---------|-------|---------|
-| 01 | Overview and the very Basics | Set up everything for operating R and learn to get help and take your own first steps in R. |
-| 02 | Types of Data                | Different levels of measurements. |
-| 03 | Types of Objects             | Different types of data storing in objects. |
-| 04 | Indexing                     | Access data in objects. |
-| 05 | Work Environment             | Set up your workspace and the R environment.  |
-| 06 | Data Input and Output        | Tabulated data and what csv-files are for. |
-| 07 | Operations                   | What operators and loops do and how to write an if-then-else construct. |
-| 08 | Sorting & Combining Data       | Combine and sort different datasets through sorting, binding, merging |
-| 09 | Simple Visualizations        | Quickly and simply visualize your data. |
-|    | Spotlights                   | Additional resources on selected topics. |
+|------|-------|---------|
+| 01 | Overview and the very Basics | Set up everything for operating R, take your own first steps in R, and learn how to get help |
+| 02 | Types of Data                | How data is measured and organized with an R perspective                                     |
+| 03 | Types of Objects             | How data types are structured within different object types in R                             |
+| 04 | Indexing                     | Learn how to access your data in R objects                                                   |
+| 05 | Work Environment             | Set up your directory structure and get control over your paths to directories and files  |
+| 06 | Data Input and Output        | Get your data in and out of R           |
+| 07 | Operations                   | Operations with operators, decisions structures, and loops  |
+| 08 | Sorting and Combining Data   | Sort, order, bind, and merge your data  |
+| 09 | Simple Visualizations        | Quickly and simply visualize your data  |
+|    | Spotlights                   | Additional resources on selected topics |
 
 
 <!--

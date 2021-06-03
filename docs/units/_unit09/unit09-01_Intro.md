@@ -1,5 +1,5 @@
 ---
-title: Introduction to Simple Graphics
+title: Introduction to creating graphs
 header:
   image: /assets/images/unit_images/u09/header.png
   image_description: "statistics"

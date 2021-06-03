@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Input and Output of Data"
+title: "Intoduction"
 header:
   image: /assets/images/unit_images/u06/header.png
   image_description: "neon data"

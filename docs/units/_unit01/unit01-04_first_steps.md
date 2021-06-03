@@ -32,7 +32,7 @@ The output of the code will print below the chunk in the second Window (Console)
 
 ```r
 hello <- "Welcome to R"
-print(hello)
+hello
 ```
 ```r
 ## Welcome to R
@@ -87,5 +87,4 @@ c <- (a + b) * 2 # brackets
 c
 [1] 8
 ```
-And that is how information is stored in objects.
-Let's move to the next unit.
+And that is how information is stored in objects in an object-oriented programming language.
