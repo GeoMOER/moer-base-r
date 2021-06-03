@@ -50,9 +50,44 @@ In order to ask a question effectively, it helps to phrase the question clearly,
 Which leads us to **Stack Overflow:**
 Stack Overflow is a well organized site for help and discussions about programming. It has excellent searchability and “R” is a very popular tag on the site. To go directly to R-related topics, visit [Questions tagged R](http://stackoverflow.com/questions/tagged/r).
 
+{% include figure image_path="/assets/images/unit_images/u01/help.png" caption="Using a search engine for help" %}
+
 ---
 
-{% include figure image_path="/assets/images/unit_images/u01/help.png" caption="Using a search engine for help" %}
+### Google: "searchme": site:moer-base-r
+
+<style>.unit p {text-align: justify;}</style>
+<div class="unit">
+<img src="google2.png" width="515" height="283" align="right" vspace="10" hspace="20">
+<p>Although the page itself does not contain a search function for keywords, the page can still be searched to a limited extent with the help of Google. To do this, enter the word to be searched for in quotation marks with a colon and the keyword <i>site:</i> plus the URL of the Base R page. By the way this works for every site on the web. <br> <br>
+
+For example, if you want to search for the word "ratio", it looks like this:
+</p></div>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+</style>
+</head>
+<body>
+<div class="info">
+  <p> "ratio": site:https://geomoer.github.io/moer-base-r </p>
+</div>
+</body>
+</html>
+
+---
 
 Long Story short:
 
@@ -67,6 +102,8 @@ Long Story short:
 * [Stack Overflow with r questions](http://stackoverflow.com/questions/tagged/r)
 * [Stack Overflow](https://stackoverflow.com/)
 * Last but not least: simply use a search engine and phrase your problem.
+
+
 
 <!--
 ## Further reading
