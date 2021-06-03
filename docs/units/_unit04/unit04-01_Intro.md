@@ -21,6 +21,3 @@ Let's start...
 
 
 <!--more-->
-
-
-_work in progress_

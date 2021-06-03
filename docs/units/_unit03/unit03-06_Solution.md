@@ -48,7 +48,7 @@ root
 
 ### Task 3: Data about size and weight
 
-create objects: object  <-  c(..., ..., ...)
+create vectors: vector  <-  c(..., ..., ...)
 
 ```r
 size <- c(1.67,1.8,1.58,1.83,1.65,1.74,1.8,1.6,1.76,1.8)

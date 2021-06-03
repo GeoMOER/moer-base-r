@@ -76,3 +76,7 @@ state: NRW, Bayern, Sachsen, Hessen, Hessen, MV, Hessen, Brandenburg, Hessen, Be
   </p>
 </div>
 </body>
+
+----
+
+Congratulations! This was the last exercise for this chapter.

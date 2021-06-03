@@ -15,7 +15,7 @@ header:
 Use `is.` to test for data type. Returns TRUE or FALSE
 Use `as.` to explicitly convert it.
 
-*	How to convert vectors see Unit 2: [Converting Types of Data](/moer-base-r/unit02/unit02-06_convert.html)
+*How to convert vectors see Unit 2: [Converting Types of Data](/moer-base-r/unit02/unit02-06_convert.html)*
 
 
 |   | to vector | to matrix | to dataframe |

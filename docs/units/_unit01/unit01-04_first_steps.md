@@ -43,23 +43,23 @@ print(hello)
 The basic arithmetic operations are addition, subtraction, multiplication and division, furthmore square roots, exponentiation and some other.
 
 Examples of arithmetic operations in R. This is using R like a calculator.
-```r
+```
 1 + 2
 [1] 3
 ```
-```r
+```
 2 - 1
 [1] 1
 ```
-```r
+```
 2 * 3
 [1] 6
 ```
-```r
+```
 2 / 3
 [1] 0,6666666666666667‬
 ```
-```r
+```
 2 ^ 3
 [1] 8
 ```
@@ -67,14 +67,14 @@ Examples of arithmetic operations in R. This is using R like a calculator.
 That [1] next to your result is a reminder that this line begins with the first value in your result. Some commands return more than one value, and their results may fill up multiple lines.
 
 ## Assigning values to objects
-```r
+```
 # Assign values to objects
 a <- 1+2 # addition/allocation, calculation is stored in object "a"
 a <- print the result
 [1] 3
 ```
 
-```r
+```
 # adding another object
 b <- 2-1
 b
