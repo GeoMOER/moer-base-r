@@ -59,6 +59,7 @@ Stack Overflow is a well organized site for help and discussions about programmi
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
 <img src="google2.png" width="515" height="283" align="right" vspace="10" hspace="20">
+
 <p>Although the page itself does not contain a search function for keywords, the page can still be searched to a limited extent with the help of Google. To do this, enter the word to be searched for in quotation marks with a colon and the keyword <i>site:</i> plus the URL of the Base R page. By the way this works for every site on the web. <br> <br>
 
 For example, if you want to search for the word "ratio", it looks like this:
