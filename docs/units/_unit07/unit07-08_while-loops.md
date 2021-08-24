@@ -59,5 +59,3 @@ while(a <= b){
 Variable `c` has to be reseted to its initial value every time the inner loop is completed. Otherwise it would not start a second time since the termination condition is already reached. Of course this behavior can also be useful for a variety of problems.
 
 ----
-
-Let's move on to unit 6: Data input and output...

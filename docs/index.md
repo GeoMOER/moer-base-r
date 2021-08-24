@@ -5,7 +5,7 @@ date: '2020-06-30 13:00:00 +0100'
 header:
   overlay_color: "#000"
   overlay_filter: 0.6
-  overlay_image: "/assets/images/domorewithR.jpeg"
+  overlay_image: "/assets/images/teaser.jpeg"
   caption: 'Photo: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
   cta_label: Go to course units
   cta_url: "/units.html"

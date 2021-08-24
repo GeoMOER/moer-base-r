@@ -5,7 +5,7 @@ toc_float: TRUE
 header:
   image: /assets/images/unit_images/u05/header.png
   image_description: "work environment"
-  caption: "Image by [Lukas Bieri](https://pixabay.com/de/users/lukasbieri-4664461/) from [Pixabay](https://pixabay.com/)"
+  caption: "Photo by [Lukas Goumbik](https://pixabay.com/de/users/Goumbik-3752482/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2055522) from [Pixabay](https://pixabay.com)"
 ---
 
 > “Good things come in small packages.” — Proverb

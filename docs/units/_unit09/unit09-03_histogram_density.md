@@ -15,7 +15,7 @@ header:
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Histogram_of_arrivals_per_minute.svg" width="400" height="338" align="right" vspace="10" hspace="20">
-<p>A histogram is a graphical representation of the frequency distribution of cardinally scaled characteristics. It requires the division of the data into bins (classes), which can have a constant or variable width (see image on the right by <i>DanielPenfield on wikimedia.org</i>). Directly adjacent rectangles of the width of the respective class are drawn, the area of which represents the (relative or absolute) class frequencies. The height of each rectangle then represents the (relative or absolute) frequency density, i.e. the (relative or absolute) frequency divided by the width of the corresponding class.
+<p>A histogram is a graphical representation of the frequency distribution of cardinally scaled characteristics. It requires the division of the data into bins (classes), which can have a constant or variable width (see image on the right by <a href="https://commons.wikimedia.org/wiki/File:Histogram_of_arrivals_per_minute.svg"><i>DanielPenfield</i></a>) on wikimedia.org. Directly adjacent rectangles of the width of the respective class are drawn, the area of which represents the (relative or absolute) class frequencies. The height of each rectangle then represents the (relative or absolute) frequency density, i.e. the (relative or absolute) frequency divided by the width of the corresponding class.
 </p></div>
 
 ## Build in Datasets
