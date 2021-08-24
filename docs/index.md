@@ -5,8 +5,8 @@ date: '2020-06-30 13:00:00 +0100'
 header:
   overlay_color: "#000"
   overlay_filter: 0.6
-  overlay_image: "/assets/images/teaser.png"
-#  caption: 'Photo: [**Environmental Informatics Marburg**](https://www.flickr.com/environmentalinformatics-marburg/)'
+  overlay_image: "/assets/images/domorewithR.jpeg"
+  caption: 'Photo: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r)'
   cta_label: Go to course units
   cta_url: "/units.html"
 excerpt: Learn the essentials for working with R.
@@ -40,7 +40,7 @@ At the end of this course you should
 # Course features
 
 This course is intended as a blended learning module in the study program of the Department of Geography at the University of Marburg.
-However, the provided units and spotlights can also be used independently. 
+However, the provided units and spotlights can also be used independently.
 
 
 # Syllabus
