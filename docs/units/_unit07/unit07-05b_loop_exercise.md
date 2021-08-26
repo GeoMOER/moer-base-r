@@ -1,5 +1,5 @@
 ---
-title: "Exercise: Loop and Conquer"
+title: Loop and Conquer
 toc: TRUE
 toc_float: TRUE
 header:

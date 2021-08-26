@@ -45,10 +45,10 @@ It is also possible to use a general search site like Google, Ecosia, Duckduckgo
 **Asking for help:**
 If you find that you can’t answer a question or solve a problem yourself, you can ask others for help, either locally (if you know someone who is knowledgeable about R) or on the internet.
 
-In order to ask a question effectively, it helps to phrase the question clearly, and, if you’re trying to solve a problem, to include a small, self-contained, reproducible example of the problem that others can execute. For information on how to ask questions, see, e.g., the [R mailing list posting guide](https://www.r-project.org/posting-guide.html), and the document about [how to create reproducible examples for R](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) on Stack Overflow.
+In order to ask a question effectively, it helps to phrase the question clearly, and, if you’re trying to solve a problem, to include a small, self-contained, reproducible example of the problem that others can execute. For information on how to ask questions, see, e.g., the [R mailing list posting guide](https://www.r-project.org/posting-guide.html){:target="_blank"}, and the document about [how to create reproducible examples for R](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example){:target="_blank"} on Stack Overflow.
 
 Which leads us to **Stack Overflow:**
-Stack Overflow is a well organized site for help and discussions about programming. It has excellent searchability and “R” is a very popular tag on the site. To go directly to R-related topics, visit [Questions tagged R](http://stackoverflow.com/questions/tagged/r).
+Stack Overflow is a well organized site for help and discussions about programming. It has excellent searchability and “R” is a very popular tag on the site. To go directly to R-related topics, visit [Questions tagged R](http://stackoverflow.com/questions/tagged/r){:target="_blank"}.
 
 {% include figure image_path="/assets/images/unit_images/u01/help.png" caption="Using a search engine for help" %}
 
@@ -56,7 +56,7 @@ Stack Overflow is a well organized site for help and discussions about programmi
 
 ### Google: "searchme": site:moer-base-r
 
-<p>Although this page itself does not contain a search function for keywords, it can still be searched to a limited extent with the help of Google. To do this, enter the word to be searched for in quotation marks with a colon and the keyword <i>site:</i> plus the URL of the Base R page. By the way this works for every site on the web. <br> <br>
+<p>Although this page itself does not contain a search function for keywords, it can still be searched to a limited extent with the help of Google. To do this, enter the word to be searched for in quotation marks with a colon and the keyword <i>site:</i> plus the URL of the Base R page. By the way this works for every site on the web. The prerequisite, however, is that it is already indexed on Google with all its subpages, which is not always the case. <br> <br>
 
 For example, if you want to search for the word "ratio", it looks like this:
 </p>
@@ -89,15 +89,15 @@ div {
 Long Story short:
 
 * R integrated help through functions: `help()` ; `?` ; `apropos()` ; `help.search()` ; `RSiteSearch()` ; `findfn()`
-* [R Documentation](https://www.rdocumentation.org/)
-* [R Project Help](https://www.r-project.org/help.html)
-* [R Manuals](https://cran.r-project.org/manuals.html)
-* [Quick-R.net](https://www.statmethods.net/)
-* [R-Graph-Gallery.com](https://www.r-graph-gallery.com/)
-* [R-Bloggers.com](https://www.r-bloggers.com/)
-* [German R-Forum](http://forum.r-statistik.de/index.php)
-* [Stack Overflow with r questions](http://stackoverflow.com/questions/tagged/r)
-* [Stack Overflow](https://stackoverflow.com/)
+* [R Documentation](https://www.rdocumentation.org/){:target="_blank"}
+* [R Project Help](https://www.r-project.org/help.html){:target="_blank"}
+* [R Manuals](https://cran.r-project.org/manuals.html){:target="_blank"}
+* [Quick-R.net](https://www.statmethods.net/){:target="_blank"}
+* [R-Graph-Gallery.com](https://www.r-graph-gallery.com/){:target="_blank"}
+* [R-Bloggers.com](https://www.r-bloggers.com/){:target="_blank"}
+* [German R-Forum](http://forum.r-statistik.de/index.php){:target="_blank"}
+* [Stack Overflow with r questions](http://stackoverflow.com/questions/tagged/r){:target="_blank"}
+* [Stack Overflow](https://stackoverflow.com/){:target="_blank"}
 * Last but not least: simply use a search engine and phrase your problem.
 
 

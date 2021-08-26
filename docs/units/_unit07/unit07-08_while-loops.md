@@ -1,7 +1,5 @@
 ---
-title: "Example: While-loops"
-toc: TRUE
-toc_float: TRUE
+title: While-loops
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"

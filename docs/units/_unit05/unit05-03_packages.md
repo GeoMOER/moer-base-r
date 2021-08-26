@@ -2,6 +2,8 @@
 title: Installing Packages in R
 toc: TRUE
 toc_float: TRUE
+collapsed: TRUE
+smooth_scroll: TRUE
 header:
   image: /assets/images/unit_images/u05/header.png
   image_description: "work environment"

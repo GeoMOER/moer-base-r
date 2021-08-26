@@ -8,10 +8,9 @@ header:
   image_description: "computer"
   caption: "Photo by [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373) [Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336373)"
 ---
-<!--more-->
 
 > “Torture the data, and it will confess to anything.” – Ronald Coase
----
+<!--more-->
 
 ## An introduction to comma-seperated values
 
@@ -46,7 +45,7 @@ They can be more complicated than that, and can contain thousands of lines, more
 That simplicity is a feature. CSV files are designed to be a way to easily export data and import it into other programs. The resulting data is human-readable and can be easily viewed with a text editor like Notepad or a spreadsheet program like Microsoft Excel.
 
 ## Know your decimal seperator!
-As mentioned in [Unit 2.5 - Types of Data](https://geomoer.github.io/moer-base-r/unit02/unit02-05_types_of_data.html) it is essentially to know the decimal seperator.
+As mentioned in [Unit 2.5 - Types of Data](https://geomoer.github.io/moer-base-r/unit02/unit02-05_types_of_data.html){:target="_blank"} it is essentially to know the decimal seperator.
 
 When you check `?read.table` you will probably find all the answer that you need.
 There are two issues with European csv files:

@@ -7,7 +7,7 @@ header:
 ---
 
 > “Data is the new oil.” — Clive Humby
----
+<!--more-->
 
 Control structures require arithmetic, logical or also boolean operators which test simple relationships between two or more variables.
 Depending on the test results, control structures can be used to decide how the program should go on.

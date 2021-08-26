@@ -1,5 +1,5 @@
 ---
-title: "Data Types"
+title: "Types of Data"
 toc: true
 header:
   image: /assets/images/unit_images/u03/header.png
@@ -90,5 +90,3 @@ Take the test, to check if you understand everything correctly:
 -----
 
 Let's move on...
-
-

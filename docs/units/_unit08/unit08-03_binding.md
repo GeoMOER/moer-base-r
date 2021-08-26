@@ -1,17 +1,14 @@
 ---
 title: Binding
-toc: TRUE
-toc_float: TRUE
 header:
   image: /assets/images/unit_images/u08/header.png
   image_description: "noodle"
   caption: "Photo by [congerdesign](https://pixabay.com/de/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384)"
 ---
-<!--more-->
 
 > “In God we trust, all others bring data.” — W Edwards Deming
+<!--more-->
 
----
 When thinking about combining two data frames one has to distinguish between
 merging them by the values given in a specific column or consecutively putting
 them together just rows after rows.

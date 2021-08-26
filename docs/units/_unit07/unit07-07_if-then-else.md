@@ -1,7 +1,5 @@
 ---
-title: "Example: If-then-else"
-toc: TRUE
-toc_float: TRUE
+title: If-then-else
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"
@@ -92,8 +90,6 @@ if (test == FALSE) {
 ## [1] "a is larger than b"
 ```
 
-
-## If-then-else
 If-then-else decisions are useful if your computation needs different workflows for different variable values.
 
 ```yaml

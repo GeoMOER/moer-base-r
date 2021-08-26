@@ -89,6 +89,9 @@ Course contents are among other things:
 * high- and low-level plotting functions and their arguments and
 * various statistical analysis methods.
 
+google search: https://search.google.com/search-console/
+still registered to Mandy Gimpels Google Account
+-> transfer to Geomoer@google.com???
 
 ("digital literacy")
 -->

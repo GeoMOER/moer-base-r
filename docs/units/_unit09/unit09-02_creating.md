@@ -8,11 +8,9 @@ header:
   caption: "Photo by [Gerd Altmann](https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4705451) [from Pixabay](https://pixabay.com/)"
 ---
 
+> “No design works unless it embodies ideas that are held common by the people for whom the object is intended.” - Adrian Forty
 <!--more-->
 
-> “No design works unless it embodies ideas that are held common by the people for whom the object is intended.” - Adrian Forty
-
----
 
 The use of R offers many advantages not only in the analysis of data, R is also a useful tool for creating scientific graphs. R makes it possible
 * to produce high quality graphs that are also suitable for professional printing.

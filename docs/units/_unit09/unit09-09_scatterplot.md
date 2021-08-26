@@ -7,6 +7,7 @@ header:
   image_description: "statistics"
   caption: "Photo by [Gerd Altmann](https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4705451) [from Pixabay](https://pixabay.com/)"
 ---
+
 ## What is a Scatterplot?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit"><img src="scatterplot1.png" width="454" height="388" align="right" vspace="10" hspace="20">

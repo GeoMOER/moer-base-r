@@ -1,5 +1,5 @@
 ---
-title: "Example: Batch processing"
+title: "Batch processing"
 toc: TRUE
 toc_float: TRUE
 header:

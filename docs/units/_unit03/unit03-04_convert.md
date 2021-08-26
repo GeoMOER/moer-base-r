@@ -1,7 +1,5 @@
 ---
-title: Converting Objects
-toc: TRUE
-toc_float: TRUE
+title: "Converting Objects"
 header:
   image: /assets/images/unit_images/u03/header.png
   image_description: "neon data"
@@ -12,11 +10,11 @@ header:
 > “Errors using inadequate data are much less than those using no data at all.” – Charles Babbage
 
 ---
-Use `is.` to test for data type. Returns TRUE or FALSE
-Use `as.` to explicitly convert it.
 
 *How to convert vectors see Unit 2: [Converting Types of Data](/moer-base-r/unit02/unit02-06_convert.html)*
 
+* Use `is.` to test for data type. Returns TRUE or FALSE
+* Use `as.` to explicitly convert it.
 
 |   | to vector | to matrix | to dataframe |
 |------------|-------------|-------------|-------------|

@@ -1,5 +1,5 @@
 ---
-title: "Example: For-loops"
+title: For-loops
 toc: TRUE
 toc_float: TRUE
 header:

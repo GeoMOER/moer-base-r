@@ -1,7 +1,5 @@
 ---
 title: "Levels of Measurement"
-toc: true
-toc_float: true
 header:
   image: /assets/images/unit_images/u02/header.png
   image_description: "neon data"

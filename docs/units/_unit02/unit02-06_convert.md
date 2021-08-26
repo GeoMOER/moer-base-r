@@ -1,7 +1,5 @@
 ---
 title: Converting Types of Data
-toc: TRUE
-toc_float: TRUE
 header:
   image: /assets/images/unit_images/u03/header.png
   image_description: "neon data"

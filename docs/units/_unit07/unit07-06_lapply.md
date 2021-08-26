@@ -1,5 +1,5 @@
 ---
-title: "Example: Lapply-loops"
+title: Lapply-loops
 toc: TRUE
 toc_float: TRUE
 header:
