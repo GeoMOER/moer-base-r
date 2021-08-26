@@ -35,13 +35,13 @@ install.packages("<the package's name>")
 
 Go to the bottom right window (in other words the fourth window in the image from unit 1) and click on Packages (the orange circle). You will see all installed (but not activated!) packages. When you scroll down you will see some packages with a check mark in front of the name. Only this packages are activated.
 
-{% include figure image_path="/assets/images/unit_images/u05/packages1.png" caption="Searching for and installing packages in R environment" %}
+{% include figure image_path="/assets/images/unit_images/u05/packages01.png" caption="Searching for and installing packages in R environment" %}
 
 Press the Install button (red square) and choose from where you want to install your package. You can choose between a local zip-file or from the CRAN online repository.
 
 Then type in the name of the package and suggestions will be displayed, for example `ggplot2` - R's famous package for making beautiful graphics. Finish the installation with hitting `Install`.
 
-{% include figure image_path="/assets/images/unit_images/u05/packages2.png" caption="searching for and installing packages" %}
+{% include figure image_path="/assets/images/unit_images/u05/packages02.png" caption="searching for and installing packages" %}
 
 # Activating packages
 
@@ -53,7 +53,7 @@ library("<the package's name>")
 ```
 The seconds option is to activate a package through the window by simply putting a check mark in front of the package name.
 
-{% include figure image_path="/assets/images/unit_images/u05/packages3.png" caption="activating packages" %}
+{% include figure image_path="/assets/images/unit_images/u05/packages03.png" caption="activating packages" %}
 
 # Multiple packages
 
