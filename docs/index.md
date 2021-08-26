@@ -18,6 +18,9 @@ feature_row_ilos:
   title: Intended learning outcomes
   excerpt: "Template..."
 ---
+<head>
+<meta name="google-site-verification" content="YUryV-9eiF-F3EmYUGc-_Bc4wpKVjMeH9AgvBFjKy-k" />
+</head>
 
 {% include feature_row id="feature_row_intro" type="center" %}
 
