@@ -3,6 +3,7 @@ title: Base R - no statistics, no fancy packages, just plain R
 layout: splash
 date: '2020-06-30 13:00:00 +0100'
 header:
+  google-site-verification: googlecbcb487a237fee78.html
   overlay_color: "#000"
   overlay_filter: 0.6
   overlay_image: "/assets/images/teaser.jpeg"
