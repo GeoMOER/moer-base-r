@@ -12,7 +12,7 @@ header:
   cta_url: "/units.html"
 excerpt: Learn the essentials for working with R.
 feature_row_intro:
-- excerpt: This course is currently under construction as part of the "digLL" initiative funded by the Hessian Ministry of Higher Education, Research, Science and the Arts.
+- excerpt: This course is brought to you by the Lab of Environmental Informatics (University of Marburg, Germany) and was funded by the "digLL" initiative of the Hessian Ministry of Higher Education, Research, Science and the Arts.
 feature_row_ilos:
 - image_path: "/assets/images/envobs_ilos.jpg"
   alt: PC monitor laying in the garden of the institute.
