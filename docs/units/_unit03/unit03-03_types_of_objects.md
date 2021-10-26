@@ -264,7 +264,6 @@ Note the specific data types of objects:
 * Lists can contain any data type.
 * Factors can contain only strings.
 
-Let's move on to Loops...
 
 <!--
 ## Further reading

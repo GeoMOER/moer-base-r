@@ -31,7 +31,6 @@ With ordinal scales, the order of the values is what is important and significan
 
 Ordinal scales are typically measures of non-numeric concepts like satisfaction, happiness, discomfort, etc.
 
-Let's move on to quantitative data ...
 
 <!--
 ## Further reading
