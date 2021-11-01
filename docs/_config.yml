@@ -55,6 +55,8 @@ author:
 title_separator: "|"
 excerpt_separator: <!--more-->
 
+search: true
+
 # Build settings
 markdown: kramdown
 # theme: minima
