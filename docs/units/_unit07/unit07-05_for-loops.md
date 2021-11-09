@@ -138,6 +138,13 @@ a
 ## [1] "Ax" "Bx" "Cx" "Dx"
 ```
 
+If you want to get some feedback for each iteration while a loop is running, try to add a line like:
+
+```r
+cat("Current iterator: ", i, " | ", "Current content of object: ", a, "\n", sep = "")
+```
+
+
 Of course the same is possible for data frames. Let's make an example where we have the following data frame:
 
 ```r
@@ -147,6 +154,7 @@ c <- c(1, 2, 3, 4, 5, 6, 7)
 d <- c(10, 20, 30, 40, 50, 60, 70)
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 ```
+
 We now want to modify this data frame in that way that the characters of columns Cat1 and Cat2 are converted to lower case and the values of Val1 and Val2 are converted to their square root. Therefore we must iterate over each column and then we can apply the `lowercase` function to all rows of the first two columns and the `sqrt` function to all entries of the last two columns. While we could use `seq(4)` as control vector, we can also get the number of columns from the data frame using the `ncol` function:
 
 ```r
@@ -176,9 +184,10 @@ df
 ## 7    a    y   2.645751   8.366600
 ```
 
-##Building a data type in a loop
 
-The above examples show how to modify an existing variable. If you want to keep your original values but safe the results in a new variable, you have to to define it first outside the loop. Afterwards you modify it within the loop so
+## Building a new variable with a loop
+
+The above examples show how to modify an existing variable. If you want to keep your original values but safe the results in a new variable, you have to define it first outside the loop. Afterwards you modify it within the loop so
 it is similar to the task above.
 
 For example, if you want to convert the elements of vector a to lower case and store the results in another vector, the following would be necessary:
@@ -268,4 +277,11 @@ str(df_new)
 ##  $ Val2: num  3.16 4.47 5.48 6.32 7.07 ...
 ```
 
-Let's move on to an exercise...
+
+
+
+
+
+
+
+
