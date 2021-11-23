@@ -134,8 +134,6 @@ the factor values which we see when printing the content of a data frame and
 the levels which we do not see when we print it (but which might affect the
 printig and plotting or some statistical operations).
 
-Characters like the ones of vector y are genreally converted to factor variables
-in data frames.
 
 Lets have a look at the data frame df again:
 
@@ -204,8 +202,7 @@ Levels: Z R O D A
 
 
 For more information have a look at e.g. the respective
-[sorting](http://www.statmethods.net/management/sorting.html) site at Quick R,
-have a look into the package documentation or search the web.
+[sorting](http://www.statmethods.net/management/sorting.html) site at Quick R.
 
 
 <!--
