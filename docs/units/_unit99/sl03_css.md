@@ -26,6 +26,7 @@ Since HTML properties as well as CSS properties can be changed with JavaScript, 
 You can try the differences and play with the heads from the picture above on [html-css-js.com](https://html-css-js.com/).
 
 For simplicity JavaScript is now omitted.
+</p></body>
 
 ## What is HTML?
 HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.
@@ -33,7 +34,7 @@ HTML (Hypertext Markup Language) is the code that is used to structure a web pag
 It is the language used to create webpages. "Hypertext" refers to the hyperlinks that an HTML page may contain. "Markup language" refers to the way tags are used to define the page layout and elements within the page.
 
 Below is an example of HTML used to define a basic webpage with a title and a single paragraph of text.
-</p></body>
+
 ---
 ```html
 <!doctype html>
