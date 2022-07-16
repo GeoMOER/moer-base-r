@@ -2,7 +2,7 @@
 title: "Summary"
 toc: FALSE
 toc_float: TRUE
-published: FALSE
+published: TRUE
 header:
   image: /assets/images/unit_images/u01/header.png
   image_description: "Android Market-share Worldwide 2018-2020"
