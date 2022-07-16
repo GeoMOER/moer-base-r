@@ -28,14 +28,9 @@ In summary, nominal variables are used to “name,” or label a series of value
 | has a true zero  |         |         |          |    X    |
 
 -----
-
 ## Test
-*Now test your knowledge on types of data.*
 
-<iframe src="https://h5p.org/h5p/embed/956482" width="1090" height="325" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
-
-In the following exercise, you will learn how to use the console as a calculator and how to assign variables. You will also get to know the basic data types in R. Let's get started.
-
+<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit02-05-data-types.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 <!--
 ## Further reading
