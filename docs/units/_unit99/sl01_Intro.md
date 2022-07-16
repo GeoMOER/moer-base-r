@@ -14,7 +14,17 @@ The spotlights will focus on topics unrelated yet important to the previous unit
 * [An introduction to CSS in general and CSS in rMarkdown](/moer-base-r/unit99/sl03_css.html)
 
 
+## Comments?
+You can leave comments below if you have questions or remarks about any of the text or code in this unit.
+Please copy the corresponding line into your comment to make it easier to answer your question.
 
+<script src="https://utteranc.es/client.js"
+        repo="GeoMOER/moer-base-r"
+        issue-term="moer-base-r_unit99"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 <!--
 ## Further reading
 
