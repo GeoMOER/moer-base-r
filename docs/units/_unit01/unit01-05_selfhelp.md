@@ -62,7 +62,7 @@ ChatGPT is a language model designed for natural language understanding and gene
 While ChatGPT might be a great help, it's important to use it responsibly, to validate generated code, and to be mindful of legal and ethical considerations while utilizing it in real-world projects. 
 To effectively use ChatGPT for programming-related questions and tasks, and to evaluate whether it's accurate,  you need to have a basic understanding of how R works.
 
-{% include figure image_path="/assets/images/unit_images/u01/ChatGPT.jpg" caption="Using ChatGPT for help" %}
+{% include figure image_path="/assets/images/unit_images/u01/ChatGPT.png" caption="Using ChatGPT for help" %}
 
 Note, that use of generative AI (e.g., ChatGPT1 and other LLMs) is banned when posting content on Stack Overflow, according to their [policy](https://stackoverflow.com/help/gpt-policy):
 

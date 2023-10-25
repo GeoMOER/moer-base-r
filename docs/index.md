@@ -73,11 +73,15 @@ No preparation or prerequisites are needed for this course.
 
 
 # Instructor
-{% include author-profile.html %}
-
+{% for author in site.data.authors %} {% include author-profile.html %}
+{% endfor %}
 
 
 <!-- chunky
+
+
+% include author-profile.html %
+
 Course contents are among other things:
 
 * scientific theoretical basics,
