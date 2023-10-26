@@ -61,17 +61,13 @@ Logical values or boolean values can only contain either the value **true** or *
 ### When things are lost …NULL-values
 When there are missing or undefined values in your data, they’ll be indicated by different so-called NULL-Values
 
-NA 
-NA is a logical constant of length 1 and stands for "Not Available". It is used to represent missing or undefined values in a dataset where a value should be present but is unknown or unavailable.
+ **NA** is a logical constant of length 1 and stands for "Not Available". It is used to represent missing or undefined values in a dataset where a value should be present but is unknown or unavailable.
 
-NULL
-NULL represents the null object : It is a value that typically represents a complete absence of data or a value that cannot be defined. It is often returned when a function results in an undefined value. 
+**NULL** represents the null object : It is a value that typically represents a complete absence of data or a value that cannot be defined. It is often returned when a function results in an undefined value. 
 
-NaN 
-NaN (Not-a-Number): is a logical vector of a length 1 and represents the result of an undefined or unrepresentable mathematical operation. It applies to numerical values, but not to values of integer vector and is often encountered in numeric calculations where the result is not a valid number.
+**NaN** (Not-a-Number): is a logical vector of a length 1 and represents the result of an undefined or unrepresentable mathematical operation. It applies to numerical values, but not to values of integer vector and is often encountered in numeric calculations where the result is not a valid number.
 
-Inf / - Inf (Infinity):
-Inf represents positive (or negative) infinity in R. It is used when a value is too large to be represented as a finite number. Typically, it results from mathematical operations like dividing a number by zero.
+**Inf / - Inf** represents positive (or negative) infinity in R. It is used when a value is too large to be represented as a finite number. Typically, it results from mathematical operations like dividing a number by zero.
 
 
 
@@ -82,8 +78,6 @@ Inf represents positive (or negative) infinity in R. It is used when a value is 
 | character  |© ; H ; π ; A; B; C        |
 | string     |"Hello World"  ;   "Ursus maritimus"  ;   "black" |  
 | boolean    |true  ;   false         |
-
-
 
 ----
 

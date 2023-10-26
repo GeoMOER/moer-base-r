@@ -50,10 +50,10 @@ div {
 </head>
 <body>
 <div class="info">
-  <p><strong>*Info</strong>  <br>
+  <p>*Info  <br>
   The generic function <code class="language-plaintext highlighter-rouge">is.na</code> indicates which elements are missing.    <br><br>
   
-  The generic function <code class="language-plaintext highlighter-rouge">is.na <-</code> sets elements to NA.
+  The generic function <code class="language-plaintext highlighter-rouge">is.na <-</code> sets elements to NA.  <br><br>
 
   While factors, which are a unique feature of R, are not a separate data type like characters or numerics, they are a used to manage categorical data and maintain the integrity and order of those categories. 
   </p>

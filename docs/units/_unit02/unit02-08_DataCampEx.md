@@ -7,6 +7,157 @@ header:
 ---
 It is time for DATA CAMP exercises!
 
+<!--more-->
+
+* R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as comment.
+* Write directly in the `script.R` window on the left. The comments are telling you what to do.
+* When you are ready press `Submit` and every line of code is interpreted and executed by R and you get a message whether or not your code was correct.
+* The output of your R code is shown in the `Console` panel on the right.
+* Press `Hint` for tips.
+* Press `Solution` for a new tab showing the solution.
+* `Be patient:` this may take some time to load.
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DataCamp Light | Standalone example</title>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+
+    [data-datacamp-exercise] {
+        visibility: hidden;
+      }
+  </style>
+  <script async src="//cdn.datacamp.com/dcl/latest/dcl-react.js.gz"></script>
+</head>
+
+<body>
+  <div class="exercise">
+    <div class="title">
+      <h2>Simple calculation to start:</h2>
+    </div>
+    <div data-datacamp-exercise data-lang="r" data-height="500">
+      <code data-type="pre-exercise-code"># no pec</code>
+      <code data-type="sample-code">
+        # Calculate 3 + 4
+        3 + 4
+
+        # Calculate 6 + 12
+
+
+      </code>
+      <code data-type="solution">
+        # Calculate 3 + 4
+        3 + 4
+
+        # Calculate 6 + 12
+        6 + 12</code>
+      <code data-type="sct">
+        test_output_contains(&quot;18&quot;, incorrect_msg = &quot;Make sure to add `6 + 12`
+        on
+        a new line. Do not start the line with a `#`, otherwise your R code is not executed!&quot;)
+        success_msg(&quot;Awesome! See how the console shows the result of the R code you
+        submitted? Now that you&#39;re familiar with the interface, let&#39;s get down to R
+        business!&quot;)
+      </code>
+      <div data-type="hint">
+        <p>Just add a line of R code that calculates the sum of 6 and 12, just like the
+          example
+          in the sample code!</p>
+      </div>
+    </div>
+  </div>
+
+<h2>   </h2>
+
+<div class="exercise">
+  <div class="title">
+    <h2>Arithmetic calculations</h2>
+  </div>
+<p>In its most basic form, R can be used as a simple calculator with the following arithmetic operators: </p>
+
+<ul>
+<li>Addition: + </li>
+<li>Subtraction: - </li>
+<li>Multiplication: * </li>
+<li>Division: / </li>
+<li>Exponentiation: ^ </li>
+<li>Modulo: %% </li>
+</ul>
+<p>The last two might need some explaining: <br><br>
+
+The <code class="language-plaintext highlighter-rouge">^</code> operator raises the number to its left to the power of the number to its right: for example <code class="language-plaintext highlighter-rouge">3^2</code> is 9. <br><br>
+The modulo <code class="language-plaintext highlighter-rouge">%%</code> returns the remainder of the division of the number to the left by the number on its right, for example <code class="language-plaintext highlighter-rouge">5 %% 3</code> is 2.</p>
+
+<p><u>Instructions:</u></p>
+<ul><li>Type 5^2 in the editor to calculate 2 to the power 5. </li>
+<li>Type 28 %% 6 to calculate 28 modulo 6. </li>
+<li>Submit the answer and have a look at the R output in the console. </li></ul>
+
+
+    <div data-datacamp-exercise data-lang="r" data-height="350">
+      <code data-type="pre-exercise-code"># no pec</code>
+      <code data-type="sample-code">
+        # An addition example
+        5 + 5
+
+        # A subtraction example
+        5 - 5
+
+        # A multiplication example
+        3 * 5
+
+        # A division example
+        10 / 2
+
+        # Exponentiation (5²)
+
+
+        # Modulo  (28 modulo 6)
+
+
+      </code>
+      <code data-type="solution">
+        # An addition
+        5 + 5
+
+        # A subtraction
+        5 - 5
+
+        # A multiplication
+        3 * 5
+
+        # A division
+        10 / 2
+
+        # Exponentiation (5²)
+        5 ^ 2
+
+        # Modulo (28 modulo 6)
+        28 %% 6
+      </code>
+      <code data-type="sct">
+        msg = &quot;Do not remove the other arithmetic examples!&quot;
+        test_output_contains(&quot;5^2&quot;, incorrect_msg = &quot;The exponentiation
+        example
+        is not correct. Write `5 ^ 2` on a new line.&quot;)
+        test_output_contains(&quot;28 %% 6&quot;, incorrect_msg = &quot;There seems to be an
+        issue with the modulo example. Write `28 %% 6` on a new line.&quot;)
+        success_msg(&quot;Great! Head over to the next exercise.&quot;)
+      </code>
+      <div data-type="hint">
+        <p>Another example of the modulo operator:
+          <code>9 %% 2</code> equals
+          <code>1</code>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
 
 <div class="exercise">
     <div class="title">
