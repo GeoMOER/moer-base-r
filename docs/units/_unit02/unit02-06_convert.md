@@ -18,7 +18,7 @@ There are multiple classes that are grouped together as "numeric" classes. The t
 
 Sometimes you may want to specifically store a vector as integers if you know that they will never be converted to doubles (used as ID values or indexing) since integers require less storage space. But if they are going to be used in any math that will convert them to double, then it will probably be quickest to just store them as doubles to begin with.
 
-The table below gives an overview of the different data types.
+The table below gives an overview of the different data types*.
 
 | Data Type  | is.function | as.function |
 |------------|-------------|-------------|
@@ -50,9 +50,12 @@ div {
 </head>
 <body>
 <div class="info">
-  <p><strong>Info</strong>  <br>
+  <p><strong>*Info</strong>  <br>
   The generic function <code class="language-plaintext highlighter-rouge">is.na</code> indicates which elements are missing.    <br><br>
+  
   The generic function <code class="language-plaintext highlighter-rouge">is.na <-</code> sets elements to NA.
+
+  While factors, which are a unique feature of R, are not a separate data type like characters or numerics, they are a used to manage categorical data and maintain the integrity and order of those categories. 
   </p>
 </div>
 </body>

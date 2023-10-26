@@ -13,7 +13,7 @@ header:
 ---
 
 ## How can phenomenons be measured?
-There are four data measurement scales: *nominal, ordinal, interval and ratio*.  Simply these are ways to sub-categorize different types of data.
+There are four data measurement scales: *nominal, ordinal, interval and ratio*.  Simply these are ways to sub-categorize different types of data. It’s important to know what type of data you have, because it heavily influences the choice of statistics and graphical representation.
 
 {% include figure image_path="/assets/images/unit_images/u02/4horsemen-masson-krichevsky.jpg" caption="The Four Horsemen of Measurement © 2018 Artwork by [J. Krichevsky & D. Masson](https://www.artstation.com/artwork/x1Xm2), edited" %}
 
