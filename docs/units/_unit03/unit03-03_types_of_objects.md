@@ -161,7 +161,7 @@ result
 
 If you perform operations on vectors of different lengths, R will automatically recycle or repeat the shorter vector to match the length of the longer vector. This can be powerful but should be used with caution to avoid unexpected results.
 
-{% include figure image_path="/assets/images/unit_images/u03/recycling.png" %}
+{% include figure image_path="/assets/images/unit_images/u03/Recycling.png" %}
 
 
 -----
