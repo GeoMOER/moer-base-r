@@ -22,6 +22,8 @@ Common data types include:
 * logical or boolean
 * NULL and/or NA
 
+In contrast to other programming languages like C and java in R, you do not have to declare what data type your newly created object has to have. Instead, when you assign a value to a variable, R determines the data type of that variable based on the assigned value. This means that the data type of the object is determined dynamically at runtime – but you might have to change that using the “as.” -function if necessary.
+
 Data types are used within type systems, which offer various ways of defining, implementing and using them. Different type systems ensure varying degrees of type safety.
 
 ### Integer

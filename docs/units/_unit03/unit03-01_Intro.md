@@ -16,9 +16,7 @@ In computer science, type safety is the extent to which a programming language d
 
 At the end of this unit you should know
 
-* what integer, character, string, float, boolean and NULL/NA mean
-* the differences between the data types mentioned above
-* what variables, arrays, matrices, data frames and lists are
+* what vectors, arrays, matrices, data frames and lists are
 * and how the data types are stored in them
 
 ## Comments?

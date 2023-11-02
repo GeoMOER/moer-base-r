@@ -11,7 +11,8 @@ header:
 See if you were right in exercise 1!
 
 <!--more-->
-### Task 1
+
+<!-- ### Task 1
 use `help(mean)`, `help(sqrt)`, `?log`
 
 | function | meaning | example |
@@ -28,8 +29,8 @@ use `help(mean)`, `help(sqrt)`, `?log`
 | boxplot()     | Produce box-and-whisker plot(s) of the given (grouped) values.   |
 
 
-
-### Task2
+ -->
+<!-- ### Task2
 ```r
 # square root  of 10 + 6
 root <- sqrt(10+6)
@@ -45,8 +46,8 @@ root
 
 [1] 4
 ```
-
-### Task 3: Data about size and weight
+ -->
+### Task : Data about size and weight
 
 create vectors: vector  <-  c(..., ..., ...)
 
@@ -67,4 +68,4 @@ state
 ```
 ---
 
-Congratulations! This was the last exercise for this chapter.
+<!-- Congratulations! This was the last exercise for this chapter. -->
