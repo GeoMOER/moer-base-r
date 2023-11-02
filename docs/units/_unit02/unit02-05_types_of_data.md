@@ -17,10 +17,8 @@ That means when programming, the variables generally have a specific type, and t
 Common data types include:
 * integer
 * double or floating-point number
-* character
-* string
+* character string
 * logical or boolean
-* NULL and/or NA
 
 In contrast to other programming languages like C and java in R, you do not have to declare what data type your newly created object has to have. Instead, when you assign a value to a variable, R determines the data type of that variable based on the assigned value. This means that the data type of the object is determined dynamically at runtime – but you might have to change that using the “as.” -function if necessary.
 
@@ -62,14 +60,17 @@ It is used to represent text rather than numbers. It is comprised of a set of ch
 ### Logical or boolean
 Logical values or boolean values can only contain either the value **true** or **false**.
 
-### NULL or NA
-Both are used to represent missing or undefined values.
+### When things are lost …NULL-values
+When there are missing or undefined values in your data, they’ll be indicated by different so-called NULL-Values
 
-It is common for programming languages to have a NULL value.  What often leads to confusion is the fact NULL can have two distinct meanings.  In the first, NULL is used to represent missing or undefined values. In the second case, NULL is the logical representation a statement that is neither TRUE nor FALSE.  This indeterminacy is the basis for ternary logic.
+ **NA** is a logical constant of length 1 and stands for "Not Available". It is used to represent missing or undefined values in a dataset where a value should be present but is unknown or unavailable.
 
-Ternary logics are examples of multivalent logics. This means that instead of two truth values there are three. Instead of only "true" (1) and "false" (0) there are also "unknown", "undetermined" or "don't care".
+**NULL** represents the null object : It is a value that typically represents a complete absence of data or a value that cannot be defined. It is often returned when a function results in an undefined value. 
 
-The R language has two closely related NULL-like values, NA and NULL.  Both are fully supported in the language by core functions (e.g, is.na, is.null, as.null, etc.). And, while NA is used exclusively in the logical sense, both are used to represent missing or undefined values.
+**NaN** (Not-a-Number): is a logical vector of a length 1 and represents the result of an undefined or unrepresentable mathematical operation. It applies to numerical values, but not to values of integer vector and is often encountered in numeric calculations where the result is not a valid number.
+
+**Inf / - Inf** represents positive (or negative) infinity in R. It is used when a value is too large to be represented as a finite number. Typically, it results from mathematical operations like dividing a number by zero.
+
 
 
 | Data Type  | Examples |
@@ -79,9 +80,6 @@ The R language has two closely related NULL-like values, NA and NULL.  Both are 
 | character  |© ; H ; π ; A; B; C        |
 | string     |"Hello World"  ;   "Ursus maritimus"  ;   "black" |  
 | boolean    |true  ;   false         |
-| NULL       |  NULL       |
-| NA         |  NA       |  
-
 
 ----
 
