@@ -8,14 +8,14 @@ header:
 *You will learn how to access the indices.*
 
 <!--more-->
-
+In the previous unit, you got an idea of how to address some elements of an object. Let's take a closer look now.
 At the end of this unit you should know how to
 
 * find
 * address and
 * change
 
-specific datum in vectors, lists, matrices and data.frames.
+specific data in vectors, lists, matrices and data.frames.
 
 ## Comments?
 You can leave comments below if you have questions or remarks about any of the text or code in this unit.
