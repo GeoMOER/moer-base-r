@@ -232,6 +232,8 @@ e[['xyz']]
 ```
 The `$` can also be used with data.frame objects (a special list, after all), but not with matrices.
 
+
+
 ## Data.frame
 Indexing a data.frame can generally be done as for matrices and for lists.
 
