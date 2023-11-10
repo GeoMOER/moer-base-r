@@ -158,27 +158,27 @@ If you do target one specific word, but certain positions or characters, you can
 
 
 Metacharacter/Construct	Description
-**^**	Matches the beginning of a line
-**$**	Matches the end of a line
-**.**	Matches any single character except newline
-**[...]**	Matches any one of the enclosed characters
-**[^...]**	Matches any character not enclosed
-* * *	Matches 0 or more occurrences of the preceding element
-* + *	Matches 1 or more occurrences of the preceding element
-**?**	Matches 0 or 1 occurrence of the preceding element
-**{n}**	Matches exactly n occurrences of the preceding element
-**{n,}**	Matches n or more occurrences of the preceding element
-**{n,m}**	Matches at least n and no more than m occurrences of the preceding element
-**()**	Groups regular expressions and remembers matched text
-**\s**	Matches whitespace characters
-**\S**	Matches non-whitespace characters
-**\d**	Matches digits. Equivalent to [0-9]
-**\D**	Matches non-digits
-**\w**	Matches word characters (letters, digits, and underscores)
-**\W**	Matches non-word characters
-**\b**	Matches a word boundary
-**\B**	Matches a non-word boundary
-**\\**	Escapes a metacharacter of its special meaning
+1) **^**	Matches the beginning of a line
+2) **$**	Matches the end of a line
+3) **.**	Matches any single character except newline
+4) **[...]**	Matches any one of the enclosed characters
+5) **[^...]**	Matches any character not enclosed
+6) * * *	Matches 0 or more occurrences of the preceding element
+7) * + *	Matches 1 or more occurrences of the preceding element
+8) **?**	Matches 0 or 1 occurrence of the preceding element
+9) **{n}**	Matches exactly n occurrences of the preceding element
+10) **{n,}**	Matches n or more occurrences of the preceding element
+11) **{n,m}**	Matches at least n and no more than m occurrences of the preceding element
+12) **()**	Groups regular expressions and remembers matched text
+13) **\s**	Matches whitespace characters
+14) **\S**	Matches non-whitespace characters
+15) **\d**	Matches digits. Equivalent to [0-9]
+16) **\D**	Matches non-digits
+17) **\w**	Matches word characters (letters, digits, and underscores)
+18) **\W**	Matches non-word characters
+19) **\b**	Matches a word boundary
+20) **\B**	Matches a non-word boundary
+21) **\\**	Escapes a metacharacter of its special meaning
 
 Here's a visualization of the principle:
 
