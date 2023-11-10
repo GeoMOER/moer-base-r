@@ -75,7 +75,7 @@ In R, the functions grep, grepl, and regexpr, gregexpr, are all used for matchin
 •	Returns a list of the same length as the input vector, with each list element containing the start indices and lengths of all matches.
 
 
-As an example, we turn to a Terry Pratchett quote, namely the “Sam Vimes "Boots" theory of socioeconomic unfairness” mentioned in the novel “Men at Arms” (slightly adjusted for this prupose):
+As an example, we turn to a Terry Pratchett quote, namely the “Sam Vimes Boots theory of socioeconomic unfairness” mentioned in the novel “Men at Arms” (slightly adjusted for this purpose):
 
 > "The reason that the rich were so rich, Vimes reasoned, 
 was because they managed to spend less money. Take boots, for example. ... A man who could afford 50 dollars had a pair of boots that'd still be keeping his feet dry in ten years' time, while a poor man who could only afford cheap boots would have spent 100 dollars on boots in the same time and would still have wet feet"
