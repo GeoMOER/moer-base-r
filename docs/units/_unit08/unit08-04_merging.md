@@ -11,7 +11,7 @@ To merge data frames based on identifiers rather than the order of the rows, we 
 
 2. Without a specified matching column, R performs a Cartesian product of the data frames, repeating each row in the first data frame with every row in the second, as illustrated here:
 
-{% include figure image_path="/assets/images/unit_images/u08/LOTR2.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR2.png" %}
 
 
 In this example, we use the values of
@@ -54,7 +54,7 @@ different, no X or Y is added in the output column names.
 
 Be cautious: by default, only the identifiers present in both data frames are retained in the merged data frame. You can modify this behavior by setting all=TRUE, which includes all identifiers from both data frames, not just those that appear in both. If you wish to keep all records from the first data frame regardless of a match in the second, set all.x=TRUE. Conversely, use all.y=TRUE to preserve all records from the second data frame when they don't have a match in the first. Tip: The techniques you learned in Unit 04 can be useful in identifying these missing values 
 
-{% include figure image_path="/assets/images/unit_images/u08/LOTR1.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR1.png" %}
 
 
 <!--
