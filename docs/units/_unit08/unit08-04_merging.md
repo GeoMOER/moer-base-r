@@ -5,10 +5,17 @@ header:
   image_description: "noodle"
   caption: "Photo by [congerdesign](https://pixabay.com/de/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384)"
 ---
+To merge data frames based on identifiers rather than the order of the rows, we utilize the merge() function. When merging two data frames, it's essential to designate the column that contains the identifiers for matching by using the by= argument. This is a crucial step; failing to specify the column can result in R handling the task in one of two ways:
 
-To merge two data frames, you have to specify the column containing the values
-which should be used in the matching. In this example, we use the values of
-the column Z to merge the two data frames.
+1. If there is a column with the same name in both data frames, R will automatically use that column for merging. However, it is not always certain that this column contains matching information across both data frames, which can lead to erroneous results.
+
+2. Without a specified matching column, R performs a Cartesian product of the data frames, repeating each row in the first data frame with every row in the second, as illustrated here:
+
+{% include figure image_path="/assets/images/unit_images/u08/LOTR2.png" %}
+
+
+In this example, we use the values of
+the column Z to merge the two data frames:
 
 ```
 dfc <- merge(df1, df2, by = "Z")
@@ -44,6 +51,10 @@ dfc
 ```
 Since not only the names of the columns used for merging but all column names are
 different, no X or Y is added in the output column names.
+
+Be cautious: by default, only the identifiers present in both data frames are retained in the merged data frame. You can modify this behavior by setting all=TRUE, which includes all identifiers from both data frames, not just those that appear in both. If you wish to keep all records from the first data frame regardless of a match in the second, set all.x=TRUE. Conversely, use all.y=TRUE to preserve all records from the second data frame when they don't have a match in the first. Tip: The techniques you learned in Unit 04 can be useful in identifying these missing values 
+
+{% include figure image_path="/assets/images/unit_images/u08/LOTR1.png" %}
 
 
 <!--
