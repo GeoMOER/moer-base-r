@@ -130,6 +130,8 @@ An absolute (or full) path points to the same location in a file system, regardl
 
 By contrast, a relative path starts from some given working directory `(C:/geomoer/Project1/)`, avoiding the need to provide the __full__ absolute path. For example: `../Data/data.csv`
 
+
+
 <html>
 <body>
 <div class="info">
@@ -151,6 +153,10 @@ By contrast, a relative path starts from some given working directory `(C:/geomo
 </div>
 </body>
 </html>
+
+## RProjects
+
+Another option is setting the Working Directory with R projects: When you open an R project (typically a file with the .Rproj extension), RStudio automatically sets the working directory to the directory where the R project file is located. This means that all relative paths in your scripts are based on this project directory, making it easier to reference files within the project structure.
 
 Now move to the packages...
 
