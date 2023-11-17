@@ -57,6 +57,11 @@ Be cautious: by default, only the identifiers present in both data frames are re
 {% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR1.png" %}
 
 
+
+## Test what you've learned so far!
+
+<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit08-merging.html" width="1090" height="450" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+
 <!--
 ## Further reading
 
