@@ -123,6 +123,10 @@ for(i in seq(length(a))){
 ## [1] "D"
 ```
 
+{% include figure image_path="/assets/data/data/for_loop.gif" caption="Animation of the plot process" %}
+
+
+
 ## Modifying an existing variable in a loop
 If you want to modify a existing variable, for (and while) loops are the only option (i.e. you can not use `lapply`). Aside from that restriction, it is a straight forward task. Let's just add an "x" to each entry of variable a:
 
