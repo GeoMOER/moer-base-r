@@ -276,9 +276,31 @@ str(df_new)
 ##  $ Val1: num  1 1.41 1.73 2 2.24 ...
 ##  $ Val2: num  3.16 4.47 5.48 6.32 7.07 ...
 ```
+## DIY loops - some tipps
+
+Sometimes it can be a little overwhelming to write a loop from top to bottom. That's why it makes sense to tackle the whole thing piece by piece. The following approach might be helpful.
+
+1) Start by setting up an empty for(){} loop, establishing the structure for your iterative process. This initial step helps maintain proper text indentation and structure in your code.
+
+2) Take one piece of your data and define it as your data source.
+
+3) Write down all the operations you want to perform within the loop. 
+
+4) Identify and handle replaceable elements within your loop. These are parts of your code that may change during each iteration. Use variables or placeholders to represent these elements, enhancing code flexibility and readability.
+
+5) Think about how you want to save the output of each iteration. Create a result container, such as a list or matrix, outside the loop, and store the results there.
+
+6) Consider using vectorized operations when possible to improve loop efficiency and reduce code complexity.
+
+7) Debug and test your loop incrementally, checking for errors and unexpected behavior after each iteration. Depending on the complexity of the data, the loop may not be complete. Missing data, for example, often leads to a subscript out of bound error. To eliminate these errors bit by bit, you can use the cat(i,"\n") command to specify the point at which the loop stops, and continue to process the data or add conditions accordingly.
 
 
+{% include figure image_path="/assets/data/data/for_loop2.gif" caption="Animation of the plot process" %}
 
+
+## Test what you've learned so far!
+
+<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit07-forloops.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
 
 
 
