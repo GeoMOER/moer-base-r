@@ -57,3 +57,21 @@ while(a <= b){
 Variable `c` has to be reseted to its initial value every time the inner loop is completed. Otherwise it would not start a second time since the termination condition is already reached. Of course this behavior can also be useful for a variety of problems.
 
 ----
+
+One couls also use the *repeat* statement, which creates  a loop that repeats an action or a set of actions indefinitely until a certain condition is met. The loop continues executing until an explicit break statement is encountered within the loop. Here's how it works:
+
+```r
+repeat {
+  # Code to be executed in each iteration
+  
+  if (condition) {
+    break  # Terminate the loop if the condition is met
+  }
+}
+
+```
+
+
+## Test what you've learned so far!
+
+<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit07-whilerepeat.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
