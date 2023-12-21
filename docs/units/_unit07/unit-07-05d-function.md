@@ -48,7 +48,26 @@ X[sample(1:50, 4)] <- NA
 my.mean(X)
 my.mean(X, na.rm = FALSE)
 ```
+In this example, the __na.rm__ argument has a default value of __TRUE__ by defining it in the round bracket. If you call my.mean without providing a value for __na.rm__, it will use the default value - and calculate the mean after excluding NA-values. If na.rm is not __TRUE__, the second part of the loop will be executed. Let's have a look at a different example:
 
+```r
+my_function <- function(x, y = 10) {
+  result <- x + y
+  return(result)
+}
+
+```
+Here, our value x will be increased by 10 as long as y is not defined.
+
+```r
+my_function(5)  # This will result in 15 (5 + 10)
+```
+However, you can still override the default value by explicitly specifying a value for y when calling the function:
+
+```r
+my_function(5, 20)  # This will result in 25 (5 + 20)
+
+```
 
 ## Test what you've learned so far!
 
