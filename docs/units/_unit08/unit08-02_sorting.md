@@ -75,7 +75,7 @@ df[order(df$Y),]  # order by column Y
 ```
 
 ```
-df[order(df$Y, df$Z),]  # order by column Y and Z
+df[order(df$Y, df$Z),]  # order by column Y and Z. Z is only used for identical values.
 
 ##    X Y  Z
 ## 4  2 A 30
