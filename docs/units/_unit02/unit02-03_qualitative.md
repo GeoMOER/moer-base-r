@@ -13,7 +13,7 @@ header:
 
 As mentioned before there are quantitative and qualitative data.
 
-When you do not have numbers, you have got **qualitative data**. This data is non-numerical or also called categorical or discrete data.
+When you do not have numbers, you have got **qualitative data**. This data is non-numerical also called categorical or discrete data.
 
 ## Qualitative Data ("categorical")
 Non-numerical data that is usually textual and descriptive, like "mostly satisfied", "brown eyes", "female", "yes/no", etc.
@@ -24,8 +24,8 @@ You can use frequency counts, mode, and contingency tables to describe and analy
 Bar charts, pie charts, and stacked bar charts are useful for visualizing nominal data. They display the frequency or proportion of each category.
 
 
-### Ordinal Scale Data (orderd)
-With ordinal scales, the order of the values is what is important and significant, but the differences between each one is not known. For example, we know that a #4 is better than a #3 or #2, but we don’t know–and cannot quantify–how much better it is. Another example is the difference between “OK” and “Unhappy”. Is it the same as the difference between “Very Happy” and “Happy?”
+### Ordinal Scale Data (ordered) {#ordinal-scale-data-orderd}
+With ordinal scales, the order of the values is what is important and significant, but the differences between the values are not known. For example, we know that a #4 is better than a #3 or #2, but we don’t know–and cannot quantify–how much better it is. Another example is the difference between “OK” and “Unhappy”. Is it the same as the difference between “Very Happy” and “Happy?”
 
 Ordinal scales are typically measures of non-numeric concepts like satisfaction, happiness, discomfort, etc.
 

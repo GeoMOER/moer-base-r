@@ -12,10 +12,10 @@ header:
 
 <!--more-->
 
-Now that you know how to access the R-intern help pages you need to know how to read them. Typically, the R Help files follow a fairly standard outline as seen below in a heavily clipped screenshot of the function `read.table`. Different functions might have different sections, but these are the main ones you should be aware of:
+Now that you know how to access the built-in R help pages you need to know how to read them. Typically, the R Help files follow a fairly standard outline as seen below in a heavily clipped screenshot of the function `read.table`. Different functions might have different sections, but these are the main ones you should be aware of:
 
 <img src="selfhelp_2.1.png" width="400" height="631" align="right" vspace="10" hspace="20">
-<u>Package Name:</u> <br>The package to which the function belongs to (in grey). <br><br>
+<u>Package Name:</u> <br>The package to which the function belongs (in grey). <br><br>
 <u>Title:</u> <br>The name of the function and its purpose.
 <br><br>
 <u>Description:</u> <br>An extended description of what the function does.
@@ -44,13 +44,13 @@ Now that you know how to access the R-intern help pages you need to know how to 
 ---
 
 <img src="selfhelp_2.5.png" width="400" height="307" align="right" vspace="10" hspace="20">
-<u>Details:</u> <br>Extended details about how the function works, provides longer descriptions of the various ways to call the function and a longer discussion of the arguments.
+<u>Details:</u> <br>This section provides more details about how the function works, including the various ways to call it and a longer discussion of its arguments.
 <br><br><br><br><br><br>
 
 ---
 
 <img src="selfhelp_2.6.png" width="400" height="122" align="right" vspace="10" hspace="20">
-<u>References:</u> <br>References on which scientific basis the functions and arguments are based.
+<u>References:</u> <br>References underlying the implementation or use of the function.
 <br><br>
 
 ---

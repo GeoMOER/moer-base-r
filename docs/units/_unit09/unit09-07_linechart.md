@@ -55,8 +55,8 @@ By default, `plot( )` plots the (x,y) points. Use the `type="n"` option in the `
 | h | histogram-like vertical lines |
 | n | does not produce any points or lines |
 
-## Example with mtcars:
-By default the `plot()` function produces a scatter plot with dots. To make line graphs, pass it to the vector of x and y values, and specify the `type = " "`:
+## Example with pressure: {#example-with-mtcars}
+By default the `plot()` function produces a scatter plot with dots. To make line graphs, pass the x and y vectors to `plot()`, and specify the `type = " "`:
 ```
 plot(x = pressure$temperature, y = pressure$pressure)                  # 0.
 plot(x = pressure$temperature, y = pressure$pressure, type = "p")      # 1.
@@ -80,7 +80,7 @@ plot(x = pressure$temperature, y = pressure$pressure,
 # add points
 points(x = pressure$temperature, y = pressure$pressure, col = "steelblue")
 
-# add second line in red color
+# add second line in dark green
 lines(x = pressure$temperature, y = pressure$pressure/2, col = "darkgreen")
 
 # add points to second line
@@ -89,7 +89,7 @@ points(x = pressure$temperature, y = pressure$pressure/2, col = "darkgreen")
 
 {% include figure image_path="/assets/images/unit_images/u09/linechart3.gif" caption="Line chart with multiple colored lines." %}
 
-## Example with orange:
+## Example with Orange: {#example-with-orange}
 To demonstrate the creation of a more complex line chart, let's plot the growth of 5 orange trees over time. Each tree will have its own distinctive line. The data come from the dataset Orange.
 ```
 # convert factor to numeric for convenience

@@ -18,14 +18,14 @@ header:
 <p>A histogram is a graphical representation of the frequency distribution of cardinally scaled characteristics. It requires the division of the data into bins (classes), which can have a constant or variable width (see image on the right by <a href="https://commons.wikimedia.org/wiki/File:Histogram_of_arrivals_per_minute.svg"><i>DanielPenfield</i></a>) on wikimedia.org. Directly adjacent rectangles of the width of the respective class are drawn, the area of which represents the (relative or absolute) class frequencies. The height of each rectangle then represents the (relative or absolute) frequency density, i.e. the (relative or absolute) frequency divided by the width of the corresponding class.
 </p></div>
 
-## Build in Datasets
-R comes with several built-in data sets, which are generally used as demo data for playing with R functions. These built-in data sets are ideal for practising plotting. To see the list of pre-loaded data, type the function `data():`
+## Built-in Datasets {#build-in-datasets}
+R comes with several built-in data sets, which are generally used as demo data for playing with R functions. These built-in data sets are ideal for practicing plotting. To see the list of pre-loaded data, type the function `data():`
 
 * "mtcars": Motor Trend Car Road Tests
 * "iris": measurements for 50 flowers from each of 3 species of iris
 * "ToothGrowth": effect of vitamin C on tooth growth in Guinea pigs
 * "PlantGrowth": results of an experiment to compare yields
-* "USArrests": statistics about violent crime rates by us state
+* "USArrests": statistics about violent crime rates by US state
 * and many many more...
 
 
@@ -80,10 +80,10 @@ hist(mtcars$hp, breaks=6, col="blue")
 ```
 {% include figure image_path="/assets/data/data/histo2.png" caption="Print of Code chunk above" %}
 
-Histograms can be a poor method for determining the shape of a distribution because it is so strongly affected by the number of bins used.
+Histograms can be a poor method for determining the shape of a distribution because their appearance is strongly affected by the number of bins used.
 
 ## Kernel Density Plots
-Kernal density plots are usually a much more effective way to view the distribution of a variable. Create the plot using plot(density(x)) where x is a numeric vector.
+Kernel density plots are usually a much more effective way to view the distribution of a variable. Create the plot using plot(density(x)) where x is a numeric vector.
 
 ```
 d <- density(mtcars$mpg) # returns the density data

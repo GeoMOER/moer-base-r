@@ -13,7 +13,7 @@ header:
 
 ---
 
-# What does workspace mean?**
+# What does workspace mean? {#what-does-workspace-mean}
 > “A workspace is (often) a file or directory that allows a user to gather various source code files and resources and work with them as a cohesive unit.[1] Often these files and resources represent the complete state of an integrated development environment (IDE) at a given time, a snapshot. Workspaces are very helpful in cases of complex projects when maintenance can be challenging.” — [Wikipedia](https://en.wikipedia.org/wiki/Workspace)
 
 {% include figure image_path="/assets/images/unit_images/u05/gui_rstudio_exp.png" caption="Work Environment in RStudio from Unit 1" %}
@@ -61,7 +61,7 @@ If you have a project with many data files, analysis scripts or other it is high
 
 The key elements of a project folder include:
 * a `Data/` folder
-* an `Process/` folder and
+* a `Process/` folder and
 * an `Output/` folder.
 
 The `Data/` folder contains all data files which include all raw data files as well as all subsets and manipulated versions of these data files.
@@ -73,9 +73,9 @@ And an `Output/` folder stores the final reports e.g. .docx, .pdf, .Rmd files an
 
 ## Understanding the directory structures
 
-You need to explicitly instruct R on how to access a file from the R session’s working directory. Because a data file may reside in a different directory than which the R script is calling it.
+You need to tell R how to access a file from the working directory because the data file may be stored in a different directory.
 
-In an example, user Geomoer has a project folder called Project1 in which reside a `./Data` folder and an `./Process` folder. He opens the R script which contains the following line of code and runs it.
+In an example, user Geomoer has a project folder called Project1 containing a `./Data` folder and a `./Process` folder. He opens the R script which contains the following line of code and runs it.
 
 ```
 data <- read.csv("data.csv")
@@ -121,7 +121,7 @@ In such a scenario, the user would need to modify every R script that references
 ```
 dat <- read.csv("../Data/data.csv")
 ```
-The two dots **..** tells R to move up the directory hierarchy relative to the current working directory. So in our working example, `../` tells R to move out of the `Process/` folder and up into the `Project1/` folder. The relative path `../Data/data.csv` tells R to move out of the `Process/` directory and over into the `Data/` directory before attempting to read the contents of the `data.csv` data file.
+The two dots **..** tell R to move up the directory hierarchy relative to the current working directory. So in our working example, `../` tells R to move out of the `Process/` folder and up into the `Project1/` folder. The relative path `../Data/data.csv` tells R to move out of the `Process/` directory and over into the `Data/` directory before attempting to read the contents of the `data.csv` data file.
 
 Using relative paths makes your project folder independent of the full directory structure in which it resides thus facilitating the reproducibility of your work on a different computer or root directory environment.
 
@@ -154,7 +154,7 @@ By contrast, a relative path starts from some given working directory `(C:/geomo
 </body>
 </html>
 
-## RProjects
+## R projects {#rprojects}
 
 Another option is setting the Working Directory with R projects: When you open an R project (typically a file with the .Rproj extension), RStudio automatically sets the working directory to the directory where the R project file is located. This means that all relative paths in your scripts are based on this project directory, making it easier to reference files within the project structure.
 

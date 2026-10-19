@@ -28,12 +28,12 @@ dfc
 ## 4 D   4 4.0 400  40
 ## 5 E   5 5.5 300  36
 ```
-Since both data frames have identical column names, X and Y is added to the
+Since both data frames have identical column names, X and Y are added to the
 column names in the resulting data frame to indicate if the column is from the
 first (i.e. X) or second (i.e. Y) data frame. You can easily rename the columns
 using the `colnames` function.
 
-If the columns which should be used for mergin have different names, no problem:
+If the columns which should be used for merging have different names, no problem:
 just supply the column names separately for the first (i.e. X) and second (i.e. Y)
 data frame:
 

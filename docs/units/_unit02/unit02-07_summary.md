@@ -14,7 +14,7 @@ Remember that the top-level category is either *quantitative or qualitative* (nu
 
 In summary, nominal variables are used to “name,” or label a series of values.  Ordinal scales provide good information about the order of choices, such as in a customer satisfaction survey.  Interval scales give us the order of values AND the ability to quantify the difference between each one.  Finally, Ratio scales give us the ultimate–order, interval values, plus the ability to calculate ratios since a “true zero” can be defined.
 
-The data will be also assigned to a certain data type in R: integer (whole numbers, no decimal), double (fractional number), character-strings (letters, symbols and text) and Boolean (true/false). Make sure that your data has the right datatype, which can be assessed by a proceeding “is.”, and, if necessary, transformed by a proceeding “as.”
+R stores values using types such as integer, double, character, and logical. Integer values represent whole numbers; double values can represent whole numbers and fractions. Character vectors store text, and logical vectors contain TRUE or FALSE (or a missing value). Check that your data has the intended type using functions such as `is.integer()` or `is.character()`, and convert it when needed using functions such as `as.integer()` or `as.character()`.
 
 
 | Provides                      | Nominal | Ordinal | Interval |  Ratio
@@ -25,7 +25,7 @@ The data will be also assigned to a certain data type in R: integer (whole numbe
 | Median  |         |   X     |     X    |    X    |
 | Mean  |         |         |     X    |    X    |
 | Can quantify the difference between each value  |         |         |     X    |    X    |
-| Can add or substract values  |         |         |     X    |    X    |
+| Can add or subtract values  |         |         |     X    |    X    |
 | Can multiply and divide values  |         |         |          |    X    |
 | has a true zero  |         |         |          |    X    |
 

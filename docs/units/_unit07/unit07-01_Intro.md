@@ -5,7 +5,7 @@ header:
   image_description: "loop"
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
-*You will learn what operators and loops do and how to write a if-then-else construct.*
+*You will learn what operators and loops do and how to write an if-then-else construct.*
 
 <!--more-->
 

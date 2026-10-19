@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Base R — blue R inspired by the course teaser</title>
+  <rect width="64" height="64" rx="13" fill="#041018"/>
+  <ellipse cx="29" cy="28" rx="24" ry="18" transform="rotate(-12 29 28)"
+    fill="none" stroke="#008d90" stroke-width="7"/>
+  <path fill="#48b9e4" fill-rule="evenodd"
+    d="M16 18H35C46 18 51 23 51 31C51 37 48 41 42 42C45 43 47 46 49 50L54 59H41L34 46C32 43 31 42 28 42H27V59H16ZM27 27V34H34C38 34 40 33 40 30.5C40 28 38 27 34 27Z"/>
+</svg>

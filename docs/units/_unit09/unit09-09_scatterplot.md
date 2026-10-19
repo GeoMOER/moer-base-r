@@ -48,7 +48,7 @@ div {
 <body>
 <div class="info">
   <p><strong>Info</strong>  <br>
-  LOWESS (Locally Weighted Scatterplot Smoothing), sometimes called LOESS (locally weighted smoothing), is a popular tool used in regression analysis that creates a smooth line through a timeplot or scatter plot to help you to see relationship between variables and foresee trends.
+  LOWESS (Locally Weighted Scatterplot Smoothing), sometimes called LOESS (locally weighted smoothing), is a popular tool used in regression analysis that creates a smooth line through a timeplot or scatter plot to help you to see relationships between variables and foresee trends.
   </p>
 </div>
 </body>

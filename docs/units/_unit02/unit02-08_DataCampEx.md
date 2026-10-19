@@ -9,7 +9,7 @@ It is time for DATA CAMP exercises!
 
 <!--more-->
 
-* R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as comment.
+* R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as a comment.
 * Write directly in the `script.R` window on the left. The comments are telling you what to do.
 * When you are ready press `Submit` and every line of code is interpreted and executed by R and you get a message whether or not your code was correct.
 * The output of your R code is shown in the `Console` panel on the right.
@@ -109,8 +109,8 @@ It is time for DATA CAMP exercises!
     </div>
 
 <p>R works with numerous data types. Some of the most basic types to get started are:</p>
-<ul><li>Decimal values like <code class="language-plaintext highlighter-rouge">4.5</code> are called <b>numerics</b>.</li>
-<li>Whole numbers like <code class="language-plaintext highlighter-rouge">4</code> are called <b>integers</b>. Integers are also numerics.</li>
+<ul><li>Numeric literals such as <code class="language-plaintext highlighter-rouge">4.5</code> or <code class="language-plaintext highlighter-rouge">4</code> are normally stored as <b>double</b> values.</li>
+<li>An uppercase L creates an <b>integer</b> literal, such as <code class="language-plaintext highlighter-rouge">4L</code>. Integers and doubles are both numeric types in R.</li>
 <li>The Boolean values <code class="language-plaintext highlighter-rouge">TRUE</code> or <code class="language-plaintext highlighter-rouge">FALSE</code> are called <b>logical</b>.</li>
 <li>Text (or string) values are called <b>characters</b>.
 <br> Note how the quotation marks in the editor indicate that <code class="language-plaintext highlighter-rouge">"Apple"</code> is a string just like <code class="language-plaintext highlighter-rouge">"five"</code>.</li></ul>
@@ -229,7 +229,7 @@ Change the value of the following variables:
       </code>
       <div data-type="hint">
         <p>The code that prints the data type of
-          <code>my_numeric</code> is already included; do a similar things for
+          <code>my_numeric</code> is already included; do the same for
           <code>my_character</code> and
           <code>my_logical</code>.
         </p>

@@ -89,8 +89,7 @@ df[order(df$Y, df$Z),]  # order by column Y and Z. Z is only used for identical 
 # sorting would only be applicable for one row/column (i.e. one vector)
 sort(df[,2])
 
-[1] A D O R Z
-Levels: A D O R Z
+[1] "A" "D" "O" "R" "Z"
 ```
 
 ```
@@ -108,9 +107,9 @@ l[[1]][order(l[[1]])]
 Please note that the above examples are not the only way and that you might
 find other solutions for the same problem - this is something quite typical for
 very high level programming languages. Just to illustrate it, here comes the
-`with` function which evaluates an expression for the given data structure which
-requires that e. g. for a data frame it is placed at the position of the
-respective dimension inside the square brackets.
+`with` function, which evaluates an expression in the context of the given data
+structure. In this example, `order(X, Z)` produces the row indices used to
+subset the data frame inside the square brackets.
 
 ```
 # sort a data frame by column X and Z
@@ -126,16 +125,22 @@ df[with(df, order(X, Z)), ]
 
 
 #### Sorting factors
-A quick note on sorting factors. Factors are categorial variables which can take
+A quick note on sorting factors. Factors are categorical variables which can take
 on a value which is part of a predefined (and limited) set. Factors consist
 of two parts, the actual value at some position and the set of possible values
 called levels. This implies that two aspects of a factor can be ordered separately:
 the factor values which we see when printing the content of a data frame and
 the levels which we do not see when we print it (but which might affect the
-printig and plotting or some statistical operations).
+printing and plotting or some statistical operations).
 
 
-Lets have a look at the data frame df again:
+Column Y is currently a character vector. To demonstrate sorting factors, first convert it to a factor:
+
+```r
+df$Y <- factor(df$Y)
+```
+
+Let's have a look at the data frame df again:
 
 ```
 df

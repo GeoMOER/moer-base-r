@@ -19,12 +19,12 @@ The data import features can be accessed from the environment pane or from the t
 
 
 Or through the "File" menu, followed by the "Import Dataset" submenu:
-{% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-file.png" caption="Data import via Filemenu. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" %}
+{% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-file.png" caption="Data import via File menu. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" %}
 
 
 Importing `From Text (readr)` files allows you to import csv files and in general, character delimited files using the `readr package`. This Text importer provides support to:
 
-* Import from the file system or an url
+* Import from the file system or a URL
 * Change column data types
 * Skip or include-only columns
 * Rename the data set
@@ -40,10 +40,10 @@ Importing `From Text (readr)` files allows you to import csv files and in genera
 
 
 ## Importing data via code
-Reading or writing tabulated data into or from a data frame is a quite common task in data analysis. The `read.table` or the `read.csv` functions for this.
+Reading or writing tabular data is a common task in data analysis. Use `read.table()` or `read.csv()` to import a text file into a data frame.
 
 ```r
-df <- read.csv(file.csv) # or read.csv2 -> selection depends on the delimiter and seperator
+df <- read.csv(file.csv) # or read.csv2 -> selection depends on the delimiter and separator
 ```
 
 ```r
@@ -63,20 +63,20 @@ df <- read.table(paste0(envrmt$path_data_csv, "/AI001_gebiet_flaeche.csv"),
                  skip = 4, header = TRUE, sep = ";", dec = ",")
 ```
 
-As you can see, the `read.table` function gets several arguments (which is common for many functions). The first one gives the filename inclducing the path to the file.
+As you can see, the `read.table` function gets several arguments (which is common for many functions). The first one gives the filename including the path to the file.
 * `skip = 4` tells the function to skip the first four lines (which are plain text lines in this case and not tabulated values)
 * `header = TRUE` tells the function, that the csv file has a header line which is used by `read.table` to name the columns of the returning data frame
 * `sep = ";"` defines the separator of the individual columns in the data frame
 * `dec = ","` defines the decimal separator used in the dataset
 
 A note on the sequence of the arguments: the sequence of the arguments does
-not matter as long as you name them explicetly. If you do not use the argument
-identfier as it is the case for the first argument, the filename, in the example
+not matter as long as you name them explicitly. If you do not use the argument
+identifier as it is the case for the first argument, the filename, in the example
 then the sequence matters. To get information on the default sequence and of
-course the general application of the each R function, type `?<function name>`
+course the general application of each R function, type `?<function name>`
 (e.g. `?read.table`) in an R console.
 
-After you executing the `read.table` function above, the content of the csv file is
+After you execute the `read.table` function above, the content of the csv file is
 stored into a two dimensional data frame called `df` in the example above.
 
 A quick way to check if everything is fine is to display the first few lines of
@@ -113,7 +113,7 @@ write.table(df, file = paste0(envrmt$path_data_tmp, "new.csv"),
 ```
 As you can see, you can define any column or decimal separator.
 
-For more information have a look at e.g. the respective [data importing](http://www.statmethods.net/input/importingdata.html) and [data exporting](http://www.statmethods.net/input/exportingdata.html) site at Quick R, have a look into the package
+For more information have a look at e.g. the respective [R manual: data import](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Spreadsheet_002dlike-data) and [R manual: text export](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Export-to-text-files) site at Quick R, have a look into the package
 documentation or search the web.
 
 

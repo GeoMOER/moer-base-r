@@ -7,13 +7,13 @@ header:
   image_description: "confused"
   caption: "Image by [slon_pics](https://pixabay.com/de/users/www_slon_pics-5203613/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2261021) [from pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2261021)"
 ---
-*Making your first steps in R with simple arithmetic operations.*
+*Taking your first steps in R with simple arithmetic operations.*
 
 <!--more-->
 
 ## #Hashtag and Run!
 
-R treats the hashtag character, **#**, in a special way. It will not compile anything that follows a # on a line. This makes hashtags very useful for adding comments and annotations to your code. You will be able to read the comments, but your computer will pass over them.
+Outside quoted text, **#** starts a comment in R. The text after it on the same line is not executed. Use comments to explain your code to yourself and others.
 
 ```r
 # This is a comment. Comments are very helpful
@@ -24,11 +24,11 @@ This is not a comment anymore. Be careful.
 hello <- "Welcome to R" #the variable "hello" is storing the information "Welcome to R"
 ```
 
-To run a chunk, you can hit the "Run" arrow to the right in the first Window (following picture, red box), or put your cursor inside the chunk and then hit `CTRL + ENTER` on Windows/Linux or `CMD + ENTER` on a Mac.
+To run a line in an R script, place the cursor on that line and click the "Run" button in the script editor (red box in the following picture). Alternatively, press `CTRL + ENTER` on Windows/Linux or `CMD + ENTER` on a Mac. Select several lines first to run them together.
 
 {% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp2.png" caption="Hit the Run-Button." %}
 
-The code and the output of the code will print below the chunk in the second Window (Console).
+RStudio sends the selected code to the Console, where you see the commands and their output.
 It looks like this:
 ```r
 > hello <- "Welcome to R"
@@ -36,13 +36,13 @@ It looks like this:
 [1] "Welcome to R"
 >
 ```
-Here, you’ll also see on the left hand side the “>” symbol which means that R is ready to receive a new command. If there's a “+” is visible instead, this means that the command has not yet been completed, e.g. a parenthesis has not been closed.
+Here, you’ll also see on the left hand side the “>” symbol which means that R is ready to receive a new command. If a “+” is visible instead, this means that the command has not yet been completed, e.g. a parenthesis has not been closed.
 
 ## Creating scalar objects and simple arithmetic operations
 
-The basic arithmetic operations are addition, subtraction, multiplication and division. Further, more complex operations include square roots, exponentiation and some other. To  control the order of operations, use parentheses "()". Note, that square brackets "[]" cannot be used, because they are reserved for subsetting or indexing data structures like vectors, lists, data frames, and matrices, as you will see in Unit 04.
+The basic arithmetic operations are addition, subtraction, multiplication and division. Further, more complex operations include square roots, exponentiation and other operations. To control the order of operations, use parentheses "()". Note that square brackets "[]" cannot be used, because they are reserved for subsetting or indexing data structures like vectors, lists, data frames, and matrices, as you will see in Unit 04.
 
-Examples of mathematic operations in R. This is using R like a calculator.
+Examples of mathematical operations in R. This is using R like a calculator.
 
 
 | Operator  | Description                          | Example   |
@@ -62,7 +62,7 @@ Examples of mathematic operations in R. This is using R like a calculator.
 | ^(1/n)    | nth roots                            | `x^(1/n)`|
 | abs()     | Absolute value                       | `abs(x)` |
 | sin()     | Sine                                 | `sin(x)` |
-| cos()     | Cosinus                              | `cos(x)` |
+| cos()     | cosine                              | `cos(x)` |
 | tan()     | Tangent                              | `tan(x)` |
 
 This is what it looks like in R:

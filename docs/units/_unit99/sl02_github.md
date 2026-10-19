@@ -1,54 +1,54 @@
 ---
-title: "The many faces of Github"
+title: "The many faces of GitHub"
 toc: TRUE
 toc_float: TRUE
 header:
   image: /assets/images/spotlights/github_header.png
-  image_description: "Hello Github."
-  caption: "[Gitbanner](https://github.com/mappum/gitbanner) [by Matt Bell](https://github.com/mappum) [on Github](https://github.com)"
+  image_description: "Hello GitHub."
+  caption: "[Gitbanner](https://github.com/mappum/gitbanner) [by Matt Bell](https://github.com/mappum) [on GitHub](https://github.com)"
 ---
 
 <!--more-->
 
 ## What is Git?
-Before you can understand what Github is, you must first understand the concept of Git:
+Before you can understand what GitHub is, you must first understand the concept of Git:
 
 <body>
 <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="251" height="134" align="right" vspace="10" hspace="20">
 <p>Git is <u>version control software</u> for projects. You can use it to easily jump back to old versions or work with multiple people on a project.
-You can operate Git either in the command line of your operating system or in Github Desktop, a Git client with a graphical user interface.
+You can operate Git either in the command line of your operating system or in GitHub Desktop, a Git client with a graphical user interface.
 </p></body>
 
 You need to know the following commands when working with Git:
 * `git clone [URL]`: clone a Git repository from the URL to your local computer.
-* `git init`: Initialize a Git project locally. You can optionally upload this to Github or another host later.
+* `git init`: Initialize a Git project locally. You can optionally upload this to GitHub or another host later.
 * `git add`: Add files to the watch list. This step is mandatory to upload your work to the repository afterwards.
 * `git commit`: Use a commit to record the changes. This is a state that you can go back to at any time. Files must be backed up with a commit before they can be sent to a remote repository.
-* `git push`: With a push, you send all commits to the remote repository on Github's servers or the chosen other provider.
+* `git push`: With a push, you send all commits to the remote repository on GitHub's servers or the chosen other provider.
 * `git fetch`: Imports commits from a remote repository into the local repo. These commits are stored as remote branches instead of normal local branches. This gives developers the opportunity to review changes before integrating them into their own copies of the project.
 
-## What is Github?
+## What is GitHub? {#what-is-github}
 <body>
-<img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="251" height="134" align="right" vspace="10" hspace="20">
-<p>Github is the host for your Git projects and has similar features to a social network.
-<ul><li>You can use Git to access your projects stored in Github from anywhere.</li>
-    <li>Repositories stored in Github are always public. So other users can view your projects. You can only get private repositories by paying a monthly fee.</li>
+<img src="{{ "/assets/images/spotlights/octocat.png" | relative_url }}" width="251" height="134" align="right" vspace="10" hspace="20">
+<p>GitHub is the host for your Git projects and has similar features to a social network.
+<ul><li>You can use Git to access your projects stored in GitHub from anywhere.</li>
+    <li>Repositories stored in GitHub are always public. So other users can view your projects. You can only get private repositories by paying a monthly fee.</li>
     <li>You can also contribute to existing programs by fixing bugs and thus actively contribute to open source tools.</li>
-    <li>Github is largely used for large projects in certain programming languages. However, it is just as possible to manage simple documents in Github.</li>
+    <li>GitHub is largely used for large projects in certain programming languages. However, it is just as possible to manage simple documents in GitHub.</li>
 </ul></p></body>
 
 
-**If you want a visualisation of how GitHub works let's see how Eddie and his team use GitHub:**
+**If you want a visualization of how GitHub works let's see how Eddie and his team use GitHub:**
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w3jLJU7DT5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
-**Difference between Github and Git in a nutshell** <br>
+**Difference between GitHub and Git in a nutshell** <br>
 * git is a local version control software that enables developers to save snapshots of their projects over time. It's generally best for individual use.
 * GitHub is a web-based platform that incorporates git's version control features so they can be used collaboratively.
 
 
-| <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="70px" width="70px"> |  <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" height="70px" width="70px"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="70px" width="70px"> |
+| <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="70px" width="70px"> |  <img src="{{ "/assets/images/spotlights/octocat.png" | relative_url }}" height="70px" width="70px"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="70px" width="70px"> |
 |---------|-------|---------|
 | is a software | is a service |
 | is installed locally on the system | is hosted on the web |
@@ -57,28 +57,28 @@ You need to know the following commands when working with Git:
 | provides functionalities like Version Control System (VCS) and Source Code Management (SCM) | provides functionalities of Git like VCS and SCM and a few of its own functions like hosting websites |
 
 
-## Setting up Git and Github
-Before you can get started with Git and Github, you need a Github account and you need to install Git locally. Here's how:
+## Setting up Git and GitHub {#setting-up-git-and-github}
+Before you can get started with Git and GitHub, you need a GitHub account and you need to install Git locally. Here's how:
 
-* First, create an account on [Github](https://github.com/). This is pretty straightforward and done quickly without any pitfalls.
-* To use Github productively, you need Git on your local computer. [Install Git](https://git-scm.com/downloads): Choose the installer you need for your operating system.
+* First, create an account on [GitHub](https://github.com/). This is pretty straightforward and done quickly without any pitfalls.
+* To use GitHub productively, you need Git on your local computer. [Install Git](https://git-scm.com/downloads): Choose the installer you need for your operating system.
 * On Windows, launch the **Git Bash** you just installed. On macOS and Linux start the normal terminal.
 * With `git config --global user.name "[Name]"` you now have to set your name.
-* As before the name you set with `git config --global user.email "[Mail]"` your mail address. Use the same mail here that you specified on the Github page beforehand.
+* As with your name, set your email address using `git config --global user.email "[Mail]"`. Use the email address associated with your GitHub account.
 
-## Github Tutorial: Setting up a repository
+## GitHub Tutorial: Setting up a repository {#github-tutorial-setting-up-a-repository}
 If you want to get started with a project, you can create a repository in two ways:
 
 *First:*
-* To create a new repository on the Github page click on the **`+`** next to your profile picture on the top right corner.
+* To create a new repository on the GitHub page click on the **`+`** next to your profile picture on the top right corner.
 * Give your project a name. As described above, you will need to set the project to public or pay a monthly fee for privacy.
 * Then click on the `Create repository` button. You can then add the repository locally using git clone as described above.
 
 *Second:*
 * Locally, you create a repository with `git init`. Then you can link a local and an online repo with `git remote add origin https://github.com/[username]/[projectname].git`.
-* You now have an online repository on Github and can thus manage your projects and use them from anywhere.
+* You now have an online repository on GitHub and can thus manage your projects and use them from anywhere.
 
-**To go through a fully accompanied installation and set up watch this *Git & GitHub Crash Course For Beginners* from [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)**
+**For a guided installation and setup, watch *Git & GitHub Crash Course For Beginners* from [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA).**
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SWYqp7iY_Tc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -86,12 +86,12 @@ If you want to get started with a project, you can create a repository in two wa
 ## GitHub Desktop
 Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow. GitHub Desktop will allow us to easily start using version control by offering a Graphical User Interface (GUI) to use Git. A GUI allows users to interact with a program using a visual interface rather than relying on text commands.
 
-{% include figure image_path="https://desktop.github.com/images/github-desktop-screenshot-windows.png" caption="Interface of Github Desktop." %}
+{% include figure image_path="/assets/images/spotlights/gh_d8.png" caption="GitHub Desktop interface used in this tutorial (existing course screenshot)." %}
 
 __Step by Step introduction to GitHub Desktop:__
 
-**1.** Download [Github Desktop](https://desktop.github.com/)
-{% include figure image_path="assets/images/spotlights/gh_d0.png" caption="Download Github Desktop." %}
+**1.** Download [GitHub Desktop](https://desktop.github.com/)
+{% include figure image_path="assets/images/spotlights/gh_d0.png" caption="Download GitHub Desktop." %}
 
 **2.** Log in to GitHub Desktop to connect to your GitHub account.
 {% include figure image_path="assets/images/spotlights/gh_d1.png" caption="Sign in to GitHub Desktop 1/4." %}
@@ -108,16 +108,16 @@ __Step by Step introduction to GitHub Desktop:__
 {% include figure image_path="assets/images/spotlights/gh_d7.png" caption="Cloning an existing repository 2/3." %}
 
 
-**5.** Copy some .txt files to the local repository on your computer. GitHub Desktop immediately recognizes changes in that repository. To publish your changes add a detailed summary (mandatory) and and a description. Then click `commit`.
+**5.** Copy some .txt files to the local repository on your computer. GitHub Desktop immediately recognizes changes in that repository. To publish your changes add a detailed summary (mandatory) and a description. Then click `commit`.
 {% include figure image_path="assets/images/spotlights/gh_d8.png" caption="Uploading some files." %}
 
-**6.** Click `Publish branch` (on the top of the GitHub Desktop window) to make the local branch also available on origin (GitHub). Remember, there are usually two versions of a branch — the local version and the remote version. Make sure you get the updates you and your collaborators merged into the masterbranch online into your local copy. In your GitHub Desktop GUI client, click the Fetch origin button. Fetch gets the latest updates from origin but doesn’t update your local working copy with the changes. After you click Fetch origin, the button changes to Pull Origin. Click Pull Origin to update your local working copy with the fetched updates.
+**6.** Click `Publish branch` (on the top of the GitHub Desktop window) to make the local branch also available on origin (GitHub). Remember, there are usually two versions of a branch — the local version and the remote version. Make sure you get the updates you and your collaborators merged into the default branch online into your local copy. In your GitHub Desktop GUI client, click the Fetch origin button. Fetch gets the latest updates from origin but doesn’t update your local working copy with the changes. After you click Fetch origin, the button changes to Pull Origin. Click Pull Origin to update your local working copy with the fetched updates.
 {% include figure image_path="assets/images/spotlights/gh_d9.png" caption="Uploading some files." %}
 
 Further Information on: [Activity: Use the GitHub Desktop client](https://idratherbewriting.com/learnapidoc/pubapis_github_desktop_client.html)
 
 
-**Github Desktop introduction** *A quick intro for GitHub Desktop on Windows:*
+**GitHub Desktop introduction** *A quick intro for GitHub Desktop on Windows:*
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/77W2JSL7-r8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -145,7 +145,7 @@ Git provides a BASH emulation used to run Git from the command line. Simply righ
 | **Inspection & Comparison**  |
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
-| `git log` --oneline` | View changes (briefly) |
+| `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
 <br>
@@ -157,7 +157,7 @@ Git provides a BASH emulation used to run Git from the command line. Simply righ
 ---
 <br>
 
-## Github in RStudio
+## GitHub in RStudio {#github-in-rstudio}
 Once you've installed Git, you'll need to activate it on your system by following these steps:
 
 _Part 1_ <br>
@@ -172,7 +172,7 @@ _Part 1_ <br>
 {% include figure image_path="assets/images/spotlights/git_rstudio.png" caption="Git in RStudio." %}
 
 **Setup Git** <br>
-Configure Git and set your user name and email (the email address you used to register on GitHub). You can directly open the Git prompt from within RStudio. User name and email needs to be set only once. Go to Tools > Shell to open the Git Shell to tell Git your username and GitHub email.
+Configure Git and set your user name and email (the email address you used to register on GitHub). You can directly open the Git prompt from within RStudio. User name and email need to be set only once. Go to Tools > Shell to open the Git Shell to tell Git your username and GitHub email.
 
 `git config --global user.name 'yourGitHubUsername'
 git config --global user.email 'name@provider.com'`
@@ -191,7 +191,7 @@ Select _File > New Project.._, create a project from a _New Directory_ and check
 In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to _File > New Project_, select create a new project from an _Existing Directory_ and create the project.
 
 **c)** Create a new project based on a remote Git repository: <br>
-Select _File > New Project.._ and from the opening menu select to create a new project from _Version Control_, choose _Git_, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.
+Select _File > New Project.._ and from the opening menu select to create a new project from _Version Control_, choose _Git_, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the repository you want to clone and create the project.
 
 {% include figure image_path="assets/images/spotlights/git_rstudio4.gif" caption="Git in RStudio." %}
 
@@ -201,7 +201,7 @@ To create a new Git based project in RStudio, we need the repository url. You fi
 
 ---
 
-That's it. All you need to know about Git, Git Desktop, Github, Git Bash and Git integration in RStudio.
+That's it. All you need to know about Git, Git Desktop, GitHub, Git Bash and Git integration in RStudio.
 
 {% include figure image_path="/assets/images/spotlights/github_austinpowers.jpg" caption="Live dangerously." %}
 

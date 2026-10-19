@@ -7,7 +7,7 @@ header:
   image_description: "neon data"
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
-Try yourself in Exercise 1!
+Try Exercise 1 yourself!
 
 <!--more-->
 Now it's your turn.
@@ -73,7 +73,7 @@ state: NRW, Bayern, Sachsen, Hessen, Hessen, MV, Hessen, Brandenburg, Hessen, Be
 <div class="info">
   <p><strong>Hint</strong>
   <br>
-      Common denomination: all letters small, do not use umlauts, numbers or special characters. Keep in mind the different syntax between strings and integers!
+      Naming convention: all letters small, do not use umlauts, numbers or special characters. Keep in mind the different syntax between strings and integers!
   </p>
 </div>
 </body>

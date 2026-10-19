@@ -12,14 +12,13 @@ header:
 <!--more-->
 
 
-The use of R offers many advantages not only in the analysis of data, R is also a useful tool for creating scientific graphs. R makes it possible
+The use of R offers many advantages for data analysis. R is also a useful tool for creating scientific graphs. R makes it possible
 * to produce high quality graphs that are also suitable for professional printing.
 * to create graphics completely in R syntax and thus make them reproducible.
-reproducible.
 * to flexibly combine different types of graphics or develop your own forms of presentation.
 * to easily create uniformly designed graphics.
 
-Do not wait until the very final analysis stage to produce some publication quality graphics but produce fast (not necessarily nice) visualizations all the way through your data analysis. Otherwise you will not utilize the best neural network infrastructure you have available: your brain and it's ability to identify patterns.
+Do not wait until the very final analysis stage to produce some publication quality graphics but produce fast (not necessarily nice) visualizations all the way through your data analysis. Otherwise you will not utilize the best neural network infrastructure you have available: your brain and its ability to identify patterns.
 
 ## Basic plots in R
 
@@ -29,10 +28,10 @@ Do not wait until the very final analysis stage to produce some publication qual
 |---------|-------|---------|
 | type | sets the diagram type: <br> "l" -> lines <br> "p" -> dots <br> "b" -> both points and lines <br> "c"-> empty points joined by lines <br> "h" -> bars, histogram-like vertical lines <br> "s" -> step diagram <br> "n" -> no representation, does not produce any points or lines <br>        | type="b" |
 | main | name of title              | main="Population growth (annual %)" |
-| col | set colour for lines, dots, bars etc. <br> show available colour words: colours()  | col="blue" <br> col="#112233" (RGB value) <br> col="#11223344" (RGB and transparency value) |
+| col | set color for lines, dots, bars etc. <br> show available color words: colours()  | col="blue" <br> col="#112233" (RGB value) <br> col="#11223344" (RGB and transparency value) |
 | sub | subtitle, caption           | sub="Figure 1" |
-| xlab | labelling of the x-axis                | xlab="Years 2000 to 2020" |
-| ylab | labelling of the y-axis                | ylab="Population Growth in %" |
+| xlab | labeling of the x-axis                | xlab="Years 2000 to 2020" |
+| ylab | labeling of the y-axis                | ylab="Population Growth in %" |
 | pch | The graphic symbol used to represent data points. Either a character as a string or a number representing the following characters; <br> <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pointmarks.png"> | pch=1 |
 | lty | Stroke type of lines  <br>  <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Rlines.png">              | lty=1 |
 | lwd | Line width | lwd=3 |
@@ -40,8 +39,8 @@ Do not wait until the very final analysis stage to produce some publication qual
 | xlim | Sets start and end values of the X-axis scale | xlim=c(0,20) |
 | ylim | Sets start and end values of the y-axis scale | ylim=c(100,160) |
 | bty | Outline of the complete character area. Options are: "n", "o", "c", "l", "7" | bty="n" |
-| xaxt | Labelling of the X-axis scale OFF | xaxt="n" |
-| yaxt | Labelling of the Y-axis scale OFF | yaxt="n" |
+| xaxt | Labeling of the X-axis scale OFF | xaxt="n" |
+| yaxt | Labeling of the Y-axis scale OFF | yaxt="n" |
 | font | Selection of the font format, 1=plain, 2=bold, 3=italic, 5=Greek symbols | font=5 |
 |  | "Pointcharacters as used in GNU R" by Marc Schwenzer on Wikimedia <br> "Line-Styles of GNU R" by Europol on Wikimedia | |
 
@@ -60,7 +59,7 @@ Then calculate the range from 0 to max value of sport cars and family cars:
 max_range <- range(0, sport_cars, family_cars)
 ```
 
-We graph the cars using the y axis that ranges from 0 to max value in sports or family cars and turning off axes and annotations (axis labels) so we can specify them ourself.
+We graph the cars using the y axis that ranges from 0 to max value in sports or family cars and turning off axes and annotations (axis labels) so we can specify them ourselves.
 ```
 plot(sport_cars, type="o", col="blue", ylim=max_range,
      axes=FALSE, ann=FALSE)

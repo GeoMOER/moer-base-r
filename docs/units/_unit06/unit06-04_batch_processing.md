@@ -15,7 +15,7 @@ Each file in the "input" directory is sequentially processed (in this example ge
 and the result is written into a corresponding file with the same file name in the "output" directory.
 
 Note that the management of file names and file paths is crucial for batch processing.
-So know the path to your working directory, the paths to your input and output folders, the paths to your files, the names of your files and their extention.
+So know the path to your working directory, the paths to your input and output folders, the paths to your files, the names of your files and their extension.
 
 <!-- some nice graphic showing root, path, working directory, filename, and file extension -->
 

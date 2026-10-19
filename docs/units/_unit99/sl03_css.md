@@ -12,9 +12,8 @@ header:
 Before a CSS file can be included in a markdown document, you must first understand what CSS is and how it relates to HTML.
 
 # Basics of web development
-The holy trinity in web development: HTML, CSS, JavaScript and  are inevitably linked and working together.
+The holy trinity in web development: HTML, CSS, and JavaScript are inevitably linked and working together.
 
-<body>
 <img src="https://html-css-js.com/images/og.jpg" width="451" height="334" align="right" vspace="10" hspace="20">
 <p>
 <b>HTML</b> provides the individual elements of the page, defines their type and the structure and how they are logically arranged to each other. The question is <u>"What is it"</u>? <br> <br>
@@ -26,7 +25,7 @@ Since HTML properties as well as CSS properties can be changed with JavaScript, 
 You can try the differences and play with the heads from the picture above on [html-css-js.com](https://html-css-js.com/).
 
 For simplicity JavaScript is now omitted.
-</p></body>
+</p>
 
 ## What is HTML?
 HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.
@@ -48,23 +47,16 @@ Below is an example of HTML used to define a basic webpage with a title and a si
 </html>
 ```
 
-And the result:
+And the result in the page body:
 
 ---
-<html lang="de">
-  <head>
-    <title>Description of the page (appears in the title bar of the browser)</title>
-  </head>
-  <body>
-    <p>This text is displayed in the browser window.</p>
-  </body>
-</html>
+<div class="notice">This text is displayed in the browser window.</div>
 ---
 
-These angle brackets are typical of HTML. HTML is a markup language, which means that there is text, and there are symbols that mark sections of text and tell the browser what that piece of text means. To distinguish symbols from text, you put them in angle brackets. The <span style="color: #259ebc"><html></span> symbol means: this is where the HTML section starts. If the symbols are to mark a section of text, there must be one for "end" in addition to the symbol for "beginning". The counterpart of <span style="color: #259ebc"><html></span> is positioned at the end of the example and it looks like this: <span style="color: #259ebc"></html></span>. It tells the browser that the HTML section ends here. End symbols differentiate from start symbols by the slash that comes between the angle bracket and the symbol name.
+These angle brackets are typical of HTML. HTML is a markup language, which means that there is text, and there are symbols that mark sections of text and tell the browser what that piece of text means. To distinguish symbols from text, you put them in angle brackets. The <code>&lt;html&gt;</code> tag means: this is where the HTML section starts. If the symbols are to mark a section of text, there must be one for "end" in addition to the symbol for "beginning". The closing tag for <code>&lt;html&gt;</code> is positioned at the end of the example and it looks like this: <code>&lt;/html&gt;</code>. It tells the browser that the HTML section ends here. End symbols differentiate from start symbols by the slash that comes between the angle bracket and the symbol name.
 
 The first line defines what type of contents the document contains. `<!doctype html>` means the page is written in HTML5. Properly formatted HTML pages should include
-<span style="color: #259ebc"><html></span>, <span style="color: #259ebc"><head></span>, and <span style="color: #259ebc"><body></span>, tags, which are all included in the example above. The page title, metadata, and links to referenced files are placed between the <span style="color: #259ebc"><head></span> tags. The actual contents of the page go between the <span style="color: #259ebc"><body></span> tags.
+<code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>, tags, which are all included in the example above. The page title, metadata, and links to referenced files are placed between the <code>&lt;head&gt;</code> tags. The actual contents of the page go between the <code>&lt;body&gt;</code> tags.
 
 The web has gone through many changes over the past few decades, but HTML has always been the fundamental language used to develop webpages. Interestingly, while websites have become more advanced and interactive, HTML has actually gotten simpler. If you compare the source of an HTML5 page with a similar page written in HTML 4.01 or XHTML 1.0, the HTML5 page would probably contain less code. This is because modern HTML relies on **Cascading Style Sheets** or JavaScript to format nearly all the elements within a page.
 
@@ -112,9 +104,9 @@ And where to put it? Their place is in the style element, which must be found in
 
 {% include figure image_path="assets/images/spotlights/anatomy-of-a-css-rule.png" caption="Anatomy of a CSS rule. Image from [waiffarer.com](http://www.waiffarer.com)" %}
 
-A CSS rule begins with a __selector__ that specifies which HTML elements the rule should apply to. One way to do this is to name HTML elements; this example rule applies to every <span style="color: #259ebc"><h2></span> element. The selector is followed by a left curly bracket ({), then the CSS properties to set for the selected elements. Each property is terminated by a semicolon. Finally, the rule is ended with a right curly bracket (}).
+A CSS rule begins with a __selector__ that specifies which HTML elements the rule should apply to. One way to do this is to name HTML elements; this example rule applies to every <code>&lt;h2&gt;</code> element. The selector is followed by a left curly bracket ({), then the CSS properties to set for the selected elements. Each property is terminated by a semicolon. Finally, the rule is ended with a right curly bracket (}).
 
-In the <span style="color: #259ebc"><head></span> area of your page, it may look like this:
+In the <code>&lt;head&gt;</code> area of your page, it may look like this:
 
 ```
 <style>
@@ -129,18 +121,18 @@ p {
 </style>
 ```
 
-Note that the semicolon after each property is important part of CSS syntax. Line breaks are irrelevant for CSS rules.
+Note that the semicolon after each property is an important part of CSS syntax. Line breaks are irrelevant for CSS rules.
 
-Besides the text color, the first rule specifies two other properties. One is the background-color, and the other is the font-size. 1.5 stands for "1.5" (one point five). You have to get used to this number notation with CSS. Like so many computer things, CSS comes from the USA, and there they use the dot as a decimal separator, not the comma as we do. The second rule sets the font color for all <span style="color: #259ebc"><p></span> elements to brown.
+Besides the text color, the first rule specifies two other properties. One is the background-color, and the other is the font-size. 1.5 stands for "1.5" (one point five). You have to get used to this number notation with CSS. Like so many computer things, CSS comes from the USA, and there they use the dot as a decimal separator, not the comma as we do. The second rule sets the font color for all <code>&lt;p&gt;</code> elements to brown.
 
-You can write as many CSS rules as you like in the <span style="color: #259ebc"><style></span> element. A separator between two rules is not required.
+You can write as many CSS rules as you like in the <code>&lt;style&gt;</code> element. A separator between two rules is not required.
 
-It is possible to store the formatting in a style element in the head of the page. But it makes more sense to collect them in one CSS file for all HTML documents. Therefore writing the CSS rulesets in a new file and save it under the name *format.css* in the same directory as the index file. It is necessary to tell the browser that it should consider the file *format.css* when it displays the index.html. It is possible to think it is obvious that the two files somehow belong together, but the browser does not.
+It is possible to store the formatting in a style element in the head of the page. But it makes more sense to collect them in one CSS file for all HTML documents. Therefore, write the CSS rules in a new file and save the file as *format.css* in the same directory as the index file. It is necessary to tell the browser that it should consider the file *format.css* when it displays the index.html. It is possible to think it is obvious that the two files somehow belong together, but the browser does not.
 
-For this the start page, the index.html file, has to be adjusted with <span style="color: #259ebc"><link rel="stylesheet" href="format.css"></span>
+For this the start page, the index.html file, has to be adjusted with <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;format.css&quot;&gt;</code>
 The new line just tells the browser to apply the CSS instructions from the file format.css to the HTML file. This line needs to be included in the other HTML files as well and in any subsequent ones that might be added later. This stylesheet now sets the appearance centrally for all web pages.
 
-Note that for the subpages, which are after all in a directory other than index.html, you need to adjust the URL of the format.css: <span style="color: #259ebc"><link rel=".../stylesheet" href="format.css"></span>
+Note that for the subpages, which are after all in a directory other than index.html, adjust the stylesheet path. For a page one directory below the stylesheet, use: <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../format.css&quot;&gt;</code>
 
 ```
 <!doctype html>
@@ -165,7 +157,7 @@ Free CSS style templates available at
 
 <br><br>
 
-**This Edureka video on "what is CSS" explains what is CSS along with all the varied elements and fundamentals of CSS.**
+**This Edureka video on "what is CSS" explains what CSS is along with all the varied elements and fundamentals of CSS.**
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6vbgZnQrpbU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -173,8 +165,8 @@ Free CSS style templates available at
 
 ## HTML and CSS in a nutshell
 
-**At the end here are the differences between HTML and CSS**
-{% include figure image_path="/assets/images/spotlights/html-css.png" caption="The differences between HTML and CSS from [codingdojo.com](www.codingdojo.com)" %}
+**Finally, compare HTML and CSS:**
+{% include figure image_path="/assets/images/spotlights/html-css.png" caption="The differences between HTML and CSS from [codingdojo.com](https://www.codingdojo.com/)" %}
 
 
 ---
@@ -270,7 +262,7 @@ and
 </ol>
 ---
 
-Nice, but what if you want to style a particular Markdown list with a specific colored list? Markdown renders to empty HTML tags like <ul>, <li>, <p>, etc. without class names, so there is no way to add a unique class identifier to a Markdown element. Let’s use a neat CSS trick to easily style an individual Markdown element: the immediate sibling selector (+).
+Nice, but what if you want to style a particular Markdown list with a specific color? Markdown renders to HTML elements like <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;p&gt;</code> without class names, so there is no way to add a unique class identifier to a Markdown element. Let’s use a neat CSS trick to easily style an individual Markdown element: the immediate sibling selector (+).
 
 ```
 <style>

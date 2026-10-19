@@ -12,7 +12,7 @@ header:
 
 
 ## Installing R
-Go and visit [cran.r-project.org](https://cran.r-project.org/) to learn more about R or choose your operating system and go directly to the download page. Cran R is available for following systems:
+Go and visit [cran.r-project.org](https://cran.r-project.org/) to learn more about R or choose your operating system and go directly to the download page. R is available for the following systems:
 
 
 * [Download R for Linux](https://cran.r-project.org/bin/linux/){:target="_blank"}
@@ -22,7 +22,7 @@ Go and visit [cran.r-project.org](https://cran.r-project.org/) to learn more abo
 
 ## RStudio
 
-Then go to [rstudio.com](https://rstudio.com/) and learn more about Rstudio. Alternatively you can also **[click here](https://rstudio.com/products/rstudio/download/#download){:target="_blank"}** and you will be taken directly to the download area of RStudio (Windows).
+Then go to [rstudio.com](https://rstudio.com/) and learn more about RStudio. Alternatively you can also **[click here](https://rstudio.com/products/rstudio/download/#download){:target="_blank"}** and you will be taken directly to the download area of RStudio (Windows).
 
 <!--
 ## Further reading

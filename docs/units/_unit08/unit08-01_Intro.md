@@ -1,5 +1,5 @@
 ---
-title: Intoduction
+title: Introduction
 header:
   image: /assets/images/unit_images/u08/header.png
   image_description: "noodle"
@@ -10,7 +10,7 @@ At the end of this unit you should know how to
 * sort
 * bind
 * merge
-specific datum in vectors, lists, matrices and data.frames.
+specific data in vectors, lists, matrices and data.frames.
 
 ## Comments?
 You can leave comments below if you have questions or remarks about any of the text or code in this unit.

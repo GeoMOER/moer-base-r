@@ -14,13 +14,13 @@ header:
 In R, vectors are automatically assigned to a certain data type, or the data type of a vector can be subsequently converted into another data type. The query, which data type it is, is made with a preceding `is.` (e.g.
 `is.numeric()`). With a preceding `as.` one can change the data type of a vector (e.g. `as.numeric()`).
 
-There are multiple classes that are grouped together as "numeric" classes. The two most common of which are double (for double precision floating point numbers) and integer. R will automatically convert between the numeric classes when needed, so for the most part it does not matter to the casual user whether the number 3 is currently stored as an integer or as a double. Most math is done using double precision, so that is often the default storage.
+There are multiple classes that are grouped together as "numeric" classes. The two most common are double (for double precision floating point numbers) and integer. R will automatically convert between the numeric classes when needed, so for the most part it does not matter to the casual user whether the number 3 is currently stored as an integer or as a double. Most math is done using double precision, so that is often the default storage.
 
 Sometimes you may want to specifically store a vector as integers if you know that they will never be converted to doubles (used as ID values or indexing) since integers require less storage space. But if they are going to be used in any math that will convert them to double, then it will probably be quickest to just store them as doubles to begin with.
 
-The table below gives an overview of the different data types*.
+The table below summarizes common checks and conversions*. The last row shows how to detect and assign missing values.
 
-| Data Type  | is.function | as.function |
+| Type or value | Test | Conversion or assignment |
 |------------|-------------|-------------|
 | numeric  | is.numeric()  | as.numeric()  |
 | integer  | is.integer()  | as.integer() |
@@ -29,7 +29,7 @@ The table below gives an overview of the different data types*.
 | factor    | is.factor() | as.factor() |
 | logical   | is.logical() | as.logical() |
 | NULL      | is.null() | as.null() |
-| NA        | is.na()   | as.na()     |
+| NA        | is.na()   | Assign `NA`, e.g. `x[2] <- NA` |
 
 
 <html>
@@ -53,9 +53,9 @@ div {
   <p>*Info  <br>
   The generic function <code class="language-plaintext highlighter-rouge">is.na</code> indicates which elements are missing.    <br><br>
   
-  The generic function <code class="language-plaintext highlighter-rouge">is.na <-</code> sets elements to NA.  <br><br>
+  There is no Base R function <code class="language-plaintext highlighter-rouge">as.na()</code>. To mark a value as missing, assign <code class="language-plaintext highlighter-rouge">NA</code>, for example <code class="language-plaintext highlighter-rouge">x[2] &lt;- NA</code>. The replacement form <code class="language-plaintext highlighter-rouge">is.na(x) &lt;- 2</code> also marks the second element as missing.  <br><br>
 
-  While factors, which are a unique feature of R, are not a separate data type like characters or numerics, they are a used to manage categorical data and maintain the integrity and order of those categories. 
+  While factors, which are a unique feature of R, are not a separate data type like characters or numerics, they are used to manage categorical data and maintain the integrity and order of those categories.
   </p>
 </div>
 </body>

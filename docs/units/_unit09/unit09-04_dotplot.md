@@ -16,7 +16,7 @@ header:
 <b>Long Version:</b> A Dot Plot, also called a dot chart or strip plot, is a type of simple histogram-like chart used in statistics for relatively small data sets where values fall into a number of discrete bins (categories). A dot plot is similar to a bar graph because the height of each “bar” of dots is equal to the number of items in a particular category. To draw one, count the number of data points falling in each bin (What is a BIN in statistics?) and draw a stack of dots that number high for each bin.
 </p></div>
 
-Create dotplots with the `dotchart(x, labels=)` function, where x is a numeric vector and labels is a vector of labels for each point. You can add a `groups=` option to designate a factor specifying how the elements of x are grouped. If so, the option `gcolor=` controls the color of the groups label. cex controls the size of the labels.
+Create dotplots with the `dotchart(x, labels=)` function, where x is a numeric vector and labels is a vector of labels for each point. You can add a `groups=` option to designate a factor specifying how the elements of x are grouped. If so, the option `gcolor=` controls the color of the group labels. cex controls the size of the labels.
 
 ## Example with mtcars:
 __Not grouped and colored at all, sorted by mpg:__
@@ -63,8 +63,8 @@ dotchart(x$mpg,labels=row.names(x),cex=.7,groups= x$cyl,
 {% include figure image_path="/assets/images/unit_images/u09/dotplot2.png" caption="Dotplots sorted by gear and cylinder and grouped by color" %}
 
 ### Difference between Dotplot and Scatterplot:
-* A dot plot is just a bar chart that uses dots to represent **individual** quanta. So if you wanted to plot the number of pets per household, you might have 10 households with 0 pets, 20 with 1 pet, 12 with 2 pets, etc. Over zero, you'd draw 10 dots; over one, you'd draw 20 dots, etc. In the example below shows which car type can drive how much miles per gallon.
+* A dot plot is just a bar chart that uses dots to represent **individual** quanta. So if you wanted to plot the number of pets per household, you might have 10 households with 0 pets, 20 with 1 pet, 12 with 2 pets, etc. Over zero, you'd draw 10 dots; over one, you'd draw 20 dots, etc. The example below shows which car type can drive how many miles per gallon.
 
-* Scatterplots are used to determine the **strength of a relationship** between two numerical variables. The X-axis represents the independent variable and the Y-axis the dependent variable. For example, if you measure a cars horsepower and miles per gallon, you could create a scatter plot where one axis represented horsepower and one represented miles per gallon. Each point on a scatter plot represents one car.
+* Scatterplots are used to determine the **strength of a relationship** between two numerical variables. The X-axis represents the independent variable and the Y-axis the dependent variable. For example, if you measure a car's horsepower and miles per gallon, you could create a scatter plot where one axis represented horsepower and one represented miles per gallon. Each point on a scatter plot represents one car.
 
 {% include figure image_path="/assets/images/unit_images/u09/dotplot3.png" caption="Difference between Dotplot and Scatterplot." %}

@@ -12,7 +12,7 @@ header:
 > “You can have data without information, but you cannot have information without data”  —  Daniel Keys Moran
 
 Almost all programming languages explicitly include the notion of data type, though different languages may use different terminology.
-That means when programming, the variables generally have a specific type, and they should be selected the appropriate type according to what you want to use the variable for.
+That means when programming, the variables generally have a specific type, and an appropriate type should be selected according to what you want to use the variable for.
 
 Common data types include:
 * integer
@@ -20,22 +20,22 @@ Common data types include:
 * character string
 * logical or boolean
 
-In contrast to other programming languages like C and java in R, you do not have to declare what data type your newly created object has to have. Instead, when you assign a value to a variable, R determines the data type of that variable based on the assigned value. This means that the data type of the object is determined dynamically at runtime – but you might have to change that using the “as.” -function if necessary.
+In contrast to other programming languages like C and Java in R, you do not have to declare what data type your newly created object has to have. Instead, when you assign a value to a variable, R determines the data type of that variable based on the assigned value. This means that the data type of the object is determined dynamically at runtime – but you might have to change that using the “as.” -function if necessary.
 
 Data types are used within type systems, which offer various ways of defining, implementing and using them. Different type systems ensure varying degrees of type safety.
 
 ### Integer
-int is short for "integer", which means whole numbers. It is used to specify that the variable contains only whole numbers. For example, 3 is an integer but 3.25 is not an integer. The range goes from -2,147,483,648 to 2,147,483,647.
+In R, `integer` stores whole numbers. Add `L` to a number to create an integer explicitly: for example, `3L`. Without `L`, the number `3` is normally stored as a double. The range of non-missing integer values is -2,147,483,647 to 2,147,483,647.
 
 ### Double or Floating-point number
-float is short for "floating-point number", which is a fractional number, eg, 3.25907. This can be a number between roughly 1.5 x 10^45 to 3.4 10^38, in floating point format.
+R uses double-precision floating-point numbers for most numerical calculations. A double can represent whole numbers such as `3` as well as fractional values such as `3.25`. The largest finite positive double is approximately `1.8e308`; it can be inspected with `.Machine$double.xmax`. The term `float` is common in other programming languages, but `double` is the R data type used here.
 
 **Note: Watch your decimal separator!**
 The decimal separator is a symbol used to separate the integer part from the fractional part of a number written in decimal form. Different countries officially designate different symbols for use as the separator. The choice of symbol also affects the choice of symbol for the thousands separator used in digit grouping.
 
 Currently there are three ways to group the number ten thousand with digit group separators.
 
-| Seperator  | Meaning |
+| Separator  | Meaning |
 |------------|----------|
 | 10 000,00  |  Space, the internationally recommended thousands separator  |
 | 10.000,00  |  Period (spoken as point), the thousands separator in many non-English speaking countries. |
@@ -49,41 +49,37 @@ Accordingly, care must be taken when importing the data.
 More information on this in Chapter 6: In- and Output of Data
 
 ### Character
-characters basically behave like words. They can be stringed together, they can be compared, but they can't be used for calculations.
-
-Examples of characters include letters, numerical digits, common punctuation marks (such as "." or "-"), and whitespace. The concept also includes control characters, which do not correspond to visible symbols but rather to instructions to format or process the text. Examples of control characters include carriage return or tab, as well as instructions to printers or other devices that display or otherwise process text.
+In R, `character` stores text. Character values are written in quotes, for example `"H"`, `"3"`, or `"Ursus maritimus"`. The value `"3"` is text, whereas `3` is a number; they cannot be used interchangeably in arithmetic.
 
 ### String
-Characters are typically combined into strings. A string is a sequence of characters, e.g. "Hello World."
-It is used to represent text rather than numbers. It is comprised of a set of characters that can also contain spaces and numbers. For example, the word "hamburger" and the phrase "I ate 3 hamburgers" are both strings, consisting of characters.
+A string is a sequence of characters, such as `"Hello World"` or `"I ate 3 hamburgers"`. R uses the same `character` data type for a single letter and for a longer string; it does not have separate `character` and `string` data types. Text can also contain whitespace and escape sequences such as `\n` for a newline or `\t` for a tab.
 
 ### Logical or boolean
-Logical values or boolean values can only contain either the value **true** or **false**.
+The R data type `logical` stores the values `TRUE` and `FALSE`. These names must be written in uppercase. A logical vector can also contain `NA` when a value is missing.
 
-### When things are lost …NULL-values
-When there are missing or undefined values in your data, they’ll be indicated by different so-called NULL-Values
+### Missing and special values {#when-things-are-lost-null-values}
+R distinguishes between a missing value, the null object, an undefined numerical result, and infinity. These values have different meanings and should not all be called "NULL-values".
 
- **NA** is a logical constant of length 1 and stands for "Not Available". It is used to represent missing or undefined values in a dataset where a value should be present but is unknown or unavailable.
+**NA** means "Not Available" and marks a missing value. For example, `c(4, NA, 8)` is a numeric vector whose second value is missing. Use `is.na()` to find missing values. Missing values can occur in different vector types, including numeric, character, and logical vectors.
 
-**NULL** represents the null object : It is a value that typically represents a complete absence of data or a value that cannot be defined. It is often returned when a function results in an undefined value. 
+**NULL** is R's null object. It has length zero and is different from an element marked `NA`. Use `is.null()` to test whether an object is `NULL`.
 
-**NaN** (Not-a-Number): is a logical vector of a length 1 and represents the result of an undefined or unrepresentable mathematical operation. It applies to numerical values, but not to values of integer vector and is often encountered in numeric calculations where the result is not a valid number.
+**NaN** means "Not a Number" and can result from an undefined numerical calculation such as `0 / 0`. Use `is.nan()` to test for `NaN`. Note that `is.na()` also returns `TRUE` for `NaN`.
 
-**Inf / - Inf** represents positive (or negative) infinity in R. It is used when a value is too large to be represented as a finite number. Typically, it results from mathematical operations like dividing a number by zero.
+**Inf / -Inf** represent positive and negative infinity. For example, `1 / 0` returns `Inf`, and `-1 / 0` returns `-Inf`. Use `is.infinite()` to identify these values; infinity is not a missing value.
 
-
-
-| Data Type  | Examples |
-|------------|----------|
-| integer        |1; 15 ; 1984297       |
-| float      |1.15 ; 1007.28 ; 0.0001       |
-| character  |© ; H ; π ; A; B; C        |
-| string     |"Hello World"  ;   "Ursus maritimus"  ;   "black" |  
-| boolean    |true  ;   false         |
+| Data Type in R | Examples |
+|----------------|----------|
+| integer | `1L`, `15L`, `1984297L` |
+| double | `1`, `1.15`, `1007.28`, `0.0001` |
+| character | `"H"`, `"π"`, `"Hello World"`, `"Ursus maritimus"` |
+| logical | `TRUE`, `FALSE` |
 
 ----
 
-Take the test, to check if you understand everything correctly:
+Take the test to check if you understand everything correctly:
+
+The quiz uses general programming terms: *float* corresponds to `double` in R, *string* to `character`, and *boolean* to `logical`. It asks you to choose a suitable data type, rather than identify the default type of an R expression. Where the quiz uses `True`, write `TRUE` in R.
 
 <iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit02-05-data-types.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 -----

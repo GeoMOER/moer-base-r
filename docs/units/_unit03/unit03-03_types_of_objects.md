@@ -10,9 +10,9 @@ header:
 
 <!--more-->
 
-You may like to store information of various data types like character, integer, floating point, Boolean etc. Based on the data type of a object, the operating system allocates memory and decides what can be stored in the reserved memory.
+R objects can store values of different types, such as character, integer, double, and logical. The type determines how the values are stored and which operations can be applied to them.
 
-The objects are assigned with R-Objects and the data type of the R-object becomes the data type of the object. There are many types of R-objects. The frequently used ones are:
+R provides the following basic data structures:
 
 *	Vectors
 *	Data Frames
@@ -22,14 +22,14 @@ The objects are assigned with R-Objects and the data type of the R-object become
 *	Factors
 
 
-The simplest of these objects is the vector object and there are six data types of these atomic vectors, also termed as six classes of vectors. The other R-Objects are built upon the atomic vectors.
+Atomic vectors store elements of one data type. R has six atomic vector types; here we focus on logical, integer, double, and character vectors. These types can also be used within more complex data structures.
 
-| Data Type in R   | Example | Data Type from previous lesson |
-|------------|----------|----------|
-| integer    |1; 15 ; 1984297 | int |
-| numeric    |1.15 ; 1007.28 ; 0.0001 | float |
-| character  |© ; H ; π ; "Hello World"  ;   "Ursus maritimus"  ;   "black"         | character combines character and strings |
-| logical    |true  ;   false         | boolean |
+| Data type in R | Examples | Meaning |
+|----------------|----------|---------|
+| integer | `1L`, `15L`, `1984297L` | Whole numbers stored explicitly as integers |
+| double | `1.15`, `1007.28`, `0.0001` | Double-precision numerical values, including whole numbers |
+| character | `"H"`, `"π"`, `"Hello World"`, `"Ursus maritimus"` | Text, from a single character to a longer string |
+| logical | `TRUE`, `FALSE` | Logical values |
 
 ------
 
@@ -40,12 +40,14 @@ Objects are the core of any R program. They contain the information we calculate
 
 > “All things are defined by names. Change the name, and you change the thing” — Terry Pratchett, Pyramids
 
-Even though data is very diverse, objects cannot take every name. This is because they must be unique to the computer. They can contain letters, numbers and underscores ( _ ), though the latter cannot be used at the beginning of the name. All other characters and spaces are not allowed. This restriction is important because R has to understand the input data, furthermore it has to be unique for the program. For example, if minus signs (-) were allowed for naming (which they are not!), there would be an ambiguity with the name `all-animals`. R would not know whether we meant the object `all-animals` or whether we wanted to subtract the object `animals` from the object `all`.
+For ordinary object names, use letters, digits, dots (`.`), and underscores (`_`). A name must start with a letter or a dot; if it starts with a dot, the next character must not be a digit. Names such as `all_animals`, `all.animals`, and `AllAnimals` are valid. Names such as `1animal`, `_animals`, and `.2animals` are not valid ordinary names. Reserved words such as `if` cannot be used as ordinary object names.
+
+Spaces and minus signs are not allowed in ordinary names. For example, `all-animals` is interpreted as a subtraction: the object `animals` is subtracted from the object `all`. R also supports names enclosed in backticks, but simple names are easier to use in the examples here.
 
 Instead, we could call it `all_animals`, `AllAnimals`, `allanimals`, `Allanimals` or `allAnimals`.
 
 Note that R distinguishes between upper and lower case for names. `allAnimals` and `AllAnimals` are not the same object and it is not possible to switch them.
-You should generally not use names, which are reserved for functions (e.g mean). Try to find meaningful names, but try to make them relatively short, too.
+Avoid reusing names of existing functions, such as `mean`, to keep your code clear. These names are different from reserved words such as `if`. Choose meaningful names and keep them reasonably short.
 
 **How to define objects?**
 
@@ -95,7 +97,7 @@ typeof(apple)
 [1] "character"
 ```
 
-Another important property of a vector is its length. This is the number of elements in the vector and can be checked with the function `length()`. In this case the length is 3. Three Values for "red", "green" and "yellow".
+Another important property of a vector is its length. This is the number of elements in the vector and can be checked with the function `length()`. In this case the length is 3. The vector contains three values: "red", "green", and "yellow".
 
 ```r
 #Ask for the length of the vector
@@ -167,7 +169,7 @@ If you perform operations on vectors of different lengths, R will automatically 
 -----
 
 # Dataframe
-A data frame is a two dimensional data structure. It is a special case of a list which has each component of __equal length__.
+A data frame is a two-dimensional data structure. It is a special case of a list which has each component of __equal length__.
 Each column represents a variable, which must have the same data type, and each row represents an observation or a case. Unlike matrices, however, data frames can hold columns of different data types (e.g., numeric, character, factor, date, etc.). This tabular structure makes data frames suitable for storing and working with structured data and allows you to represent real-world datasets with mixed data types in a single data structure. 
 Data frames are built with the data.frame() function 
 
@@ -193,8 +195,8 @@ print(df)
 
 ```
 Data frames have column names (variable names) and row names (often called row labels or row names) that help identify and reference specific variables and observations. You can access columns using the __$__ operator or square brackets __[ ]__, and you can access rows by their index or labels. For more details, see Unit 04
-You can use functions like __str()__ to check the data type of the column.  __summary()__ summarizes the of the columns. For numeric variables, it provides basic summary statistics for that vector, including the minimum, 1st quartile, median, mean, 3rd quartile, and maximum values. Note, that you can also apply this function to vectors!
-If you want to quickly inspect the first few rows a  long dataframe, you can use the  __head()__-function. The default behavior of __head()__ is to display the first 6 rows or elements, but you can specify a different number if needed.
+You can use functions like __str()__ to check the data type of the column.  __summary()__ summarizes the columns. For numeric variables, it provides basic summary statistics for that vector, including the minimum, 1st quartile, median, mean, 3rd quartile, and maximum values. Note that you can also apply this function to vectors!
+If you want to quickly inspect the first few rows of a large data frame, you can use the  __head()__-function. The default behavior of __head()__ is to display the first 6 rows or elements, but you can specify a different number if needed.
 
 With __nrow()__ and __ncol()__, you can return the number of rows and columns, respectively.
 
@@ -265,14 +267,14 @@ print(M)
 [2,] "a"  "c"  "a" 
 
 ```
-When we execute the above code, it produces the following result − Notice that by default, the first column is first filled from top to button, then the second column and so on.
+When we execute the above code, it produces the following result − Notice that by default, the first column is first filled from top to bottom, then the second column and so on.
 
 
 it follows this pattern:
 
-{% include figure image_path="/assets/images/unit_images/u03/matrix_direction.png" %}
+{% include figure image_path="/assets/images/unit_images/u03/matrix_direction.svg" alt="Two-row matrices filled by columns or rows; small numbers show input positions." caption="Matrix filling order for the same input vector. Diagram created for this course." %}
 
-If you want to change this, set byrow=FALSE
+To fill the matrix row by row instead, set `byrow = TRUE`.
 
 ```r
 
@@ -284,12 +286,12 @@ M
 ```
 Columns and rows can be attached using __cbind()__ and __rbind()__, respectively.
 With __nrow()__ and __ncol()__, you can return the number of rows and columns, respectively.
-As in dataframes, you can add names to your columns and row. In contrast to dataframes, however, you cannot address a column with by __”$”__.
+As in dataframes, you can add names to your columns and rows. In contrast to dataframes, however, you cannot address a column with __`$`__.
 
 ---
 
 # Array
-Arrays are the objects which can store data in more than two dimensions. For example − If we create an array of dimension (2, 3, 4) then it creates 4 rectangular matrices each with 2 rows and 3 columns. Arrays can store only one data type.
+Arrays can have one, two, or more dimensions. A matrix is a two-dimensional array. For example − If we create an array of dimension (2, 3, 4) then it creates 4 rectangular matrices each with 2 rows and 3 columns. Arrays can store only one data type.
 
 An array is created using the array() function. It takes vectors as input and uses the values in the dim parameter to create an array.
 
@@ -317,7 +319,7 @@ This array has three dimensions. Notice that, although the rows are given as the
 
 {% include figure image_path="/assets/images/unit_images/u03/Array.png" caption="Note the structural difference between vectors, matrices and arrays." %}
 
-A vector is one-dimensional, a matrix is two-dimensional and an array is more than two dimensional.
+An atomic vector stores a sequence of values without a dimension attribute. An array adds dimensions to its data; a matrix is a two-dimensional array. The figure above shows an example with three dimensions.
 
 ----
 
@@ -345,8 +347,8 @@ When we execute the above code, it produces the following result:
 [[3]]
 function (x)  .Primitive("sin")
 ```
-It prints one list with three elements. The first element  [[1]] is an vector containing values. The second element [[2]] is a value and the third [[3]] is a function.
-Note, that in lists, that the selection of list element via single square brackets __[]__ preserves the list structure, which means that the result will still be a list if you extract a single element. while __[[]]__ returns the actual value stored within the selected element. Therefore, the choice between __[]__ and __[[]]__ depends on whether you want to work with the structure of the list or extract the values from it.
+It prints one list with three elements. The first element  [[1]] is a vector containing values. The second element [[2]] is a value and the third [[3]] is a function.
+Note that selecting list elements with single square brackets __[]__ preserves the list structure, even when you select a single element. Double square brackets __[[]]__ return the object stored in the selected element. Choose __[]__ to retain a list and __[[]]__ to extract an element.
 
 ```r
 list1[1]
@@ -368,9 +370,9 @@ list1$numbers
 ----
 
 # Factors
-In R, a "factor" is a data structure used for fields that takes only predefined, finite number of values (categorical data). In such case, we know the possible values beforehand and these predefined, distinct values are called levels. Factors are more memory-efficient than storing categorical data as character vectors. This is because factors internally represent the data as integers and maintain a separate list of levels. They can have a specific order or hierarchy, which can be important when dealing with ordinal data. Factors with an order can be used in statistical analyses that consider the order of the levels. Using factors helps maintain data integrity by ensuring that values are limited to a predefined set of levels. This reduces the risk of errors and inconsistencies in data entry. 
+In R, a "factor" is a data structure used for fields that take only a predefined, finite number of values (categorical data). In such cases, we know the possible values beforehand and these predefined, distinct values are called levels. Factors are more memory-efficient than storing categorical data as character vectors. This is because factors internally represent the data as integers and maintain a separate list of levels. They can have a specific order or hierarchy, which can be important when dealing with ordinal data. Factors with an order can be used in statistical analyses that consider the order of the levels. Using factors helps maintain data integrity by ensuring that values are limited to a predefined set of levels. This reduces the risk of errors and inconsistencies in data entry.
 
-In such case, we know the possible values beforehand and these predefined, distinct values are called levels.
+In such cases, we know the possible values beforehand and these predefined, distinct values are called levels.
 
 A factor is created using the function `factor()`. Levels of a factor are inferred from the data if not provided.
 
@@ -382,7 +384,7 @@ treecover
 Levels: Beech Gap Oak Spruce
 ```
 
-Here, we can see that factor *treecover* has seven elements and four levels. We can check if a object is a factor or not using `class()` function.
+Here, we can see that factor *treecover* has seven elements and four levels. We can check if an object is a factor or not using `class()` function.
 
 Similarly, levels of a factor can be checked using the `levels()` function. 
 

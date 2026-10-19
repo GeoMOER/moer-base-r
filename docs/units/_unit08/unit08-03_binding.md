@@ -11,7 +11,7 @@ header:
 
 When thinking about combining two data frames one has to distinguish between
 merging them by the values given in a specific column or consecutively putting
-them together just rows after rows.
+them together row by row.
 
 For the following examples, we will use these two data frames.
 
@@ -66,7 +66,7 @@ dfr
 ## 10 500 55.0 B
 ```
 
-Note, that it is not necessary that the columns are in the same order since the
+Note that it is not necessary that the columns are in the same order since the
 concatenation is done by the column names, not the column sequence:
 
 ```

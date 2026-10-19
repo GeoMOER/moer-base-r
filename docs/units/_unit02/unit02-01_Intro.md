@@ -5,7 +5,7 @@ header:
   image_description: "neon data"
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
-*Learn about different levels of measurements and how information is arranged in data types in R.*
+*Learn about different levels of measurement and how information is arranged in data types in R.*
 <!--more-->
 
 At the End of this unit you should know

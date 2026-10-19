@@ -17,13 +17,13 @@ header:
 <br>
 Pie charts are often used for representation of distributions and proportions. The number of partial values should not exceed 7, otherwise the diagram becomes confusing. Several small partial values are also displayed confusingly. In this case, it is recommended to combine the small partial values into an "Other" value. Usually, the clarity increases if the partial values are sorted clockwise by size and the largest partial value starts on the 12 o'clock line, as in a clock.</p></div>
 
-The basic syntax for creating a pie-chart using the R is:
+The basic syntax for creating a pie-chart using R is:
 
 `pie(x, labels, radius, main, col, clockwise)`
 
 Following is the description of the parameters used:
 * x is a vector containing the numeric values used in the pie chart.
-* labels is used to give description to the slices.
+* labels is used to give descriptions to the slices.
 * radius indicates the radius of the circle of the pie chart.(value between −1 and +1).
 * main indicates the title of the chart.
 * col indicates the color palette.
@@ -37,7 +37,7 @@ Following is the description of the parameters used:
 x <- c(21, 62, 10, 53)
 labels <- c("Tesla", "VW", "Opel", "BMW")
 
-# Plot the chart with title, label and rainbow color pallete.
+# Plot the chart with title, label and rainbow color palette.
 pie(x, labels, main = "Cars", col = rainbow(length(x)))
 ```
 ```
@@ -96,4 +96,4 @@ div {
 </div>
 </body>
 </html>
-{% include figure image_path="/assets/images/unit_images/u09/colorpalette.png" caption="Color pallete of contiguous colors in base R." %}
+{% include figure image_path="/assets/images/unit_images/u09/colorpalette.png" caption="Color palette of contiguous colors in base R." %}

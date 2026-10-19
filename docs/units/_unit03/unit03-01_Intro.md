@@ -6,13 +6,13 @@ header:
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
-*You will learn about different types of data storing in objects.*
+*You will learn about different ways of storing data in objects.*
 
 <!--more-->
 
 Data types are used within type systems, which offer various ways of defining, implementing and using them. Different type systems ensure varying degrees of type safety. Almost all programming languages explicitly include the notion of data type, though different languages may use different terminology.
 
-In computer science, type safety is the extent to which a programming language discourages or prevents type errors. A type error is erroneous or undesirable program behaviour caused by a discrepancy between differing data types for the program's constants, variables, and methods (functions), e.g., treating an integer (int) as a floating-point number (float).
+In computer science, type safety is the extent to which a programming language discourages or prevents type errors. A type error is erroneous or undesirable program behavior caused by a discrepancy between differing data types for the program's constants, variables, and methods (functions), e.g., treating an integer (int) as a floating-point number (float).
 
 At the end of this unit you should know
 

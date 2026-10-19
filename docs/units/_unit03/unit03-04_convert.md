@@ -11,7 +11,7 @@ header:
 
 ---
 
-*How to convert vectors see Unit 2: [Converting Types of Data](/moer-base-r/unit02/unit02-06_convert.html)*
+*For vector conversions, see Unit 02: [Converting Types of Data](/moer-base-r/unit02/unit02-06_convert.html).*
 
 * Use `is.` to test for data type. Returns TRUE or FALSE
 * Use `as.` to explicitly convert it.

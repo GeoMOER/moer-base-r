@@ -8,9 +8,9 @@ header:
 It is time for DATA CAMP exercises!
 
 <!--more-->
-Take your first steps with R. To test your knowledge up to know you can test yourself in the following exercises.
+Take your first steps with R. To test your knowledge up to now you can test yourself in the following exercises.
 
-* R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as comment.
+* R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as a comment.
 * Write directly in the `script.R` window on the left. The comments are telling you what to do.
 * When you are ready press `Submit` and every line of code is interpreted and executed by R and you get a message whether or not your code was correct.
 * The output of your R code is shown in the `Console` panel on the right.
@@ -94,7 +94,7 @@ The <code class="language-plaintext highlighter-rouge">^</code> operator raises 
 The modulo <code class="language-plaintext highlighter-rouge">%%</code> returns the remainder of the division of the number to the left by the number on its right, for example <code class="language-plaintext highlighter-rouge">5 %% 3</code> is 2.</p>
 
 <p><u>Instructions:</u></p>
-<ul><li>Type 5^2 in the editor to calculate 2 to the power 5. </li>
+<ul><li>Type 5^2 in the editor to calculate 5 to the power 2. </li>
 <li>Type 28 %% 6 to calculate 28 modulo 6. </li>
 <li>Submit the answer and have a look at the R output in the console. </li></ul>
 

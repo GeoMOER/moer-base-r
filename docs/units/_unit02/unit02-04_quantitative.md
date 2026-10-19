@@ -19,7 +19,7 @@ Within **quantitative data**, there exists a sub-level of data types: discrete d
 
 Continuous data can be further categorized into a couple of types: **interval and ratio.**
 
-### Intervall
+### Interval {#intervall}
 Interval scales are numeric scales in which we know both the order and the exact differences between the values.  The classic example of an interval scale is Celsius temperature because the difference between each value is the same.  For example, the difference between 60 and 50 degrees is a measurable 10 degrees, as is the difference between 80 and 70 degrees.
 
 Interval scales are nice because the realm of statistical analysis on these data sets opens up.  For example, central tendency can be measured by mode, median or mean; standard deviation can also be calculated.
@@ -31,7 +31,7 @@ In the case of interval scales, zero does not mean the absence of value, but is 
 Interval data allows for more parametric tests like t-tests and ANOVA. Histograms, box plots, and line charts are useful for interval data, showing distribution and trends
 
 ### Ratio
-Ratio scales are the ultimate nirvana when it comes to data measurement scales because they tell us about the order, they tell us the exact value between units, AND they also have an absolute zero – which allows for a wide range of both descriptive and inferential statistics to be applied.  At the risk of repeating the topic, everything before mentioned about interval data applies to ratio scales: plus ratio scales have a clear definition of zero.  Good examples of ratio variables include height, weight, speed, duration and temperature in Kelvin. 
+Ratio scales are the ultimate nirvana when it comes to data measurement scales because they tell us about the order, they tell us the exact value between units, AND they also have an absolute zero – which allows for a wide range of both descriptive and inferential statistics to be applied.  At the risk of repeating the topic, everything mentioned above about interval data applies to ratio scales: plus ratio scales have a clear definition of zero.  Good examples of ratio variables include height, weight, speed, duration and temperature in Kelvin.
 
 Ratio scales provide a wealth of possibilities when it comes to statistical analysis. These variables can be meaningfully added, subtracted, multiplied, divided (ratios). Central tendency can be measured by mode, median, or mean; measures of dispersion, such as standard deviation and coefficient of variation can also be calculated from ratio scales. This allows for the full range of statistical analysis, including parametric tests, and ratio statistics like rates or proportions.
 Similar to interval data, ratio data can be effectively visualized with histograms, box plots, line charts, and scatter plots.

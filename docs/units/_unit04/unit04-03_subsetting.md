@@ -16,14 +16,14 @@ header:
 
 When you are working with a large data set, you are often only interested in a small part of it for your analysis. So how do you sort out all the variables and observations and extract only the ones you need? Well, R has several ways of doing this in a process it calls "subsetting".
 
-The most basic way of subsetting a data frame in R is by using square brackets such that in:
+The most basic way of subsetting a data frame in R is by using square brackets as follows:
 
 ```
 data[x,y]
 ```
 `data` is the data frame we want to subset. `x` consists of the rows we want returned, and `y` consists of the columns we want returned. Let’s pull some data from the built-in dataset `mtcars` and see how this is done on a real data set.
 
-Now, let’s suppose we only need *mpg, hp* and *gear* to show the relationship between fuel consumption, horsepower and number of gears. However, we only need data seperated by the kind of transmission (am): 0 = automatic, 1 = manual. Here’s the basic way to retrieve that data in R:
+Now, let’s suppose we only need *mpg, hp* and *gear* to show the relationship between fuel consumption, horsepower and number of gears. However, we only need data separated by the kind of transmission (am): 0 = automatic, 1 = manual. Here’s the basic way to retrieve that data in R:
 
 ```
 #loading dataset mtcars
@@ -60,8 +60,8 @@ automatic3 <- subset(mtcars, am == 0, select = c(mpg, hp, gear))
 In the following example, we select by different values:
 
 First all rows that have a value of horsepower (hp) between 100 and 200.
-Second all rows that have a value of horsepower greater or equal to 150 AND are automatic.
-Third all rows that have a value of horsepower greater or equal to 250 OR have less than 4 gears.
+Second all rows that have a value of horsepower greater than or equal to 150 AND are automatic.
+Third all rows that have a value of horsepower greater than or equal to 250 OR have less than 4 gears.
 We keep the mpg, hp and gear columns for all three.
 
 ```

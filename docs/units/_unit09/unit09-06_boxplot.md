@@ -19,7 +19,7 @@ Examine the following items to learn more about the location and spread of the s
 <div class="unit"><p>
 The <b>Median</b> is represented by the line in the box. The median is a common measure of the location of the data. Half of the observations are less than or equal to the value, the other half of the observations are greater than or equal to the value. <br>
 <br>
-The <b>interquartile range box</b> interquartile range box represents the middle 50% of the data. It indicates the distance between the first and the third quartile (Q3-Q1).<br>
+The <b>interquartile range box</b> represents the middle 50% of the data. It indicates the distance between the first and the third quartile (Q3-Q1).<br>
 <br>
 The <b>Whiskers</b> start from both sides of the box. They represent the ranges for the bottom 25 % and the top 25 % of the data values excluding the outliers.<br>
 <br>
@@ -39,7 +39,7 @@ boxplot(mpg~cyl,data=mtcars, main="Car Milage Data",
 
 
 
-Notched and coloured Boxplot of MPG by Car Cylinders
+Notched and colored Boxplot of MPG by Car Cylinders
 ```
 boxplot(mpg~cyl,data=mtcars, main="Car Milage Data", notch=TRUE,
         col=(c("steelblue","darkgreen", "darkred")),

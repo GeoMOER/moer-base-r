@@ -12,10 +12,10 @@ header:
 > “Torture the data, and it will confess to anything.” – Ronald Coase
 <!--more-->
 
-## An introduction to comma-seperated values
+## An introduction to comma-separated values {#an-introduction-to-comma-seperated-values}
 
 ### What is a .csv-file?
-A csv is a comma-separated values file, which allows data to be saved in a tabular format. CSVs look like a spreadsheet but with a .csv extension. CSV files can be used with the most of spreadsheet programs, such as Microsoft Excel or Google Spreadsheets. They differ from other spreadsheet file types because they can only have a single sheet in a file, they can not save cells, columns, or rows. Also, there cannot be saved formulas in this format. These files may sometimes be called Character Separated Values or Comma Delimited files. They mostly use the comma character to separate (or delimit) data, but sometimes use other characters, like semicolons.
+A CSV file stores tabular data as plain text. It can be opened with spreadsheet programs such as Microsoft Excel or Google Sheets. A CSV file contains a single table of rows and columns; it does not retain cell formatting, multiple worksheets, or executable spreadsheet formulas. CSV stands for comma-separated values. Commas usually separate the values, although some files use other delimiters, such as semicolons.
 
 ### Why are .csv files used?
 These files serve a number of different purposes. They are often used for exchanging data between different applications, for example databases. They help to export a high volume of data to a more concentrated database, for instance. They also serve other primary functions:
@@ -44,8 +44,8 @@ They can be more complicated than that, and can contain thousands of lines, more
 
 That simplicity is a feature. CSV files are designed to be a way to easily export data and import it into other programs. The resulting data is human-readable and can be easily viewed with a text editor like Notepad or a spreadsheet program like Microsoft Excel.
 
-## Know your decimal seperator!
-As mentioned in [Unit 2.5 - Types of Data](https://geomoer.github.io/moer-base-r/unit02/unit02-05_types_of_data.html){:target="_blank"} it is essentially to know the decimal seperator.
+## Know your decimal separator! {#know-your-decimal-seperator}
+As mentioned in [Unit 2.5 - Types of Data](https://geomoer.github.io/moer-base-r/unit02/unit02-05_types_of_data.html){:target="_blank"} it is essentially to know the decimal separator.
 
 When you check `?read.table` you will probably find all the answer that you need.
 There are two issues with European csv files:

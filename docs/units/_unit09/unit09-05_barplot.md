@@ -18,7 +18,7 @@ Create barplots with the `barplot(values)` function, where *values* is a vector 
 * If *values* is a matrix and the option `beside=FALSE` then each bar of the plot corresponds to a column of height, with the values in the column giving the heights of stacked “sub-bars”.
 * If height is a matrix and beside=TRUE, then the values in each column are juxtaposed rather than stacked.
 * Include option `names.arg=(character vector)` to label the bars.
-* The option `horiz=TRUE` to createa a horizontal barplot.
+* Use `horiz=TRUE` to create a horizontal bar plot.
 
 ## Example with mtcars:
 

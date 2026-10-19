@@ -24,7 +24,7 @@ Raw data is categorized in different scales, which are expressed in different da
 Note the specific data types of objects:
 * Vectors must be of the same data type.
 * Matrices must be of the same data type.
-* Data frames must be arranged that columns are of the same data type.
+* Data frames must be arranged so that columns are of the same data type.
 * Lists can contain any data type.
-* Factors can contain only strings.
+* Factors represent categories, which can be supplied as text or numbers. Internally, a factor uses integer codes and character labels for its levels.
 

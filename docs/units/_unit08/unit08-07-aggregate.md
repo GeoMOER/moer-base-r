@@ -8,7 +8,7 @@ header:
 
 #### Aggregate
 
-Aggregate functions in R are used to perform operations on subsets of data, summarizing multiple values into a single value. Common aggregate functions include **sum()**, **mean()**, **min()**, **max()**, and **length()**. These functions are often used in conjunction with the **aggregate(x, by, FUN)** function. X stands for the data frae, by is the list of grouping elements, often factors, and FUN is the function to be applied (e.g., mean, sum).
+Aggregate functions in R are used to perform operations on subsets of data, summarizing multiple values into a single value. Common aggregate functions include **sum()**, **mean()**, **min()**, **max()**, and **length()**. These functions are often used in conjunction with the **aggregate(x, by, FUN)** function. X stands for the data frame, by is the list of grouping elements, often factors, and FUN is the function to be applied (e.g., mean, sum).
 
 Let's take the dataset mtcars, which comes with R. This calculates the average mpg for each group of cyl (cylinders)
 
@@ -21,4 +21,4 @@ In R, data can be transformed between wide and long formats using functions such
 
 {% include figure image_path="/assets/images/unit_images/u08/dcast.png" %}
 
-**melt(data, id.vars, measure.vars)** converts wide data to long by melting multiple columns into key-value pairs. Where *id.vars* is the columns to keep as they are, *measure.vars* is the column names to merge into a new column (in the image above, this would be the orange column names in the bottom half of the image) and *variable.name* is the name of the new column in which the values (here: in blue) are now presented in long format. In the image above, this would be "Anzahl Individuen". 
+**melt(data, id.vars, measure.vars)** converts wide data to long by melting multiple columns into key-value pairs. Here, *id.vars* specifies the columns to keep as they are, *measure.vars* specifies the column names to merge into a new column (in the image above, this would be the orange column names in the bottom half of the image) and *variable.name* is the name of the new column in which the values (here: in blue) are now presented in long format. In the image above, this would be "Anzahl Individuen".

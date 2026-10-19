@@ -26,8 +26,8 @@ Common simple examples include arithmetic (e.g. addition), comparison (e.g. "gre
 | <         | test if x is smaller than y           | `x < y`  |
 |   >       | test if x is greater than y           | `x > y`  |
 |  ==       | test if x is exactly equal to y       | `x == y` |
-|    >=     | test if x is greater or equal than y  | `x >= y` |
-|   <=      | test if x is smaller or equal than y  | `x <= y` |
+|    >=     | test if x is greater than or equal to y  | `x >= y` |
+|   <=      | test if x is less than or equal to y  | `x <= y` |
 |   !=      | test if x is not equal to y           | `x != y` |
 | **Logical Operators** ||
 | !         | logical NOT                           | `!x`        |
@@ -66,7 +66,7 @@ div {
 
     <li>Logical operators are used to carry out Boolean operations like AND, OR etc. Such operators compare two variables and return true or false depending on the result of the comparison.</li><br>
 
-    <li>Operators & and &#124; perform element-wise operation producing result having length of the longer operand. <br><br> But && and &#124;&#124; examines only the first element of the operands resulting into a single length logical vector.</li>
+    <li>Operators & and &#124; perform element-wise operations. Their result has the length of the longer operand. <br><br> Operators && and &#124;&#124; use a single logical value from each operand and return a single logical value. Use length-one operands; supplying a vector with more than one element causes an error in current R versions.</li>
   </ul>
   </p>
 </div>

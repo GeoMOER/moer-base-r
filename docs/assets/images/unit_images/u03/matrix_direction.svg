@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" role="img" aria-labelledby="title description">
+<title id="title">Filling a matrix by columns or by rows</title>
+<desc id="description">For c("a", "a", "b", "c", "b", "a"), a two-row matrix fills columns by default. With byrow TRUE, it fills rows. Numbers in each cell show the input position.</desc>
+<rect width="1120" height="420" fill="#f7f9fc" rx="12"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#17324d">
+<text x="560" y="38" font-size="24" font-weight="bold">The same values, two filling directions</text>
+<text x="560" y="72" font-size="19">Input: c("a", "a", "b", "c", "b", "a")</text>
+<rect x="25" y="100" width="510" height="280" rx="8" fill="#e6eef7"/>
+<text x="280" y="134" font-size="21" font-weight="bold">Default: byrow = FALSE</text>
+<text x="170" y="170" font-size="17">Column 1</text>
+<text x="300" y="170" font-size="17">Column 2</text>
+<text x="430" y="170" font-size="17">Column 3</text>
+<text x="64" y="222" font-size="16">Row 1</text>
+<rect x="110" y="185" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="170" y="224" font-size="25" fill="white">a</text>
+<text x="123" y="203" font-size="13" fill="#e5f3ff">1</text>
+<rect x="240" y="185" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="300" y="224" font-size="25" fill="white">b</text>
+<text x="253" y="203" font-size="13" fill="#e5f3ff">3</text>
+<rect x="370" y="185" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="430" y="224" font-size="25" fill="white">b</text>
+<text x="383" y="203" font-size="13" fill="#e5f3ff">5</text>
+<text x="64" y="291" font-size="16">Row 2</text>
+<rect x="110" y="254" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="170" y="293" font-size="25" fill="white">a</text>
+<text x="123" y="272" font-size="13" fill="#e5f3ff">2</text>
+<rect x="240" y="254" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="300" y="293" font-size="25" fill="white">c</text>
+<text x="253" y="272" font-size="13" fill="#e5f3ff">4</text>
+<rect x="370" y="254" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="430" y="293" font-size="25" fill="white">a</text>
+<text x="383" y="272" font-size="13" fill="#e5f3ff">6</text>
+<text x="280" y="343" font-size="17">Columns: top to bottom, then left to right</text>
+<rect x="585" y="100" width="510" height="280" rx="8" fill="#e6eef7"/>
+<text x="840" y="134" font-size="21" font-weight="bold">byrow = TRUE</text>
+<text x="730" y="170" font-size="17">Column 1</text>
+<text x="860" y="170" font-size="17">Column 2</text>
+<text x="990" y="170" font-size="17">Column 3</text>
+<text x="624" y="222" font-size="16">Row 1</text>
+<rect x="670" y="185" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="730" y="224" font-size="25" fill="white">a</text>
+<text x="683" y="203" font-size="13" fill="#e5f3ff">1</text>
+<rect x="800" y="185" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="860" y="224" font-size="25" fill="white">a</text>
+<text x="813" y="203" font-size="13" fill="#e5f3ff">2</text>
+<rect x="930" y="185" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="990" y="224" font-size="25" fill="white">b</text>
+<text x="943" y="203" font-size="13" fill="#e5f3ff">3</text>
+<text x="624" y="291" font-size="16">Row 2</text>
+<rect x="670" y="254" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="730" y="293" font-size="25" fill="white">c</text>
+<text x="683" y="272" font-size="13" fill="#e5f3ff">4</text>
+<rect x="800" y="254" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="860" y="293" font-size="25" fill="white">b</text>
+<text x="813" y="272" font-size="13" fill="#e5f3ff">5</text>
+<rect x="930" y="254" width="120" height="60" rx="4" fill="#407db4"/>
+<text x="990" y="293" font-size="25" fill="white">a</text>
+<text x="943" y="272" font-size="13" fill="#e5f3ff">6</text>
+<text x="840" y="343" font-size="17">Rows: left to right, then top to bottom</text>
+<text x="560" y="405" font-size="16">Small numbers indicate the positions in the input vector.</text>
+</g>
+</svg>

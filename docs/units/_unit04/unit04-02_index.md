@@ -1,5 +1,6 @@
 ---
 title: Indexing
+canonical_url: https://geomoer.github.io/moer-base-r/unit04/unit04-02_index.html
 toc: TRUE
 toc_float: TRUE
 header:
@@ -357,7 +358,7 @@ Another handy similar function is match:
 match(j, x)
 ## [1] NA NA  2  4
 ```
-telling us that the third value in j is equal to the second value in x and that the fourth value in ‘j’ is equal to the fourth value in x.
+This result tells us that the third value in `j` equals the second value in `x`, and the fourth value in `j` equals the fourth value in `x`.
 
 match is asymmetric: match(j,x) is not the same as match(x,j).
 

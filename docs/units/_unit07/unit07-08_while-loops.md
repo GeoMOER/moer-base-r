@@ -6,7 +6,7 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
-As for loops, while loops are repeating structures which enable the execution of certain code blocks for multiple times. The difference is that for while loops the number of necessary repetitions is not known at the starting time of the loop.
+As for loops, while loops are repeating structures which enable the execution of certain code blocks multiple times. The difference is that for while loops the number of necessary repetitions is not known at the starting time of the loop.
 
 While loops are executed until a termination condition is reached. In the following example, this condition is given by `a > b`:
 
@@ -54,11 +54,11 @@ while(a <= b){
 ## [1] "Outer loop value of a: 10"
 ```
 
-Variable `c` has to be reseted to its initial value every time the inner loop is completed. Otherwise it would not start a second time since the termination condition is already reached. Of course this behavior can also be useful for a variety of problems.
+Variable `c` has to be reset to its initial value every time the inner loop is completed. Otherwise it would not start a second time since the termination condition is already reached. Of course this behavior can also be useful for a variety of problems.
 
 ----
 
-One couls also use the *repeat* statement, which creates  a loop that repeats an action or a set of actions indefinitely until a certain condition is met. The loop continues executing until an explicit break statement is encountered within the loop. Here's how it works:
+One could also use the *repeat* statement, which creates  a loop that repeats an action or a set of actions indefinitely until a certain condition is met. The loop continues executing until an explicit break statement is encountered within the loop. Here's how it works:
 
 ```r
 repeat {

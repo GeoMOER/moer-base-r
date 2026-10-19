@@ -10,7 +10,7 @@ header:
 
 For-loops are the mother of all repeating structures which enable the execution of certain code blocks for multiple times. For-loops are useful if the number of necessary repetitions is known at the starting time of the loop (which is not necessarily the starting time of the program!).
 
-In for loops, the number of repeated executions is given at the start time either by a variable which is defined during the runtime of the previous code or by a constant supplied by the programmer. Imaging that we know already how many times the loop has to be repeated, one can implement it simply as:
+In for loops, the number of repeated executions is given at the start time either by a variable which is defined during the runtime of the previous code or by a constant supplied by the programmer. Imagine that we know already how many times the loop has to be repeated, one can implement it simply as:
 
 ```r
 for(i in seq(7,10)){
@@ -77,7 +77,7 @@ class(t)
 ## [1] "integer"
 ```
 
-As obvious from the above examples, the iteration variable (i.e. i or j in our examples above ) is set to the first value of the vector during the first iteration, then to the second value during the second iteration and so on. Since the number of repititions is defined by the length of the control vector and not by the values within it, one can also use a vector with e.g. characters to construct a for loop:
+As obvious from the above examples, the iteration variable (i.e. i or j in our examples above ) is set to the first value of the vector during the first iteration, then to the second value during the second iteration and so on. Since the number of repetitions is defined by the length of the control vector and not by the values within it, one can also use a vector with e.g. characters to construct a for loop:
 
 ```r
 a <- c("A", "B", "C", "D")
@@ -93,7 +93,7 @@ for(elements in a){
 ## [1] "D"
 ```
 
-**Important:** while this behaviour is usefull for programming pros, it might be very confusing for greenhorns. Therefore you can just stick to using numbers as iteration elements. The above for loop can be implemented using numbers as follows:
+**Important:** while this behavior is useful for programming pros, it might be very confusing for greenhorns. Therefore you can just stick to using numbers as iteration elements. The above for loop can be implemented using numbers as follows:
 
 ```r
 for(i in seq(4)){
@@ -128,7 +128,7 @@ for(i in seq(length(a))){
 
 
 ## Modifying an existing variable in a loop
-If you want to modify a existing variable, for (and while) loops are the only option (i.e. you can not use `lapply`). Aside from that restriction, it is a straight forward task. Let's just add an "x" to each entry of variable a:
+If you want to modify an existing variable, for (and while) loops are the only option (i.e. you can not use `lapply`). Aside from that restriction, it is a straight forward task. Let's just add an "x" to each entry of variable a:
 
 ```r
 a <- c("A", "B", "C", "D")
@@ -159,11 +159,11 @@ d <- c(10, 20, 30, 40, 50, 60, 70)
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 ```
 
-We now want to modify this data frame in that way that the characters of columns Cat1 and Cat2 are converted to lower case and the values of Val1 and Val2 are converted to their square root. Therefore we must iterate over each column and then we can apply the `lowercase` function to all rows of the first two columns and the `sqrt` function to all entries of the last two columns. While we could use `seq(4)` as control vector, we can also get the number of columns from the data frame using the `ncol` function:
+We now want to modify this data frame in that way that the characters of columns Cat1 and Cat2 are converted to lower case and the values of Val1 and Val2 are converted to their square root. Therefore we must iterate over each column and then we can apply the `tolower` function to all rows of the first two columns and the `sqrt` function to all entries of the last two columns. While we could use `seq(4)` as control vector, we can also get the number of columns from the data frame using the `ncol` function:
 
 ```r
 for(i in seq(ncol(df))){
-  if(is.factor(df[,i])){
+  if(is.character(df[,i])){
     df[,i] <- tolower(df[,i])
     } else if(is.numeric(df[,i])){
       df[,i] <- sqrt(df[,i])
@@ -171,7 +171,7 @@ for(i in seq(ncol(df))){
   }
 ```
 
-As you can see, we iterate over the columns of the data frame by using i as column index (i.e. `df[,i]`). If the actual column is a factor (first if statement), the content of the actual column is converted to lower cases and the original
+As you can see, we iterate over the columns of the data frame by using i as column index (i.e. `df[,i]`). If the current column is a character vector (first if statement), the content of the actual column is converted to lower cases and the original
 column content is overwritten (line 3). If the actual column is numeric (second if statement), the content of this column is converted to its square root and the original column content is overwritten (line 4).
 In the end, the data frame looks like this:
 
@@ -191,7 +191,7 @@ df
 
 ## Building a new variable with a loop
 
-The above examples show how to modify an existing variable. If you want to keep your original values but safe the results in a new variable, you have to define it first outside the loop. Afterwards you modify it within the loop so
+The above examples show how to modify an existing variable. If you want to keep your original values but save the results in a new variable, you have to define it first outside the loop. Afterwards you modify it within the loop so
 it is similar to the task above.
 
 For example, if you want to convert the elements of vector a to lower case and store the results in another vector, the following would be necessary:
@@ -206,7 +206,7 @@ test
 
 ## [1] "a" "b" "c" "a" "b" "a" "a"
 ```
-Please note that this example can of course easily implemented without a loop so just take it as a simple illustration.
+Please note that this example can of course easily be implemented without a loop so just take it as a simple illustration.
 
 If you want to construct a data frame, it is just a little more complicated. Let's get back to the original data frame used in the example just above:
 
@@ -240,7 +240,7 @@ Let's start with the loop:
 
 ```r
 for(i in seq(ncol(df))){
-  if(is.factor(df[,i])){
+  if(is.character(df[,i])){
     df_new[,i] <- tolower(df[,i])
     } else if(is.numeric(df[,i])){
       df_new[,i] <- sqrt(df[,i])
@@ -280,7 +280,7 @@ str(df_new)
 ##  $ Val1: num  1 1.41 1.73 2 2.24 ...
 ##  $ Val2: num  3.16 4.47 5.48 6.32 7.07 ...
 ```
-## DIY loops - some tipps
+## DIY loops - some tips {#diy-loops---some-tipps}
 
 Sometimes it can be a little overwhelming to write a loop from top to bottom. That's why it makes sense to tackle the whole thing piece by piece. The following approach might be helpful.
 

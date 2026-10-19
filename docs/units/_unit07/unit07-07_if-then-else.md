@@ -20,7 +20,7 @@ if (a < b) {
 ## [1] "a is smaller than b"
 ```
 
-Such an if-statement can be extended by *n* if-else statements and - optionally - an else-statement. To illustrate this, let us start with another if-statement as the one above but include it later:
+Such an if-statement can be extended by *n* if-else statements and - optionally - an else-statement. To illustrate this, let us start with an if-statement different from the one above but include it later:
 
 ```r
 if (a < b/2) {
@@ -36,7 +36,7 @@ if (a < b/2) {
 ## [1] "a is smaller than b"
 ```
 
-In such a structure, the first if-statment is evaluated. If it is true, all following else-if- (or else-)statements are skipped and the execution continues below the decision structure.
+In such a structure, the first if-statement is evaluated. If it is true, all following else-if- (or else-)statements are skipped and the execution continues below the decision structure.
 
 The above example would not print anything if a is larger than b. For this case, other else-if statements could be used but if no differentiation should be made for any case of a larger than b, this can also be solved by a final else-statement.
 

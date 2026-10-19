@@ -34,7 +34,7 @@ for(<iteration variable> in <control vector>){
 ```
 
 ### Lapply-loop
-The *apply* family of loops is special to R. One of the most used loops of this family is `lapply`. It is largely compareable to a for-loop but calls a function for each iteration and returns a list of the function's results. Hence, it is useful if your computation needs the same sequential workflow for different variables or subsets *and* you want the results returned in a list.
+The *apply* family of loops is special to R. One of the most used loops of this family is `lapply`. It is largely comparable to a for-loop but calls a function for each iteration and returns a list of the function's results. Hence, it is useful if your computation needs the same sequential workflow for different variables or subsets *and* you want the results returned in a list.
 
 ```
 # Pseudocode

@@ -8,10 +8,10 @@ header:
 
 <!--more-->
 
-The spotlights will focus on topics unrelated yet important to the previous units.
+The spotlights will focus on topics additional topics that complement the previous units.
 
 * [A quick introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/moer-base-r/unit99/sl02_github.html)
-* [An introduction to CSS in general and CSS in rMarkdown](/moer-base-r/unit99/sl03_css.html)
+* [An introduction to CSS in general and CSS in R Markdown](/moer-base-r/unit99/sl03_css.html)
 
 
 ## Comments?

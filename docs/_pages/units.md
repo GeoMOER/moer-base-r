@@ -17,7 +17,7 @@ feature_row:
   - image_path: assets/images/unit_images/u02/grid.png
     alt: "Unit 2"
     title: "Unit 02: Types of Data"
-    excerpt: "Introduction to different levels of measurements."
+    excerpt: "Introduction to different levels of measurement."
     url: "/unit02/unit02-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"
@@ -25,7 +25,7 @@ feature_row:
   - image_path: assets/images/unit_images/u03/grid.png
     alt: "Unit 3"
     title: "Unit 03: Types of Objects"
-    excerpt: "Introduction to different types of data storing in objects."
+    excerpt: "Introduction to different ways of storing data in objects."
     url: "/unit03/unit03-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"
@@ -48,8 +48,8 @@ feature_row:
 
   - image_path: assets/images/unit_images/u06/grid.png
     alt: "Unit 6"
-    title: "Unit 06: In- & Output of Data"
-    excerpt: "Introduction to In- and Output of Data in R."
+    title: "Unit 06: Data Input and Output"
+    excerpt: "Introduction to data input and output in R."
     url: "/unit06/unit06-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"  
@@ -65,7 +65,7 @@ feature_row:
   - image_path: assets/images/unit_images/u08/grid.png
     alt: "Unit 8"
     title: "Unit 08: Sorting & Merging"
-    excerpt:  "Introduction to sorting Data."
+    excerpt:  "Introduction to sorting data."
     url: "/unit08/unit08-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"
