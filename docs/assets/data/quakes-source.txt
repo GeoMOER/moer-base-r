@@ -1,0 +1,27 @@
+Source of quakes.csv
+
+This replacement teaching CSV was exported from `datasets::quakes` in R 4.3.3 on 20.10.2026. It contains all 1,000 records and the five original columns, in their original order, with unchanged values.
+
+The R documentation attributes the dataset to the Harvard PRIM-H project, which obtained it from Dr. John Woodhouse, Department of Geophysics, Harvard University.
+
+Upstream dataset documentation:
+https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/quakes.html
+
+The dataset is distributed with R. Upstream distribution terms:
+https://www.r-project.org/Licenses/
+
+The teaching export adds four metadata lines, uses semicolons as column separators and commas as decimal separators, and omits R's row names. It is a reformatted copy for the import lesson. Reproduce it in R with:
+
+```r
+metadata <- c(
+  "# Teaching CSV exported from datasets::quakes in R 4.3.3; data values unchanged.",
+  "# Source: Harvard PRIM-H project; Dr. John Woodhouse, Harvard University.",
+  "# Columns: lat (degrees), long (degrees), depth (km), mag, stations.",
+  "# Format: semicolon-separated columns, decimal comma; skip these four lines."
+)
+con <- file("quakes.csv", open = "wt", encoding = "UTF-8")
+writeLines(metadata, con)
+write.table(datasets::quakes, file = con, sep = ";", dec = ",",
+            row.names = FALSE)
+close(con)
+```

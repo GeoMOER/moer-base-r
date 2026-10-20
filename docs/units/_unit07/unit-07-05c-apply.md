@@ -56,7 +56,9 @@ For more examples, have a look at the next page.
 sapply(1:10, function(x) x + 1)
 
 ```
-**apply** can be used for arrays, data frames and matrices. Important is to add the MARGIN - apply will then apply the function along that, e.g. if you set the MARGIN to 2, R would apply the function along the rows of your data frame/array.
+**apply** applies a function over selected dimensions of a matrix or array. For a matrix, `MARGIN = 1` applies the function to each row, and `MARGIN = 2` applies it to each column.
+
+When you pass a data frame to `apply()`, R first converts it to a matrix. All values in a matrix have the same type. If the data frame contains both numeric and character columns, the matrix contains character values, so functions such as `sum()` cannot be used directly. Select only the numeric columns before calculating sums.
 
 ```r
 # Create a sample matrix

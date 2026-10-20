@@ -128,7 +128,7 @@ for(i in seq(length(a))){
 
 
 ## Modifying an existing variable in a loop
-If you want to modify an existing variable, for (and while) loops are the only option (i.e. you can not use `lapply`). Aside from that restriction, it is a straight forward task. Let's just add an "x" to each entry of variable a:
+A `for` loop can update an existing variable with `<-` in the environment where the loop runs. With `lapply()`, you collect the returned values and assign the result to a variable. Here, we use a `for` loop to add an "x" to each entry of variable `a`:
 
 ```r
 a <- c("A", "B", "C", "D")

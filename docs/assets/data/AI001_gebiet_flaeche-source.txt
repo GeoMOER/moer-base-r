@@ -1,0 +1,46 @@
+Source and version of AI001_gebiet_flaeche.txt
+
+Source: Statistische Aemter des Bundes und der Laender, Regionalatlas
+Deutschland / Regionaldatenbank Deutschland, GENESIS table AI001,
+"Indikatoren des Themenbereichs 'Gebiet und Flaeche'".
+Official database: https://www.regionalstatistik.de/genesis/online/
+
+Historical teaching copy supplied by the course author on 20.10.2026.
+The original download date is unknown. The raw bytes were copied without
+changing the encoding, line endings, metadata, column names, or values.
+
+SHA-256:
+58d3fec02a83768351b0a5d0ee3e00dab5a45cc6643f49e10900711a659aecbb
+
+Format: Latin-1 text with CRLF line endings, four metadata lines, then
+one header line and 5,250 semicolon-separated records. Decimal comma.
+Seven columns: reporting year, region code, place description, and four
+percentages of total area (settlement and transport, recreation,
+agriculture, forest). Each measurement column has 540 '.' markers.
+The raw file contains no explanation of those markers; the lesson maps
+them to NA without inferring the reason that each value is unavailable.
+
+Reporting years: 1996, 2000, 2004, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
+The file contains different geographic levels and is not a table of
+independent districts for a single year. Retain region codes as text.
+
+Related teaching example:
+https://geomoer.github.io/moer-mpg-data-analysis/unit04/unit04-05_cleaning.html
+
+Newer related official data (checked 20.10.2026): Destatis lists a
+"Statistischer Bericht - Flaechenerhebung nach Art der tatsaechlichen
+Nutzung 2024" on its land-use page:
+https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Flaechennutzung/_inhalt.html
+
+Current Regionalatlas land-use information:
+https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Flaechennutzung/regionalatlas-flaeche-alkis_aktuell.html
+
+These newer related statistics have not been verified as a direct update
+of this exact legacy AI001 export. ALKIS replaced ALB as the basis of
+the land-use statistics in 2016; definitions and comparability require
+checking before joining historical and newer series. Official methods:
+https://www.destatis.de/DE/Methoden/Qualitaet/Qualitaetsberichte/Land-Forstwirtschaft-Fischerei/flaechenerhebung.pdf?__blob=publicationFile
+
+This copy is kept for reproducible teaching about import and preprocessing.
+Attribute the statistical offices when reusing the data and consult the
+official source for applicable reuse terms and methodological details.

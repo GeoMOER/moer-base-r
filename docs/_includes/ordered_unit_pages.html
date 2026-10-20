@@ -1,0 +1,4 @@
+{%- comment -%}Keep each unit's summary last without changing published filenames.{%- endcomment -%}
+{%- assign summary_pages = include.items | where: 'unit_summary', true -%}
+{%- assign lesson_pages = include.items | where_exp: 'item', 'item.unit_summary != true' -%}
+{%- assign ordered_unit_pages = lesson_pages | concat: summary_pages -%}

@@ -14,7 +14,9 @@ As examples for the apply family we shortly introduce `lapply`.
 ## Basic structure
 The `lapply` function can be your workhorse when it comes to loops over data frames but it can also drive you mad if you do not understand its way of handling stuff.
 
-Remember: the function will always return a structured list with one return statement per sub-entry and the function can never change a data frame or any other variable content defined outside the loop (no matter if it has the same name or not).
+`lapply()` returns a list with one element for each input element. Each list element contains the value returned by one call to the supplied function. An explicit `return()` is optional: a function also returns the value of its last evaluated expression.
+
+Each function call has its own local environment, where it stores its arguments and local variables. In the examples below, assignments with `<-` inside the function create local variables. They leave variables with the same names outside the function unchanged. To keep the transformed values, assign the result returned by `lapply()` to a variable.
 
 Let's have a look at an example for which we will use the following data frame:
 
@@ -135,7 +137,7 @@ str(result_df)
 All problems solved.
 
 ## Using variables defined outside the lapply loop
-If one additionally wants to include other variables defined outside the loop into the lapply-loop, no problem. Since this type of function definition can not be reused outside the loop anyway, one can just pass any variable from outside the loop to the inside. Here is one example where we use a variable called *var_outside*:
+The function supplied to `lapply()` can read variables from the surrounding environment. Here, we define `var_outside` before the call and use it inside the function to multiply the square roots by 10:
 
 ```r
 var_outside <- 10
@@ -163,8 +165,7 @@ result
 ## 7    a    y 26.45751 83.66600
 ```
 
-**Watch out:** Regarding the utilization of variables defined outside the loop within the loop, one special case must be kept in mind: it is not possible to change the content of any variable defined outside the loop with the apply function.
-Here is one example where we store the result of the `tolower` function in a variable called *df* before returning it. Remember that *df* is also the data frame we modify! We also include another variable called test which is used as intermediate storage for the `sqrt` return:
+**Watch out:** Reading a variable from the surrounding environment and assigning to a local variable are different operations. In this example, `act_column <- df[,x]` reads the data frame `df` from the surrounding environment. The later assignment `df <- tolower(act_column)` creates a local variable named `df` for that function call; it leaves the original data frame unchanged. The assignment to `test` in the numeric branch is also local. Both branches return their calculated values:
 
 ```r
 test <- 1
@@ -214,8 +215,9 @@ df
 ## 7    A    Y    7   70
 ```
 
-Although test is used as variable name for the lower case conversion and *df* is used for the numeric computation, the content of the variables outside the loop has not changed.
-Hence, if you really want to change the content of a variable defined outside the loop, use a `for` loop instead of `apply`.
+The local variable `df` holds the result of `tolower()`, and the local variable `test` holds the square roots multiplied by `var_outside`. Outside the function, `df` still contains the original data and `test` is still `1`. The returned values have been collected and converted to the data frame `result`.
+
+To replace the original data frame with these transformed values, use `df <- result` after the function call and conversion. This assignment happens in the surrounding environment. For the next example, we keep `df` unchanged.
 
 ## Returning data frames within the lapply loop
 One last but important and heavily utilized procedure: In the above examples, the function used within `lapply` returns a vector which allows an easy conversion of the overall returned nested list from the `lapply` function by using the `as.data.frame` function. In many cases, your function will return a data frame, not a vector, which makes the conversion a tiny bit more complicated.

@@ -1,0 +1,37 @@
+{% assign previous_page = page.previous %}
+{% assign next_page = page.next %}
+{% if page.collection %}
+  {% assign unit_pages = site[page.collection] | sort: 'order' %}
+  {% assign unit_summaries = unit_pages | where: 'unit_summary', true %}
+  {% if unit_summaries.size > 0 %}
+  {% include ordered_unit_pages.html items=unit_pages %}
+  {% assign previous_page = nil %}
+  {% assign next_page = nil %}
+  {% for item in ordered_unit_pages %}
+    {% if item.url == page.url %}
+      {% unless forloop.first %}
+        {% assign previous_index = forloop.index0 | minus: 1 %}
+        {% assign previous_page = ordered_unit_pages[previous_index] %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next_index = forloop.index0 | plus: 1 %}
+        {% assign next_page = ordered_unit_pages[next_index] %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% endif %}
+{% endif %}
+{% if previous_page or next_page %}
+  <nav class="pagination">
+    {% if previous_page %}
+      <a href="{{ previous_page.url | relative_url }}" class="pagination--pager" title="{{ previous_page.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% endif %}
+    {% if next_page %}
+      <a href="{{ next_page.url | relative_url }}" class="pagination--pager" title="{{ next_page.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% endif %}
+  </nav>
+{% endif %}

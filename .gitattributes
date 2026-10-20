@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep the historical AI001 export byte-for-byte, including its CRLF line endings.
+docs/assets/data/AI001_gebiet_flaeche.txt -text -diff

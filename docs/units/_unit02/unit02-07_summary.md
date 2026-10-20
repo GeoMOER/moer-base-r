@@ -1,5 +1,7 @@
 ---
 title: "Summary"
+unit_summary: true
+toc: TRUE
 header:
   image: /assets/images/unit_images/u02/header.png
   image_description: "neon data"
@@ -7,32 +9,52 @@ header:
 
 ---
 
+You can now describe what a variable means, identify its representation in R, and check a conversion before using the result.
+
+<!--more-->
+
 ## Summary
-{% include figure image_path="/assets/images/unit_images/u02/types_data.PNG" caption="The Four Types of Data: nominal, ordinal, interval and ratio." %}
 
-Remember that the top-level category is either *quantitative or qualitative* (numerical or not). From there, quantitative data can be grouped into “discrete” or “continuous” data. That covers most of it. 
+Three questions describe different aspects of your data. **Measurement level** describes the meaning of values. **Discrete or continuous** describes the possible values of a quantitative variable. **R's data type** describes how values are stored. One does not automatically determine the others.
 
-In summary, nominal variables are used to “name,” or label a series of values.  Ordinal scales provide good information about the order of choices, such as in a customer satisfaction survey.  Interval scales give us the order of values AND the ability to quantify the difference between each one.  Finally, Ratio scales give us the ultimate–order, interval values, plus the ability to calculate ratios since a “true zero” can be defined.
+| Measurement level | Meaning | Example |
+|---|---|---|
+| Nominal | Categories without an inherent order. | Land cover: forest, grassland, water. |
+| Ordinal | Ordered categories whose spacing is not defined. | Erosion severity: low, medium, high. |
+| Interval | Equal differences are meaningful; zero is a reference point. | Temperature in degrees Celsius: a 10-degree difference is meaningful, but 20 °C is not twice as hot as 10 °C. |
+| Ratio | Equal differences and ratios are meaningful; zero indicates absence of the measured quantity. | Length in meters: 20 m is twice 10 m. |
 
-R stores values using types such as integer, double, character, and logical. Integer values represent whole numbers; double values can represent whole numbers and fractions. Character vectors store text, and logical vectors contain TRUE or FALSE (or a missing value). Check that your data has the intended type using functions such as `is.integer()` or `is.character()`, and convert it when needed using functions such as `as.integer()` or `as.character()`.
+A count of trees is **discrete**; measured tree height is treated as **continuous**, even if recorded to the nearest centimeter. Numeric category codes, such as `1 = forest`, remain categories. The choice of a calculation also depends on the question, sampling, and distribution of the data.
 
+## Representation in R
 
-| Provides                      | Nominal | Ordinal | Interval |  Ratio
-|-------------------------------|---------|---------|----------|---------|
-| Counts, Frequency of Distribution  |    X     |   X     |     X    |    X    |
-| Mode  |     X    |   X     |     X    |    X    |
-| The order of values is known  |         |   X     |     X    |    X    |
-| Median  |         |   X     |     X    |    X    |
-| Mean  |         |         |     X    |    X    |
-| Can quantify the difference between each value  |         |         |     X    |    X    |
-| Can add or subtract values  |         |         |     X    |    X    |
-| Can multiply and divide values  |         |         |          |    X    |
-| has a true zero  |         |         |          |    X    |
+| Type | Example | Remember |
+|---|---|---|
+| Integer | `3L` | Whole-number storage; the `L` requests an integer literal. |
+| Double | `3` or `3.5` | Stores numeric values, including whole numbers. R code uses a decimal point. |
+| Character | `"003"` or `"forest"` | Text; useful for identifiers with leading zeros. |
+| Logical | `TRUE`, `FALSE` | Truth values, also used for selecting data. |
 
------
+Use checks such as `is.integer()`, `is.numeric()`, or `is.character()` to inspect a type. Both integer and double vectors count as numeric. Use conversion functions such as `as.numeric()` only when the intended meaning supports the conversion.
 
-<!--
-## Further reading
+## A short recap in R
 
-add some day
--->
+```r
+recorded <- c("12.5", "18.0", NA)
+height <- as.numeric(recorded)
+is.numeric(height)
+is.na(height)
+mean(height, na.rm = TRUE)
+```
+
+The type check returns `TRUE`. The missing-value check returns `FALSE FALSE TRUE`, and the mean of the two available heights is `15.25`. Removing missing values from a calculation changes which observations contribute; it does not explain why they are missing.
+
+`NA` marks a missing value; use `is.na(x)`, rather than `x == NA`, to find it. `NaN` marks an undefined numeric result, such as `0 / 0`, and is also detected by `is.na()`. `Inf` represents infinity. `NULL` represents the absence of an object or component and is not a placeholder for one missing observation.
+
+## Check your understanding
+
+1. Classify land cover, erosion severity, temperature in °C, and tree count by measurement level. Which quantitative example is discrete?
+2. Why should the station identifier `"003"` usually remain character data?
+3. What could happen if a text column containing `"unknown"` is converted to numeric? How would you check the result?
+
+Revisit [data types]({{ '/unit02/unit02-05_types_of_data.html' | relative_url }}) and [conversion]({{ '/unit02/unit02-06_convert.html' | relative_url }}) for the checks and special values.

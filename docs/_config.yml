@@ -41,11 +41,11 @@ twitter:
 ##### Lecturer settings #######################################################
 author:
   name             : "Dirk Zeuss"
-  avatar           : "/assets/images/zeuss.jpg"
+  avatar           : "/assets/images/authors/zeuss.jpg"
   bio              : "University of Marburg"
   location         : "Marburg, DE"
   email            : "dirk.zeuss@uni-marburg.de"
-  uri              : "https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics"
+  uri              : "https://www.uni-marburg.de/en/fb19/research/working-groups/environmental-informatics"
   home             : "https://www.researchgate.net/profile/Dirk_Zeuss"
   researchgate     : "https://www.researchgate.net/profile/Dirk_Zeuss/stats" # to be included some day
   github           : "GeoMOER"

@@ -42,29 +42,34 @@ Importing `From Text (readr)` files allows you to import csv files and in genera
 ## Importing data via code
 Reading or writing tabular data is a common task in data analysis. Use `read.table()` or `read.csv()` to import a text file into a data frame.
 
+The following code blocks are templates. Replace `"path/to/your/file.csv"` with the path to your own file before running them. `read.csv()` assumes comma-separated columns and a decimal point; `read.csv2()` assumes semicolon-separated columns and a decimal comma.
+
 ```r
-df <- read.csv(file.csv) # or read.csv2 -> selection depends on the delimiter and separator
+df <- read.csv("path/to/your/file.csv")
 ```
 
-```r
-df <- read.table(file.csv, header = FALSE, sep = “”,
-                 dec = “.”, skip = 0, ...)
+With `read.table()`, you can specify the format explicitly. This template reads whitespace-separated values without a header. Adjust `header`, `sep`, `dec`, and `skip` to match your file:
 
-write.table(df, file = <file>, sep = “ “, dec = “.”, ...)
+```r
+df <- read.table("path/to/your/file.csv", header = FALSE, sep = "",
+                 dec = ".", skip = 0)
 ```
 
 ## Reading data from csv files
 
-Reading csv files is realized using the `read.table` function from R's utils library. The function will return a data frame which contains the information of the csv file (example taken from [here](https://www.regionalstatistik.de/genesis/online/){:target="_blank"}) .
+For the following example, use the course's [quakes.csv]({{ '/assets/data/quakes.csv' | relative_url }}). This replacement teaching dataset is a CSV export of R's built-in `quakes` data: 1,000 seismic events near Fiji, with five columns. The data come from the Harvard PRIM-H project, which obtained them from Dr. John Woodhouse at Harvard University. See the [R dataset documentation](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/quakes.html) and the [CSV source and export notes]({{ '/assets/data/quakes-source.txt' | relative_url }}).
 
+Create `Data/` and `Output/` folders inside your RStudio project folder. Download `quakes.csv` and save it as `Data/quakes.csv`. Open your `.Rproj` file so that the working directory is the project folder; check it with `getwd()`.
+
+The CSV export keeps all original data values and adds four metadata lines before the column header. It uses semicolons between columns and decimal commas. Import it with `read.table()`:
 
 ```r
-df <- read.table(paste0(envrmt$path_data_csv, "/AI001_gebiet_flaeche.csv"),
+df <- read.table("Data/quakes.csv",
                  skip = 4, header = TRUE, sep = ";", dec = ",")
 ```
 
 As you can see, the `read.table` function gets several arguments (which is common for many functions). The first one gives the filename including the path to the file.
-* `skip = 4` tells the function to skip the first four lines (which are plain text lines in this case and not tabulated values)
+* `skip = 4` tells the function to skip the four metadata lines added to this teaching CSV
 * `header = TRUE` tells the function, that the csv file has a header line which is used by `read.table` to name the columns of the returning data frame
 * `sep = ";"` defines the separator of the individual columns in the data frame
 * `dec = ","` defines the decimal separator used in the dataset
@@ -76,85 +81,84 @@ then the sequence matters. To get information on the default sequence and of
 course the general application of each R function, type `?<function name>`
 (e.g. `?read.table`) in an R console.
 
-After you execute the `read.table` function above, the content of the csv file is
-stored into a two dimensional data frame called `df` in the example above.
-
-A quick way to check if everything is fine is to display the first few lines of
-the data file using the `head` function (without the 2, it will print 5 lines as a standard setting).
+After running the import, `df` contains a data frame with 1,000 rows and five columns: latitude (`lat`), longitude (`long`), depth in kilometers (`depth`), reported magnitude (`mag`), and the number of reporting stations (`stations`). Inspect the column types with `str()`:
 
 ```r
-head(df,2)
+str(df)
 ```
 
+```text
+'data.frame': 1000 obs. of  5 variables:
+ $ lat     : num  -20.4 -20.6 -26 -18 -20.4 ...
+ $ long    : num  182 181 184 182 182 ...
+ $ depth   : int  562 650 42 626 649 195 82 194 211 622 ...
+ $ mag     : num  4.8 4.2 5.4 4.1 4 4 4.8 4.4 4.7 4.3 ...
+ $ stations: int  41 15 43 19 11 12 43 15 35 19 ...
 ```
-##      X X.1                  X.2
-## 1 1996  DG          Deutschland
-## 2 1996  01   Schleswig-Holstein
-##   Anteil.Siedlungs..und.Verkehrsfläche.an.Gesamtfl.
-## 1                                              11,8
-## 2                                              10,8
-##   Anteil.Erholungsfläche.an.Gesamtfläche
-## 1                                    0,7
-## 2                                    0,7
-##   Anteil.Landwirtschaftsfläche.an.Gesamtfläche
-## 1                                         54,1
-## 2                                         73,0
-##   Anteil.Waldfläche.an.Gesamtfläche
-## 1                              29,4
-## 2                               9,3
+
+Use `head(df, 2)` to display the first two rows of the imported data frame. Without an explicit row count, `head(df)` shows the first six rows, or all rows if there are fewer than six. This is a useful first inspection; it does not by itself confirm that every column was imported correctly.
+
+```r
+head(df, 2)
+```
+
+```text
+     lat   long depth mag stations
+1 -20.42 181.62   562 4.8       41
+2 -20.62 181.03   650 4.2       15
 ```
 
 ## Writing data to csv files
-Writing data is as easy as reading it. Just use the `write.table` function.
+Use `write.table()` to export `df` to the `Output/` folder you created above. This example uses comma-separated columns and a decimal point. `row.names = FALSE` omits R's row names from the file:
 
 ```r
-write.table(df, file = paste0(envrmt$path_data_tmp, "new.csv"),
-            sep = ",", dec = ".")
+write.table(df, file = "Output/quakes-export.csv", sep = ",", dec = ".",
+            row.names = FALSE)
 ```
-As you can see, you can define any column or decimal separator.
+The exported file starts directly with the column header; it does not include the four metadata lines from the input file. Read it back with `read.csv()` and compare the imported and exported data frames:
 
-For more information have a look at e.g. the respective [R manual: data import](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Spreadsheet_002dlike-data) and [R manual: text export](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Export-to-text-files) site at Quick R, have a look into the package
-documentation or search the web.
+```r
+df_csv <- read.csv("Output/quakes-export.csv")
+identical(df, df_csv)
+```
+
+```text
+[1] TRUE
+```
+
+For this numeric dataset, the values, column types, and names match after export and re-import. CSV does not preserve every kind of R object or attribute; use RDS when you want to store an R object for use in R.
+
+For more information, see the [R manual: data import](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Spreadsheet_002dlike-data), the [R manual: text export](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Export-to-text-files), or the help pages for `read.table()` and `write.table()`.
 
 
 ## Alternative data I/O using RDS
-Writing into CSV files is a good choice for data exchange into the non-R world. If you want to re-use the information stored in a data.frame or any other variable in R, writing the actual R object to a file connection will be of some benefit especially for more complex objects like model outputs or geo-datasets which do not represent the final information (because this would likely be shared to others using GeoTiff or other well recognized formats). To save an R object to a file connection, use the `saveRDS` function, to read it, use the `readRDS` function. The file extension **.rds** is generally used for that format.
+CSV is useful for exchanging tabular data with other programs. To save a single R object for later use in R, use `saveRDS()` and restore it with `readRDS()`. RDS preserves the object's R structure and attributes, such as column types and factor levels. The file extension `.rds` is commonly used for this format.
 
-If you stay within R for reading and writing R objects from and to data files, you could also use the serialization of readRDS and saveRDS.
-
-```r
-saveRDS(df, file = paste0(envrmt$path_data_tmp, "new.rds"))
-
-# Read data to different variable
-df2 = readRDS(paste0(envrmt$path_data_tmp, "new.rds"))
-```
-
-
+The following code writes `quakes.rds` in `Output/` and reads the object back into `df2`:
 
 ```r
-saveRDS(df, file = <file>)
+saveRDS(df, file = "Output/quakes.rds")
 
-df = readRDS(<file>)
+# Restore the saved object under a different name
+df2 <- readRDS("Output/quakes.rds")
+identical(df, df2)
 ```
 
-See the respective help pages for more details.
-
-
-Reading or writing tabulated data into or from a data frame is a quite common task in data analysis. You could use the read.table function for this.
-```yaml
-df <- read.table(<file>, header = FALSE, sep = “”,
-                 dec = “.”, skip = 0, ...)
-
-write.table(df, file = <file>, sep = “ “, dec = “.”, ...)
+```text
+[1] TRUE
 ```
 
-Writing into CSV files is a good choice for data exchange into the non-R world. If you want to re-use the information stored in a data.frame or *any* other variable in R, writing the actual R object to a file connection will be of some benefit especially for more complex objects like model outputs or geo-datasets which do not represent the final information (because this would likely be shared to others using GeoTiff or other well recognized formats). To save an R object to a file connection, use the saveRDS function, to read it, use the readRDS function. The file extension "rds" is generally used for that format.
-```yaml
-saveRDS(df, file = <file>)
+See `?saveRDS` and `?readRDS` for more details.
 
-df = readRDS(<file>)
-```
-See the respective help pages for more details.
+## Example: Importing Destatis data {#cleaning-official-land-use-data}
+
+Continue with [Example: Importing Destatis data]({{ '/unit06/unit06-03b_destatis.html' | relative_url }}), a separate worked example using the official 2024 land-use report.
+
+<span id="land-use-import-and-inspect"></span>
+The [import and inspection steps]({{ '/unit06/unit06-03b_destatis.html' | relative_url }}#land-use-import-and-inspect) show how to preserve identifiers and inspect empty cells in the current source table.
+
+<span id="land-use-cleaning-decisions"></span>
+The [column selection and conversion steps]({{ '/unit06/unit06-03b_destatis.html' | relative_url }}#land-use-cleaning-decisions) include detailed English explanations of the German names, codes, units, and geographic levels.
 
 
 ## Test what you've learned so far!
