@@ -32,8 +32,8 @@ Do not wait until the very final analysis stage to produce some publication qual
 | sub | subtitle, caption           | sub="Figure 1" |
 | xlab | labeling of the x-axis                | xlab="Years 2000 to 2020" |
 | ylab | labeling of the y-axis                | ylab="Population Growth in %" |
-| pch | The graphic symbol used to represent data points. Either a character as a string or a number representing the following characters; <br> <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pointmarks.png"> | pch=1 |
-| lty | Stroke type of lines  <br>  <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Rlines.png">              | lty=1 |
+| pch | The graphic symbol used to represent data points. Either a character as a string or a number representing the following characters; <br> <img alt="R point-symbol codes: 0 open square, 1 open circle, 2 open triangle, 3 plus, 4 cross, 5 open diamond; further codes combine symbols or fill them." src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pointmarks.png"> | pch=1 |
+| lty | Stroke type of lines  <br>  <img alt="R line types: 1 solid, 2 dashed, 3 dotted, 4 dot-dash, 5 long-dash and 6 two-dash." src="https://upload.wikimedia.org/wikipedia/commons/8/89/Rlines.png">              | lty=1 |
 | lwd | Line width | lwd=3 |
 | cex | Symbol size | cex=2 |
 | xlim | Sets start and end values of the X-axis scale | xlim=c(0,20) |
@@ -43,6 +43,8 @@ Do not wait until the very final analysis stage to produce some publication qual
 | yaxt | Labeling of the Y-axis scale OFF | yaxt="n" |
 | font | Selection of the font format, 1=plain, 2=bold, 3=italic, 5=Greek symbols | font=5 |
 |  | "Pointcharacters as used in GNU R" by Marc Schwenzer on Wikimedia <br> "Line-Styles of GNU R" by Europol on Wikimedia | |
+
+Text key for the symbol charts: `pch = 0` is an open square, `1` an open circle, `2` an open triangle, `3` a plus, `4` a cross, `5` an open diamond, `15` a filled square, `16` a filled circle and `17` a filled triangle. Line types `lty = 1:6` are solid, dashed, dotted, dot-dash, long-dash and two-dash, respectively.
 
 
 ## Let's have some fun
@@ -65,44 +67,44 @@ plot(sport_cars, type="o", col="blue", ylim=max_range,
      axes=FALSE, ann=FALSE)
 ```
 
-{% include figure image_path="/assets/data/data/plot1.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot1.png" caption="Print of Code chunk above" alt="Blue points joined by lines show seven sport-car counts, 1, 2, 4, 2, 6, 7 and 10, before axes and labels are added." %}
 
 Make x axis using Mon-Fri labels
 ```
 axis(1, at=1:7, lab=c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
 ```
-{% include figure image_path="/assets/data/data/plot2.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot2.png" caption="Print of Code chunk above" alt="The sport-car plot now has weekday labels Monday through Sunday on the horizontal axis." %}
 
 Make y axis with horizontal labels that display ticks at every 4 marks. 4*0:g_range[2] is equivalent to c(0,4,8,12).
 ```
 axis(2, las=1, at=4*0:max_range[2])
 ```
-{% include figure image_path="/assets/data/data/plot3.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot3.png" caption="Print of Code chunk above" alt="The sport-car plot now has vertical-axis tick labels at 0, 4 and 8." %}
 
 Create box around plot
 ```
 box()
 ```
-{% include figure image_path="/assets/data/data/plot4.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot4.png" caption="Print of Code chunk above" alt="A rectangular border is added around the sport-car plot." %}
 
 Graph trucks with red dashed line and square points
 ```
 lines(family_cars, type="o", pch=22, lty=2, col="red")
 ```
-{% include figure image_path="/assets/data/data/plot5.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot5.png" caption="Print of Code chunk above" alt="A red dashed line with square points adds family-car counts 3, 6, 6, 8, 6, 5 and 2 alongside the blue sport-car series." %}
 
 Create a title with a red, bold/italic font
 ```
 title(main="Car Types on Streets", col.main="red", font.main=4)
 ```
-{% include figure image_path="/assets/data/data/plot6.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot6.png" caption="Print of Code chunk above" alt="The two-series car plot gains a red bold italic title, Car Types on Streets." %}
 
 Label the x and y axes with dark green text
 ```
 title(xlab="Days", col.lab=rgb(0,0.5,0))
 title(ylab="Total", col.lab=rgb(0,0.5,0))
 ```
-{% include figure image_path="/assets/data/data/plot7.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot7.png" caption="Print of Code chunk above" alt="The car plot gains green axis labels, Days horizontally and Total vertically." %}
 
 Create a legend at (1, g_range[2]) that is slightly smaller (cex) and uses the same line colors and points used by  the actual plots
 ```
@@ -110,7 +112,7 @@ legend(1, max_range[2], c("Sport","Family"), cex=0.8,
        col=c("blue","red"), pch=21:22, lty=1:2);
 ```
 
-{% include figure image_path="/assets/data/data/plot8.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/plot8.png" caption="Print of Code chunk above" alt="The completed car plot includes a legend: Sport uses blue circles and a solid line; Family uses red squares and a dashed line." %}
 
 In total this is the code and the output in the plot-window will look like this with each line:
 ```
@@ -129,7 +131,7 @@ title(ylab="Total", col.lab=rgb(0,0.5,0))
 legend(1, max_range[2], c("Sport","Family"), cex=0.8,
        col=c("blue","red"), pch=21:22, lty=1:2);
 ```       
-{% include figure image_path="/assets/data/data/plot.gif" caption="Animation of the plot process" %}
+{% include figure image_path="/assets/data/data/plot.gif" caption="Animation of the plot process" alt="Animation builds the car plot in stages: data, weekday and count axes, border, second series, title, axis labels and legend. Each stage and its code are shown above." %}
 
 ## Visualizations 101
 
@@ -140,7 +142,7 @@ For further reading, have a look at e.g. [Kelleher & Wagner 2011](https://www.sc
 
 
 ## Test your knowledge!
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-creating.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+<iframe title="Interactive quiz: creating graphs in R" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-creating.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 
 <!--

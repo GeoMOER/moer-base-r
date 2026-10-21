@@ -7,7 +7,7 @@ sidebar:
 
 feature_row:
   - image_path: assets/images/unit_images/u01/grid.png
-    alt: "Unit 1"
+    alt: ""
     title: "Unit 01: Introduction to R"
     excerpt: "Setting up R and introducing some help tools."
     url: "/unit01/unit01-01_Intro.html"
@@ -15,7 +15,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u02/grid.png
-    alt: "Unit 2"
+    alt: ""
     title: "Unit 02: Types of Data"
     excerpt: "Introduction to different levels of measurement."
     url: "/unit02/unit02-01_Intro.html"
@@ -23,7 +23,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u03/grid.png
-    alt: "Unit 3"
+    alt: ""
     title: "Unit 03: Types of Objects"
     excerpt: "Introduction to different ways of storing data in objects."
     url: "/unit03/unit03-01_Intro.html"
@@ -31,7 +31,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u04/grid.png
-    alt: "Unit 4"
+    alt: ""
     title: "Unit 04: Indexing"
     excerpt: "Introduction to Indexing."
     url: "/unit04/unit04-01_Intro.html"
@@ -39,7 +39,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u05/grid.png
-    alt: "Unit 5"
+    alt: ""
     title: "Unit 05: Work Environment"
     excerpt: "Introduction to the R Work Environment."
     url: "/unit05/unit05-01_Intro.html"
@@ -47,7 +47,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u06/grid.png
-    alt: "Unit 6"
+    alt: ""
     title: "Unit 06: Data Input and Output"
     excerpt: "Introduction to data input and output in R."
     url: "/unit06/unit06-01_Intro.html"
@@ -55,7 +55,7 @@ feature_row:
     btn_class: "btn--primary"  
 
   - image_path: assets/images/unit_images/u07/grid.png
-    alt: "Unit 07"
+    alt: ""
     title: "Unit 07: Operations"
     excerpt: "Introduction to operators, if-then-else and loops."
     url: "/unit07/unit07-01_Intro.html"
@@ -63,7 +63,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u08/grid.png
-    alt: "Unit 8"
+    alt: ""
     title: "Unit 08: Sorting & Merging"
     excerpt:  "Introduction to sorting data."
     url: "/unit08/unit08-01_Intro.html"
@@ -71,7 +71,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/unit_images/u09/grid.png
-    alt: "Unit 09"
+    alt: ""
     title: "Unit 09: Simple Visualizations"
     excerpt: "Introduction to simple graphic outputs."
     url: "/unit09/unit09-01_Intro.html"
@@ -79,7 +79,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - image_path: assets/images/spotlights/grid.png
-    alt: "Spotlights"
+    alt: ""
     title: "Spotlights"
     excerpt: "Some Spotlights to make your life easier."
     url: "/unit99/sl01_Intro.html"

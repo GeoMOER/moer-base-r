@@ -14,7 +14,7 @@ header:
 ## What is a Histogram?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Histogram_of_arrivals_per_minute.svg" width="400" height="338" align="right" vspace="10" hspace="20">
+<img alt="Example histogram of arrivals per minute, with adjoining bars representing frequency in numerical intervals." src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Histogram_of_arrivals_per_minute.svg" width="400" height="338" align="right" vspace="10" hspace="20">
 <p>A histogram is a graphical representation of the frequency distribution of cardinally scaled characteristics. It requires the division of the data into bins (classes), which can have a constant or variable width (see image on the right by <a href="https://commons.wikimedia.org/wiki/File:Histogram_of_arrivals_per_minute.svg"><i>DanielPenfield</i></a>) on wikimedia.org. Directly adjacent rectangles of the width of the respective class are drawn, the area of which represents the (relative or absolute) class frequencies. The height of each rectangle then represents the (relative or absolute) frequency density, i.e. the (relative or absolute) frequency divided by the width of the corresponding class.
 </p></div>
 
@@ -70,7 +70,7 @@ data(mtcars)
 mpg <- hist(mtcars$mpg)
 hp <- hist(mtcars$hp)
 ```
-{% include figure image_path="/assets/data/data/histo1.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/histo1.png" caption="Print of Code chunk above" alt="Histograms of mtcars mpg and horsepower. Most mpg observations lie between 10 and 25; horsepower is concentrated toward the lower end with a tail toward 350." %}
 
 
 Histogram with Breaks (Bins) and Color
@@ -78,7 +78,7 @@ Histogram with Breaks (Bins) and Color
 hist(mtcars$mpg, breaks=10, col="red")
 hist(mtcars$hp, breaks=6, col="blue")
 ```
-{% include figure image_path="/assets/data/data/histo2.png" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/histo2.png" caption="Print of Code chunk above" alt="The mpg and horsepower histograms are redrawn with red and blue fills; the mpg histogram uses narrower bins." %}
 
 A histogram's appearance depends on both the widths and the positions of its bin boundaries. Narrow bins show more local detail but may exaggerate random variation; wide bins can hide features. Compare several reasonable choices before interpreting peaks, gaps or skewness. In the example above, `breaks=10` is a suggestion, not a guarantee of exactly ten bins.
 
@@ -90,6 +90,6 @@ d <- density(mtcars$mpg) # returns the density data
 plot(d, main="Kernel Density of Miles/Gallon") # Unfilled Density Plot
 polygon(d, col="red", border="blue") # Filled Density Plot
 ```
-{% include figure image_path="/assets/data/data/kdmpg.gif" caption="Print of Code chunk above" %}
+{% include figure image_path="/assets/data/data/kdmpg.gif" caption="Print of Code chunk above" alt="Animation of a kernel-density estimate for mtcars mpg; the smooth distribution peaks near 20 mpg with a smaller shoulder around 30." %}
 
 The vertical axis shows density, not a count or the probability of an exact value. Probability is represented by area over an interval. The estimated curve can extend beyond the observed minimum and maximum because the default Gaussian kernels spread mass around each observation. To explore bandwidth sensitivity, compare `plot(density(mtcars$mpg, adjust=0.5))` with `plot(density(mtcars$mpg, adjust=2))`.

@@ -11,26 +11,29 @@ header:
 <!--more-->
 ---
 
-As mentioned before there are quantitative and qualitative data.
+Qualitative (categorical) variables describe which category an observation belongs to. Their measurement level can be nominal or ordinal.
 
-When you do not have numbers, you have got **qualitative data**. This data is non-numerical also called categorical or discrete data.
+Categories can be recorded as words or numeric codes. The codes are labels, not measurements of an amount. For example, `1 = forest` and `2 = water` do not mean that water is twice forest. Here, “discrete” is reserved for quantitative variables with a finite or countable set of possible values; it is not used as a synonym for categorical.
 
 ## Qualitative Data ("categorical")
-Non-numerical data that is usually textual and descriptive, like "mostly satisfied", "brown eyes", "female", "yes/no", etc.
+Examples include land-cover classes, eye colour, yes/no responses and ordered satisfaction categories. Read the variable definition and any code list before interpreting its values.
 
 ### Nominal Scale Data (named)
-Nominal scales are used for labeling variables, without any quantitative value. Notice that all of these scales are mutually exclusive (no overlap) and none of them have any numerical significance.  A good way to remember all of this is that “nominal” sounds a lot like “name” and nominal scales are kind of like “names” or labels. When there are only two categories (e.g. yes/no True/False. Presence/Absence), it is called a dichotomous variable.
-You can use frequency counts, mode, and contingency tables to describe and analyze the data. Measures of central tendency, variance, or correlation are not meaningful for nominal data.
+Nominal values name categories without an inherent order. For a single land-cover classification, an observation belongs to one defined category, such as forest, grassland or water. Assigning the codes 1, 2 and 3 does not create an order or a distance between the classes. A variable with two categories, such as presence/absence, is called dichotomous or binary.
+
+Frequency counts, proportions, the mode (most frequent category), and contingency tables are useful summaries. Means and standard deviations of arbitrary category codes have no general interpretation as measurements of the categories. An explicitly defined 0/1 indicator is a useful special case: its mean is the proportion of observations coded 1. Associations between categorical variables can also be studied with suitable methods.
 Bar charts, pie charts, and stacked bar charts are useful for visualizing nominal data. They display the frequency or proportion of each category.
 
 
 ### Ordinal Scale Data (ordered) {#ordinal-scale-data-orderd}
-With ordinal scales, the order of the values is what is important and significant, but the differences between the values are not known. For example, we know that a #4 is better than a #3 or #2, but we don’t know–and cannot quantify–how much better it is. Another example is the difference between “OK” and “Unhappy”. Is it the same as the difference between “Very Happy” and “Happy?”
+Ordinal values have an inherent order, but the spacing between categories is not defined. For example, erosion severity can be classified as low, medium or high. Coding these categories as 1, 2 and 3 preserves their order; it does not establish that the change from low to medium equals the change from medium to high.
 
-Ordinal scales are typically measures of non-numeric concepts like satisfaction, happiness, discomfort, etc.
+Ordered satisfaction responses are another example. The numerical codes alone do not justify interpreting a mean score as though the categories were equally spaced measurements.
 
-For ordinal data, you can use median, mode, and non-parametric tests like the Mann-Whitney U-test. You can order the categories but can't perform arithmetic operations on them.
+Useful summaries include category frequencies, the mode and a median category. Rank-based methods may be suitable for some questions, but their assumptions and the intended comparison still need checking.
 Bar charts, stacked bar charts, and ordered categorical plots are suitable for displaying ordinal data, emphasizing the order or ranking.
+
+See [Statistics Canada: Types of variables](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch8/5214817-eng.htm) for categorical variables, their ordering and numeric coding.
 
 
 <!--

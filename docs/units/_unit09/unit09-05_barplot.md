@@ -28,7 +28,7 @@ counts <- table(mtcars$cyl)
 barplot(counts, main="Car Distribution",
         xlab="Number of Cylinders")
 ```
-{% include figure image_path="/assets/images/unit_images/u09/barplot1.png" caption="Simple Barplot without grouping and colouring." %}
+{% include figure image_path="/assets/images/unit_images/u09/barplot1.png" caption="Simple Barplot without grouping and colouring." alt="Counts of mtcars by cylinder category: 11 four-cylinder cars, 7 six-cylinder cars and 14 eight-cylinder cars." %}
 
 ### Simple Horizontal Barplot with Added Labels
 ```
@@ -37,7 +37,7 @@ barplot(counts, main="Car Distribution", horiz=TRUE,
         names.arg=c("4 Cylinder", "6 Cylinder", "8 Cylinder"))
 
 ```
-{% include figure image_path="/assets/images/unit_images/u09/barplot2.png" caption="Horizontal barplot with labels and without grouping and colouring." %}
+{% include figure image_path="/assets/images/unit_images/u09/barplot2.png" caption="Horizontal barplot with labels and without grouping and colouring." alt="Horizontal version of the cylinder-count bar chart, with categories 4, 6 and 8 Cylinder labelled on the vertical axis." %}
 
 ### Stacked Barplot with Colors and Legend
 ```
@@ -47,7 +47,7 @@ barplot(counts, main="Car Distribution by Gears and VS",
         xlab="Number of Gears", col=c("steelblue","darkgreen"),
         legend = rownames(counts))
 ```
-{% include figure image_path="/assets/images/unit_images/u09/barplot3.png" caption="Barplot with legend and colouring." %}
+{% include figure image_path="/assets/images/unit_images/u09/barplot3.png" caption="Barplot with legend and colouring." alt="Stacked bars count cars with 3, 4 and 5 gears; segments distinguish engine configurations vs = 0 and vs = 1." %}
 
 ### Grouped and colored Barplot
 ```
@@ -56,12 +56,12 @@ barplot(counts, main="Car Distribution by Gears and Cylinder",
         xlab="Number of Gears", col=c("darkgreen","steelblue", "darkred"),
         legend = rownames(counts), beside=TRUE)
 ```
-{% include figure image_path="/assets/images/unit_images/u09/barplot4.png" caption="Barplot with grouping, colouring and legend." %}
+{% include figure image_path="/assets/images/unit_images/u09/barplot4.png" caption="Barplot with grouping, colouring and legend." alt="Grouped bars compare cylinder categories within each gear category; colours and legend identify 4, 6 and 8 cylinders." %}
 
 
 ### Difference between Barplot and Histogram:
 Barplots are good when your data is in categories (such as "Comedy", "Drama", etc). But when you have continuous data (such as a person's height) then use a Histogram. It is best to leave gaps between the bars of a Bar Graph, so it doesn't look like a Histogram.
-{% include figure image_path="/assets/images/unit_images/u09/barplot5.png" caption="Difference between Barplot and Histogram: Barplot are used for categories (e.g. number of cylinders); Histograms for continuous data ranges (e.g. horsepower)." %}
+{% include figure image_path="/assets/images/unit_images/u09/barplot5.png" caption="Difference between Barplot and Histogram: Barplot are used for categories (e.g. number of cylinders); Histograms for continuous data ranges (e.g. horsepower)." alt="Four panels compare inappropriate and appropriate displays: separate bars for cylinder categories and adjoining histogram bins for horsepower ranges." %}
 
 ## Test your knowledge!
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-barplot.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+<iframe title="Interactive quiz: bar plots" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-barplot.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>

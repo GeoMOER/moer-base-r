@@ -15,7 +15,7 @@ In this course, you will prepare and analyze data by writing R code in scripts a
  -- Tilman M. Davies, The book of R 
 
 ## Getting to know R
-{% include figure image_path="/assets/images/unit_images/u01/gui_r.png" caption="**User interface of R:** The interpreter provides a blank canvas for statistical analysis. Adapted from Tilman M. Davies, *The Book of R*." %}
+{% include figure image_path="/assets/images/unit_images/u01/gui_r.png" caption="**User interface of R:** The interpreter provides a blank canvas for statistical analysis. Adapted from Tilman M. Davies, *The Book of R*." alt="Base R graphical interface with a single console for entering commands and reading output." %}
 
 
 
@@ -31,7 +31,7 @@ The *[r-project](https://www.r-project.org/)* describes its work as follows:
 -------
 
 ## Getting to know RStudio
-{% include figure image_path="/assets/images/unit_images/u01/gui_rstudio.png" caption="User Interface of RStudio" %}
+{% include figure image_path="/assets/images/unit_images/u01/gui_rstudio.png" caption="User Interface of RStudio" alt="RStudio interface combining a script editor, console, environment browser and plot viewer." %}
 
 RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
 

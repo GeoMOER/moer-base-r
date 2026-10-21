@@ -11,7 +11,7 @@ header:
 ## What is a Line Chart?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
-<img src="linechart1.png" width="404" height="409" align="right" vspace="10" hspace="20">
+<img alt="Comic comparing expected automation savings with the reality of debugging and ongoing development, shown as work-over-time charts." src="linechart1.png" width="404" height="409" align="right" vspace="10" hspace="20">
 <p> A line chart is the graphical representation of the functional relationship of two (with 2D representation) or three (with 3D representation) characteristics as a diagram in line form, whereby changes or developments (for example within a certain period of time) can be represented. In contrast to the scatterplot, there can only be one pair or trio of values at a time.  If enough data points are collected during a measurement, these points are usually ordered on the x-coordinate and can be connected by drawing line segments between them. Line charts are usually used in identifying the trends in data.
 </p></div>
 
@@ -68,7 +68,7 @@ plot(x = pressure$temperature, y = pressure$pressure, type = "s")      # 6.
 plot(x = pressure$temperature, y = pressure$pressure, type = "h")      # 7.
 plot(x = pressure$temperature, y = pressure$pressure, type = "n")      # 8.
 ```
-{% include figure image_path="/assets/images/unit_images/u09/linechart2.png" caption="First row from left to right: 0. scatterplot without specification, 1. chart with points (equal to no specification), 2. line chart, 3. overplotted lines and point; second row from left to right: 4. points joined by lines, 5. no visible points (empty) joined by lines, 6. line-like stair steps: third row from left to right: 7. histogram-like vertical points, 8. no visible points or lines since it does not produce any." %}
+{% include figure image_path="/assets/images/unit_images/u09/linechart2.png" caption="First row from left to right: 0. scatterplot without specification, 1. chart with points (equal to no specification), 2. line chart, 3. overplotted lines and point; second row from left to right: 4. points joined by lines, 5. no visible points (empty) joined by lines, 6. line-like stair steps: third row from left to right: 7. histogram-like vertical points, 8. no visible points or lines since it does not produce any." alt="Nine panels compare plot types for the same increasing series: default points, p, l, o, b, c, s, h and n; n draws no data." %}
 
 
 To include **multiple lines** or to plot the points, first call plot() for the first line, then add additional lines and points with lines() and points() respectively:
@@ -87,7 +87,7 @@ lines(x = pressure$temperature, y = pressure$pressure/2, col = "darkgreen")
 points(x = pressure$temperature, y = pressure$pressure/2, col = "darkgreen")
 ```
 
-{% include figure image_path="/assets/images/unit_images/u09/linechart3.gif" caption="Line chart with multiple colored lines." %}
+{% include figure image_path="/assets/images/unit_images/u09/linechart3.gif" caption="Line chart with multiple colored lines." alt="Animated pressure-versus-temperature line plot from the pressure dataset; pressure rises sharply at higher temperatures." %}
 
 ## Example with Orange: {#example-with-orange}
 To demonstrate the creation of a more complex line chart, let's plot the growth of 5 orange trees over time. Each tree will have its own distinctive line. The data come from the dataset Orange.
@@ -128,4 +128,4 @@ legend(xrange[1], yrange[2], 1:ntrees, cex=0.8, col=colors,
        pch=plotchar, lty=linetype, title="Tree")
 ```
 
-{% include figure image_path="/assets/images/unit_images/u09/linechart4.gif" caption="Line chart with multiple colored lines." %}
+{% include figure image_path="/assets/images/unit_images/u09/linechart4.gif" caption="Line chart with multiple colored lines." alt="Animated Orange dataset plot: five coloured lines connect trunk circumference measurements over age, with a Tree legend." %}

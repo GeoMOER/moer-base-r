@@ -20,7 +20,7 @@ The **working directory** is a folder on your computer. R uses it as the startin
 
 An **RStudio project** organizes your work in a project folder and stores project settings in an `.Rproj` file. Opening the project sets the working directory to that folder. We return to projects at the end of this page.
 
-{% include figure image_path="/assets/images/unit_images/u05/gui_rstudio_exp.png" caption="Work Environment in RStudio from Unit 1" %}
+{% include figure image_path="/assets/images/unit_images/u05/gui_rstudio_exp.png" caption="Work Environment in RStudio from Unit 1" alt="RStudio with four labelled panes: script editor at upper left, console at lower left, environment at upper right, and graphical output at lower right." %}
 
 
 <html>
@@ -61,7 +61,7 @@ Now let's have a closer look at the environment after you have gotten to know th
 
 If you have a project with many data files, analysis scripts or other it is highly recommended that you create a directory structure under your main project folder to store and organize all these files. For example, you might have a project folder under `C:/geomoer/Project1`, whose directory structure might look like this
 
-{% include figure image_path="/assets/images/unit_images/u05/structure.png" caption="Project directory structure" %}
+{% include figure image_path="/assets/images/unit_images/u05/structure.png" caption="Project directory structure" alt="Project1 directory tree: Data stores input files; Process contains Figures and Scripts; Output stores exported results." %}
 
 The key elements of a project folder include:
 * a `Data/` folder

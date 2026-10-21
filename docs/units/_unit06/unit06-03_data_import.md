@@ -15,11 +15,11 @@ header:
 
 The data import features can be accessed from the environment pane or from the tools menu. The importers are grouped into 3 categories: Text data, Excel data and statistical data. To access this feature, use the "Import Dataset" dropdown from the "Environment" pane:
 
-{% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-envi.png" caption="Data import via environment. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" %}
+{% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-envi.png" caption="Data import via environment. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" alt="RStudio Environment pane: the Import Dataset menu offers text, Excel, SPSS, SAS and Stata importers." %}
 
 
 Or through the "File" menu, followed by the "Import Dataset" submenu:
-{% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-file.png" caption="Data import via File menu. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" %}
+{% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-file.png" caption="Data import via File menu. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" alt="RStudio File menu with Import Dataset expanded to show the available file-format importers." %}
 
 
 Importing `From Text (readr)` files allows you to import csv files and in general, character delimited files using the `readr package`. This Text importer provides support to:
@@ -36,7 +36,7 @@ Importing `From Text (readr)` files allows you to import csv files and in genera
 * Select quote, escape, comment and NA identifiers
 
 
-{% include figure image_path="/assets/images/unit_images/u06/602_data-import-rstudio-overview.gif" caption="Data import via environment. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" %}
+{% include figure image_path="/assets/images/unit_images/u06/602_data-import-rstudio-overview.gif" caption="Data import via environment. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" alt="Animation of importing a text dataset through RStudio, previewing its columns and importing it into the Environment pane." %}
 
 
 ## Importing data via code
@@ -163,7 +163,7 @@ The [column selection and conversion steps]({{ '/unit06/unit06-03b_destatis.html
 
 ## Test what you've learned so far!
 
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit06-pathanddata.html" width="1090" height="450" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+<iframe title="Interactive quiz: file paths and importing data" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit06-pathanddata.html" width="1090" height="450" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 
 

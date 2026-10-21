@@ -74,7 +74,7 @@ merge(left, right)
 
 The following illustration also shows all row combinations when there is no shared column name:
 
-{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR2.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR2.png" alt="Without a common key or an explicit by argument, each of five character rows is paired with all four weapon rows, producing 20 combinations." %}
 
 Check whether your intended key is unique in each input. When a key value occurs more than once on **both** sides, `merge()` returns every matching pair. Here, site `A` has two visits and two samples, producing four rows for `A` and one for `B`:
 
@@ -90,14 +90,14 @@ Both checks return `TRUE`, and the merged table has five rows. If you expected o
 
 When you merge on a key, `merge()` keeps only rows whose key values match in both inputs by default. Use `all = TRUE` to retain unmatched rows from *both* inputs, `all.x = TRUE` for all rows from the first input, or `all.y = TRUE` for all rows from the second. Unmatched columns contain `NA`; Unit 04 explains how to find and handle missing values. The illustration below shows matching by the shared `name` column and what happens to unmatched rows when they are retained:
 
-{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR1.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR1.png" alt="Joining characters and weapons by name matches Frodo, Aragorn, Legolas and Gimli. A full join retains Gandalf with NA for his weapon; an inner join drops him." %}
 
 See the [R documentation for `merge()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/merge.html) for the complete argument list and matching rules.
 
 
 ## Test what you've learned so far!
 
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit08-merging.html" width="1090" height="450" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+<iframe title="Interactive quiz: merging data frames" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit08-merging.html" width="1090" height="450" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 <!--
 ## Further reading

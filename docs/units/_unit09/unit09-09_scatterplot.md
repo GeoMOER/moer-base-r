@@ -10,7 +10,7 @@ header:
 
 ## What is a Scatterplot?
 <style>.unit p {text-align: justify;}</style>
-<div class="unit"><img src="scatterplot1.png" width="454" height="388" align="right" vspace="10" hspace="20">
+<div class="unit"><img alt="Comic scatterplot positioning foods by taste and ease of eating, rather than measured physical quantities." src="scatterplot1.png" width="454" height="388" align="right" vspace="10" hspace="20">
 <p>A scatter plot is a graphical representation of observed pairs of values of two statistical characteristics. These pairs of values are plotted in a Cartesian coordinate system, resulting in a scatter plot. The points can be represented by different symbols. It is hoped that the pattern of points in the scatter plot will provide information about the dependency structure of the two features represented by the coordinates.</p></div>
 
 There are many ways to create a scatterplot in R. The basic function is `plot(x, y)`, where x and y are numeric vectors denoting the (x,y) points to plot.
@@ -27,7 +27,7 @@ lines(lowess(mtcars$wt,mtcars$mpg), lty=2, col="darkgreen") # LOWESS/LOESS line 
 legend("topright", legend=c("Regression", "LOWESS"),
        col=c("steelblue", "darkgreen"), lty=1:2, cex=0.8)
 ```
-{% include figure image_path="/assets/images/unit_images/u09/scatterplot2.png" caption="Simple scatterplot." %}
+{% include figure image_path="/assets/images/unit_images/u09/scatterplot2.png" caption="Simple scatterplot." alt="Scatterplot of mtcars weight against miles per gallon: heavier cars generally have lower mpg; linear regression and LOWESS curves are overlaid." %}
 
 <html>
 <head>
@@ -57,4 +57,4 @@ div {
 
 
 ## Test your knowledge!
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-scatterplot.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+<iframe title="Interactive quiz: scatterplots" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-scatterplot.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>

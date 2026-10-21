@@ -14,7 +14,7 @@ Before a CSS file can be included in a markdown document, you must first underst
 # Basics of web development
 The holy trinity in web development: HTML, CSS, and JavaScript are inevitably linked and working together.
 
-<img src="https://html-css-js.com/images/og.jpg" width="451" height="334" align="right" vspace="10" hspace="20">
+<img alt="" src="https://html-css-js.com/images/og.jpg" width="451" height="334" align="right" vspace="10" hspace="20">
 <p>
 <b>HTML</b> provides the individual elements of the page, defines their type and the structure and how they are logically arranged to each other. The question is <u>"What is it"</u>? <br> <br>
 <b>CSS</b> stands for Cascading Style Sheets and takes care of the question <u>"What does it look like?"</u> <br> <br>
@@ -102,7 +102,7 @@ color: red;
 
 And where to put it? Their place is in the style element, which must be found in the head area of the page. A style rule looks like this: <br>
 
-{% include figure image_path="assets/images/spotlights/anatomy-of-a-css-rule.png" caption="Anatomy of a CSS rule. Image from [waiffarer.com](http://www.waiffarer.com)" %}
+{% include figure image_path="assets/images/spotlights/anatomy-of-a-css-rule.png" caption="Anatomy of a CSS rule. Image from [waiffarer.com](http://www.waiffarer.com)" alt="CSS rule h1 { color: orange; text-align: center; }: h1 is the selector, color and text-align are properties, and orange and center are their values." %}
 
 A CSS rule begins with a __selector__ that specifies which HTML elements the rule should apply to. One way to do this is to name HTML elements; this example rule applies to every <code>&lt;h2&gt;</code> element. The selector is followed by a left curly bracket ({), then the CSS properties to set for the selected elements. Each property is terminated by a semicolon. Finally, the rule is ended with a right curly bracket (}).
 
@@ -158,7 +158,7 @@ Free CSS style templates available at
 <br><br>
 
 **This Edureka video on "what is CSS" explains what CSS is along with all the varied elements and fundamentals of CSS.**
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6vbgZnQrpbU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="Video: What is CSS? by Edureka" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6vbgZnQrpbU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <br><br>
@@ -166,7 +166,9 @@ Free CSS style templates available at
 ## HTML and CSS in a nutshell
 
 **Finally, compare HTML and CSS:**
-{% include figure image_path="/assets/images/spotlights/html-css.png" caption="The differences between HTML and CSS from [codingdojo.com](https://www.codingdojo.com/)" %}
+{% include figure image_path="/assets/images/spotlights/html-css.png" caption="The differences between HTML and CSS from [codingdojo.com](https://www.codingdojo.com/)" alt="Infographic comparing HTML for document structure and content with CSS for presentation, including colours, fonts and layout." %}
+
+In text: HTML identifies the structure and content of a page, such as headings, paragraphs and links. CSS sets their appearance, including fonts, colours, spacing and layout.
 
 
 ---
@@ -308,8 +310,8 @@ but this is not styled:
 
 **For more information about R Markdown syntax in general have a look at the R Markdown cheat sheet:**
 <a href="https://geomoer.github.io/moer-base-r/assets/data/cheatsheets/rmarkdown-cheatsheet.pdf" download="rmarkdown-cheatsheet.pdf">Download R Markdown Cheat Sheet</a>{:target="_blank"}
-{% include figure image_path="assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p1.PNG" caption="R Markdown Cheat Sheet 1/2" %}
-{% include figure image_path="assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p2.PNG" caption="R Markdown Cheat Sheet 2/2" %}
+{% include figure image_path="assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p1.PNG" caption="R Markdown Cheat Sheet 1/2" alt="R Markdown cheat sheet, page 1 of 2: workflow, opening a file, Markdown syntax and output formats. The PDF is linked in the lesson." %}
+{% include figure image_path="assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p2.PNG" caption="R Markdown Cheat Sheet 2/2" alt="R Markdown cheat sheet, page 2 of 2: code chunks, rendering, interactive documents and publishing. The PDF is linked in the lesson." %}
 
 
 

@@ -62,18 +62,20 @@ div {
 Calculate the root square of 10 + 6
 
  -->
-### Task : Data about size and weight
-Create objects for size, height and states
+### Task: Data about height and weight {#task--data-about-size-and-weight}
+Create three vectors named `height`, `weight` and `state`. For this exercise, interpret the heights in metres and the weights in kilograms; `state` contains German federal-state labels.
 
-size: 1.67, 1.8, 1.58, 1.83, 1.65, 1.74, 1.8, 1.6, 1.76, 1.8 <br>
-weight: 62, 78, 56, 85, 58, 70, 70, 120, 62, 90) <br>
-state: NRW, Bayern, Sachsen, Hessen, Hessen, MV, Hessen, Brandenburg, Hessen, Berlin
+* `height` (m): 1.67, 1.8, 1.58, 1.83, 1.65, 1.74, 1.8, 1.6, 1.76, 1.8
+* `weight` (kg): 62, 78, 56, 85, 58, 70, 70, 120, 62, 90
+* `state`: NRW, Bayern, Sachsen, Hessen, Hessen, MV, Hessen, Brandenburg, Hessen, Berlin
+
+Each vector has ten entries. Entries in the same position belong to the same person, so keep the given order. Print each vector to inspect its contents.
 
 <body>
 <div class="info">
   <p><strong>Hint</strong>
   <br>
-      Naming convention: all letters small, do not use umlauts, numbers or special characters. Keep in mind the different syntax between strings and integers!
+      Use the lowercase object names given above. Combine values with <code>c(...)</code>. Write heights and weights as numbers, using a decimal point where needed, and put each state label in quotation marks.
   </p>
 </div>
 </body>

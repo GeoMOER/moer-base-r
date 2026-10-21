@@ -123,7 +123,7 @@ for(i in seq(length(a))){
 ## [1] "D"
 ```
 
-{% include figure image_path="/assets/data/data/for_loop.gif" caption="Animation of the plot process" %}
+{% include figure image_path="/assets/data/data/for_loop.gif" caption="Animation of the plot process" alt="Animation of a for-loop: i takes successive values from seq2 and print(i) prints each value; the shown third iteration prints 3." %}
 
 
 
@@ -299,12 +299,12 @@ Sometimes it can be a little overwhelming to write a loop from top to bottom. Th
 7) Debug and test your loop incrementally, checking for errors and unexpected behavior after each iteration. Depending on the complexity of the data, the loop may not be complete. Missing data, for example, often leads to a subscript out of bound error. To eliminate these errors bit by bit, you can use the cat(i,"\n") command to specify the point at which the loop stops, and continue to process the data or add conditions accordingly.
 
 
-{% include figure image_path="/assets/data/data/for_loop2.gif" caption="Animation of the plot process" %}
+{% include figure image_path="/assets/data/data/for_loop2.gif" caption="Animation of the plot process" alt="Animation of iterating over named data frames to fit a model, store its summary and save a plot for each data frame. The complete loop is given in the preceding code." %}
 
 
 ## Test what you've learned so far!
 
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit07-forloops.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> 
+<iframe title="Interactive quiz: for-loops" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit07-forloops.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 
 

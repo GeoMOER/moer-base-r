@@ -47,7 +47,7 @@ In order to ask a question effectively, it helps to phrase the question clearly,
 Which leads us to **Stack Overflow:**
 Stack Overflow is a well organized site for help and discussions about programming. It has excellent searchability and “R” is a very popular tag on the site. To go directly to R-related topics, visit [Questions tagged R](http://stackoverflow.com/questions/tagged/r){:target="_blank"}.
 
-{% include figure image_path="/assets/images/unit_images/u01/help.png" caption="Using a search engine for help" %}
+{% include figure image_path="/assets/images/unit_images/u01/help.png" caption="Using a search engine for help" alt="Google search suggestions for a query beginning with cran r, including R documentation and package searches." %}
 
 ---
 ### ChatGPT
@@ -62,7 +62,7 @@ ChatGPT is a language model designed for natural language understanding and gene
 While ChatGPT might be a great help, it's important to use it responsibly, to validate generated code, and to be mindful of legal and ethical considerations while utilizing it in real-world projects. 
 To effectively use ChatGPT for programming-related questions and tasks, and to evaluate whether it's accurate,  you need to have a basic understanding of how R works.
 
-{% include figure image_path="/assets/images/unit_images/u01/ChatGPT.png" caption="Using ChatGPT for help" %}
+{% include figure image_path="/assets/images/unit_images/u01/ChatGPT.png" caption="Using ChatGPT for help" alt="ChatGPT response to a question about Euclidean distance: a formula, example R vectors and code. The lesson explains why generated answers must be checked." %}
 
 Note, that use of generative AI (e.g., ChatGPT and other LLMs) is banned when posting content on Stack Overflow, according to their [policy](https://stackoverflow.com/help/gpt-policy):
 

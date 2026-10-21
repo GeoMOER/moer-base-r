@@ -27,7 +27,7 @@ In a **wide** table, each measured category has its own column. In a **long** ta
 
 The figure shows a long table being cast to a wide one. Its German labels are **Art** (species) and **Anzahl Individuen** (number of individuals). `Treatment` and `Plot` identify each output row (green); values of `Art` become column headings (orange); the counts fill the cells (blue). The figure displays `0` where a plot has no row for a species. To reproduce those zeros with `dcast()`, specify `fill = 0` *if an absent combination really means zero*. Without that choice, a missing combination is generally shown as `NA`.
 
-{% include figure image_path="/assets/images/unit_images/u08/dcast.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/dcast.png" alt="Long-to-wide reshaping: Treatment and Plot identify rows, species names become columns, and individual counts fill cells; absent combinations are explicitly filled with zero." %}
 
 Here is a smaller, complete example. Each row of `wide` represents one plot, and the two species have separate count columns:
 

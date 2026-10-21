@@ -47,24 +47,43 @@ root
 [1] 4
 ```
  -->
-### Task : Data about size and weight
+### Task: Data about height and weight {#task--data-about-size-and-weight}
 
-create vectors: vector  <-  c(..., ..., ...)
+Use `c()` to create the three vectors. Here, `height` is in metres, `weight` is in kilograms, and `state` contains the state labels in the same order as the exercise.
 
 ```r
-size <- c(1.67,1.8,1.58,1.83,1.65,1.74,1.8,1.6,1.76,1.8)
-height <- c(62,78,56,85,58,70,70,120,62,90)
-state <- c("NRW", "Bayern", "Sachsen", "Hessen", "Hessen", "MV", "Hessen", "Brandenburg", "Hessen", "Berlin")
+height <- c(1.67, 1.8, 1.58, 1.83, 1.65,
+            1.74, 1.8, 1.6, 1.76, 1.8)
+weight <- c(62, 78, 56, 85, 58, 70, 70, 120, 62, 90)
+state <- c("NRW", "Bayern", "Sachsen", "Hessen", "Hessen",
+           "MV", "Hessen", "Brandenburg", "Hessen", "Berlin")
+```
 
-size
+Print each vector. Run the R commands; the separate output blocks show the results. Line wrapping may vary with the width of your R console.
+
+```r
 height
+```
+
+```text
+ [1] 1.67 1.80 1.58 1.83 1.65 1.74 1.80 1.60 1.76 1.80
+```
+
+```r
+weight
+```
+
+```text
+ [1]  62  78  56  85  58  70  70 120  62  90
+```
+
+```r
 state
+```
 
-[1 ] 1.67, 1.8, 1.58, 1.83, 1.65, 1.74, 1.8, 1.6, 1.76, 1.8
-
-[1] 62, 78, 56, 85, 58, 70, 70, 120, 62, 90
-
-[1] NRW, Bayern, Sachsen, Hessen, Hessen, MV, Hessen, Brandenburg, Hessen, Berlin
+```text
+ [1] "NRW"         "Bayern"      "Sachsen"     "Hessen"      "Hessen"
+ [6] "MV"          "Hessen"      "Brandenburg" "Hessen"      "Berlin"
 ```
 ---
 

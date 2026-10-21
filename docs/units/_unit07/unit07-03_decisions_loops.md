@@ -57,7 +57,7 @@ while("<some logical expression with iteration variable>"){
 
 ## What loop to choose?
 
-{% include figure image_path="/assets/images/unit_images/u07/which-loop-to-choose.jpg" alt="Flow chart showing a decision tree which helps to choose the right loop." %}
+{% include figure image_path="/assets/images/unit_images/u07/which-loop-to-choose.jpg" alt="Decision tree: for a known sequence of iterations use a for-loop; when applying a function and collecting a list use lapply; when repetition depends on a condition use a while-loop." %}
 
 One rule for choosing between a while- and a for-loop is that __while-loops__ are used when the number of iterations is __unknown__ and __for-loops__ are used when the number is __known__.
 

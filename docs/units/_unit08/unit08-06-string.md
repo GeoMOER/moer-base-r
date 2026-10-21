@@ -194,9 +194,9 @@ Metacharacter/Construct	Description
 
 Here's a visualization of the principle:
 
-{% include figure image_path="/assets/images/unit_images/u08/Regexpr1.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/Regexpr1.png" alt="Regex annotations on the passage: ^T anchors T at the start, .nd matches a character followed by nd, le* allows zero or more e characters, and feet.$ matches feet plus one character at the end." %}
 
-{% include figure image_path="/assets/images/unit_images/u08/Regexpr2.png" %}
+{% include figure image_path="/assets/images/unit_images/u08/Regexpr2.png" alt="Regex examples on the passage: [Tt]he matches The or the, feet followed by whitespace selects the first feet, and digit matching selects individual digits in 50 and 100." %}
 
 #### The practical use
 

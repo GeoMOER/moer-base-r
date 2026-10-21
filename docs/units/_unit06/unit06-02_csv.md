@@ -58,7 +58,7 @@ To read standard csv use `read.csv`, to read European csv use `read.csv2`. These
 If your file does not follow either of these standards set the arguments manually with `sep` and `dec`.
 
 
-{% include figure image_path="/assets/images/unit_images/u06/602_csv.PNG" caption="Structure of an csv file." %}
+{% include figure image_path="/assets/images/unit_images/u06/602_csv.PNG" caption="Structure of an csv file." alt="Semicolon-separated file: the first row contains column names, and subsequent lines contain one region and its values per row." %}
 
 
 Let's move on to the next chapter: Working with csv ...

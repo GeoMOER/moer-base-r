@@ -26,7 +26,7 @@ hello <- "Welcome to R" #the variable "hello" is storing the information "Welcom
 
 To run a line in an R script, place the cursor on that line and click the "Run" button in the script editor (red box in the following picture). Alternatively, press `CTRL + ENTER` on Windows/Linux or `CMD + ENTER` on a Mac. Select several lines first to run them together.
 
-{% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp2.png" caption="Hit the Run-Button." %}
+{% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp2.png" caption="Hit the Run-Button." alt="RStudio script editor with the Run button highlighted; running selected code sends it to the console." %}
 
 RStudio sends the selected code to the Console, where you see the commands and their output.
 It looks like this:

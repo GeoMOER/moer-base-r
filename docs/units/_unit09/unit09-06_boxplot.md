@@ -13,7 +13,7 @@ header:
 <div class="unit"><p>
 A boxplot (also called a box-and-whisker plot) summarises the location and spread of a numeric variable. The box shows the median and the central part of the data; whiskers and separately drawn points show the tails. In R's default boxplot, the whisker ends need not be the minimum and maximum of the sample.</p></div>
 
-{% include figure image_path="/assets/images/unit_images/u09/boxplot1.png" caption="Comic by Randall Munroe [(xkcd)](https://xkcd.com/)." %}
+{% include figure image_path="/assets/images/unit_images/u09/boxplot1.png" caption="Comic by Randall Munroe [(xkcd)](https://xkcd.com/)." alt="Comic: someone uses a boxplot comparing time spent together to argue that a relationship is statistically significant." %}
 
 Examine the following items to learn more about the location and spread of the sample data:
 <div class="unit"><p>
@@ -48,6 +48,6 @@ boxplot(mpg~cyl,data=mtcars, main="Car Milage Data", notch=TRUE,
         col=(c("steelblue","darkgreen", "darkred")),
         xlab="Number of Cylinders", ylab="Miles Per Gallon")
 ```
-{% include figure image_path="/assets/images/unit_images/u09/boxplot3.png" caption="Simple Boxplot and notched and colored Boxplot." %}
+{% include figure image_path="/assets/images/unit_images/u09/boxplot3.png" caption="Simple Boxplot and notched and colored Boxplot." alt="Mtcars mpg by 4, 6 and 8 cylinders, first as plain boxplots and then with coloured notches. Four-cylinder cars have the highest median mpg and eight-cylinder cars the lowest." %}
 
 In the eight-cylinder group, the lower whisker is at 13.3 mpg, while two observations at 10.4 mpg are flagged by the 1.5 × IQR rule. Their symbols overlap, so only one circle is visible. For the six-cylinder group, R warns that some notches extend outside the hinges: there are only seven observations, and the notch interval extends beyond the box. Interpret these small-sample comparisons cautiously.

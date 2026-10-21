@@ -81,7 +81,7 @@ Take the test to check if you understand everything correctly:
 
 The quiz uses general programming terms: *float* corresponds to `double` in R, *string* to `character`, and *boolean* to `logical`. It asks you to choose a suitable data type, rather than identify the default type of an R expression. Where the quiz uses `True`, write `TRUE` in R.
 
-<iframe src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit02-05-data-types.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<iframe title="Interactive quiz: data types" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit02-05-data-types.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 -----
 
 Let's move on...

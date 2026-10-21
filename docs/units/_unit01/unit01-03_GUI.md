@@ -11,7 +11,7 @@ header:
 
 ## User Interface
 
-{% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp.png" caption="RStudio User Interface" %}
+{% include figure image_path="/assets/images/unit_images/u01/gui_rstudio_exp.png" caption="RStudio User Interface" alt="RStudio with four labelled panes: script editor at upper left, console at lower left, environment at upper right, and graphical output at lower right." %}
 
 This is the Integrated Development Environment (IDE). It contains
 * a syntax-highlighting text editor *(1. Script)* - this is where the code is written.
