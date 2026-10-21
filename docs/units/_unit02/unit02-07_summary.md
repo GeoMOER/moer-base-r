@@ -24,6 +24,8 @@ Three questions describe different aspects of your data. **Measurement level** d
 | Interval | Equal differences are meaningful; zero is a reference point. | Temperature in degrees Celsius: a 10-degree difference is meaningful, but 20 °C is not twice as hot as 10 °C. |
 | Ratio | Equal differences and ratios are meaningful; zero indicates absence of the measured quantity. | Length in meters: 20 m is twice 10 m. |
 
+{% include figure image_path="/assets/images/unit_images/u02/types_data.PNG" alt="Diagram naming nominal, ordinal, interval and ratio measurement levels. It also connects continuous data to ratio and interval, and discrete data to ordinal and nominal; those pairings are an oversimplification." caption="The four measurement levels. The diagram's discrete/continuous branches are an oversimplification: measurement level and whether a quantitative variable is discrete or continuous describe separate properties. Use the table above for the distinction." %}
+
 A count of trees is **discrete**; measured tree height is treated as **continuous**, even if recorded to the nearest centimeter. Numeric category codes, such as `1 = forest`, remain categories. The choice of a calculation also depends on the question, sampling, and distribution of the data.
 
 ## Representation in R
