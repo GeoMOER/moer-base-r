@@ -15,30 +15,11 @@ header:
 <p> A line chart is the graphical representation of the functional relationship of two (with 2D representation) or three (with 3D representation) characteristics as a diagram in line form, whereby changes or developments (for example within a certain period of time) can be represented. In contrast to the scatterplot, there can only be one pair or trio of values at a time.  If enough data points are collected during a measurement, these points are usually ordered on the x-coordinate and can be connected by drawing line segments between them. Line charts are usually used in identifying the trends in data.
 </p></div>
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Info</strong>  <br>
   The <code class="language-plaintext highlighter-rouge">lines()</code> function adds information to a graph. It can not produce a graph on its own.   <br><br> Usually it follows a <code class="language-plaintext highlighter-rouge">plot(x, y)</code> command that produces a graph.
   </p>
 </div>
-</body>
-</html>
 
 By default, `plot( )` plots the (x,y) points. Use the `type="n"` option in the `plot( )` command, to create the graph with axes, titles, etc., but without plotting the points.
 

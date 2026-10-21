@@ -32,24 +32,7 @@ The table below summarizes common checks and conversions*. The last row shows ho
 | NA        | is.na()   | Assign `NA`, e.g. `x[2] <- NA` |
 
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p>*Info  <br>
   The generic function <code class="language-plaintext highlighter-rouge">is.na</code> indicates which elements are missing.    <br><br>
   
@@ -58,8 +41,6 @@ div {
   While factors, which are a unique feature of R, are not a separate data type like characters or numerics, they are used to manage categorical data and maintain the integrity and order of those categories.
   </p>
 </div>
-</body>
-</html>
 
 <i>Example</i>
 ```

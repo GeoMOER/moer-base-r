@@ -18,25 +18,9 @@ Take your first steps with R. To test your knowledge up to now you can test your
 * Press `Solution` for a new tab showing the solution.
 * `Be patient:` this may take some time to load.
 
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>DataCamp Light | Standalone example</title>
-  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <style>
-    .exercise {
-      margin: 50px;
-    }
+  <script async src="https://cdn.datacamp.com/dcl-react.js.gz"></script>
 
-    [data-datacamp-exercise] {
-        visibility: hidden;
-      }
-  </style>
-  <script async src="//cdn.datacamp.com/dcl/latest/dcl-react.js.gz"></script>
-</head>
-
-<body>
-  <div class="exercise">
+<div class="exercise">
     <div class="title">
       <h2>Simple calculation to start:</h2>
     </div>

@@ -29,30 +29,11 @@ legend("topright", legend=c("Regression", "LOWESS"),
 ```
 {% include figure image_path="/assets/images/unit_images/u09/scatterplot2.png" caption="Simple scatterplot." alt="Scatterplot of mtcars weight against miles per gallon: heavier cars generally have lower mpg; linear regression and LOWESS curves are overlaid." %}
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Info</strong>  <br>
   LOWESS (Locally Weighted Scatterplot Smoothing), sometimes called LOESS (locally weighted smoothing), is a popular tool used in regression analysis that creates a smooth line through a timeplot or scatter plot to help you to see relationships between variables and foresee trends.
   </p>
 </div>
-</body>
-</html>
 
 
 

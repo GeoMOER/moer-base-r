@@ -71,11 +71,9 @@ Create three vectors named `height`, `weight` and `state`. For this exercise, in
 
 Each vector has ten entries. Entries in the same position belong to the same person, so keep the given order. Print each vector to inspect its contents.
 
-<body>
 <div class="info">
   <p><strong>Hint</strong>
   <br>
       Use the lowercase object names given above. Combine values with <code>c(...)</code>. Write heights and weights as numbers, using a decimal point where needed, and put each state label in quotation marks.
   </p>
 </div>
-</body>

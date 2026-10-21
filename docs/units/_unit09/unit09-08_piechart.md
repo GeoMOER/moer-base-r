@@ -67,24 +67,7 @@ pie(iris_table, labels = labels,
 ```
 {% include figure image_path="/assets/images/unit_images/u09/piechart2.png" caption="Pie chart with and without percentages in different color pallets." alt="Four pie-chart examples compare car-category counts, percentage labels, colour choices and the equal iris species sample sizes of 50 each." %}
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Info: R base color palettes</strong>  <br>
   There are 5 R base functions that can be used to generate a vector of n contiguous colors:   <br>
   <code class="language-plaintext highlighter-rouge">rainbow(n)</code>
@@ -94,6 +77,4 @@ div {
   <code class="language-plaintext highlighter-rouge">cm.colors(n)</code>
   </p>
 </div>
-</body>
-</html>
 {% include figure image_path="/assets/images/unit_images/u09/colorpalette.png" caption="Color palette of contiguous colors in base R." alt="Five base R colour gradients: rainbow spans the hue spectrum; heat runs yellow to red; terrain mixes brown and green; topo runs green to blue; cm mixes magenta and cyan." %}

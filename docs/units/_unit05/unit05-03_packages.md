@@ -79,28 +79,9 @@ library("ggplot2")
 library("randomForest")
 ```
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Hint:</strong> Mind the order: first install - then activate through library.</p>
 </div>
-</body>
-</html>
 
 # Working with a package
 

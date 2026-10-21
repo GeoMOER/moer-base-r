@@ -23,24 +23,7 @@ An **RStudio project** organizes your work in a project folder and stores projec
 {% include figure image_path="/assets/images/unit_images/u05/gui_rstudio_exp.png" caption="Work Environment in RStudio from Unit 1" alt="RStudio with four labelled panes: script editor at upper left, console at lower left, environment at upper right, and graphical output at lower right." %}
 
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Little reminder from Unit 1:</strong>
   This is the Integrated Development Environment (IDE) of RStudio. It contains
   <br>
@@ -52,8 +35,6 @@ div {
   </ol>
   </p>
 </div>
-</body>
-</html>
 
 Now let's have a closer look at the environment after you have gotten to know the script and the console.
 
@@ -114,13 +95,9 @@ The second is to specify an absolute path in the `read.csv()` call. This works r
 ```r
 dat <- read.csv("C:/geomoer/Project1/Data/data.csv")
 ```
-<html>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Hint:</strong> Pay attention to the quotation marks.</p>
 </div>
-</body>
-</html>
 
 
 ### Relative and absolute paths
@@ -144,9 +121,7 @@ By contrast, a relative path starts from the current working directory. From `C:
 
 
 
-<html>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Important Note to Windows Users:</strong><br>
   R gets confused if you use a path in your code like:<br><br>
 
@@ -163,8 +138,6 @@ By contrast, a relative path starts from the current working directory. From `C:
   Either will work. We use the second convention throughout this platform.
   </p>
 </div>
-</body>
-</html>
 
 ## RStudio projects {#rprojects}
 

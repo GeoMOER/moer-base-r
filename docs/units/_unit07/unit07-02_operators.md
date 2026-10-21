@@ -38,24 +38,7 @@ Common simple examples include arithmetic (e.g. addition), comparison (e.g. "gre
 
 ------
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Information</strong>
   <br>
 <ul>
@@ -70,8 +53,6 @@ div {
   </ul>
   </p>
 </div>
-</body>
-</html>
 
 
 

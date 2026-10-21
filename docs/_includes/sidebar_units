@@ -11,7 +11,7 @@
         {% assign items = ordered_unit_pages %}
         <li>
           <span class="nav__sub-title">
-            <a href="{{ items[0].url | prepend: site.baseurl }}" class="">{{ cat.name }}</a>
+            <a href="{{ items[0].url | relative_url }}" class="">{{ cat.name }}</a>
           </span>
           <ul>
             {% for item in items %}
@@ -21,7 +21,7 @@
                 {% assign active = "" %}
               {% endif %}
               {% if page.url contains collection.label %}
-                <li><a href="{{ item.url | prepend: site.baseurl }}" class="{{ active }}">{{ item.title }}</a></li>
+                <li><a href="{{ item.url | relative_url }}" class="{{ active }}">{{ item.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>

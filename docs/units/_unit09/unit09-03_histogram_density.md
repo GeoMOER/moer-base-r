@@ -29,24 +29,7 @@ R comes with several built-in data sets, which are generally used as demo data f
 * and many many more...
 
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p><strong>Reminder</strong>  <br>
   <ol>
       <li>Load a built-in R data set: <code class="language-plaintext highlighter-rouge">data(“dataset_name”)</code></li>
@@ -54,8 +37,6 @@ div {
   </ol>
   </p>
 </div>
-</body>
-</html>
 
 ## Theory
 You can create histograms with `hist(x)`, where `x` is a numeric vector. With equal-width bins, the default vertical axis shows counts. With `freq=FALSE`, heights show probability densities: each bar's area is the proportion of observations in its bin, and the total area is one. Use this scale when bin widths differ. The `breaks=` argument can specify exact bin boundaries or suggest a number of bins; R may adjust a suggested number to obtain convenient boundaries. See the [R documentation for `hist()`](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/hist.html).

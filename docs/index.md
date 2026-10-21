@@ -1,6 +1,7 @@
 ---
 title: Base R - no statistics, no fancy packages, just plain R
 layout: splash
+google_site_verification: "YUryV-9eiF-F3EmYUGc-_Bc4wpKVjMeH9AgvBFjKy-k"
 date: '2020-06-30 13:00:00 +0100'
 header:
   google-site-verification: googlecbcb487a237fee78.html
@@ -19,9 +20,6 @@ feature_row_ilos:
   title: Intended learning outcomes
   excerpt: "Template..."
 ---
-<head>
-<meta name="google-site-verification" content="YUryV-9eiF-F3EmYUGc-_Bc4wpKVjMeH9AgvBFjKy-k" />
-</head>
 
 {% include feature_row id="feature_row_intro" type="center" %}
 

@@ -309,7 +309,7 @@ but this is not styled:
 ---
 
 **For more information about R Markdown syntax in general have a look at the R Markdown cheat sheet:**
-<a href="https://geomoer.github.io/moer-base-r/assets/data/cheatsheets/rmarkdown-cheatsheet.pdf" download="rmarkdown-cheatsheet.pdf">Download R Markdown Cheat Sheet</a>{:target="_blank"}
+<a href="{{ '/assets/data/cheatsheets/rmarkdown-cheatsheet.pdf' | relative_url }}" download="rmarkdown-cheatsheet.pdf">Download R Markdown Cheat Sheet</a>{:target="_blank"}
 {% include figure image_path="assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p1.PNG" caption="R Markdown Cheat Sheet 1/2" alt="R Markdown cheat sheet, page 1 of 2: workflow, opening a file, Markdown syntax and output formats. The PDF is linked in the lesson." %}
 {% include figure image_path="assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p2.PNG" caption="R Markdown Cheat Sheet 2/2" alt="R Markdown cheat sheet, page 2 of 2: code chunks, rendering, interactive documents and publishing. The PDF is linked in the lesson." %}
 

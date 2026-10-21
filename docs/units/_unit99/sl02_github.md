@@ -13,11 +13,10 @@ header:
 ## What is Git?
 Before you can understand what GitHub is, you must first understand the concept of Git:
 
-<body>
 <img alt="Git" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="251" height="134" align="right" vspace="10" hspace="20">
 <p>Git is <u>distributed version control software</u> for projects, used both individually and in teams. It records project history in a local repository, so you can inspect earlier versions and create commits without an internet connection. Collaborators can exchange commits through a shared remote repository. Git itself does not require a GitHub account.
 You can operate Git either in the command line of your operating system or in GitHub Desktop, a Git client with a graphical user interface.
-</p></body>
+</p>
 
 You need to know the following commands when working with Git:
 * `git clone [URL]`: clone a Git repository from the URL to your local computer.
@@ -30,14 +29,13 @@ You need to know the following commands when working with Git:
 For more detail, see [Git's introduction to version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and the documentation for [`git add`](https://git-scm.com/docs/git-add), [`git push`](https://git-scm.com/docs/git-push) and [`git fetch`](https://git-scm.com/docs/git-fetch).
 
 ## What is GitHub? {#what-is-github}
-<body>
 <img alt="" src="{{ "/assets/images/spotlights/octocat.png" | relative_url }}" width="251" height="134" align="right" vspace="10" hspace="20">
 <p>GitHub is the host for your Git projects and has similar features to a social network.
 <ul><li>You can use Git to access your projects stored in GitHub from anywhere.</li>
     <li>GitHub repositories can be public or private. Public repositories can be viewed by anyone; access to private repositories is restricted to people with permission. GitHub Free includes unlimited public and private repositories, although some features and usage allowances depend on the plan. See <a href="https://docs.github.com/en/get-started/learning-about-github/githubs-plans">GitHub's current plans</a>.</li>
     <li>You can also contribute to existing programs by fixing bugs and thus actively contribute to open source tools.</li>
     <li>GitHub is largely used for large projects in certain programming languages. However, it is just as possible to manage simple documents in GitHub.</li>
-</ul></p></body>
+</ul></p>
 
 
 **If you want a visualization of how GitHub works let's see how Eddie and his team use GitHub:**

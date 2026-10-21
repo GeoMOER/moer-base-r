@@ -22,7 +22,7 @@
 # baseurl: "/data/UNIMR/lm_data/lm_xxx"
 
 # Serve on GitHub
-url: https://geomoer.github.io/
+url: https://geomoer.github.io
 baseurl: "/moer-base-r"
 
 

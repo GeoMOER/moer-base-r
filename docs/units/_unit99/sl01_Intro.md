@@ -10,8 +10,8 @@ header:
 
 The spotlights will focus on topics additional topics that complement the previous units.
 
-* [A quick introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio](/moer-base-r/unit99/sl02_github.html)
-* [An introduction to CSS in general and CSS in R Markdown](/moer-base-r/unit99/sl03_css.html)
+* [A quick introduction to Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio]({{ '/unit99/sl02_github.html' | relative_url }})
+* [An introduction to CSS in general and CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }})
 
 
 ## Comments?

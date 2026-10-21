@@ -76,28 +76,9 @@ Note, that use of generative AI (e.g., ChatGPT and other LLMs) is banned when po
 For example, if you want to search for the word "ratio", it looks like this:
 </p>
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.info {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-}
-
-</style>
-</head>
-<body>
-<div class="info">
+<div class="course-info">
   <p> "ratio": site:https://geomoer.github.io/moer-base-r </p>
 </div>
-</body>
-</html>
 
 ---
 

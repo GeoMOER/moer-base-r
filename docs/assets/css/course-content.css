@@ -1,0 +1,16 @@
+/* Keep the existing blue callout styling within course content. */
+.page__content .course-info {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196f3;
+}
+
+/* Retain the embedded DataCamp exercises' spacing and loading state. */
+.page__content .exercise {
+  margin: 50px;
+}
+
+.page__content [data-datacamp-exercise] {
+  visibility: hidden;
+}
