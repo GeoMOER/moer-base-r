@@ -15,24 +15,26 @@ Before you can understand what GitHub is, you must first understand the concept 
 
 <body>
 <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="251" height="134" align="right" vspace="10" hspace="20">
-<p>Git is <u>version control software</u> for projects. You can use it to easily jump back to old versions or work with multiple people on a project.
+<p>Git is <u>distributed version control software</u> for projects, used both individually and in teams. It records project history in a local repository, so you can inspect earlier versions and create commits without an internet connection. Collaborators can exchange commits through a shared remote repository. Git itself does not require a GitHub account.
 You can operate Git either in the command line of your operating system or in GitHub Desktop, a Git client with a graphical user interface.
 </p></body>
 
 You need to know the following commands when working with Git:
 * `git clone [URL]`: clone a Git repository from the URL to your local computer.
 * `git init`: Initialize a Git project locally. You can optionally upload this to GitHub or another host later.
-* `git add`: Add files to the watch list. This step is mandatory to upload your work to the repository afterwards.
-* `git commit`: Use a commit to record the changes. This is a state that you can go back to at any time. Files must be backed up with a commit before they can be sent to a remote repository.
-* `git push`: With a push, you send all commits to the remote repository on GitHub's servers or the chosen other provider.
-* `git fetch`: Imports commits from a remote repository into the local repo. These commits are stored as remote branches instead of normal local branches. This gives developers the opportunity to review changes before integrating them into their own copies of the project.
+* `git add [file]`: Stage the file's current content for the next commit. The staging area (also called the index) holds the changes you have selected. If you edit the file again, run `git add` again to stage the newer content.
+* `git commit`: Record the staged changes in the local repository. A commit creates a point in the project history that you can inspect or return to later.
+* `git push origin [branch]`: Send the commits needed to update the named branch on the remote called `origin`. This shares committed work; unstaged or staged changes that have not been committed are not uploaded.
+* `git fetch origin`: Download commits and update remote-tracking references such as `origin/main`. Fetching alone does not integrate these changes into your current local branch or change its working files; you can review them before integration.
+
+For more detail, see [Git's introduction to version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and the documentation for [`git add`](https://git-scm.com/docs/git-add), [`git push`](https://git-scm.com/docs/git-push) and [`git fetch`](https://git-scm.com/docs/git-fetch).
 
 ## What is GitHub? {#what-is-github}
 <body>
 <img src="{{ "/assets/images/spotlights/octocat.png" | relative_url }}" width="251" height="134" align="right" vspace="10" hspace="20">
 <p>GitHub is the host for your Git projects and has similar features to a social network.
 <ul><li>You can use Git to access your projects stored in GitHub from anywhere.</li>
-    <li>Repositories stored in GitHub are always public. So other users can view your projects. You can only get private repositories by paying a monthly fee.</li>
+    <li>GitHub repositories can be public or private. Public repositories can be viewed by anyone; access to private repositories is restricted to people with permission. GitHub Free includes unlimited public and private repositories, although some features and usage allowances depend on the plan. See <a href="https://docs.github.com/en/get-started/learning-about-github/githubs-plans">GitHub's current plans</a>.</li>
     <li>You can also contribute to existing programs by fixing bugs and thus actively contribute to open source tools.</li>
     <li>GitHub is largely used for large projects in certain programming languages. However, it is just as possible to manage simple documents in GitHub.</li>
 </ul></p></body>
@@ -44,17 +46,16 @@ You need to know the following commands when working with Git:
 <br>
 
 **Difference between GitHub and Git in a nutshell** <br>
-* git is a local version control software that enables developers to save snapshots of their projects over time. It's generally best for individual use.
-* GitHub is a web-based platform that incorporates git's version control features so they can be used collaboratively.
+* Git is a distributed version control system. It supports local work, branches and collaboration through shared repositories.
+* GitHub hosts Git repositories and adds collaboration tools such as issues, pull requests and code review.
 
 
 | <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" height="70px" width="70px"> |  <img src="{{ "/assets/images/spotlights/octocat.png" | relative_url }}" height="70px" width="70px"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="70px" width="70px"> |
-|---------|-------|---------|
-| is a software | is a service |
-| is installed locally on the system | is hosted on the web |
-| is a command line tool | provides a graphical interface |
-| is a tool to manage different versions of edits, made to files in a git repository | is a space to upload a copy of the Git repository |
-| provides functionalities like Version Control System (VCS) and Source Code Management (SCM) | provides functionalities of Git like VCS and SCM and a few of its own functions like hosting websites |
+|---------|-------|
+| Version control software | A repository hosting and collaboration service |
+| Runs locally, including on computers used as Git servers | Provides hosted remote repositories and web tools |
+| Can be used through the command line or graphical clients | Can be accessed through Git, the website or clients such as GitHub Desktop |
+| Records commits and manages branches in a repository | Hosts shared repositories and supports issues, pull requests and code review |
 
 
 ## Setting up Git and GitHub {#setting-up-git-and-github}
@@ -71,12 +72,15 @@ If you want to get started with a project, you can create a repository in two wa
 
 *First:*
 * To create a new repository on the GitHub page click on the **`+`** next to your profile picture on the top right corner.
-* Give your project a name. As described above, you will need to set the project to public or pay a monthly fee for privacy.
+* Give your project a name and choose **Public** or **Private** visibility. Private repositories are available with GitHub Free; choose the visibility appropriate for your project.
 * Then click on the `Create repository` button. You can then add the repository locally using git clone as described above.
 
 *Second:*
-* Locally, you create a repository with `git init`. Then you can link a local and an online repo with `git remote add origin https://github.com/[username]/[projectname].git`.
-* You now have an online repository on GitHub and can thus manage your projects and use them from anywhere.
+* Locally, create a repository with `git init` and make an initial commit after staging your files. Separately, create an empty repository on GitHub, without adding a README, licence or `.gitignore` there.
+* Connect the local repository to that existing remote with `git remote add origin https://github.com/[username]/[projectname].git`. This command records the remote address locally; it does not create a repository on GitHub.
+* Share your committed work with `git push -u origin [branch-name]`, replacing `[branch-name]` with your current branch name (shown by `git branch --show-current`). GitHub authentication is required. The push uploads your commits to the repository you created.
+
+See GitHub's instructions for [creating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) and Git's documentation for [`git remote add`](https://git-scm.com/docs/git-remote).
 
 **For a guided installation and setup, watch *Git & GitHub Crash Course For Beginners* from [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA).**
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SWYqp7iY_Tc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,11 +112,11 @@ __Step by Step introduction to GitHub Desktop:__
 {% include figure image_path="assets/images/spotlights/gh_d7.png" caption="Cloning an existing repository 2/3." %}
 
 
-**5.** Copy some .txt files to the local repository on your computer. GitHub Desktop immediately recognizes changes in that repository. To publish your changes add a detailed summary (mandatory) and a description. Then click `commit`.
-{% include figure image_path="assets/images/spotlights/gh_d8.png" caption="Uploading some files." %}
+**5.** Copy some .txt files to the local repository on your computer. GitHub Desktop shows the changes. Select the files or changes you want to include, enter a commit summary (mandatory) and an optional description, then click `commit`. This records a local commit; use the publish or push action in the next step to share it on GitHub.
+{% include figure image_path="assets/images/spotlights/gh_d8.png" caption="Selecting changes and creating a local commit in GitHub Desktop." %}
 
-**6.** Click `Publish branch` (on the top of the GitHub Desktop window) to make the local branch also available on origin (GitHub). Remember, there are usually two versions of a branch — the local version and the remote version. Make sure you get the updates you and your collaborators merged into the default branch online into your local copy. In your GitHub Desktop GUI client, click the Fetch origin button. Fetch gets the latest updates from origin but doesn’t update your local working copy with the changes. After you click Fetch origin, the button changes to Pull Origin. Click Pull Origin to update your local working copy with the fetched updates.
-{% include figure image_path="assets/images/spotlights/gh_d9.png" caption="Uploading some files." %}
+**6.** For a branch that is not yet on GitHub, click `Publish branch`; for an already published branch, use `Push origin` to share new local commits. Your local branch and its corresponding remote branch can contain different commits. Use `Fetch origin` to check for remote updates. Fetching alone does not integrate them into your local branch. If updates are available, Desktop offers `Pull origin` to integrate them; resolve any conflicts before continuing. See the official instructions for [pushing changes with GitHub Desktop](https://docs.github.com/en/desktop/making-changes-in-a-branch/pushing-changes-to-github-from-github-desktop).
+{% include figure image_path="assets/images/spotlights/gh_d9.png" caption="Sharing commits with the remote repository." %}
 
 Further Information on: [Activity: Use the GitHub Desktop client](https://idratherbewriting.com/learnapidoc/pubapis_github_desktop_client.html)
 
@@ -133,15 +137,15 @@ Git provides a BASH emulation used to run Git from the command line. Simply righ
 | **Basics** |
 | `git status` | Check status |
 | `git add [file-name.txt]` | Add a file to the staging area |
-| `git add -A` | Add all new and changed files to the staging area |
+| `git add -A` | Stage all added, modified and deleted files |
 | `git commit -m "[commit message]"` | Commit changes |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
 | **Sharing & Updating Projects** |
 | `git push origin [branch name]` | Push a branch to your remote repository |
 | `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
 | `git push` | Push changes to remote repository (remembered branch) |
-| `git pull` | Update local repository to the newest commit |
-| `git pull origin [branch name]` | Pull changes from remote repository |
+| `git pull` | Fetch and integrate changes from the configured upstream branch (by merging or rebasing, depending on configuration) |
+| `git pull origin [branch name]` | Fetch the named remote branch and integrate it into the current local branch |
 | **Inspection & Comparison**  |
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |

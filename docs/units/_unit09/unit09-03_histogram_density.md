@@ -58,11 +58,11 @@ div {
 </html>
 
 ## Theory
-You can create histograms with the function `hist(x)` where x is a numeric vector of values to be plotted. The option `freq=FALSE` plots probability densities instead of frequencies. The option `breaks=` controls the number of bins.
+You can create histograms with `hist(x)`, where `x` is a numeric vector. With equal-width bins, the default vertical axis shows counts. With `freq=FALSE`, heights show probability densities: each bar's area is the proportion of observations in its bin, and the total area is one. Use this scale when bin widths differ. The `breaks=` argument can specify exact bin boundaries or suggest a number of bins; R may adjust a suggested number to obtain convenient boundaries. See the [R documentation for `hist()`](https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/hist.html).
 
 
 Simple Histogram with the dataset mtcars. If you want to learn more about mtcars, type this: `?mtcars`
-```
+```r
 # Loading dataset
 data(mtcars)
 
@@ -74,20 +74,22 @@ hp <- hist(mtcars$hp)
 
 
 Histogram with Breaks (Bins) and Color
-```
+```r
 hist(mtcars$mpg, breaks=10, col="red")
 hist(mtcars$hp, breaks=6, col="blue")
 ```
 {% include figure image_path="/assets/data/data/histo2.png" caption="Print of Code chunk above" %}
 
-Histograms can be a poor method for determining the shape of a distribution because their appearance is strongly affected by the number of bins used.
+A histogram's appearance depends on both the widths and the positions of its bin boundaries. Narrow bins show more local detail but may exaggerate random variation; wide bins can hide features. Compare several reasonable choices before interpreting peaks, gaps or skewness. In the example above, `breaks=10` is a suggestion, not a guarantee of exactly ten bins.
 
 ## Kernel Density Plots
-Kernel density plots are usually a much more effective way to view the distribution of a variable. Create the plot using plot(density(x)) where x is a numeric vector.
+A kernel density plot gives a smooth estimate of a numeric variable's probability density. Create one with `plot(density(x))`. It is another view of the distribution, whose appearance depends on the smoothing bandwidth: smaller bandwidths give more detail and larger bandwidths more smoothing. Use `bw=` to set the bandwidth or `adjust=` to multiply the automatically chosen bandwidth. Neither a histogram nor a density plot is always preferable; check whether the features you describe persist across reasonable bin or bandwidth choices. See the [R documentation for `density()`](https://stat.ethz.ch/R-manual/R-patched/library/stats/html/density.html).
 
-```
+```r
 d <- density(mtcars$mpg) # returns the density data
 plot(d, main="Kernel Density of Miles/Gallon") # Unfilled Density Plot
 polygon(d, col="red", border="blue") # Filled Density Plot
 ```
 {% include figure image_path="/assets/data/data/kdmpg.gif" caption="Print of Code chunk above" %}
+
+The vertical axis shows density, not a count or the probability of an exact value. Probability is represented by area over an interval. The estimated curve can extend beyond the observed minimum and maximum because the default Gaussian kernels spread mass around each observation. To explore bandwidth sensitivity, compare `plot(density(mtcars$mpg, adjust=0.5))` with `plot(density(mtcars$mpg, adjust=2))`.
