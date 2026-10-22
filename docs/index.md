@@ -14,11 +14,11 @@ header:
 excerpt: Learn the essentials for working with R.
 feature_row_intro:
 - excerpt: This course is brought to you by the Lab of Environmental Informatics (University of Marburg, Germany) and was funded by the "digLL" initiative of the Hessian Ministry of Higher Education, Research, Science and the Arts.
+# Optional image metadata; learning outcomes are rendered as Markdown below.
 feature_row_ilos:
 - image_path: "/assets/images/envobs_ilos.jpg"
   alt: PC monitor laying in the garden of the institute.
   title: Intended learning outcomes
-  excerpt: "Template..."
 ---
 
 {% include feature_row id="feature_row_intro" type="center" %}

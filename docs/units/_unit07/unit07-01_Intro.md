@@ -1,19 +1,21 @@
 ---
 title: "Introduction to loops"
+order: 1
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
-*You will learn what operators and loops do and how to write an if-then-else construct.*
+*You will learn how to use operators, conditional statements, loops, and functions.*
 
 <!--more-->
 
-At the end of this unit you should know
+At the end of this unit, you should know
 
-* what arithmetic, relational and logical operators are
-* what for-loops, lapply-loops and while-loops are and how to choose the right one
-* and how to build if-then-else constructs.
+* what arithmetic, relational, and logical operators do,
+* how to use for loops, `lapply()`, and while loops,
+* how to write if-then-else statements, and
+* how to define and call your own functions.
 
 ## Comments?
 You can leave comments below if you have questions or remarks about any of the text or code in this unit.

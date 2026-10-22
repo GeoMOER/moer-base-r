@@ -1,5 +1,6 @@
 ---
-title: write your own function
+title: Writing your own functions
+order: 6
 toc: TRUE
 toc_float: TRUE
 header:
@@ -8,7 +9,7 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
-You have already used many functions up to this point. Now it's time to write your own functions. A function takes an object *x*, or more, specified within the round brackets. What comes after the curly braces is what should happen with this object. Let's take the well-known function mean as an example. We know that the mean is calculated by summing all elements in a numeric vector and then dividing by the number of elements. So instead of using mean, we can write it as sum(x)/length(x), or, in a function form:
+You have already used many functions. Now it is time to write your own. A function can accept one or more arguments, listed in parentheses. Its body, enclosed in curly braces, contains the operations to perform. For example, the mean of a numeric vector without missing values is its sum divided by its length. We can write `sum(x) / length(x)` as a function:
 
 ```r
 function(x){sum(x)/length(x)}
@@ -19,7 +20,7 @@ To access this function later, you can also save it as an object in your environ
 my.mean <- function(x){sum(x)/length(x)}
 ```
 
-For an initial test, let's create a vector X (uppercase), then execute our function my.mean, and afterwards, use the standard mean function for comparison:
+For an initial test, create a vector `X` (uppercase), call `my.mean()`, and compare the result with `mean()`:
 
 ```r
 X <- c(50:100)
@@ -28,7 +29,7 @@ my.mean(X)
 mean(X)
 ```
 
-You can also create default settings:
+You can also define default argument values:
 
 ```r
 my.mean <- function(x, na.rm = TRUE){
@@ -48,7 +49,7 @@ X[sample(1:50, 4)] <- NA
 my.mean(X)
 my.mean(X, na.rm = FALSE)
 ```
-In this example, the __na.rm__ argument has a default value of __TRUE__ by defining it in the round bracket. If you call my.mean without providing a value for __na.rm__, it will use the default value - and calculate the mean after excluding NA-values. If na.rm is not __TRUE__, the second part of the loop will be executed. Let's have a look at a different example:
+In this example, `na.rm` has the default value `TRUE`, specified in the argument list. If you call `my.mean()` without supplying `na.rm`, the function excludes missing values before calculating the mean. With `na.rm = FALSE`, the function takes the `else` branch. Here is another example:
 
 ```r
 my_function <- function(x, y = 10) {
@@ -57,12 +58,12 @@ my_function <- function(x, y = 10) {
 }
 
 ```
-Here, our value x will be increased by 10 as long as y is not defined.
+If the caller omits `y`, the function uses its default value of 10 and adds it to `x`.
 
 ```r
 my_function(5)  # This will result in 15 (5 + 10)
 ```
-However, you can still override the default value by explicitly specifying a value for y when calling the function:
+You can override the default by supplying a value for `y` when calling the function:
 
 ```r
 my_function(5, 20)  # This will result in 25 (5 + 20)

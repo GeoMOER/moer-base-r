@@ -1,5 +1,6 @@
 ---
-title: Lapply-loops
+title: Loops with lapply
+order: 8
 toc: TRUE
 toc_float: TRUE
 header:
@@ -9,10 +10,10 @@ header:
 ---
 
 
-As examples for the apply family we shortly introduce `lapply`.
+This page develops the examples from the apply family using `lapply()`.
 
 ## Basic structure
-The `lapply` function can be your workhorse when it comes to loops over data frames but it can also drive you mad if you do not understand its way of handling stuff.
+The `lapply()` function is useful for processing data frames. To use it effectively, you need to understand how it processes input elements and collects results.
 
 `lapply()` returns a list with one element for each input element. Each list element contains the value returned by one call to the supplied function. An explicit `return()` is optional: a function also returns the value of its last evaluated expression.
 
@@ -28,9 +29,9 @@ d <- c(10, 20, 30, 40, 50, 60, 70)
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 ```
 
-We now want to build a new data frame with the same columns but the characters of columns Cat1 and Cat2 should be converted to lower case and the values of Val1 and Val2 should become their square root. This is the same task as used in the for loop code examples.
+We want a new data frame with the same columns, with character values in `Cat1` and `Cat2` converted to lowercase and numeric values in `Val1` and `Val2` replaced by their square roots. This is the same task as in the examples using for loops.
 
-In order to solve this problem with an `lapply` call, we have to define an appropriate function within the () brackets of the `lapply` call structure. Since we want to iterate over all (four) columns of the data frame, we define the iteration sequence using the `ncol` function which in that specific case is the same as `seq(4)` since we have four columns:
+Supply a function to `lapply()` that processes one column at a time. The input sequence `seq(ncol(df))` supplies the column positions; here, it is equivalent to `seq(4)`:
 
 ```r
 result <- lapply(seq(ncol(df)), function(x){
@@ -43,9 +44,9 @@ result <- lapply(seq(ncol(df)), function(x){
 })
 ```
 
-As you can see, the function we want to apply is passed within the outer () brackets and starts with the { bracket in the first line. The actual body of the function (i.e. what controls what is done within it) starts in the second line and ends in line six. The function is closed in line seven with the closing } bracket and the `lapply` function call is closed directly afterwards with the closing ) bracket.
+The second argument is an anonymous function, introduced by `function(x)`. Its body is enclosed in curly braces. The final `})` closes the function body and the `lapply()` call.
 
-Let's have a look at what is returned, i.e. what is stored in the variable called result:
+Inspect the returned values stored in `result`:
 
 ```r
 
@@ -71,7 +72,7 @@ str(result)
 ##  $ : num [1:7] 1 1.41 1.73 2 2.24 ...
 ##  $ : num [1:7] 3.16 4.47 5.48 6.32 7.07 ...
 ```
-Obviously it is a list with four sub-elements and each element contains a vector which holds the modified content of one of the data frame columns. Since we originally wanted a data frame, we have to convert this list to a data frame using:
+The result is a list of four vectors, one for each transformed column. Convert it to a data frame:
 
 ```r
 result_df <- data.frame(result)
@@ -121,7 +122,7 @@ str(result_df)
 ##  $ c.3.16227766016838..4.47213595499958..5.47722557505166..6.32455532033676..: num  3.16 4.47 5.48 6.32 7.07 ...
 ```
 
-Although it looks odd, it is a data frame but the column names are not nice. Let us fix this:
+The conversion creates column names from the values. Restore the original column names:
 
 ```r
 colnames(result_df) <- colnames(df)
@@ -134,7 +135,7 @@ str(result_df)
 ##  $ Val2: num  3.16 4.47 5.48 6.32 7.07 ...
 ```
 
-All problems solved.
+The result now has the original column names.
 
 ## Using variables defined outside the lapply loop
 The function supplied to `lapply()` can read variables from the surrounding environment. Here, we define `var_outside` before the call and use it inside the function to multiply the square roots by 10:
@@ -194,7 +195,7 @@ result
 ## 7    a    y 26.45751 83.66600
 ```
 
-The result is obviously correct. Now have a look at *df* and test:
+Now inspect `df` and `test` outside the function:
 
 ```r
 test
@@ -220,7 +221,7 @@ The local variable `df` holds the result of `tolower()`, and the local variable 
 To replace the original data frame with these transformed values, use `df <- result` after the function call and conversion. This assignment happens in the surrounding environment. For the next example, we keep `df` unchanged.
 
 ## Returning data frames within the lapply loop
-One last but important and heavily utilized procedure: In the above examples, the function used within `lapply` returns a vector which allows an easy conversion of the overall returned nested list from the `lapply` function by using the `as.data.frame` function. In many cases, your function will return a data frame, not a vector, which makes the conversion a tiny bit more complicated.
+In the earlier examples, each function call returns a vector, so the result list can be converted to a data frame with `as.data.frame()`. If each call returns a data frame, combine those data frames explicitly:
 
 Here is an example that combines columns Cat1 and Cat2, and columns Val1 and Val2, into new columns. We change the iteration sequence passed to `lapply()` so that the function processes one row at a time. This example can also be implemented without a loop; it serves as an illustration:
 
@@ -257,7 +258,7 @@ str(result)
 ##   ..$ Col2: num 490
 ```
 
-The result is a structured list with a data frame within each list element. To build an overall data frame one basically just has to copy each row of the individual data frames below each other. This is done by the following statement:
+The result is a list of data frames. Combine them by rows with `do.call("rbind", result)`:
 
 ```r
 result <- do.call("rbind", result)

@@ -1,5 +1,6 @@
 ---
-title: apply
+title: The apply family
+order: 7
 toc: TRUE
 toc_float: TRUE
 header:
@@ -8,11 +9,11 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
-For-loops are very flexible and a good start to get to know the principle, but there's another way to repeat tasks, which can be a bit more effective and reduces the amount of code. Introducing the *apply*-family.
+For loops are a flexible way to repeat tasks. The apply family offers another approach that can make the code shorter and easier to read.
 
-The apply functions are specific to the data type or have a specific data type as output.
+Functions in the apply family differ in the input structures they accept and the output structures they return.
 
-A quick review of data types:
+A quick review of data structures:
 
 ```r
 vector.letter <- LETTERS[1:10]
@@ -25,8 +26,7 @@ names(list.all) <- c("vector", "matrix", "dataframe")
 
 ```
 
-**lapply** is commonly used with vectors and lists, and its output is a list.
-It will apply the function, which is given in the curly brackets, to each element of a list:
+**`lapply()`** applies a function to each element of a list or vector and returns a list. In this example, the supplied function calculates the mean tree height for each data frame in the list:
 
 
 ```r
@@ -50,13 +50,13 @@ print(mean_heights)
 
 For more examples, have a look at the next page.
 
-**sapply** simplifies the output into a vector. However, it's not always applicable and might just as well return a list:
+**`sapply()`** tries to simplify the results to a vector or matrix. If the results cannot be simplified, it returns a list:
 
 ```r
 sapply(1:10, function(x) x + 1)
 
 ```
-**apply** applies a function over selected dimensions of a matrix or array. For a matrix, `MARGIN = 1` applies the function to each row, and `MARGIN = 2` applies it to each column.
+**`apply()`** applies a function over selected dimensions of a matrix or array. For a matrix, `MARGIN = 1` applies the function to each row, and `MARGIN = 2` applies it to each column.
 
 When you pass a data frame to `apply()`, R first converts it to a matrix. All values in a matrix have the same type. If the data frame contains both numeric and character columns, the matrix contains character values, so functions such as `sum()` cannot be used directly. Select only the numeric columns before calculating sums.
 
@@ -87,7 +87,7 @@ cat("Column Sums: ", col_sums, "\n")
 
 ```
 
-**tapply** is used for group-based calculations:
+**`tapply()`** applies a function to values split into groups:
 
 ```r
 # Sample forest data

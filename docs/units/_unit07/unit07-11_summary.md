@@ -1,5 +1,6 @@
 ---
 title: "Summary"
+order: 11
 unit_summary: true
 toc: TRUE
 published: TRUE
@@ -60,4 +61,4 @@ Do not assume every input is valid. For example, `mean()` returns `NA` for data 
 2. What structure does `lapply(measurements, classify_mean)` return? What would `sapply()` try to do differently?
 3. How would you classify both sites using a threshold of 15? Predict both labels before running the code.
 
-Revisit [decisions]({{ '/unit07/unit07-07_if-then-else.html' | relative_url }}), [lapply]({{ '/unit07/unit07-06_lapply.html' | relative_url }}), and [writing functions]({{ '/unit07/unit-07-05d-function.html' | relative_url }}) if needed.
+Revisit [decisions]({{ '/unit07/unit07-04_if-then-else.html' | relative_url }}), [lapply]({{ '/unit07/unit07-08_lapply.html' | relative_url }}), and [writing functions]({{ '/unit07/unit07-06_functions.html' | relative_url }}) if needed.

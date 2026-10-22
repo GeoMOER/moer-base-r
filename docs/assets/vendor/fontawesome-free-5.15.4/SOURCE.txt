@@ -1,0 +1,13 @@
+# Font Awesome Free 5.15.4
+
+The stylesheet and webfonts are unmodified files from the official free release:
+
+- Upstream: https://github.com/FortAwesome/Font-Awesome/tree/5.15.4
+- Commit: `7d3d774145ac38663f6d1effc6def0334b68ab7e`
+- Retrieved: 2026-10-22
+- Files: `css/all.min.css`, all 15 files under `webfonts/`, and `LICENSE.txt`.
+- Original file hashes: `SHA256SUMS.json`.
+
+The course loads the stylesheet through `head/custom.html`. The `footer_scripts` configuration retains the theme's local JavaScript and avoids its failing external kit. Local files preserve the existing `fa`/`fas`/`far`/`fab` markup and remove the kit/network dependency for icons.
+
+The upstream license is preserved in `LICENSE.txt`: fonts use SIL OFL 1.1, code uses MIT, and SVG/JS icon artwork uses CC BY 4.0 as described there. This note does not change the licenses of other course materials.

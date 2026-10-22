@@ -1,12 +1,13 @@
 ---
 title: If-then-else
+order: 4
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
-If-then-else statements are the controlling structures in each program. The simplest form is:
+If-then-else statements select which code to run based on a condition. The simplest form is:
 
 ```r
 a <- 5.0
@@ -20,7 +21,7 @@ if (a < b) {
 ## [1] "a is smaller than b"
 ```
 
-Such an if-statement can be extended by *n* if-else statements and - optionally - an else-statement. To illustrate this, let us start with an if-statement different from the one above but include it later:
+An `if` statement can be extended with `else if` branches and an optional final `else` branch. In this example, a more specific condition is checked first:
 
 ```r
 if (a < b/2) {
@@ -36,9 +37,9 @@ if (a < b/2) {
 ## [1] "a is smaller than b"
 ```
 
-In such a structure, the first if-statement is evaluated. If it is true, all following else-if- (or else-)statements are skipped and the execution continues below the decision structure.
+Conditions are checked in order. The first condition that is `TRUE` selects its branch; later branches are skipped. If none is `TRUE`, the final `else` branch runs, if present.
 
-The above example would not print anything if a is larger than b. For this case, other else-if statements could be used but if no differentiation should be made for any case of a larger than b, this can also be solved by a final else-statement.
+The example prints nothing when `a` is larger than `b`, because none of its conditions is `TRUE`. Add a final `else` branch to handle that case:
 
 ```r
 a <- 15.0
@@ -58,7 +59,7 @@ if (a < b/2) {
 ## [1] "a is larger than b."
 ```
 
-Of course, boolean expressions could also be used within such structures:
+You can combine comparisons with logical operators:
 
 ```r
 c <- 20.0
@@ -75,7 +76,7 @@ if (a < b & a == c) {
 ## [1] "a non-equal to c."
 ```
 
-The above examples document if-statements which are executed if the condition is true since this is the default action for something like `a < b`. Of course, one can also check if a condition is false:
+An `if` branch runs when its condition is `TRUE`. You can also test whether a stored logical value is `FALSE`:
 
 ```r
 test <- a < b

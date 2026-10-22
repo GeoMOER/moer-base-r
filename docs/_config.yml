@@ -31,7 +31,7 @@ title: Base R
 name: &name "Lab of Environmental Informatics" # &name is a YAML anchor which can be *referenced later
 email: dirk.zeuss@uni-marburg.de
 description: >- # this means to ignore newlines until next item
-  course course-materials geography remote-sensing marburg-open-educational-resource
+  course-materials geography remote-sensing marburg-open-educational-resource
   physical-geography environmental-science nature-conservation r SDM
 
 ##### Social Sharing ##########################################################
@@ -229,6 +229,10 @@ defaults:
       layout: single
       sidebar:
         nav: "docs"
+
+# Use the theme's local script; Font Awesome is hosted locally via head/custom.html.
+footer_scripts:
+  - /assets/js/main.min.js
 
 # Plugins
 plugins:

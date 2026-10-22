@@ -1,5 +1,6 @@
 ---
 title: Operators
+order: 2
 header:
   image: /assets/images/unit_images/u07/header.png
   image_description: "loop"
@@ -9,31 +10,29 @@ header:
 > “Data is the new oil.” — Clive Humby
 <!--more-->
 
-Control structures require arithmetic, logical or also boolean operators which test simple relationships between two or more variables.
-Depending on the test results, control structures can be used to decide how the program should go on.
-Common simple examples include arithmetic (e.g. addition), comparison (e.g. "greater than" with >), and logical operations (e.g. AND, also written && in some languages).
+Operators perform calculations, compare values, or combine logical values. Control structures use logical conditions to decide which code to run. Common examples include arithmetic operations such as addition (`+`), comparisons such as greater than (`>`), and Boolean operations such as AND (`&` or `&&` in R).
 
 | Operator  | Description                          | Example   |
 |-----------|--------------------------------------|-----------|
-| **Arithmetic Operators** ||
+| **Arithmetic operators** ||
 | +         | Addition                             | `x + y` |
 | -         | Subtraction                          | `x - y` |
 | *         | Multiplication                       | `x * y` |
 | /         | Division                             | `x / y` |
 | ^ or **   | Exponentiation                       |  `x^y`  |
 | x %% y    | Modulus (x mod y)                    | `x %% y` |
-| **Relational Operators** ||
-| <         | test if x is smaller than y           | `x < y`  |
-|   >       | test if x is greater than y           | `x > y`  |
-|  ==       | test if x is exactly equal to y       | `x == y` |
-|    >=     | test if x is greater than or equal to y  | `x >= y` |
-|   <=      | test if x is less than or equal to y  | `x <= y` |
-|   !=      | test if x is not equal to y           | `x != y` |
-| **Logical Operators** ||
+| **Relational operators** ||
+| <         | Test whether x is smaller than y           | `x < y`  |
+|   >       | Test whether x is greater than y           | `x > y`  |
+|  ==       | Test whether x equals y       | `x == y` |
+|    >=     | Test whether x is greater than or equal to y  | `x >= y` |
+|   <=      | Test whether x is less than or equal to y  | `x <= y` |
+|   !=      | Test whether x differs from y           | `x != y` |
+| **Logical operators** ||
 | !         | logical NOT                           | `!x`        |
 | &         | element-wise logical AND              | `x & y`     |
 | &&        | logical AND                           | `x && y`    |
-| &#124;     | element-wise logical OR              |  <code>y &#124; y</code>    |
+| &#124;     | element-wise logical OR              |  <code>x &#124; y</code>    |
 | &#124;&#124;        | logical OR                  |  <code>x &#124;&#124; y</code>  |
 
 ------
@@ -42,12 +41,12 @@ Common simple examples include arithmetic (e.g. addition), comparison (e.g. "gre
   <p><strong>Information</strong>
   <br>
 <ul>
-    <li>Modulo (mod) is a mathematical function that names the remainder of a division of two integers.<br><br>
+    <li>Modulo gives the remainder after division.<br><br>
   <center>Example: 10 %% 3 = 1 (i.e. "ten modulo three equals one") <br> because 10 / 3 = 3, remainder 1 (3 * 3 + 1 = 10)</center></li><br>
 
-    <li>Relational operators are used to compare between values.</li> <br>
+    <li>Relational operators compare values.</li> <br>
 
-    <li>Logical operators are used to carry out Boolean operations like AND, OR etc. Such operators compare two variables and return true or false depending on the result of the comparison.</li><br>
+    <li>Logical operators carry out Boolean operations such as AND, OR, and NOT on logical values.</li><br>
 
     <li>Operators & and &#124; perform element-wise operations. Their result has the length of the longer operand. <br><br> Operators && and &#124;&#124; use a single logical value from each operand and return a single logical value. Use length-one operands; supplying a vector with more than one element causes an error in current R versions.</li>
   </ul>

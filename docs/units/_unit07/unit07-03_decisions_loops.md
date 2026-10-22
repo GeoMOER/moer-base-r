@@ -1,5 +1,6 @@
 ---
-title: Decisions and Loops
+title: Decisions and loops
+order: 3
 toc: TRUE
 toc_float: TRUE
 header:
@@ -8,7 +9,7 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
-Decision structures are like junctions in the analysis workflow and decide which way to go during runtime. Loops are the workhorses for repeating the same computations on different subsets of the data.
+Conditional statements choose which code to run based on a logical condition. Loops repeat operations for different values or subsets of data.
 
 ## If-then-else
 If-then-else decisions are useful if your computation needs different workflows for different variable values.
@@ -22,9 +23,9 @@ if("<some logical (and boolean) expression>"){
 ```
 
 ## Loops
-Except for the lapply-loop (representative for R's entire *apply* family), the following loops exist in all programming languages.
+For loops and while loops are common control structures in many programming languages. In R, the apply family provides functions for repeating operations over data structures.
 
-### For-loop
+### For loops {#for-loop}
 Useful if your computation needs the same sequential workflow for different variables or subsets.
 ```
 # Pseudocode
@@ -33,8 +34,8 @@ for(<iteration variable> in <control vector>){
 }
 ```
 
-### Lapply-loop
-The *apply* family of loops is special to R. One of the most used loops of this family is `lapply`. It is largely comparable to a for-loop but calls a function for each iteration and returns a list of the function's results. Hence, it is useful if your computation needs the same sequential workflow for different variables or subsets *and* you want the results returned in a list.
+### Loops with lapply {#lapply-loop}
+The apply family is part of R. One frequently used member is `lapply()`, which calls a function for each input element and returns a list of results. Use it when you want to repeat an operation and collect the results in a list.
 
 ```
 # Pseudocode
@@ -44,8 +45,8 @@ lapply(<control vector>, function(<iteration variable>){
 })
 ```
 
-### While-loop
-Useful if your computation needs the same sequential workflow for a variable or subsets but you only know how often it is needed when the loop is already running.
+### While loops {#while-loop}
+Useful when an operation must be repeated while a condition remains true and the number of iterations may not be known in advance.
 
 ```
 # Pseudocode
@@ -59,12 +60,12 @@ while("<some logical expression with iteration variable>"){
 
 {% include figure image_path="/assets/images/unit_images/u07/which-loop-to-choose.jpg" alt="Decision tree: for a known sequence of iterations use a for-loop; when applying a function and collecting a list use lapply; when repetition depends on a condition use a while-loop." %}
 
-One rule for choosing between a while- and a for-loop is that __while-loops__ are used when the number of iterations is __unknown__ and __for-loops__ are used when the number is __known__.
+As a general guide, use a for loop to iterate over a known sequence. Use a while loop when repetition depends on a condition checked during execution.
 
 Let’s go through a few examples of each:
 
-* Use a for-loop to iterate over an array.
-* Use a for-loop when you know the loop should execute *n* times.
-* Use a while-loop for reading a file into a variable.
-* Use a while-loop when asking for user input.
-* Use a while-loop when the increment value is nonstandard.
+* Use a for loop to iterate over a known sequence of values.
+* Use a for loop when you know the loop should execute *n* times.
+* Use a while loop when reading records until the end of a file.
+* Use a while loop when asking for user input until it meets a condition.
+* Use a while loop when the next step depends on the current result.

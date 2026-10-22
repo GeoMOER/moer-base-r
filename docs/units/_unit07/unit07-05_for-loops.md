@@ -1,5 +1,6 @@
 ---
-title: For-loops
+title: For loops
+order: 5
 toc: TRUE
 toc_float: TRUE
 header:
@@ -8,9 +9,9 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
-For-loops are the mother of all repeating structures which enable the execution of certain code blocks for multiple times. For-loops are useful if the number of necessary repetitions is known at the starting time of the loop (which is not necessarily the starting time of the program!).
+For loops repeat a block of code for each element in a sequence. The sequence is evaluated when the loop starts, so its length determines the number of iterations.
 
-In for loops, the number of repeated executions is given at the start time either by a variable which is defined during the runtime of the previous code or by a constant supplied by the programmer. Imagine that we know already how many times the loop has to be repeated, one can implement it simply as:
+The sequence can be defined directly or stored in a variable before the loop starts. Here, the loop iterates over the values from 7 to 10:
 
 ```r
 for(i in seq(7,10)){
@@ -24,7 +25,7 @@ for(i in seq(7,10)){
 ## [1] 9
 ## [1] 10
 ```
-Note that the variable i which controls the for loop must not be changed within the loop.
+The loop assigns each value in the sequence to `i` in turn. Avoid changing `i` inside the loop, because the next iteration will assign the next sequence value to it.
 
 Of course, you can nest for loops:
 
@@ -56,9 +57,9 @@ for(i in seq(7, 10)){
 ## [1] "   Inner loop value of c: 10"
 ```
 
-The loop might look complicated but the reason for that is just the if-else statement. It is necessary since the second loop must run from `c` to the integer value just larger than `a` (i.e. 8, 9, 10). Therefore, `a` must be increased by 1 if it is smaller than 10 but stay 10 if it equals 10.
+The `if` statement sets `lower_border` to `i + 1` when `i` is smaller than 10, and to 10 otherwise. The inner loop then assigns values from 10 down to `lower_border` to `j`.
 
-Instead of defining the number of repetitions in the for loop statement, one can also use any vector variable. The number of iterations will always be equal to the length of the vector. This is not surprising, since the `seq` function used so far also simply returns a vector, e.g.:
+You can also store the sequence in a vector before using it in a for loop. The `seq()` function used above returns such a vector:
 
 ```r
 t <- seq(7, 10)
@@ -77,7 +78,7 @@ class(t)
 ## [1] "integer"
 ```
 
-As obvious from the above examples, the iteration variable (i.e. i or j in our examples above ) is set to the first value of the vector during the first iteration, then to the second value during the second iteration and so on. Since the number of repetitions is defined by the length of the control vector and not by the values within it, one can also use a vector with e.g. characters to construct a for loop:
+The iteration variable (`i` or `j` above) receives the first element of the sequence in the first iteration, the second element in the next iteration, and so on. The sequence can also contain character values:
 
 ```r
 a <- c("A", "B", "C", "D")
@@ -93,7 +94,7 @@ for(elements in a){
 ## [1] "D"
 ```
 
-**Important:** while this behavior is useful for programming pros, it might be very confusing for greenhorns. Therefore you can just stick to using numbers as iteration elements. The above for loop can be implemented using numbers as follows:
+You can also iterate over numeric positions and use them to select values from the vector:
 
 ```r
 for(i in seq(4)){
@@ -108,7 +109,7 @@ for(i in seq(4)){
 ## [1] "D"
 ```
 
-If you want to use this for arbitrary lengths of vector a, just pass the length of the vector into the `seq` function:
+To adapt the example to the length of `a`, pass `length(a)` to `seq()`:
 
 ```r
 for(i in seq(length(a))){
@@ -149,7 +150,7 @@ cat("Current iterator: ", i, " | ", "Current content of object: ", a, "\n", sep 
 ```
 
 
-Of course the same is possible for data frames. Let's make an example where we have the following data frame:
+You can also modify a data frame. Consider the following example:
 
 ```r
 a <- c("A", "B", "C", "A", "B", "A", "A")
@@ -159,7 +160,7 @@ d <- c(10, 20, 30, 40, 50, 60, 70)
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 ```
 
-We now want to modify this data frame in that way that the characters of columns Cat1 and Cat2 are converted to lower case and the values of Val1 and Val2 are converted to their square root. Therefore we must iterate over each column and then we can apply the `tolower` function to all rows of the first two columns and the `sqrt` function to all entries of the last two columns. While we could use `seq(4)` as control vector, we can also get the number of columns from the data frame using the `ncol` function:
+We want to convert the character values in `Cat1` and `Cat2` to lowercase and replace the numeric values in `Val1` and `Val2` with their square roots. The loop processes one column at a time, using `tolower()` for character columns and `sqrt()` for numeric columns. Instead of writing `seq(4)`, we can use `seq(ncol(df))` to get the column positions:
 
 ```r
 for(i in seq(ncol(df))){
@@ -171,8 +172,7 @@ for(i in seq(ncol(df))){
   }
 ```
 
-As you can see, we iterate over the columns of the data frame by using i as column index (i.e. `df[,i]`). If the current column is a character vector (first if statement), the content of the actual column is converted to lower cases and the original
-column content is overwritten (line 3). If the actual column is numeric (second if statement), the content of this column is converted to its square root and the original column content is overwritten (line 4).
+The variable `i` selects the current column with `df[,i]`. If the column contains character values, `tolower()` replaces them with lowercase values. If it is numeric, `sqrt()` replaces its values with their square roots.
 In the end, the data frame looks like this:
 
 ```r
@@ -191,10 +191,9 @@ df
 
 ## Building a new variable with a loop
 
-The above examples show how to modify an existing variable. If you want to keep your original values but save the results in a new variable, you have to define it first outside the loop. Afterwards you modify it within the loop so
-it is similar to the task above.
+To keep the original values and store the results separately, create a result variable before the loop and update it during each iteration.
 
-For example, if you want to convert the elements of vector a to lower case and store the results in another vector, the following would be necessary:
+For example, convert the elements of `a` to lowercase and store them in a new vector:
 
 ```r
 test <- character()   # this is an empty character vector
@@ -206,9 +205,9 @@ test
 
 ## [1] "a" "b" "c" "a" "b" "a" "a"
 ```
-Please note that this example can of course easily be implemented without a loop so just take it as a simple illustration.
+This task can also be implemented without a loop; here it illustrates how to collect results.
 
-If you want to construct a data frame, it is just a little more complicated. Let's get back to the original data frame used in the example just above:
+To collect results in a data frame, return to the original example:
 
 ```r
 a <- c("A", "B", "C", "A", "B", "A", "A")
@@ -218,7 +217,7 @@ d <- c(10, 20, 30, 40, 50, 60, 70)
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 ```
 
-If the lowercase/square root conversion results should be stored in a new data frame, we have to define at least one column of this new data frame first:
+For this example, initialize a new data frame with one column and the required number of rows:
 
 ```r
 df_new <- data.frame(Col1 = rep(NA, nrow(df)))
@@ -234,7 +233,7 @@ df_new
 ## 6   NA
 ## 7   NA
 ```
-We simply initialize the column with so many rows as we find in the source data frame (i.e. `nrow(df)`). Since one can not initialize a completely empty column, we write *NAs* in it.
+The new data frame has the same number of rows as `df`, given by `nrow(df)`. Its first column is filled with `NA` values as placeholders.
 
 Let's start with the loop:
 
@@ -248,8 +247,7 @@ for(i in seq(ncol(df))){
   }
 ```
 
-The only difference to the example above is that the result of the conversions are not stored in the original data frame but in our newly created one.
-Let's have a look at its content:
+The converted values are now stored in `df_new`, leaving `df` unchanged. Inspect the result:
 
 ```r
 df_new
@@ -264,9 +262,9 @@ df_new
 ## 7    a  y 2.645751 8.366600
 ```
 
-Looks good. Obviously, columns two to four (i.e. V2, V3, V4) have been created automatically when *i* in `df_new[,i]` was 2, 3 or 4.
+Columns two to four (`V2`, `V3`, and `V4`) were created when `i` in `df_new[,i]` was 2, 3, or 4.
 
-If you want to change the column names to the original column names of data frame df, just do it:
+Restore the original column names from `df`:
 
 ```r
 colnames(df_new) <- colnames(df)
@@ -284,19 +282,19 @@ str(df_new)
 
 Sometimes it can be a little overwhelming to write a loop from top to bottom. That's why it makes sense to tackle the whole thing piece by piece. The following approach might be helpful.
 
-1) Start by setting up an empty for(){} loop, establishing the structure for your iterative process. This initial step helps maintain proper text indentation and structure in your code.
+1) Start with the structure of a for loop: `for (...) { ... }`. Indent the code inside the braces.
 
 2) Take one piece of your data and define it as your data source.
 
 3) Write down all the operations you want to perform within the loop. 
 
-4) Identify and handle replaceable elements within your loop. These are parts of your code that may change during each iteration. Use variables or placeholders to represent these elements, enhancing code flexibility and readability.
+4) Identify which values change during each iteration and represent them with variables.
 
 5) Think about how you want to save the output of each iteration. Create a result container, such as a list or matrix, outside the loop, and store the results there.
 
 6) Consider using vectorized operations when possible to improve loop efficiency and reduce code complexity.
 
-7) Debug and test your loop incrementally, checking for errors and unexpected behavior after each iteration. Depending on the complexity of the data, the loop may not be complete. Missing data, for example, often leads to a subscript out of bound error. To eliminate these errors bit by bit, you can use the cat(i,"\n") command to specify the point at which the loop stops, and continue to process the data or add conditions accordingly.
+7) Debug and test the loop incrementally. Check for errors and unexpected behavior after each iteration. An invalid index can cause a "subscript out of bounds" error; missing values can also cause errors in conditions or calculations. Use `cat(i, "\n")` to identify the iteration where the loop stops, then inspect its input and operations.
 
 
 {% include figure image_path="/assets/data/data/for_loop2.gif" caption="Animation of the plot process" alt="Animation of iterating over named data frames to fit a model, store its summary and save a plot for each data frame. The complete loop is given in the preceding code." %}
