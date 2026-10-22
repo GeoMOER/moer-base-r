@@ -1,33 +1,35 @@
 ---
 title: "CSS in R Markdown"
-toc: TRUE
-toc_float: TRUE
+description: "Learn the basics of HTML and CSS, then use stylesheets and CSS chunks to customise R Markdown HTML output."
+excerpt: "Learn the basics of HTML and CSS, then use stylesheets and CSS chunks to customise R Markdown HTML output."
+toc: true
 header:
   image: /assets/images/spotlights/css_header.jpg
-  image_description: "A spotlight"
+  image_description: "Blue code-themed banner reading CODE IS POETRY."
   caption: "Image from [Wallup.net](https://wallup.net)"
 ---
 
-<!--more-->
-Before a CSS file can be included in a markdown document, you must first understand what CSS is and how it relates to HTML.
+This Spotlight introduces HTML and CSS, then shows how to use CSS to customise the HTML output of an R Markdown document.
 
-# Basics of web development
-The holy trinity in web development: HTML, CSS, and JavaScript are inevitably linked and working together.
+<!--more-->
+
+## Basics of web development
+HTML, CSS and JavaScript have complementary roles in web development.
 
 <img alt="" src="https://html-css-js.com/images/og.jpg" width="451" height="334" align="right" vspace="10" hspace="20">
 <p>
-<b>HTML</b> provides the individual elements of the page, defines their type and the structure and how they are logically arranged to each other. The question is <u>"What is it"</u>? <br> <br>
-<b>CSS</b> stands for Cascading Style Sheets and takes care of the question <u>"What does it look like?"</u> <br> <br>
-With HTML and CSS, web pages are static. If I want to change elements or their appearance, <b>JavaScript</b> comes into play. The question would be: <u>"What should it do?"</u>?  <br>
-Since HTML properties as well as CSS properties can be changed with JavaScript, the content and structure as well as the look and layout of a page can be changed. All one needs to do is say when this behavior should happen. For example if the color of a textbox should change as soon as someone touches it or a website should have interactive elements, JavaScript code is needed.
+<b>HTML</b> defines a page's elements and how they are arranged. It answers the question <u>"What is it?"</u> <br> <br>
+<b>CSS</b> stands for Cascading Style Sheets and answers the question <u>"What does it look like?"</u> <br> <br>
+<b>JavaScript</b> adds scripted behaviour, answering the question <u>"What should it do?"</u> <br>
+JavaScript can change a page's content, structure and appearance in response to events. Some interactions can be handled by CSS alone: for example, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover"><code>:hover</code></a> can change an element's colour when a pointer rests over it. Use JavaScript when the desired behaviour requires scripting.
 
 
 You can try the differences and play with the heads from the picture above on [html-css-js.com](https://html-css-js.com/).
 
-For simplicity JavaScript is now omitted.
+The rest of this Spotlight focuses on HTML and CSS.
 </p>
 
-## What is HTML?
+### What is HTML?
 HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.
 
 It is the language used to create webpages. "Hypertext" refers to the hyperlinks that an HTML page may contain. "Markup language" refers to the way tags are used to define the page layout and elements within the page.
@@ -37,7 +39,7 @@ Below is an example of HTML used to define a basic webpage with a title and a si
 ---
 ```html
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <title>Description of the page (appears in the title bar of the browser)</title>
   </head>
@@ -53,7 +55,7 @@ And the result in the page body:
 <div class="notice">This text is displayed in the browser window.</div>
 ---
 
-These angle brackets are typical of HTML. HTML is a markup language, which means that there is text, and there are symbols that mark sections of text and tell the browser what that piece of text means. To distinguish symbols from text, you put them in angle brackets. The <code>&lt;html&gt;</code> tag means: this is where the HTML section starts. If the symbols are to mark a section of text, there must be one for "end" in addition to the symbol for "beginning". The closing tag for <code>&lt;html&gt;</code> is positioned at the end of the example and it looks like this: <code>&lt;/html&gt;</code>. It tells the browser that the HTML section ends here. End symbols differentiate from start symbols by the slash that comes between the angle bracket and the symbol name.
+HTML tags use angle brackets to mark elements and tell the browser how to interpret their content. Container elements such as <code>&lt;html&gt;</code> and <code>&lt;p&gt;</code> have opening and closing tags. A closing tag has a slash before the element name, as in <code>&lt;/html&gt;</code> at the end of the example. <a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element">Void elements</a>, such as <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code> and <code>&lt;input&gt;</code>, cannot contain content and do not have closing tags.
 
 The first line defines what type of contents the document contains. `<!doctype html>` means the page is written in HTML5. Properly formatted HTML pages should include
 <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>, tags, which are all included in the example above. The page title, metadata, and links to referenced files are placed between the <code>&lt;head&gt;</code> tags. The actual contents of the page go between the <code>&lt;body&gt;</code> tags.
@@ -70,20 +72,20 @@ More information and self-study elements on
 
 ---
 
-## What is CSS?
-CSS stands for **Cascading Style Sheets** with an emphasis placed on _Style_. While HTML is used to structure a web document (defining things like headlines and paragraphs, and allowing to embed images, video, and other media), CSS specifies the document’s style. Page layouts, colors, and fonts are all determined with CSS.
+### What is CSS?
+CSS stands for **Cascading Style Sheets** with an emphasis placed on _Style_. While HTML is used to structure a web document (defining things like headings and paragraphs, and allowing you to embed images, video and other media), CSS specifies the document’s style. Page layouts, colours and fonts are all determined with CSS.
 
 CSS is basically the appearance of a webpage.
 
 When something should change in the appearance of a page, the browser needs to know:
 
 * Which HTML element do we want to select (choose) in order to change its appearance?
-* What about this element (what property) do we want to change? (Position, color, background color, text size...?).
-* How should it finally look like (which value do we assign to the property)?
+* Which property do we want to change, such as its position, colour, background colour or text size?
+* What should it look like (which value do we assign to the property)?
 
 Examples are: <br>
-Text color: red;<br>
-background color: beige;<br>
+Text colour: red;<br>
+background colour: beige;<br>
 text size: twice the normal size;<br>
 Position: 2 cm further to the left;<br>
 etc.
@@ -95,16 +97,16 @@ A style property is set, in general terms, with this notation:
 ```
 name: value;
 ```
-To assign the text color red to an element, use the color property. Colors can be specified in many ways, the easiest is to specify the color name (the list is extensive):
+To make an element's text red, use the `color` property. Colours can be specified in several ways. One simple option is a colour name:
 ```
 color: red;
 ```
 
-And where to put it? Their place is in the style element, which must be found in the head area of the page. A style rule looks like this: <br>
+For an internal stylesheet, put CSS rules in a <code>&lt;style&gt;</code> element inside the page's <code>&lt;head&gt;</code>. A style rule looks like this: <br>
 
 {% include figure image_path="assets/images/spotlights/anatomy-of-a-css-rule.png" caption="Anatomy of a CSS rule. Image from [waiffarer.com](http://www.waiffarer.com)" alt="CSS rule h1 { color: orange; text-align: center; }: h1 is the selector, color and text-align are properties, and orange and center are their values." %}
 
-A CSS rule begins with a __selector__ that specifies which HTML elements the rule should apply to. One way to do this is to name HTML elements; this example rule applies to every <code>&lt;h2&gt;</code> element. The selector is followed by a left curly bracket ({), then the CSS properties to set for the selected elements. Each property is terminated by a semicolon. Finally, the rule is ended with a right curly bracket (}).
+A CSS rule begins with a __selector__ that specifies which HTML elements the rule should apply to. The illustration above uses <code>h1</code> to select first-level headings. The code example below instead uses <code>h2</code> to select second-level headings. The selector is followed by a left curly bracket ({), then the CSS properties to set for the selected elements. Each property is terminated by a semicolon. Finally, the rule ends with a right curly bracket (}).
 
 In the <code>&lt;head&gt;</code> area of your page, it may look like this:
 
@@ -123,7 +125,7 @@ p {
 
 Note that the semicolon after each property is an important part of CSS syntax. Line breaks are irrelevant for CSS rules.
 
-Besides the text color, the first rule specifies two other properties. One is the background-color, and the other is the font-size. 1.5 stands for "1.5" (one point five). You have to get used to this number notation with CSS. Like so many computer things, CSS comes from the USA, and there they use the dot as a decimal separator, not the comma as we do. The second rule sets the font color for all <code>&lt;p&gt;</code> elements to brown.
+Besides the text colour, the first rule sets the `background-color` and `font-size` properties. Use a decimal point in CSS numeric values, for example `1.5em`. The second rule sets the text colour of all <code>&lt;p&gt;</code> elements to brown.
 
 You can write as many CSS rules as you like in the <code>&lt;style&gt;</code> element. A separator between two rules is not required.
 
@@ -136,7 +138,7 @@ Note that for the subpages, which are after all in a directory other than index.
 
 ```
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <title>Description of the page (appears in the title bar of the browser)</title>
     <link rel="stylesheet" href="format.css">
@@ -163,7 +165,7 @@ Free CSS style templates available at
 
 <br><br>
 
-## HTML and CSS in a nutshell
+### HTML and CSS in a nutshell
 
 **Finally, compare HTML and CSS:**
 {% include figure image_path="/assets/images/spotlights/html-css.png" caption="The differences between HTML and CSS from [codingdojo.com](https://www.codingdojo.com/)" alt="Infographic comparing HTML for document structure and content with CSS for presentation, including colours, fonts and layout." %}
@@ -182,10 +184,12 @@ Further information about CSS:
 ---
 
 ## CSS in R Markdown
-It is strongly recommended to learn at least the basics of CSS (and JavaScript) if you wish to customize the appearance of HTML documents.
+This optional section assumes that you already know how to create an R Markdown (`.Rmd`) document and render it to HTML. The core units can be completed with R scripts; learning R Markdown is an additional step. If it is new to you, start with the R Markdown cheat sheet linked below before applying these CSS settings.
+
+Learn at least the basics of CSS if you wish to customise the appearance of HTML documents. JavaScript is useful for adding scripted behaviour, but is not required for the styling examples below.
 For beginners, it is extremely important to understand selectors and precedence of rules in CSS, otherwise you may be confused why your custom CSS rules do not work as expected (they may not have enough precedence).
 
-To include one or multiple custom stylesheets in an rmd document (R Markdown), you can use the css option, e.g.,
+To include a custom stylesheet in an R Markdown (`.Rmd`) document, use the `css` option in the YAML header, for example:
 
 ```
 output:
@@ -201,14 +205,15 @@ output:
     css: ["style-1.css", "style-2.css"]
 ```
 
-Alternatively, you can use a CSS code chunk to embed the style rules directly in your Rmd document, e.g.,
+Alternatively, use a CSS code chunk to embed style rules directly in your R Markdown document. Copy the complete chunk, including the opening and closing backticks:
 
-```
-{css, echo=FALSE}
+````markdown
+```{css, echo=FALSE}
 p {
   font-size: 32px;
 }
 ```
+````
 
 The chunk option `echo = FALSE` means the CSS code will not be displayed verbatim in the output, but a `<style>` tag containing the CSS code will be generated to the HTML output file.
 
@@ -264,7 +269,7 @@ and
 </ol>
 ---
 
-Nice, but what if you want to style a particular Markdown list with a specific color? Markdown renders to HTML elements like <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;p&gt;</code> without class names, so there is no way to add a unique class identifier to a Markdown element. Let’s use a neat CSS trick to easily style an individual Markdown element: the immediate sibling selector (+).
+What if you want to give one Markdown list a specific colour? The plain list syntax in this example does not assign a class to the generated <code>&lt;ol&gt;</code> element. Some Markdown variants support attributes, and raw HTML is another option. Here, we place an HTML marker directly before the list and use the adjacent sibling selector (<code>+</code>) to style the ordered list that immediately follows it.
 
 ```
 <style>

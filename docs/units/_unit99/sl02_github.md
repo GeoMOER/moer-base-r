@@ -1,12 +1,15 @@
 ---
 title: "The many faces of GitHub"
-toc: TRUE
-toc_float: TRUE
+description: "An introduction to Git and GitHub, including GitHub Desktop, Git Bash and Git integration in RStudio."
+excerpt: "An introduction to Git and GitHub, including GitHub Desktop, Git Bash and Git integration in RStudio."
+toc: true
 header:
   image: /assets/images/spotlights/github_header.png
-  image_description: "Hello GitHub."
+  image_description: "GitHub contribution calendar with a message formed by green squares."
   caption: "[Gitbanner](https://github.com/mappum/gitbanner) [by Matt Bell](https://github.com/mappum) [on GitHub](https://github.com)"
 ---
+
+This Spotlight introduces Git and GitHub, with examples using GitHub Desktop, Git Bash and RStudio.
 
 <!--more-->
 
@@ -19,8 +22,8 @@ You can operate Git either in the command line of your operating system or in Gi
 </p>
 
 You need to know the following commands when working with Git:
-* `git clone [URL]`: clone a Git repository from the URL to your local computer.
-* `git init`: Initialize a Git project locally. You can optionally upload this to GitHub or another host later.
+* `git clone [URL]`: Clone a Git repository from the URL to your local computer.
+* `git init`: Initialise a Git project locally. You can optionally upload this to GitHub or another host later.
 * `git add [file]`: Stage the file's current content for the next commit. The staging area (also called the index) holds the changes you have selected. If you edit the file again, run `git add` again to stage the newer content.
 * `git commit`: Record the staged changes in the local repository. A commit creates a point in the project history that you can inspect or return to later.
 * `git push origin [branch]`: Send the commits needed to update the named branch on the remote called `origin`. This shares committed work; unstaged or staged changes that have not been committed are not uploaded.
@@ -38,7 +41,7 @@ For more detail, see [Git's introduction to version control](https://git-scm.com
 </ul></p>
 
 
-**If you want a visualization of how GitHub works let's see how Eddie and his team use GitHub:**
+**Watch how Eddie and his team use GitHub:**
 <iframe title="Video: how a team uses GitHub" width="560" height="315" src="https://www.youtube-nocookie.com/embed/w3jLJU7DT5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
@@ -61,11 +64,11 @@ Before you can get started with Git and GitHub, you need a GitHub account and yo
 
 * First, create an account on [GitHub](https://github.com/). This is pretty straightforward and done quickly without any pitfalls.
 * To use GitHub productively, you need Git on your local computer. [Install Git](https://git-scm.com/downloads): Choose the installer you need for your operating system.
-* On Windows, launch the **Git Bash** you just installed. On macOS and Linux start the normal terminal.
+* On Windows, launch **Git Bash**. On macOS and Linux, open a terminal.
 * With `git config --global user.name "[Name]"` you now have to set your name.
 * As with your name, set your email address using `git config --global user.email "[Mail]"`. Use the email address associated with your GitHub account.
 
-## GitHub Tutorial: Setting up a repository {#github-tutorial-setting-up-a-repository}
+## GitHub tutorial: setting up a repository {#github-tutorial-setting-up-a-repository}
 If you want to get started with a project, you can create a repository in two ways:
 
 *First:*
@@ -90,7 +93,7 @@ Focus on what matters instead of fighting with Git. Whether you're new to Git or
 
 {% include figure image_path="/assets/images/spotlights/gh_d8.png" caption="GitHub Desktop interface used in this tutorial (existing course screenshot)." alt="GitHub Desktop Changes view: changed files on the left, a diff on the right, and commit summary and commit button below the file list." %}
 
-__Step by Step introduction to GitHub Desktop:__
+__Step-by-step introduction to GitHub Desktop:__
 
 **1.** Download [GitHub Desktop](https://desktop.github.com/)
 {% include figure image_path="assets/images/spotlights/gh_d0.png" caption="Download GitHub Desktop." alt="GitHub Desktop download page, with the Windows download button above an application preview." %}
@@ -102,12 +105,12 @@ __Step by Step introduction to GitHub Desktop:__
 {% include figure image_path="assets/images/spotlights/gh_d4.png" caption="Sign in to GitHub Desktop 4/4." alt="GitHub Desktop usage-statistics preference and Finish button at the end of setup." %}
 
 
-**3.** So far there is no Local Repository on your computer.
-{% include figure image_path="assets/images/spotlights/gh_d5.png" caption="No local Repositories available." alt="Empty GitHub Desktop window offering to create, add or clone a repository." %}
+**3.** So far there is no local repository on your computer.
+{% include figure image_path="assets/images/spotlights/gh_d5.png" caption="No local repositories available." alt="Empty GitHub Desktop window offering to create, add or clone a repository." %}
 
-**4.** First, you should choose an __empty__ folder to store the local data. For example `C:/GITHUB/`. <br> Second, select a repository you created on GitHub to clone a version in your local computer and you will see a local repository.
+**4.** First, choose an __empty__ folder to store the local data, for example `C:/GITHUB/`. <br> Second, select a repository you created on GitHub and clone it to your computer. You will then see a local repository.
 {% include figure image_path="assets/images/spotlights/gh_d6.png" caption="Cloning an existing repository 1/2." alt="GitHub Desktop File menu with Clone repository selected." %}
-{% include figure image_path="assets/images/spotlights/gh_d7.png" caption="Cloning an existing repository 2/3." alt="Clone a repository dialog: select the remote repository and local destination, then choose Clone." %}
+{% include figure image_path="assets/images/spotlights/gh_d7.png" caption="Cloning an existing repository 2/2." alt="Clone a repository dialog: select the remote repository and local destination, then choose Clone." %}
 
 
 **5.** Copy some .txt files to the local repository on your computer. GitHub Desktop shows the changes. Select the files or changes you want to include, enter a commit summary (mandatory) and an optional description, then click `commit`. This records a local commit; use the publish or push action in the next step to share it on GitHub.
@@ -116,7 +119,7 @@ __Step by Step introduction to GitHub Desktop:__
 **6.** For a branch that is not yet on GitHub, click `Publish branch`; for an already published branch, use `Push origin` to share new local commits. Your local branch and its corresponding remote branch can contain different commits. Use `Fetch origin` to check for remote updates. Fetching alone does not integrate them into your local branch. If updates are available, Desktop offers `Pull origin` to integrate them; resolve any conflicts before continuing. See the official instructions for [pushing changes with GitHub Desktop](https://docs.github.com/en/desktop/making-changes-in-a-branch/pushing-changes-to-github-from-github-desktop).
 {% include figure image_path="assets/images/spotlights/gh_d9.png" caption="Sharing commits with the remote repository." alt="GitHub Desktop toolbar highlighting Publish branch for sharing the local branch with the remote repository." %}
 
-Further Information on: [Activity: Use the GitHub Desktop client](https://idratherbewriting.com/learnapidoc/pubapis_github_desktop_client.html)
+Further information: [Activity: Use the GitHub Desktop client](https://idratherbewriting.com/learnapidoc/pubapis_github_desktop_client.html)
 
 
 **GitHub Desktop introduction** *A quick intro for GitHub Desktop on Windows:*
@@ -124,13 +127,13 @@ Further Information on: [Activity: Use the GitHub Desktop client](https://idrath
 
 ---
 
-## Git Bash Console
-Git provides a BASH emulation used to run Git from the command line. Simply right-click on a folder in Windows Explorer to access the BASH or GUI. Bash is an acronym for "Bourne Again Shell". A shell is a terminal application that interfaces with an operating system through written commands. *NIX users should feel right at home, as the BASH emulation behaves just like the "git" command in LINUX and UNIX environments.
+## Git Bash {#git-bash-console}
+Git for Windows includes Git Bash, a Bash shell environment for running Git and other command-line programs. You can open it from the Windows Start menu or a folder's context menu. Bash stands for "Bourne Again Shell". A shell interprets typed commands; Git is a separate version control program that you can run from that shell. The Git commands are the same as those used in a terminal on Linux, macOS or other Unix systems.
 
 | Command | Description |
 | --------|-------------|
 | **Getting & Creating Projects** |
-| `git init` | Initialize a local Git repository |
+| `git init` | Initialise a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 | **Basics** |
 | `git status` | Check status |
@@ -152,7 +155,7 @@ Git provides a BASH emulation used to run Git from the command line. Simply righ
 
 <br>
 
-**Git Bash introduction** *How to upload files to github from Git Bash on Windows from scratch* from [Amarindaz](https://www.youtube.com/channel/UCLMQ_EJIZ-OBNYFKr__JRuA)
+**Git Bash introduction** Learn how to upload files to GitHub using Git Bash on Windows in this video from [Amarindaz](https://www.youtube.com/channel/UCLMQ_EJIZ-OBNYFKr__JRuA).
 <iframe title="Video: uploading files with Git Bash on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2vASHVT0qKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
@@ -168,46 +171,50 @@ _Part 1_ <br>
 * Check Enable version control interface for RStudio projects
 * Set the path to the Git executable that you just installed. Open a shell, if you don’t know where Git is installed.
 * Windows: type where git and hit enter. The path should be something like: C:/Program Files (x86)/Git/bin/git.exe
-* Linux/OS X: type which git and hit enter. The path should be something like: /usr/bin/git
+* Linux/macOS: type which git and hit enter. The path should be something like: /usr/bin/git
 * Restart RStudio, if it worked out you will find the Git icon on the top toolbar, as shown below.
 
 {% include figure image_path="assets/images/spotlights/git_rstudio.png" caption="Git in RStudio." alt="RStudio Global Options, Git/SVN panel, with the path to the Git executable and an SSH-key field." %}
 
-**Setup Git** <br>
-Configure Git and set your user name and email (the email address you used to register on GitHub). You can directly open the Git prompt from within RStudio. User name and email need to be set only once. Go to Tools > Shell to open the Git Shell to tell Git your username and GitHub email.
+**Set up Git** <br>
+Configure the author name and email address that Git records in your commits. The author name does not have to match your GitHub login. Use an email address associated with your GitHub account, or your GitHub-provided no-reply address. These global settings apply to repositories for your current operating-system account unless overridden in a repository. In RStudio, go to _Tools > Shell_ and run the following commands, replacing the example name and email address with your own:
 
-`git config --global user.name 'yourGitHubUsername'
-git config --global user.email 'name@provider.com'`
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "name@provider.com"
+```
+
+See [GitHub's guidance on Git author names](https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git).
 
 {% include figure image_path="assets/images/spotlights/git_rstudio2.png" caption="Git in RStudio." alt="RStudio Tools menu with Shell selected, opening a terminal in the project directory." %}
 
 _Part 2_ <br>
 **Create a new RStudio project with Git**
 
-There are three ways to create version control for a RStudio project.
+There are three ways to use version control in an RStudio project.
 
 **a)** Create a new project and create a local Git repository: <br>
-Select _File > New Project.._, create a project from a _New Directory_ and check the option _Create a git repository_. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.
+Select _File > New Project…_, create a project from a _New Directory_ and check the option _Create a git repository_. To push to a remote repository later, add that remote repository using the Git shell. If you already know which online repository you want to use for your project, option c) is more convenient.
 
 **b)** Create a new project from a folder under version control: <br>
-In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to _File > New Project_, select create a new project from an _Existing Directory_ and create the project.
+In this case, you only need to create an RStudio project for that directory; version control is automatically enabled. Go to _File > New Project…_, choose _Existing Directory_ and create the project.
 
 **c)** Create a new project based on a remote Git repository: <br>
-Select _File > New Project.._ and from the opening menu select to create a new project from _Version Control_, choose _Git_, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the repository you want to clone and create the project.
+Select _File > New Project…_, choose _Version Control_ and then _Git_. Enter the URL of the repository you want to clone and create the project. Use its HTTPS URL if you have not configured SSH authentication.
 
 {% include figure image_path="assets/images/spotlights/git_rstudio4.gif" caption="Git in RStudio." alt="Animation of creating an RStudio project from a Git repository: choose Version Control and Git, enter the repository URL and local directory, then create the project." %}
 
-To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button Clone or download and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like `https://github.com/yourusername/rstudio-git-test.git`
+To create an RStudio project from a GitHub repository, open the repository's page, click **Code**, select **HTTPS** and copy the repository URL. It will look like `https://github.com/yourusername/rstudio-git-test.git`. See [GitHub's cloning instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). The existing screenshot below shows an older interface, where the button was labelled **Clone or download**.
 
 {% include figure image_path="assets/images/spotlights/git_rstudio3.png" caption="Git in RStudio." alt="GitHub Clone or download menu showing the HTTPS repository URL to copy into RStudio." %}
 
 ---
 
-That's it. All you need to know about Git, Git Desktop, GitHub, Git Bash and Git integration in RStudio.
+You now know the basics of Git, GitHub Desktop, GitHub, Git Bash and Git integration in RStudio.
 
 {% include figure image_path="/assets/images/spotlights/github_austinpowers.jpg" caption="Live dangerously." alt="Austin Powers meme joking that committing without first pulling remote updates is living dangerously." %}
 
-See you in the next Spotlight *Introduction to CSS in R Markdown*.
+Continue with the next Spotlight, [CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }}).
 
 <!--
 ## Further reading

@@ -11,7 +11,7 @@ header:
 ## What is a Dotplot?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
-<img src="dotplot4.png" alt="Comic showing books counted as stacked dots over time." width="515" height="283" align="right" vspace="10" hspace="20">
+<img src="{{ '/assets/images/unit_images/u09/dotplot4.png' | relative_url }}" alt="Comic showing books counted as stacked dots over time." width="515" height="283" align="right" vspace="10" hspace="20">
 <p><b>Short Version:</b> A Cleveland dotchart compares numeric values for named items. Each item has its own row, and the horizontal position of its dot shows its value. <br> <br>
 <b>Long Version:</b> The term “dot plot” is used for several kinds of chart. In a stacked frequency dot plot, dots above the same value or bin count observations. The comic uses stacked dots to count books over time. The R examples below instead use Cleveland dotcharts: each car model has a separate row, and its dot shows miles per gallon on a numeric horizontal axis. The vertical positions identify the models; they do not measure frequencies. A strip plot is another arrangement, which places individual observations along a numeric axis, optionally separated into groups.
 </p></div>

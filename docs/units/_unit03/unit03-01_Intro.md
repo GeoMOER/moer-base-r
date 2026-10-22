@@ -10,14 +10,14 @@ header:
 
 <!--more-->
 
-Data types are used within type systems, which offer various ways of defining, implementing and using them. Different type systems ensure varying degrees of type safety. Almost all programming languages explicitly include the notion of data type, though different languages may use different terminology.
+In Unit 02, you learned how individual values are represented in R. This unit explains how vectors and other objects organize those values, and what can change when you combine or convert objects.
 
-In computer science, type safety is the extent to which a programming language discourages or prevents type errors. A type error is erroneous or undesirable program behavior caused by a discrepancy between differing data types for the program's constants, variables, and methods (functions), e.g., treating an integer (int) as a floating-point number (float).
+At the end of this unit, you should be able to
 
-At the end of this unit you should know
-
-* what vectors, arrays, matrices, data frames and lists are
-* and how the data types are stored in them
+* choose between atomic vectors, arrays, matrices, data frames and lists for a task,
+* explain how types and dimensions are arranged in these structures,
+* use factors to represent categories and distinguish their codes from their labels, and
+* inspect an object's structure and check for type changes or information loss when converting it.
 
 ## Comments?
 You can leave comments below if you have questions or remarks about any of the text or code in this unit.

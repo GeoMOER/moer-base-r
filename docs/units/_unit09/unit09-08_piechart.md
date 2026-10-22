@@ -12,7 +12,7 @@ header:
 ## What is a Pie Chart?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
-<img alt="Comic pie chart of reasons for swearing, with Mario Kart occupying most of the chart." src="piechart1.png" width="334" height="343" align="right" vspace="10" hspace="20">
+<img alt="Comic pie chart of reasons for swearing, with Mario Kart occupying most of the chart." src="{{ '/assets/images/unit_images/u09/piechart1-comic.png' | relative_url }}" width="334" height="343" align="right" vspace="10" hspace="20">
 <p>A pie chart is a form of representation (e.g. percentage distributions) for partial values of a whole as parts of a circle. The pie chart is circular and divided into several pie sectors, whereby each pie sector represents a partial value and the pie thus represents the sum of the partial values (the whole). <br>
 <br>
 Pie charts are often used for representation of distributions and proportions. The number of partial values should not exceed 7, otherwise the diagram becomes confusing. Several small partial values are also displayed confusingly. In this case, it is recommended to combine the small partial values into an "Other" value. Usually, the clarity increases if the partial values are sorted clockwise by size and the largest partial value starts on the 12 o'clock line, as in a clock.</p></div>

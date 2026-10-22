@@ -6,11 +6,16 @@ header:
   caption: "Photo by [congerdesign](https://pixabay.com/de/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384)"
 ---
 
-At the end of this unit you should know how to
-* sort
-* bind
-* merge
-specific data in vectors, lists, matrices and data.frames.
+At the end of this unit, you should be able to
+
+* sort values and reorder rows using an index,
+* combine compatible objects by rows or columns,
+* merge tables by explicit keys and check unmatched or duplicated keys,
+* inspect, combine, search and replace character strings,
+* summarize observations within groups, and
+* reshape a table between wide and long forms while preserving its identifiers.
+
+Use the object structures, indexing and function calls from the earlier units. Most examples use functions supplied with R. The reshaping lesson uses the additional `reshape2` package and explains its installation and the `reshape2::` notation.
 
 ## Comments?
 You can leave comments below if you have questions or remarks about any of the text or code in this unit.

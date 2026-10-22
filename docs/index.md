@@ -34,7 +34,7 @@ We would like to change this with this course.
 # Intended learning outcomes
 At the end of this course you should
 
-* know and understand the basic properties of an object-oriented programming language,
+* create, inspect and manipulate R objects using suitable data types and structures,
 * flexibly use your knowledge and understanding in various programming contexts, and
 * have the basic programming skills for working in more complex subject-specific projects.
 
@@ -56,7 +56,7 @@ However, the provided units and spotlights can also be used independently.
 | 05 | Work Environment             | Set up your directory structure and get control over your paths to directories and files  |
 | 06 | Data Input and Output        | Get your data in and out of R           |
 | 07 | Operations                   | Operations with operators, decision structures, and loops  |
-| 08 | Sorting and Combining Data   | Sort, order, bind, and merge your data  |
+| 08 | Sorting and Combining Data   | Sort, bind and merge data; manipulate strings, aggregate groups and reshape tables |
 | 09 | Simple Visualizations        | Quickly and simply visualize your data  |
 |    | Spotlights                   | Additional resources on selected topics |
 
@@ -67,7 +67,11 @@ The exam in unit 16 will be used for self-assessment and as a prerequisite for m
 -->
 
 # Preparation and prerequisites
-No preparation or prerequisites are needed for this course.
+No previous R programming experience is required. You should be comfortable creating folders and saving files on your computer. Unit 01 explains how to install R and RStudio; later units build on the object, indexing and file-path skills introduced earlier.
+
+The course focuses on programming with functions supplied with R, including basic summaries and plots. A few examples introduce additional packages explicitly: RStudio's optional readr importer in Unit 06 and reshape2 for reshaping in Unit 08. Unit 05 explains package installation. Internet access is needed for installing software and packages and for the hosted interactive exercises.
+
+R scripts are sufficient for the core units. R Markdown and the Git/GitHub and CSS spotlights are optional extensions; the R Markdown section assumes that you can already create and render a document. The batch-processing example in Unit 06 previews loops from Unit 07 and can be revisited after that unit.
 
 
 # Instructor

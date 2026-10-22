@@ -22,7 +22,9 @@ Or through the "File" menu, followed by the "Import Dataset" submenu:
 {% include figure image_path="/assets/images/unit_images/u06/602_data-import-via-file.png" caption="Data import via File menu. ©[Javier Luraschi](https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio)" alt="RStudio File menu with Import Dataset expanded to show the available file-format importers." %}
 
 
-Importing `From Text (readr)` files allows you to import csv files and in general, character delimited files using the `readr package`. This Text importer provides support to:
+The `From Text (readr)` option uses the additional `readr` package; follow RStudio's installation prompt if you choose it. This is an optional import route. The code workflow below uses functions supplied with R, so it does not require `readr`.
+
+The readr text importer supports CSV and other character-delimited files, with options to:
 
 * Import from the file system or a URL
 * Change column data types

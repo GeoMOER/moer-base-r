@@ -8,12 +8,13 @@ header:
 *Learn about different levels of measurement and how information is arranged in data types in R.*
 <!--more-->
 
-At the End of this unit you should know
+At the end of this unit, you should be able to
 
-* what qualitative and quantitative data is,
-* what nominal, ordinal, interval and ratio scale data is,
-* the differences between the said scales, and
-* a nice Terry Pratchett quote.
+* distinguish qualitative from quantitative data and discrete from continuous quantitative variables,
+* identify nominal, ordinal, interval and ratio measurement levels,
+* distinguish a variable's meaning from its storage type in R,
+* inspect and convert integer, double, character and logical values, and
+* recognize missing and special values and check the result of a conversion.
 
 Let's start...
 

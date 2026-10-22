@@ -103,7 +103,7 @@ Long Story short:
 
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
-<img src="google2.png" width="515" height="443" align="right" vspace="10" hspace="20">
+<img src="{{ '/assets/images/unit_images/u01/google2.PNG' | relative_url }}" width="515" height="443" align="right" vspace="10" hspace="20">
 
 add some day
 -->

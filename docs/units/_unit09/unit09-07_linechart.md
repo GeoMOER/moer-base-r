@@ -11,7 +11,7 @@ header:
 ## What is a Line Chart?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
-<img alt="Comic comparing expected automation savings with the reality of debugging and ongoing development, shown as work-over-time charts." src="linechart1.png" width="404" height="409" align="right" vspace="10" hspace="20">
+<img alt="Comic comparing expected automation savings with the reality of debugging and ongoing development, shown as work-over-time charts." src="{{ '/assets/images/unit_images/u09/linechart1.png' | relative_url }}" width="404" height="409" align="right" vspace="10" hspace="20">
 <p> A line chart is the graphical representation of the functional relationship of two (with 2D representation) or three (with 3D representation) characteristics as a diagram in line form, whereby changes or developments (for example within a certain period of time) can be represented. In contrast to the scatterplot, there can only be one pair or trio of values at a time.  If enough data points are collected during a measurement, these points are usually ordered on the x-coordinate and can be connected by drawing line segments between them. Line charts are usually used in identifying the trends in data.
 </p></div>
 

@@ -10,7 +10,7 @@ header:
 
 ## What is a Scatterplot?
 <style>.unit p {text-align: justify;}</style>
-<div class="unit"><img alt="Comic scatterplot positioning foods by taste and ease of eating, rather than measured physical quantities." src="scatterplot1.png" width="454" height="388" align="right" vspace="10" hspace="20">
+<div class="unit"><img alt="Comic scatterplot positioning foods by taste and ease of eating, rather than measured physical quantities." src="{{ '/assets/images/unit_images/u09/scatterplot1.png' | relative_url }}" width="454" height="388" align="right" vspace="10" hspace="20">
 <p>A scatter plot is a graphical representation of observed pairs of values of two statistical characteristics. These pairs of values are plotted in a Cartesian coordinate system, resulting in a scatter plot. The points can be represented by different symbols. It is hoped that the pattern of points in the scatter plot will provide information about the dependency structure of the two features represented by the coordinates.</p></div>
 
 There are many ways to create a scatterplot in R. The basic function is `plot(x, y)`, where x and y are numeric vectors denoting the (x,y) points to plot.
