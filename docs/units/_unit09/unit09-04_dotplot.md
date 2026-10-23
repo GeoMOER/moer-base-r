@@ -29,7 +29,7 @@ dotchart(mtcars$mpg,labels=row.names(mtcars),cex=.7,
 
 ```
 
-{% include figure image_path="/assets/images/unit_images/u09/dotplot1.png" caption="Dotplots without grouping and colouring." alt="Cleveland dotchart of mpg for all mtcars models, with one labelled row per car and mpg on the horizontal axis." %}
+{% include figure image_path="/assets/images/unit_images/u09/dotplot1.svg" caption="Dotplots without grouping and colouring." alt="Cleveland dotchart of mpg for all mtcars models, with one labelled row per car and mpg on the horizontal axis." %}
 
 
 ### Dotplot by gears
@@ -60,11 +60,11 @@ dotchart(x$mpg,labels=row.names(x),cex=.7,groups= x$cyl,
          xlab="Miles Per Gallon", gcolor="black", color=x$color_cyl)
 ```
 
-{% include figure image_path="/assets/images/unit_images/u09/dotplot2.png" caption="Cleveland dotcharts grouped and coloured by gear (left) or cylinder count (right), with mpg sorted within each group." alt="Two Cleveland dotcharts group and colour mtcars by gear count or cylinder count; mpg is sorted within each group." %}
+{% include figure image_path="/assets/images/unit_images/u09/dotplot2.svg" caption="Cleveland dotcharts grouped and coloured by gear (left) or cylinder count (right), with mpg sorted within each group." alt="Two Cleveland dotcharts group and colour mtcars by gear count or cylinder count; mpg is sorted within each group." %}
 
 ### Difference between Dotplot and Scatterplot:
 * The **Cleveland dotchart** below compares one numeric variable, miles per gallon, across named car models. Each row identifies a car model; the dot's horizontal position gives its mpg value. It is not a stacked frequency plot.
 
 * A **scatterplot** shows two numeric variables for each observation. Here, each point represents one car, with horsepower on the horizontal axis and miles per gallon on the vertical axis. The pattern can reveal trends, clusters and unusual observations. The axes do not by themselves establish a causal relationship.
 
-{% include figure image_path="/assets/images/unit_images/u09/dotplot3.png" caption="Difference between Dotplot and Scatterplot." alt="Comparison: the dotchart shows labelled car models against mpg; the scatterplot shows mpg against horsepower, with generally lower mpg at higher horsepower." %}
+{% include figure image_path="/assets/images/unit_images/u09/dotplot3.svg" caption="Difference between Dotplot and Scatterplot." alt="Comparison: the dotchart shows labelled car models against mpg; the scatterplot shows mpg against horsepower, with generally lower mpg at higher horsepower." %}

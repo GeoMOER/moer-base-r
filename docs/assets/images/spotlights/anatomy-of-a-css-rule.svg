@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="550" viewBox="0 0 800 550" role="img"><title>Anatomy of a CSS Rule</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial, Helvetica, sans-serif" fill="#222">
+<text x="38" y="57" text-anchor="start" font-size="30" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="#555">Anatomy of a CSS Rule</text>
+<path d="M38 61L397 61" fill="none" stroke="#555" stroke-width="2"/>
+<text x="30" y="230" text-anchor="start" font-size="64" font-weight="normal" font-family="monospace" fill="#c9b24b">h1</text>
+<text x="145" y="230" text-anchor="start" font-size="64" font-weight="normal" font-family="monospace" fill="#777">{</text>
+<text x="30" y="505" text-anchor="start" font-size="64" font-weight="normal" font-family="monospace" fill="#777">}</text>
+<text x="125" y="320" font-size="64" font-family="monospace"><tspan fill="#6baef5">color</tspan><tspan fill="#555">: </tspan><tspan fill="#6cae12">orange</tspan><tspan fill="#555">;</tspan></text>
+<path d="M130 338L745 338" fill="none" stroke="#ff0080" stroke-width="1"/>
+<text x="125" y="410" font-size="64" font-family="monospace"><tspan fill="#6baef5">text-align</tspan><tspan fill="#555">: </tspan><tspan fill="#6cae12">center</tspan><tspan fill="#555">;</tspan></text>
+<path d="M130 428L745 428" fill="none" stroke="#ff0080" stroke-width="1"/>
+<rect x="98" y="109" width="150" height="48" fill="#efda81" stroke="#aaa" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="116" y="141" text-anchor="start" font-size="23" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#555">Selector</text>
+<rect x="240" y="204" width="150" height="48" fill="#6baef5" stroke="#aaa" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="258" y="236" text-anchor="start" font-size="23" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="white">Property</text>
+<rect x="520" y="204" width="150" height="48" fill="#6cae12" stroke="#aaa" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="538" y="236" text-anchor="start" font-size="23" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="white">Value</text>
+<rect x="322" y="466" width="420" height="48" fill="#ff0080" stroke="#aaa" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="340" y="498" text-anchor="start" font-size="23" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="white">Declaration = Property + Value</text>
+<path d="M76 110L58 164" fill="none" stroke="#efda81" stroke-width="9" marker-end="url(#arrow)"/>
+<path d="M220 204L205 259" fill="none" stroke="#6baef5" stroke-width="9" marker-end="url(#arrow)"/>
+<path d="M500 204L484 259" fill="none" stroke="#6cae12" stroke-width="9" marker-end="url(#arrow)"/>
+<path d="M289 515L282 462" fill="none" stroke="#ff0080" stroke-width="9" marker-end="url(#arrow)"/>
+</g></svg>

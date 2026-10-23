@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="680" viewBox="0 0 1500 680" role="img"><title>Merging data frames: Cartesian product</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial, Helvetica, sans-serif" fill="#222">
+<rect x="25" y="25" width="170" height="60" fill="#aaa" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="37" y="65.80000000000001" text-anchor="start" font-size="28" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">No</text>
+<rect x="195" y="25" width="200" height="60" fill="#aaa" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="207" y="65.80000000000001" text-anchor="start" font-size="28" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">ID</text>
+<rect x="395" y="25" width="300" height="60" fill="#aaa" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="407" y="65.80000000000001" text-anchor="start" font-size="28" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">race</text>
+<rect x="25" y="85" width="170" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="37" y="125.80000000000001" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">1</text>
+<rect x="195" y="85" width="200" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="207" y="125.80000000000001" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Frodo</text>
+<rect x="395" y="85" width="300" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="407" y="125.80000000000001" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Hobbit</text>
+<rect x="25" y="145" width="170" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="37" y="185.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">2</text>
+<rect x="195" y="145" width="200" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="207" y="185.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Aragorn</text>
+<rect x="395" y="145" width="300" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="407" y="185.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Human</text>
+<rect x="25" y="205" width="170" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="37" y="245.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">3</text>
+<rect x="195" y="205" width="200" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="207" y="245.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Legolas</text>
+<rect x="395" y="205" width="300" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="407" y="245.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Elf</text>
+<rect x="25" y="265" width="170" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="37" y="305.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">4</text>
+<rect x="195" y="265" width="200" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="207" y="305.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Gimli</text>
+<rect x="395" y="265" width="300" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="407" y="305.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Dwarf</text>
+<rect x="25" y="325" width="170" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="37" y="365.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">5</text>
+<rect x="195" y="325" width="200" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="207" y="365.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Gandalf</text>
+<rect x="395" y="325" width="300" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="407" y="365.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Maia</text>
+<rect x="830" y="25" width="220" height="60" fill="#aaa" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="842" y="65.80000000000001" text-anchor="start" font-size="28" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">name</text>
+<rect x="1050" y="25" width="430" height="60" fill="#aaa" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="1062" y="65.80000000000001" text-anchor="start" font-size="28" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">Weapon</text>
+<rect x="830" y="85" width="220" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="842" y="125.80000000000001" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Aragorn</text>
+<rect x="1050" y="85" width="430" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="1062" y="125.80000000000001" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Andruil</text>
+<rect x="830" y="145" width="220" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="842" y="185.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Frodo</text>
+<rect x="1050" y="145" width="430" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="1062" y="185.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Sting</text>
+<rect x="830" y="205" width="220" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="842" y="245.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Gimli</text>
+<rect x="1050" y="205" width="430" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="1062" y="245.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Axe</text>
+<rect x="830" y="265" width="220" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="842" y="305.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Legolas</text>
+<rect x="1050" y="265" width="430" height="60" fill="white" stroke="#444" stroke-width="1.5" rx="0" stroke-dasharray=""/>
+<text x="1062" y="305.8" text-anchor="start" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#111">Bow</text>
+<path d="M695 115L830 115" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 115L830 175" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 115L830 235" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 115L830 295" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 175L830 115" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 175L830 175" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 175L830 235" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 175L830 295" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 235L830 115" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 235L830 175" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 235L830 235" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 235L830 295" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 295L830 115" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 295L830 175" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 295L830 235" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 295L830 295" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 355L830 115" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 355L830 175" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 355L830 235" fill="none" stroke="#ea5353" stroke-width="1"/>
+<path d="M695 355L830 295" fill="none" stroke="#ea5353" stroke-width="1"/>
+<text x="25" y="465" text-anchor="start" font-size="22" font-weight="normal" font-family="monospace" fill="#222">Situation: No matching ID and no &quot;by&quot; specification</text>
+<text x="25" y="498" text-anchor="start" font-size="22" font-weight="normal" font-family="monospace" fill="#222">All possible combinations will be returned.</text>
+<text x="25" y="531" text-anchor="start" font-size="22" font-weight="normal" font-family="monospace" fill="#222"></text>
+<text x="25" y="564" text-anchor="start" font-size="22" font-weight="normal" font-family="monospace" fill="#222">The unique and famous sword of Andruil becomes less and less unique, and Frodo suffers</text>
+<text x="25" y="597" text-anchor="start" font-size="22" font-weight="normal" font-family="monospace" fill="#222">under the weight of too many weapons...</text>
+</g></svg>

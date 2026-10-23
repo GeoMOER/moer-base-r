@@ -5,3 +5,46 @@
   max-width: 100%;
   border: 0;
 }
+
+/* Explicitly opted-in activities: a larger player contained within the page. */
+.page__content .h5p-activity-zoom {
+  max-width: 100%;
+}
+
+.page__content .h5p-zoom-toggle {
+  margin: 0 0 0.5rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.page__content .h5p-zoom-toggle:focus-visible,
+.page__content .h5p-zoom-region:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.page__content .h5p-zoom-region {
+  max-width: 100%;
+}
+
+.page__content .h5p-zoom-region.is-enlarged {
+  max-height: 650px;
+  overflow: auto;
+}
+
+.page__content .h5p-zoom-region.is-enlarged iframe[src*="/moer-h5p-content/h5p-standalone-1.3.x/demo/"] {
+  width: 740px;
+  min-width: 740px;
+  max-width: none;
+}
+
+@media (min-width: 740px) {
+  .page__content .h5p-zoom-toggle {
+    display: none;
+  }
+}

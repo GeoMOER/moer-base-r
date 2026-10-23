@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img"><title>Data types and object types</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial, Helvetica, sans-serif" fill="#222">
+<rect x="25" y="35" width="275" height="175" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="162.5" y="133.7" text-anchor="middle" font-size="32" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">Raw Data</text>
+<path d="M300 122L380 122" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="380" y="80" width="180" height="85" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="470.0" y="116.5" text-anchor="middle" font-size="24" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">Level of</text>
+<text x="470.0" y="145.3" text-anchor="middle" font-size="24" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">measurement</text>
+<path d="M560 122H590V65H605 M590 122V190H605" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="605" y="40" width="150" height="50" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="680.0" y="72.7" text-anchor="middle" font-size="22" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">continuously</text>
+<rect x="605" y="165" width="150" height="50" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="680.0" y="197.7" text-anchor="middle" font-size="22" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">discrete</text>
+<rect x="795" y="15" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="39.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">ratio-scale</text>
+<rect x="795" y="70" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="94.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">interval-scale</text>
+<rect x="795" y="165" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="189.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">ordinal-scale</text>
+<rect x="795" y="220" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="244.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">nominal-scale</text>
+<path d="M755 65H775V32H795 M775 65V87H795 M755 190H775V182H795 M775 190V237H795" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M470 165L470 270" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="25" y="290" width="950" height="440" fill="none" stroke="#aaa" stroke-width="1" rx="0" stroke-dasharray=""/>
+<path d="M470 270L470 375" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="310" y="375" width="320" height="100" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="470.0" y="434.8" text-anchor="middle" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">Data types</text>
+<path d="M470 475L470 545" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="255" y="545" width="430" height="125" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="470.0" y="617.3" text-anchor="middle" font-size="28" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">Object types</text>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="130" height="100" viewBox="0 0 724 561" x="45" y="315">
+  <ns0:defs>
+    <ns0:linearGradient id="gradientFill-1" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <ns0:stop offset="0" stop-color="rgb(203,206,208)" stop-opacity="1" />
+      <ns0:stop offset="1" stop-color="rgb(132,131,139)" stop-opacity="1" />
+    </ns0:linearGradient>
+    <ns0:linearGradient id="gradientFill-2" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <ns0:stop offset="0" stop-color="rgb(39,109,195)" stop-opacity="1" />
+      <ns0:stop offset="1" stop-color="rgb(22,92,170)" stop-opacity="1" />
+    </ns0:linearGradient>
+  </ns0:defs>
+  <ns0:path d="M361.453,485.937 C162.329,485.937 0.906,377.828 0.906,244.469 C0.906,111.109 162.329,3.000 361.453,3.000 C560.578,3.000 722.000,111.109 722.000,244.469 C722.000,377.828 560.578,485.937 361.453,485.937 ZM416.641,97.406 C265.289,97.406 142.594,171.314 142.594,262.484 C142.594,353.654 265.289,427.562 416.641,427.562 C567.992,427.562 679.687,377.033 679.687,262.484 C679.687,147.971 567.992,97.406 416.641,97.406 Z" fill="url(#gradientFill-1)" fill-rule="evenodd" />
+  <ns0:path d="M550.000,377.000 C550.000,377.000 571.822,383.585 584.500,390.000 C588.899,392.226 596.510,396.668 602.000,402.500 C607.378,408.212 610.000,414.000 610.000,414.000 L696.000,559.000 L557.000,559.062 L492.000,437.000 C492.000,437.000 478.690,414.131 470.500,407.500 C463.668,401.969 460.755,400.000 454.000,400.000 C449.298,400.000 420.974,400.000 420.974,400.000 L421.000,558.974 L298.000,559.026 L298.000,152.938 L545.000,152.938 C545.000,152.938 657.500,154.967 657.500,262.000 C657.500,369.033 550.000,377.000 550.000,377.000 ZM496.500,241.024 L422.037,240.976 L422.000,310.026 L496.500,310.002 C496.500,310.002 531.000,309.895 531.000,274.877 C531.000,239.155 496.500,241.024 496.500,241.024 Z" fill="url(#gradientFill-2)" fill-rule="evenodd" />
+</ns0:svg>
+<path d="M630 425H710V335H790 M710 425V515H790" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="795" y="325" width="130" height="27" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="860.0" y="344.8" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">numeric</text>
+<path d="M710 338.5L795 338.5" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="795" y="358" width="130" height="27" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="860.0" y="377.8" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">integer</text>
+<path d="M710 371.5L795 371.5" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="795" y="391" width="130" height="27" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="860.0" y="410.8" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">character</text>
+<path d="M710 404.5L795 404.5" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="795" y="424" width="130" height="27" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="860.0" y="443.8" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">logical</text>
+<path d="M710 437.5L795 437.5" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="795" y="457" width="130" height="27" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="860.0" y="476.8" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">NULL</text>
+<path d="M710 470.5L795 470.5" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="795" y="490" width="130" height="27" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="860.0" y="509.8" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">NA</text>
+<path d="M710 503.5L795 503.5" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="60" y="695" width="125" height="30" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="122.5" y="716.3" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">vector</text>
+<path d="M122 670L122 695" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="205" y="695" width="125" height="30" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="267.5" y="716.3" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">matrix</text>
+<path d="M267 670L267 695" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="350" y="695" width="125" height="30" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="412.5" y="716.3" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">array</text>
+<path d="M412 670L412 695" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="495" y="695" width="125" height="30" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="557.5" y="716.3" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">data frame</text>
+<path d="M557 670L557 695" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="640" y="695" width="125" height="30" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="702.5" y="716.3" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">factor</text>
+<path d="M702 670L702 695" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="785" y="695" width="125" height="30" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="847.5" y="716.3" text-anchor="middle" font-size="18" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">list</text>
+<path d="M847 670L847 695" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M122 695V680H847V695 M470 670V680" fill="none" stroke="#aaa" stroke-width="1"/>
+</g></svg>

@@ -49,7 +49,7 @@ plot(x = pressure$temperature, y = pressure$pressure, type = "s")      # 6.
 plot(x = pressure$temperature, y = pressure$pressure, type = "h")      # 7.
 plot(x = pressure$temperature, y = pressure$pressure, type = "n")      # 8.
 ```
-{% include figure image_path="/assets/images/unit_images/u09/linechart2.png" caption="First row from left to right: 0. scatterplot without specification, 1. chart with points (equal to no specification), 2. line chart, 3. overplotted lines and point; second row from left to right: 4. points joined by lines, 5. no visible points (empty) joined by lines, 6. line-like stair steps: third row from left to right: 7. histogram-like vertical points, 8. no visible points or lines since it does not produce any." alt="Nine panels compare plot types for the same increasing series: default points, p, l, o, b, c, s, h and n; n draws no data." %}
+{% include figure image_path="/assets/images/unit_images/u09/linechart2.svg" caption="First row from left to right: 0. scatterplot without specification, 1. chart with points (equal to no specification), 2. line chart, 3. overplotted lines and point; second row from left to right: 4. points joined by lines, 5. no visible points (empty) joined by lines, 6. line-like stair steps: third row from left to right: 7. histogram-like vertical points, 8. no visible points or lines since it does not produce any." alt="Nine panels compare plot types for the same increasing series: default points, p, l, o, b, c, s, h and n; n draws no data." %}
 
 
 To include **multiple lines** or to plot the points, first call plot() for the first line, then add additional lines and points with lines() and points() respectively:

@@ -1,0 +1,392 @@
+{
+  "recorded": "2026-10-23 11:24 CEST",
+  "purpose": "Permanent raster originals for vector batch; original public raster URLs also retained.",
+  "applied_replacements": 33,
+  "retained_raster_by_user": 15,
+  "items": [
+    {
+      "id": "A01",
+      "original": "docs/assets/images/spotlights/anatomy-of-a-css-rule.png",
+      "archive": "docs/assets/images/raw/spotlights/anatomy-of-a-css-rule.png",
+      "sha256": "b7ab990c6d9c93e673883f2d6f33fff815a2f740ac5f16368de604cd76cd7e7b",
+      "status": "applied",
+      "active_svg": "docs/assets/images/spotlights/anatomy-of-a-css-rule.svg"
+    },
+    {
+      "id": "A02",
+      "original": "docs/assets/images/unit_images/u02/types_data.PNG",
+      "archive": "docs/assets/images/raw/unit_images/u02/types_data.PNG",
+      "sha256": "5ea686f581f3a7fb7d4083b664e7acf3b5bba74a27e24ba3cef5d916c2f389f3",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u02/types_data.svg"
+    },
+    {
+      "id": "A03",
+      "original": "docs/assets/images/unit_images/u03/Array.png",
+      "archive": "docs/assets/images/raw/unit_images/u03/Array.png",
+      "sha256": "75f2d56c569e4de9c17028e3ea8c23a1327f086a361b7f3f7a59887b1ac6b138",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u03/Array.svg"
+    },
+    {
+      "id": "A04",
+      "original": "docs/assets/images/unit_images/u03/Recycling.png",
+      "archive": "docs/assets/images/raw/unit_images/u03/Recycling.png",
+      "sha256": "367b84d9d2dd2a91b169b3be8e1117d0f1380e106b3f643d364ba0aa92da1d0e",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u03/Recycling.svg"
+    },
+    {
+      "id": "A05",
+      "original": "docs/assets/images/unit_images/u03/objects.PNG",
+      "archive": "docs/assets/images/raw/unit_images/u03/objects.PNG",
+      "sha256": "94b4e70c6b774b153faf2a0ec41db20ef7670ae84bb882ac7d85c8c034b9f689",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u03/objects.svg"
+    },
+    {
+      "id": "A06",
+      "original": "docs/assets/images/unit_images/u03/types_objects.PNG",
+      "archive": "docs/assets/images/raw/unit_images/u03/types_objects.PNG",
+      "sha256": "6a817f51342ed0569a25c46cf27e6e4e390258b34f8432daa4428ef0c97105f2",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u03/types_objects.svg"
+    },
+    {
+      "id": "A07",
+      "original": "docs/assets/images/unit_images/u03/vectorization.png",
+      "archive": "docs/assets/images/raw/unit_images/u03/vectorization.png",
+      "sha256": "a72c8ef714e76b1c354817aef22e9e0ef3f80a31887c47cf018fbc0bad9242e3",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u03/vectorization.svg"
+    },
+    {
+      "id": "A08",
+      "original": "docs/assets/images/unit_images/u05/structure.png",
+      "archive": "docs/assets/images/raw/unit_images/u05/structure.png",
+      "sha256": "1375866ee6215464860fbc79b243cd79235848e74cfb9755a292058635f1a9ab",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u05/structure.svg"
+    },
+    {
+      "id": "A09",
+      "original": "docs/assets/images/unit_images/u07/which-loop-to-choose.jpg",
+      "archive": "docs/assets/images/raw/unit_images/u07/which-loop-to-choose.jpg",
+      "sha256": "570b80ba7a2a908a09e08b0a7d84da749ec1e9aca412c8e5e1001e7942649a9f",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u07/which-loop-to-choose.svg"
+    },
+    {
+      "id": "A10",
+      "original": "docs/assets/images/unit_images/u08/Merge_LOTR1.png",
+      "archive": "docs/assets/images/raw/unit_images/u08/Merge_LOTR1.png",
+      "sha256": "96a4f52aef1cd43d04aac3e195a65198c47f5223f132c7c5ae1968f1b7143ccc",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u08/Merge_LOTR1.svg"
+    },
+    {
+      "id": "A11",
+      "original": "docs/assets/images/unit_images/u08/Merge_LOTR2.png",
+      "archive": "docs/assets/images/raw/unit_images/u08/Merge_LOTR2.png",
+      "sha256": "84575fe0fa98ff2d4c7ce750bd188bab47dc753e4b6a192015676436a4a69a0a",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u08/Merge_LOTR2.svg"
+    },
+    {
+      "id": "A12",
+      "original": "docs/assets/images/unit_images/u08/Regexpr1.png",
+      "archive": "docs/assets/images/raw/unit_images/u08/Regexpr1.png",
+      "sha256": "3c5a6277243bbc827acde4ce64b484761c26f86c7a8648c53015039a2c11ee88",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "A13",
+      "original": "docs/assets/images/unit_images/u08/Regexpr2.png",
+      "archive": "docs/assets/images/raw/unit_images/u08/Regexpr2.png",
+      "sha256": "89d24fe927206252b9275e5939c337ca17666fada4fe44dcae8e758f467af51d",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "A14",
+      "original": "docs/assets/images/unit_images/u08/dcast.png",
+      "archive": "docs/assets/images/raw/unit_images/u08/dcast.png",
+      "sha256": "f3bca7124e079bced0bce755ed8cfb5309e4856a46c3e5b157e29a342493268d",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "B01",
+      "original": "docs/assets/data/data/histo1.png",
+      "archive": "docs/assets/images/raw/data/data/histo1.png",
+      "sha256": "f8d27ff5ae99cadfd674ba91706dd4e4f9b03d205ffb424b13c1154ac579b80e",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/histo1.svg"
+    },
+    {
+      "id": "B02",
+      "original": "docs/assets/data/data/histo2.png",
+      "archive": "docs/assets/images/raw/data/data/histo2.png",
+      "sha256": "e72b7bcbae1a8f611347709bc5e752a6f04d60bf5e54bf35d88dc1746e9e1791",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/histo2.svg"
+    },
+    {
+      "id": "B03",
+      "original": "docs/assets/data/data/plot1.png",
+      "archive": "docs/assets/images/raw/data/data/plot1.png",
+      "sha256": "33b2e32326a8f52fd4d10f0fd04db6de1ad303f2b9bbb80b52070c5af388755c",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot1.svg"
+    },
+    {
+      "id": "B04",
+      "original": "docs/assets/data/data/plot2.png",
+      "archive": "docs/assets/images/raw/data/data/plot2.png",
+      "sha256": "237eaae56b76971dfa7ef11879698d0eb82c57833e893871d9003c1f279dd80a",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot2.svg"
+    },
+    {
+      "id": "B05",
+      "original": "docs/assets/data/data/plot3.png",
+      "archive": "docs/assets/images/raw/data/data/plot3.png",
+      "sha256": "e12c869524b5f281636aa5ce94c4ed1310a416a6ccc442a013fed97d136d8cb6",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot3.svg"
+    },
+    {
+      "id": "B06",
+      "original": "docs/assets/data/data/plot4.png",
+      "archive": "docs/assets/images/raw/data/data/plot4.png",
+      "sha256": "e01e1535e5a5116cc7ba6028b7379028b01ab705780b795cba5eff9e9554ac8b",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot4.svg"
+    },
+    {
+      "id": "B07",
+      "original": "docs/assets/data/data/plot5.png",
+      "archive": "docs/assets/images/raw/data/data/plot5.png",
+      "sha256": "c21393ada357915a076db408711aa0171aa895fa0fa33481deaaf30271e7b42d",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot5.svg"
+    },
+    {
+      "id": "B08",
+      "original": "docs/assets/data/data/plot6.png",
+      "archive": "docs/assets/images/raw/data/data/plot6.png",
+      "sha256": "5408b0ab1c568362754a6cd2a6a03c4f256956bfe9e79b2c2c0aab5841de09fb",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot6.svg"
+    },
+    {
+      "id": "B09",
+      "original": "docs/assets/data/data/plot7.png",
+      "archive": "docs/assets/images/raw/data/data/plot7.png",
+      "sha256": "33dd86b86bdd7185b3e92f0aef52c6a56674949d15f0274e07db0f08faee69b8",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot7.svg"
+    },
+    {
+      "id": "B10",
+      "original": "docs/assets/data/data/plot8.png",
+      "archive": "docs/assets/images/raw/data/data/plot8.png",
+      "sha256": "1ab1b58fcf47e3346ede7f9b1e5462bd16407639f9752ca37e6c1a4e3820615a",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/plot8.svg"
+    },
+    {
+      "id": "B11",
+      "original": "docs/assets/images/unit_images/u09/barplot1.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/barplot1.png",
+      "sha256": "ea9a822905e5614f5d058d98c69784de8c0f5b0b5ed2673a2a8cb39216f90b9b",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/barplot1.svg"
+    },
+    {
+      "id": "B12",
+      "original": "docs/assets/images/unit_images/u09/barplot2.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/barplot2.png",
+      "sha256": "9807d025a2e18745137c1d8ba5c48745d40170810c48801ec112bbe67994a991",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/barplot2.svg"
+    },
+    {
+      "id": "B13",
+      "original": "docs/assets/images/unit_images/u09/barplot3.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/barplot3.png",
+      "sha256": "3888ba635857f3c04182bb48c48aec0920cffb4890b625c311412fe6547291d1",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/barplot3.svg"
+    },
+    {
+      "id": "B14",
+      "original": "docs/assets/images/unit_images/u09/barplot4.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/barplot4.png",
+      "sha256": "44de7afa0f700a0d0e6cec1537b4658535a3c32366fbbbf625bbd52e09aa033e",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/barplot4.svg"
+    },
+    {
+      "id": "B15",
+      "original": "docs/assets/images/unit_images/u09/barplot5.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/barplot5.png",
+      "sha256": "95a678c9b10664540a93d003fcdc39ea8d6ae1c40577ee90f594c3171225216b",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/barplot5.svg"
+    },
+    {
+      "id": "B16",
+      "original": "docs/assets/images/unit_images/u09/boxplot3.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/boxplot3.png",
+      "sha256": "826091e651648b2432f70f0c5e37b46fd6ebf5aacdb3a341c1197c471c0c76b3",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/boxplot3.svg"
+    },
+    {
+      "id": "B17",
+      "original": "docs/assets/images/unit_images/u09/colorpalette.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/colorpalette.png",
+      "sha256": "714c0302b0e54535410f5a345954cae4b103028c654b4282b4d00801862442ef",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "B18",
+      "original": "docs/assets/images/unit_images/u09/dotplot1.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/dotplot1.png",
+      "sha256": "42a01d76be886b0aa95846b341a4f6ac8e99562e2f71f9817acb0e71f3149cc5",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/dotplot1.svg"
+    },
+    {
+      "id": "B19",
+      "original": "docs/assets/images/unit_images/u09/dotplot2.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/dotplot2.png",
+      "sha256": "ab279ed9c0d35acfb0decebd66e022fdfc4da15a083c9529d29f7bb274f41bb5",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/dotplot2.svg"
+    },
+    {
+      "id": "B20",
+      "original": "docs/assets/images/unit_images/u09/dotplot3.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/dotplot3.png",
+      "sha256": "913a307485fa9c722ad8249cd2c833a1f6c1bc9456f59421a09abb468e969989",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/dotplot3.svg"
+    },
+    {
+      "id": "B21",
+      "original": "docs/assets/images/unit_images/u09/linechart2.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/linechart2.png",
+      "sha256": "4f5730faf0b9f33bcabc1eac7429c2583eea77cd89746099306dafe28aea0286",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/linechart2.svg"
+    },
+    {
+      "id": "B22",
+      "original": "docs/assets/images/unit_images/u09/piechart2.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/piechart2.png",
+      "sha256": "48f50791945fc9ce6570341ede43f797013c79b4069b380df63bdae3b6aa8fe4",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/piechart2.svg"
+    },
+    {
+      "id": "B23",
+      "original": "docs/assets/images/unit_images/u09/scatterplot2.png",
+      "archive": "docs/assets/images/raw/unit_images/u09/scatterplot2.png",
+      "sha256": "452dba3878ce1b228df17a2ec9cd6b152b6172ee234266e8bc58e706f560d86b",
+      "status": "applied",
+      "active_svg": "docs/assets/images/unit_images/u09/scatterplot2.svg"
+    },
+    {
+      "id": "C01",
+      "original": "docs/assets/images/cheatsheet/00pdf_ide_cheatsheet_p1.png",
+      "archive": "docs/assets/images/raw/cheatsheet/00pdf_ide_cheatsheet_p1.png",
+      "sha256": "50756f3f47a4020b9eb5fa8e03526c47ba304aa4d6a1aa7ffa11107720facaf7",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C02",
+      "original": "docs/assets/images/cheatsheet/00pdf_ide_cheatsheet_p2.png",
+      "archive": "docs/assets/images/raw/cheatsheet/00pdf_ide_cheatsheet_p2.png",
+      "sha256": "1e234c490ce260a94e8b6b285f2be716dd1ad1be4b48c4248455d8f610312e59",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C03",
+      "original": "docs/assets/images/cheatsheet/01pdf_baser_cheatsheet_p1.png",
+      "archive": "docs/assets/images/raw/cheatsheet/01pdf_baser_cheatsheet_p1.png",
+      "sha256": "94258367e47d61cd5b7a17652b30c6a530fba03f30e95f19e87ad657ee169f87",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C04",
+      "original": "docs/assets/images/cheatsheet/01pdf_baser_cheatsheet_p2.png",
+      "archive": "docs/assets/images/raw/cheatsheet/01pdf_baser_cheatsheet_p2.png",
+      "sha256": "d470e91300ffbce5d7d42bb794231e71f1eb66ba7ffe21b85dad77a213ff22d8",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C05",
+      "original": "docs/assets/images/cheatsheet/02pdf_advancer_cheatsheet_p1.png",
+      "archive": "docs/assets/images/raw/cheatsheet/02pdf_advancer_cheatsheet_p1.png",
+      "sha256": "ec0b503cd4c26ce8293270aa2bd250e2614f9db09dd40300312e8b3d3255b69d",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C06",
+      "original": "docs/assets/images/cheatsheet/02pdf_advancer_cheatsheet_p2.png",
+      "archive": "docs/assets/images/raw/cheatsheet/02pdf_advancer_cheatsheet_p2.png",
+      "sha256": "5b0ae156718d5da761e707deaee31d146e8ad43ffe29541e4ca1f77ecca6131d",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C07",
+      "original": "docs/assets/images/cheatsheet/02pdf_advancer_cheatsheet_p3.png",
+      "archive": "docs/assets/images/raw/cheatsheet/02pdf_advancer_cheatsheet_p3.png",
+      "sha256": "c08551486aabbf4a3d5549c5ce9a1b99618ce5d9f679a6086116c0b0af3c40ea",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C08",
+      "original": "docs/assets/images/cheatsheet/02pdf_advancer_cheatsheet_p4.png",
+      "archive": "docs/assets/images/raw/cheatsheet/02pdf_advancer_cheatsheet_p4.png",
+      "sha256": "1a495ea65242038ce04705af75b31d3d0ebf914d2b66d121504eace691e6d5c6",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C09",
+      "original": "docs/assets/images/cheatsheet/02pdf_advancer_cheatsheet_p5.png",
+      "archive": "docs/assets/images/raw/cheatsheet/02pdf_advancer_cheatsheet_p5.png",
+      "sha256": "6377f781ffcc58a71175ce44b4b9565d6114ebcc9415f36f608f4a84675005ca",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C10",
+      "original": "docs/assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p1.PNG",
+      "archive": "docs/assets/images/raw/cheatsheet/03pdf_rmarkdown_cheatsheet_p1.PNG",
+      "sha256": "8ac486ab279d6541292746ca715af2a30364a3de5e6011af0dd7c97e709e19f9",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    },
+    {
+      "id": "C11",
+      "original": "docs/assets/images/cheatsheet/03pdf_rmarkdown_cheatsheet_p2.PNG",
+      "archive": "docs/assets/images/raw/cheatsheet/03pdf_rmarkdown_cheatsheet_p2.PNG",
+      "sha256": "e5330fef0a1c8332844f20d24615ee4401bd432364bf1a6813d6696e09b53505",
+      "status": "kept-raster-by-user-request",
+      "active_svg": null
+    }
+  ]
+}

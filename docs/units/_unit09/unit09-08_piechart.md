@@ -65,7 +65,7 @@ labels <- paste(names(iris_table), "\n", iris_table, sep="")
 pie(iris_table, labels = labels,
     main="Pie Chart of Species\n with sample size")
 ```
-{% include figure image_path="/assets/images/unit_images/u09/piechart2.png" caption="Pie chart with and without percentages in different color pallets." alt="Four pie-chart examples compare car-category counts, percentage labels, colour choices and the equal iris species sample sizes of 50 each." %}
+{% include figure image_path="/assets/images/unit_images/u09/piechart2.svg" caption="Pie chart with and without percentages in different color pallets." alt="Four pie-chart examples compare car-category counts, percentage labels, colour choices and the equal iris species sample sizes of 50 each." %}
 
 <div class="course-info">
   <p><strong>Info: R base color palettes</strong>  <br>

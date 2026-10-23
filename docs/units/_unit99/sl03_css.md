@@ -104,7 +104,7 @@ color: red;
 
 For an internal stylesheet, put CSS rules in a <code>&lt;style&gt;</code> element inside the page's <code>&lt;head&gt;</code>. A style rule looks like this: <br>
 
-{% include figure image_path="assets/images/spotlights/anatomy-of-a-css-rule.png" caption="Anatomy of a CSS rule. Image from [waiffarer.com](http://www.waiffarer.com)" alt="CSS rule h1 { color: orange; text-align: center; }: h1 is the selector, color and text-align are properties, and orange and center are their values." %}
+{% include figure image_path="assets/images/spotlights/anatomy-of-a-css-rule.svg" caption="Anatomy of a CSS rule. Image from [waiffarer.com](http://www.waiffarer.com)" alt="CSS rule h1 { color: orange; text-align: center; }: h1 is the selector, color and text-align are properties, and orange and center are their values." %}
 
 A CSS rule begins with a __selector__ that specifies which HTML elements the rule should apply to. The illustration above uses <code>h1</code> to select first-level headings. The code example below instead uses <code>h2</code> to select second-level headings. The selector is followed by a left curly bracket ({), then the CSS properties to set for the selected elements. Each property is terminated by a semicolon. Finally, the rule ends with a right curly bracket (}).
 
@@ -178,7 +178,7 @@ In text: HTML identifies the structure and content of a page, such as headings, 
 Further information about CSS:
 * [w3schools.com](https://www.w3schools.com/css/)
 * [mozilla.org](https://developer.mozilla.org/de/docs/Learn/CSS)
-* [css-lernen.net](http://www.css-lernen.net/)
+* [CSS styling basics (MDN)](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)
 * [learnlayout](https://learnlayout.com/)
 
 ---

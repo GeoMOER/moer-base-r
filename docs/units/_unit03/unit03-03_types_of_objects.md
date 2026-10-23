@@ -147,7 +147,7 @@ The whole vector is repeated three times. Check the arguments of ?rep to find a 
 
 In R,  most (but not all!) functions are automatically applied to all elements of a vector.
 
-{% include figure image_path="/assets/images/unit_images/u03/vectorization.png" alt="Element-wise addition: adding 1 to c(1, 2, 5.3, 6, -2) gives c(2, 3, 6.3, 7, -1)." %}
+{% include figure image_path="/assets/images/unit_images/u03/vectorization.svg" alt="Element-wise addition: adding 1 to c(1, 2, 5.3, 6, -2) gives c(2, 3, 6.3, 7, -1)." %}
 
 When you perform an operation on two vectors of the same length, R will automatically apply the operation element-wise, meaning it performs the operation between the corresponding elements of the vectors
 
@@ -163,7 +163,7 @@ result
 
 If you perform operations on vectors of different lengths, R will automatically recycle or repeat the shorter vector to match the length of the longer vector. This can be powerful but should be used with caution to avoid unexpected results.
 
-{% include figure image_path="/assets/images/unit_images/u03/Recycling.png" alt="The shorter vector c(1, -2) is repeated across c(1, 2, 5.3, 6, -2), producing c(2, 0, 6.3, 4, -1) when added element by element." %}
+{% include figure image_path="/assets/images/unit_images/u03/Recycling.svg" alt="The shorter vector c(1, -2) is repeated across c(1, 2, 5.3, 6, -2), producing c(2, 0, 6.3, 4, -1) when added element by element." %}
 
 
 -----
@@ -317,7 +317,7 @@ This array has three dimensions. Notice that, although the rows are given as the
 ----
 **Visualized difference between vector, matrix and array:**
 
-{% include figure image_path="/assets/images/unit_images/u03/Array.png" caption="Note the structural difference between vectors, matrices and arrays." alt="A vector is drawn as a line of cells, a matrix as rows and columns, and an array as a stack of matrices with an additional dimension." %}
+{% include figure image_path="/assets/images/unit_images/u03/Array.svg" caption="Note the structural difference between vectors, matrices and arrays." alt="A vector is drawn as a line of cells, a matrix as rows and columns, and an array as a stack of matrices with an additional dimension." %}
 
 An atomic vector stores a sequence of values without a dimension attribute. An array adds dimensions to its data; a matrix is a two-dimensional array. The figure above shows an example with three dimensions.
 

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="738" viewBox="0 0 1440 738" role="img" aria-labelledby="title desc">
+<title id="title">Vectorised addition of one in R</title>
+<desc id="desc">Five indexed elements contain 1, 2, 5.3, 6 and -2. Adding one to every element produces 2, 3, 6.3, 7 and -1.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#00b6df"/></marker></defs>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<text x="232" y="51" font-size="40" fill="#808080">[1]</text>
+<text x="419" y="51" font-size="40" fill="#808080">[2]</text>
+<text x="606" y="51" font-size="40" fill="#808080">[3]</text>
+<text x="793" y="51" font-size="40" fill="#808080">[4]</text>
+<text x="980" y="51" font-size="40" fill="#808080">[5]</text>
+<path d="M 306 164 H 345" stroke="#808080" stroke-width="5"/>
+<path d="M 493 164 H 532" stroke="#808080" stroke-width="5"/>
+<path d="M 680 164 H 719" stroke="#808080" stroke-width="5"/>
+<path d="M 867 164 H 906" stroke="#808080" stroke-width="5"/>
+<rect x="158" y="82" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="232" y="164" dy=".35em" font-size="38"><tspan fill="white">1</tspan></text>
+<rect x="345" y="82" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="419" y="164" dy=".35em" font-size="38"><tspan fill="white">2</tspan></text>
+<rect x="532" y="82" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="606" y="164" dy=".35em" font-size="38"><tspan fill="white">5.3</tspan></text>
+<rect x="719" y="82" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="793" y="164" dy=".35em" font-size="38"><tspan fill="white">6</tspan></text>
+<rect x="906" y="82" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="980" y="164" dy=".35em" font-size="38"><tspan fill="white">-2</tspan></text>
+<path d="M 306 402 H 345" stroke="#808080" stroke-width="5"/>
+<path d="M 493 402 H 532" stroke="#808080" stroke-width="5"/>
+<path d="M 680 402 H 719" stroke="#808080" stroke-width="5"/>
+<path d="M 867 402 H 906" stroke="#808080" stroke-width="5"/>
+<rect x="158" y="320" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="232" y="402" dy=".35em" font-size="38"><tspan fill="white">1</tspan><tspan fill="#83bc37">+1</tspan></text>
+<rect x="345" y="320" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="419" y="402" dy=".35em" font-size="38"><tspan fill="white">2</tspan><tspan fill="#83bc37">+1</tspan></text>
+<rect x="532" y="320" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="606" y="402" dy=".35em" font-size="38"><tspan fill="white">5.3</tspan><tspan fill="#83bc37">+1</tspan></text>
+<rect x="719" y="320" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="793" y="402" dy=".35em" font-size="38"><tspan fill="white">6</tspan><tspan fill="#83bc37">+1</tspan></text>
+<rect x="906" y="320" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="980" y="402" dy=".35em" font-size="38"><tspan fill="white">-2</tspan><tspan fill="#83bc37">+1</tspan></text>
+<path d="M 306 656 H 345" stroke="#808080" stroke-width="5"/>
+<path d="M 493 656 H 532" stroke="#808080" stroke-width="5"/>
+<path d="M 680 656 H 719" stroke="#808080" stroke-width="5"/>
+<path d="M 867 656 H 906" stroke="#808080" stroke-width="5"/>
+<rect x="158" y="568" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="232" y="650" dy=".35em" font-size="38"><tspan fill="#83bc37">2</tspan></text>
+<rect x="345" y="568" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="419" y="650" dy=".35em" font-size="38"><tspan fill="#83bc37">3</tspan></text>
+<rect x="532" y="568" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="606" y="650" dy=".35em" font-size="38"><tspan fill="#83bc37">6.3</tspan></text>
+<rect x="719" y="568" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="793" y="650" dy=".35em" font-size="38"><tspan fill="#83bc37">7</tspan></text>
+<rect x="906" y="568" width="148" height="164" rx="25" fill="#08769d" stroke="#808080" stroke-width="3"/>
+<text x="980" y="650" dy=".35em" font-size="38"><tspan fill="#83bc37">-1</tspan></text>
+<path d="M 1150 175 V 650" stroke="#00b6df" stroke-width="7" marker-end="url(#arrow)"/>
+<text x="66" y="164" dy=".35em" font-size="34" fill="black">vec1</text>
+<text x="66" y="650" dy=".35em" font-size="34" fill="black">vec2</text>
+<text x="1175" y="391" dy=".35em" font-size="34" text-anchor="start"><tspan fill="black">vec2 = vec1</tspan><tspan fill="#83bc37">+1</tspan></text>
+</g>
+</svg>

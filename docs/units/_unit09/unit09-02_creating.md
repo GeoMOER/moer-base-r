@@ -67,44 +67,44 @@ plot(sport_cars, type="o", col="blue", ylim=max_range,
      axes=FALSE, ann=FALSE)
 ```
 
-{% include figure image_path="/assets/data/data/plot1.png" caption="Print of Code chunk above" alt="Blue points joined by lines show seven sport-car counts, 1, 2, 4, 2, 6, 7 and 10, before axes and labels are added." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot1.svg" caption="Print of Code chunk above" alt="Blue points joined by lines show seven sport-car counts, 1, 2, 4, 2, 6, 7 and 10, before axes and labels are added." %}
 
 Make x axis using Mon-Fri labels
 ```
 axis(1, at=1:7, lab=c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
 ```
-{% include figure image_path="/assets/data/data/plot2.png" caption="Print of Code chunk above" alt="The sport-car plot now has weekday labels Monday through Sunday on the horizontal axis." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot2.svg" caption="Print of Code chunk above" alt="The sport-car plot now has weekday labels Monday through Sunday on the horizontal axis." %}
 
 Make y axis with horizontal labels that display ticks at every 4 marks. 4*0:g_range[2] is equivalent to c(0,4,8,12).
 ```
 axis(2, las=1, at=4*0:max_range[2])
 ```
-{% include figure image_path="/assets/data/data/plot3.png" caption="Print of Code chunk above" alt="The sport-car plot now has vertical-axis tick labels at 0, 4 and 8." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot3.svg" caption="Print of Code chunk above" alt="The sport-car plot now has vertical-axis tick labels at 0, 4 and 8." %}
 
 Create box around plot
 ```
 box()
 ```
-{% include figure image_path="/assets/data/data/plot4.png" caption="Print of Code chunk above" alt="A rectangular border is added around the sport-car plot." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot4.svg" caption="Print of Code chunk above" alt="A rectangular border is added around the sport-car plot." %}
 
 Graph trucks with red dashed line and square points
 ```
 lines(family_cars, type="o", pch=22, lty=2, col="red")
 ```
-{% include figure image_path="/assets/data/data/plot5.png" caption="Print of Code chunk above" alt="A red dashed line with square points adds family-car counts 3, 6, 6, 8, 6, 5 and 2 alongside the blue sport-car series." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot5.svg" caption="Print of Code chunk above" alt="A red dashed line with square points adds family-car counts 3, 6, 6, 8, 6, 5 and 2 alongside the blue sport-car series." %}
 
 Create a title with a red, bold/italic font
 ```
 title(main="Car Types on Streets", col.main="red", font.main=4)
 ```
-{% include figure image_path="/assets/data/data/plot6.png" caption="Print of Code chunk above" alt="The two-series car plot gains a red bold italic title, Car Types on Streets." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot6.svg" caption="Print of Code chunk above" alt="The two-series car plot gains a red bold italic title, Car Types on Streets." %}
 
 Label the x and y axes with dark green text
 ```
 title(xlab="Days", col.lab=rgb(0,0.5,0))
 title(ylab="Total", col.lab=rgb(0,0.5,0))
 ```
-{% include figure image_path="/assets/data/data/plot7.png" caption="Print of Code chunk above" alt="The car plot gains green axis labels, Days horizontally and Total vertically." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot7.svg" caption="Print of Code chunk above" alt="The car plot gains green axis labels, Days horizontally and Total vertically." %}
 
 Create a legend at (1, g_range[2]) that is slightly smaller (cex) and uses the same line colors and points used by  the actual plots
 ```
@@ -112,7 +112,7 @@ legend(1, max_range[2], c("Sport","Family"), cex=0.8,
        col=c("blue","red"), pch=21:22, lty=1:2);
 ```
 
-{% include figure image_path="/assets/data/data/plot8.png" caption="Print of Code chunk above" alt="The completed car plot includes a legend: Sport uses blue circles and a solid line; Family uses red squares and a dashed line." %}
+{% include figure image_path="/assets/images/unit_images/u09/plot8.svg" caption="Print of Code chunk above" alt="The completed car plot includes a legend: Sport uses blue circles and a solid line; Family uses red squares and a dashed line." %}
 
 In total this is the code and the output in the plot-window will look like this with each line:
 ```
@@ -142,7 +142,13 @@ For further reading, have a look at e.g. [Kelleher & Wagner 2011](https://www.sc
 
 
 ## Test your knowledge!
-<iframe title="Interactive quiz: creating graphs in R" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-creating.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<div class="h5p-activity-zoom" data-h5p-zoom="unit09-creating">
+  <button class="h5p-zoom-toggle" type="button" aria-controls="unit09-creating-activity" aria-pressed="false" hidden>Enlarge activity</button>
+  <div class="h5p-zoom-region" id="unit09-creating-activity" role="region" aria-label="Creating graphs drag-and-drop activity" tabindex="-1">
+    <iframe title="Interactive quiz: creating graphs in R" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-creating.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe>
+  </div>
+</div>
+<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 
 <!--

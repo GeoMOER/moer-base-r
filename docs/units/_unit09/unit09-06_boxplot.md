@@ -48,6 +48,6 @@ boxplot(mpg~cyl,data=mtcars, main="Car Milage Data", notch=TRUE,
         col=(c("steelblue","darkgreen", "darkred")),
         xlab="Number of Cylinders", ylab="Miles Per Gallon")
 ```
-{% include figure image_path="/assets/images/unit_images/u09/boxplot3.png" caption="Simple Boxplot and notched and colored Boxplot." alt="Mtcars mpg by 4, 6 and 8 cylinders, first as plain boxplots and then with coloured notches. Four-cylinder cars have the highest median mpg and eight-cylinder cars the lowest." %}
+{% include figure image_path="/assets/images/unit_images/u09/boxplot3.svg" caption="Simple Boxplot and notched and colored Boxplot." alt="Mtcars mpg by 4, 6 and 8 cylinders, first as plain boxplots and then with coloured notches. Four-cylinder cars have the highest median mpg and eight-cylinder cars the lowest." %}
 
 In the eight-cylinder group, the lower whisker is at 13.3 mpg, while two observations at 10.4 mpg are flagged by the 1.5 × IQR rule. Their symbols overlap, so only one circle is visible. For the six-cylinder group, R warns that some notches extend outside the hinges: there are only seven observations, and the notch interval extends beyond the box. Interpret these small-sample comparisons cautiously.

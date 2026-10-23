@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img"><title>Raw data and levels of measurement</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial, Helvetica, sans-serif" fill="#222">
+<rect x="25" y="35" width="275" height="175" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="162.5" y="133.7" text-anchor="middle" font-size="32" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">Raw Data</text>
+<path d="M300 122L380 122" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="380" y="80" width="180" height="85" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="470.0" y="116.5" text-anchor="middle" font-size="24" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">Level of</text>
+<text x="470.0" y="145.3" text-anchor="middle" font-size="24" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">measurement</text>
+<path d="M560 122H590V65H605 M590 122V190H605" fill="none" stroke="#aaa" stroke-width="1"/>
+<rect x="605" y="40" width="150" height="50" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="680.0" y="72.7" text-anchor="middle" font-size="22" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">continuously</text>
+<rect x="605" y="165" width="150" height="50" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="680.0" y="197.7" text-anchor="middle" font-size="22" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">discrete</text>
+<rect x="795" y="15" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="39.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">ratio-scale</text>
+<rect x="795" y="70" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="94.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">interval-scale</text>
+<rect x="795" y="165" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="189.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">ordinal-scale</text>
+<rect x="795" y="220" width="180" height="35" fill="white" stroke="#888" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="885.0" y="244.85" text-anchor="middle" font-size="21" font-weight="normal" font-family="Arial, Helvetica, sans-serif" fill="#222">nominal-scale</text>
+<path d="M755 65H775V32H795 M775 65V87H795 M755 190H775V182H795 M775 190V237H795" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M470 165L470 270" fill="none" stroke="#aaa" stroke-width="1"/>
+</g></svg>

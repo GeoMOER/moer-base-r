@@ -61,4 +61,10 @@ Revisit [first steps]({{ '/unit01/unit01-04_first_steps.html' | relative_url }})
 
 ## Test GUI
 
-<iframe title="Interactive exercise: identify the RStudio panes" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit01-03-gui.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<div class="h5p-activity-zoom" data-h5p-zoom="unit01-rstudio">
+  <button class="h5p-zoom-toggle" type="button" aria-controls="unit01-rstudio-activity" aria-pressed="false" hidden>Enlarge activity</button>
+  <div class="h5p-zoom-region" id="unit01-rstudio-activity" role="region" aria-label="RStudio panes drag-and-drop activity" tabindex="-1">
+    <iframe title="Interactive exercise: identify the RStudio panes" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit01-03-gui.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe>
+  </div>
+</div>
+<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>

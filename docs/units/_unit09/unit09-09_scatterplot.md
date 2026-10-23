@@ -27,7 +27,7 @@ lines(lowess(mtcars$wt,mtcars$mpg), lty=2, col="darkgreen") # LOWESS/LOESS line 
 legend("topright", legend=c("Regression", "LOWESS"),
        col=c("steelblue", "darkgreen"), lty=1:2, cex=0.8)
 ```
-{% include figure image_path="/assets/images/unit_images/u09/scatterplot2.png" caption="Simple scatterplot." alt="Scatterplot of mtcars weight against miles per gallon: heavier cars generally have lower mpg; linear regression and LOWESS curves are overlaid." %}
+{% include figure image_path="/assets/images/unit_images/u09/scatterplot2.svg" caption="Simple scatterplot." alt="Scatterplot of mtcars weight against miles per gallon: heavier cars generally have lower mpg; linear regression and LOWESS curves are overlaid." %}
 
 <div class="course-info">
   <p><strong>Info</strong>  <br>

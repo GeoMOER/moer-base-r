@@ -42,7 +42,7 @@ Now let's have a closer look at the environment after you have gotten to know th
 
 If you have a project with many data files, analysis scripts or other it is highly recommended that you create a directory structure under your main project folder to store and organize all these files. For example, you might have a project folder under `C:/geomoer/Project1`, whose directory structure might look like this
 
-{% include figure image_path="/assets/images/unit_images/u05/structure.png" caption="Project directory structure" alt="Project1 directory tree: Data stores input files; Process contains Figures and Scripts; Output stores exported results." %}
+{% include figure image_path="/assets/images/unit_images/u05/structure.svg" caption="Project directory structure" alt="Project1 directory tree: Data stores input files; Process contains Figures and Scripts; Output stores exported results." %}
 
 The key elements of a project folder include:
 * a `Data/` folder

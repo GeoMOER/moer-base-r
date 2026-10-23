@@ -51,7 +51,7 @@ data(mtcars)
 mpg <- hist(mtcars$mpg)
 hp <- hist(mtcars$hp)
 ```
-{% include figure image_path="/assets/data/data/histo1.png" caption="Print of Code chunk above" alt="Histograms of mtcars mpg and horsepower. Most mpg observations lie between 10 and 25; horsepower is concentrated toward the lower end with a tail toward 350." %}
+{% include figure image_path="/assets/images/unit_images/u09/histo1.svg" caption="Print of Code chunk above" alt="Histograms of mtcars mpg and horsepower. Most mpg observations lie between 10 and 25; horsepower is concentrated toward the lower end with a tail toward 350." %}
 
 
 Histogram with Breaks (Bins) and Color
@@ -59,7 +59,7 @@ Histogram with Breaks (Bins) and Color
 hist(mtcars$mpg, breaks=10, col="red")
 hist(mtcars$hp, breaks=6, col="blue")
 ```
-{% include figure image_path="/assets/data/data/histo2.png" caption="Print of Code chunk above" alt="The mpg and horsepower histograms are redrawn with red and blue fills; the mpg histogram uses narrower bins." %}
+{% include figure image_path="/assets/images/unit_images/u09/histo2.svg" caption="Print of Code chunk above" alt="The mpg and horsepower histograms are redrawn with red and blue fills; the mpg histogram uses narrower bins." %}
 
 A histogram's appearance depends on both the widths and the positions of its bin boundaries. Narrow bins show more local detail but may exaggerate random variation; wide bins can hide features. Compare several reasonable choices before interpreting peaks, gaps or skewness. In the example above, `breaks=10` is a suggestion, not a guarantee of exactly ten bins.
 

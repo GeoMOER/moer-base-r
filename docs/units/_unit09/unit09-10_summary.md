@@ -62,4 +62,10 @@ Revisit [plot creation]({{ '/unit09/unit09-02_creating.html' | relative_url }}),
 
 <iframe title="Interactive quiz: boxplots and histograms" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-boxplothistogram.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
-<iframe title="Interactive drag-and-drop exercise: parts of a boxplot" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-markboxplot.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<div class="h5p-activity-zoom" data-h5p-zoom="unit09-boxplot">
+  <button class="h5p-zoom-toggle" type="button" aria-controls="unit09-boxplot-activity" aria-pressed="false" hidden>Enlarge activity</button>
+  <div class="h5p-zoom-region" id="unit09-boxplot-activity" role="region" aria-label="Boxplot labels drag-and-drop activity" tabindex="-1">
+    <iframe title="Interactive drag-and-drop exercise: parts of a boxplot" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit09-markboxplot.html" width="1090" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe>
+  </div>
+</div>
+<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>

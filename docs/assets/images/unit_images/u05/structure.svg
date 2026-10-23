@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="991" viewBox="0 0 1242 991" role="img"><title>Suggested project folder structure</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs><rect width="100%" height="100%" fill="white"/><g font-family="Arial, Helvetica, sans-serif" fill="#222">
+<path d="M540 40V25Q540 20 548 20H588L600 38H690V138H540Z" fill="#f5c75d" stroke="none" stroke-width="1"/>
+<path d="M540 42H634L645 25H690V138H540Z" fill="#ffda64" stroke="none" stroke-width="1"/>
+<text x="615" y="111" text-anchor="middle" font-size="23" font-weight="normal" font-family="Georgia, serif" fill="#222">Project1</text>
+<path d="M615 155L615 190" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M615 190H255V225" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M255 225L255 240" fill="none" stroke="#6798c8" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M180 270V255Q180 250 188 250H228L240 268H330V368H180Z" fill="#f5c75d" stroke="none" stroke-width="1"/>
+<path d="M180 272H274L285 255H330V368H180Z" fill="#ffda64" stroke="none" stroke-width="1"/>
+<text x="255" y="341" text-anchor="middle" font-size="23" font-weight="normal" font-family="Georgia, serif" fill="#222">Data</text>
+<path d="M615 155L615 190" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M615 190H615V225" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M615 225L615 240" fill="none" stroke="#6798c8" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M540 270V255Q540 250 548 250H588L600 268H690V368H540Z" fill="#f5c75d" stroke="none" stroke-width="1"/>
+<path d="M540 272H634L645 255H690V368H540Z" fill="#ffda64" stroke="none" stroke-width="1"/>
+<text x="615" y="341" text-anchor="middle" font-size="23" font-weight="normal" font-family="Georgia, serif" fill="#222">Process</text>
+<path d="M615 155L615 190" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M615 190H975V225" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M975 225L975 240" fill="none" stroke="#6798c8" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M900 270V255Q900 250 908 250H948L960 268H1050V368H900Z" fill="#f5c75d" stroke="none" stroke-width="1"/>
+<path d="M900 272H994L1005 255H1050V368H900Z" fill="#ffda64" stroke="none" stroke-width="1"/>
+<text x="975" y="341" text-anchor="middle" font-size="23" font-weight="normal" font-family="Georgia, serif" fill="#222">Output</text>
+<path d="M255 385L255 450" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M155 460H186L200 474V524H155Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M186 460V474H200" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="155" y="503" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="177" y="519" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">TXT</text>
+<path d="M210 460H241L255 474V524H210Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M241 460V474H255" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="210" y="503" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="232" y="519" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">DBF</text>
+<path d="M265 460H296L310 474V524H265Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M296 460V474H310" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="265" y="503" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="287" y="519" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">CSV</text>
+<path d="M155 540H186L200 554V604H155Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M186 540V554H200" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="155" y="583" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="177" y="599" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">XLS</text>
+<path d="M615 385L615 415" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M615 415H495V450" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M495 450L495 475" fill="none" stroke="#6798c8" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M420 515V500Q420 495 428 495H468L480 513H570V613H420Z" fill="#f5c75d" stroke="none" stroke-width="1"/>
+<path d="M420 517H514L525 500H570V613H420Z" fill="#ffda64" stroke="none" stroke-width="1"/>
+<text x="495" y="586" text-anchor="middle" font-size="23" font-weight="normal" font-family="Georgia, serif" fill="#222">Figures</text>
+<path d="M495 630L495 705" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M615 415H725V450" fill="none" stroke="#aaa" stroke-width="1"/>
+<path d="M725 450L725 475" fill="none" stroke="#6798c8" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M650 515V500Q650 495 658 495H698L710 513H800V613H650Z" fill="#f5c75d" stroke="none" stroke-width="1"/>
+<path d="M650 517H744L755 500H800V613H650Z" fill="#ffda64" stroke="none" stroke-width="1"/>
+<text x="725" y="586" text-anchor="middle" font-size="23" font-weight="normal" font-family="Georgia, serif" fill="#222">Scripts</text>
+<path d="M725 630L725 705" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M445 720H476L490 734V784H445Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M476 720V734H490" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="445" y="763" width="45" height="21" fill="#6b9b26" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="467" y="779" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">PNG</text>
+<path d="M500 720H531L545 734V784H500Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M531 720V734H545" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="500" y="763" width="45" height="21" fill="#bb2637" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="522" y="779" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">JPG</text>
+<path d="M705 720H736L750 734V784H705Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M736 720V734H750" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="705" y="763" width="45" height="21" fill="#267fe0" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="727" y="779" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">R</text>
+<path d="M975 385L975 450" fill="none" stroke="#6798c8" stroke-width="1"/>
+<path d="M905 460H936L950 474V524H905Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M936 460V474H950" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="905" y="503" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="927" y="519" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">DOC</text>
+<path d="M960 460H991L1005 474V524H960Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M991 460V474H1005" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="960" y="503" width="45" height="21" fill="#be292e" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="982" y="519" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">PDF</text>
+<path d="M1015 460H1046L1060 474V524H1015Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M1046 460V474H1060" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="1015" y="503" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="1037" y="519" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">ZIP</text>
+<path d="M905 540H936L950 554V604H905Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M936 540V554H950" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="905" y="583" width="45" height="21" fill="#6b9b26" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="927" y="599" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">PNG</text>
+<path d="M960 540H991L1005 554V604H960Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M991 540V554H1005" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="960" y="583" width="45" height="21" fill="#bb2637" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="982" y="599" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">JPG</text>
+<path d="M1015 540H1046L1060 554V604H1015Z" fill="#ededdf" stroke="none" stroke-width="1"/>
+<path d="M1046 540V554H1060" fill="#d5d5c9" stroke="none" stroke-width="1"/>
+<rect x="1015" y="583" width="45" height="21" fill="#6b8d92" stroke="none" stroke-width="1" rx="0" stroke-dasharray=""/>
+<text x="1037" y="599" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial, Helvetica, sans-serif" fill="white">DBF</text>
+</g></svg>

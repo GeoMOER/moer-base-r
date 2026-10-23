@@ -58,7 +58,7 @@ while("<some logical expression with iteration variable>"){
 
 ## What loop to choose?
 
-{% include figure image_path="/assets/images/unit_images/u07/which-loop-to-choose.jpg" alt="Decision tree: for a known sequence of iterations use a for-loop; when applying a function and collecting a list use lapply; when repetition depends on a condition use a while-loop." %}
+{% include figure image_path="/assets/images/unit_images/u07/which-loop-to-choose.svg" alt="Decision tree: for a known sequence of iterations use a for-loop; when applying a function and collecting a list use lapply; when repetition depends on a condition use a while-loop." %}
 
 As a general guide, use a for loop to iterate over a known sequence. Use a while loop when repetition depends on a condition checked during execution.
 

@@ -74,7 +74,7 @@ merge(left, right)
 
 The following illustration also shows all row combinations when there is no shared column name:
 
-{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR2.png" alt="Without a common key or an explicit by argument, each of five character rows is paired with all four weapon rows, producing 20 combinations." %}
+{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR2.svg" alt="Without a common key or an explicit by argument, each of five character rows is paired with all four weapon rows, producing 20 combinations." %}
 
 Check whether your intended key is unique in each input. When a key value occurs more than once on **both** sides, `merge()` returns every matching pair. Here, site `A` has two visits and two samples, producing four rows for `A` and one for `B`:
 
@@ -90,7 +90,7 @@ Both checks return `TRUE`, and the merged table has five rows. If you expected o
 
 When you merge on a key, `merge()` keeps only rows whose key values match in both inputs by default. Use `all = TRUE` to retain unmatched rows from *both* inputs, `all.x = TRUE` for all rows from the first input, or `all.y = TRUE` for all rows from the second. Unmatched columns contain `NA`; Unit 04 explains how to find and handle missing values. The illustration below shows matching by the shared `name` column and what happens to unmatched rows when they are retained:
 
-{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR1.png" alt="Joining characters and weapons by name matches Frodo, Aragorn, Legolas and Gimli. A full join retains Gandalf with NA for his weapon; an inner join drops him." %}
+{% include figure image_path="/assets/images/unit_images/u08/Merge_LOTR1.svg" alt="Joining characters and weapons by name matches Frodo, Aragorn, Legolas and Gimli. A full join retains Gandalf with NA for his weapon; an inner join drops him." %}
 
 See the [R documentation for `merge()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/merge.html) for the complete argument list and matching rules.
 
