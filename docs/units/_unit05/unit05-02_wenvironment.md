@@ -9,6 +9,8 @@ header:
 ---
 <!--more-->
 
+{% include self-study-start.html %}
+
 > “Data is the new oil.” — Clive Humby
 
 ---
@@ -23,20 +25,7 @@ An **RStudio project** organizes your work in a project folder and stores projec
 {% include figure image_path="/assets/images/unit_images/u05/gui_rstudio_exp.png" caption="Work Environment in RStudio from Unit 1" alt="RStudio with four labelled panes: script editor at upper left, console at lower left, environment at upper right, and graphical output at lower right." %}
 
 
-<div class="course-info">
-  <p><strong>Little reminder from Unit 1:</strong>
-  This is the Integrated Development Environment (IDE) of RStudio. It contains
-  <br>
-<ol>
-    <li>the script aka text editor,</li>
-    <li>the console for executing code,</li>
-    <li>the Environment pane for R objects and the History pane for previous commands,</li>
-    <li>the Files pane for browsing files on disk, along with panes for plots, packages, and help.</li>
-  </ol>
-  </p>
-</div>
-
-Now let's have a closer look at the environment after you have gotten to know the script and the console.
+For a reminder of the panes, revisit the [Unit 01 interface guide]({{ '/unit01/unit01-03_GUI.html' | relative_url }}). Here the new distinction is between objects in memory and files on disk: identify one of each in your own project before continuing.
 
 # Project directory structure
 

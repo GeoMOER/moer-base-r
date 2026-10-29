@@ -12,6 +12,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 Now that you know how to access the built-in R help pages you need to know how to read them. Typically, the R Help files follow a fairly standard outline as seen below in a heavily clipped screenshot of the function `read.table`. Different functions might have different sections, but these are the main ones you should be aware of:
 
 <img alt="read.table help page showing the package, title, description and usage signature; these sections are explained alongside." src="{{ '/assets/images/unit_images/u01/selfhelp_2.1.png' | relative_url }}" width="400" height="631" align="right" vspace="10" hspace="20">

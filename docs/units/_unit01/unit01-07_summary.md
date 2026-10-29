@@ -10,9 +10,11 @@ header:
   caption: "Mobile Android operating system market share by version worldwide from 2018 to 2020: [StatCounter](https://gs.statcounter.com/android-version-market-share/mobile/worldwide/#monthly-201907-202001) [via Statista](https://www.statista.com/statistics/921152/mobile-android-version-share-worldwide/)"
 ---
 
-You can now use RStudio to write and run a small R script, and find help when a command is unfamiliar.
+Check that you can use RStudio to write and run a small R script, and find help when a command is unfamiliar.
 
 <!--more-->
+
+{% include self-study-start.html %}
 
 ## What you learned
 
@@ -51,11 +53,46 @@ For a known function, enter `?sqrt` or `help("sqrt")`. For a topic whose functio
 
 When a command fails, read the error message, check spelling and parentheses, and reduce the problem to a few reproducible lines. Include those lines and the exact error when asking for help.
 
+## Try it yourself {#practice}
+
+In a new R script, store a rectangle's length as 9 cm and breadth as 4 cm. Calculate its area and the square root of that area. Save it as `unit01-check.R`, restart R using **Session > Restart R**, and run the script from the top. Use `?sqrt` to check its argument and return value.
+
+Expected checks: the area is 36 cm², its square root is 6 cm, and the saved script recreates the results after restart.
+
+<details markdown="1">
+<summary>Compare a possible solution</summary>
+
+```r
+length_cm <- 9
+breadth_cm <- 4
+area_cm2 <- length_cm * breadth_cm
+area_cm2
+sqrt(area_cm2)
+```
+
+The outputs are 36 and 6. If an object is missing after restart, check that the line creating it is saved and was run before the calculation. Alternative object names are fine.
+
+</details>
+
+**Ready to continue:** you can reproduce these results from your saved commands and locate a function's help page.
+
 ## Check your understanding
+
+Try these questions before opening the suggested answers.
 
 1. Explain the difference between typing a command in the Console and saving it in a script.
 2. Change `width` to `8`. Which lines must you rerun to update `area` and its square root?
 3. Find the **Arguments** and **Value** sections of `?sqrt`. What input does it expect, and what does it return?
+
+<details markdown="1">
+<summary>Suggested answers</summary>
+
+1. The Console executes a command immediately; a script stores its text so you can inspect, edit and rerun the steps. A saved script does not depend on remembering your Console history.
+2. Rerun `width <- 8`, then `area <- height * width`, and then the commands displaying `area` and `sqrt(area)`. With `height` still 12, they give 96 and about 9.798. Changing `width` alone does not recalculate an existing `area`.
+3. `sqrt()` accepts a numeric input and returns its square root, element by element. Check **Arguments** for the input and **Value** for the returned result; negative real inputs need separate consideration.
+
+</details>
+
 
 Revisit [first steps]({{ '/unit01/unit01-04_first_steps.html' | relative_url }}) and [reading help files]({{ '/unit01/unit01-06_helpfiles.html' | relative_url }}) if needed.
 

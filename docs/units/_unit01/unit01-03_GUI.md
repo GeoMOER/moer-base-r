@@ -8,6 +8,8 @@ header:
 *What is what in RStudio.*
 <!--more-->
 
+{% include self-study-start.html %}
+
 
 ## User Interface
 

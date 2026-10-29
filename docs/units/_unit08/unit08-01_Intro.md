@@ -6,6 +6,8 @@ header:
   caption: "Photo by [congerdesign](https://pixabay.com/de/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384)"
 ---
 
+{% include self-study-start.html %}
+
 At the end of this unit, you should be able to
 
 * sort values and reorder rows using an index,

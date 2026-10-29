@@ -8,6 +8,8 @@ header:
 *You will learn how to set up the working environment*
 
 <!--more-->
+
+{% include self-study-start.html %}
 At the end of this unit you should know
 
 * what a workspace is and how to set up your working environment

@@ -9,6 +9,8 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
+{% include self-study-start.html %}
+
 You have already used many functions. Now it is time to write your own. A function can accept one or more arguments, listed in parentheses. Its body, enclosed in curly braces, contains the operations to perform. For example, the mean of a numeric vector without missing values is its sum divided by its length. We can write `sum(x) / length(x)` as a function:
 
 ```r

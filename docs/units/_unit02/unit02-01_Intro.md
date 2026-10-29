@@ -8,6 +8,8 @@ header:
 *Learn about different levels of measurement and how information is arranged in data types in R.*
 <!--more-->
 
+{% include self-study-start.html %}
+
 At the end of this unit, you should be able to
 
 * distinguish qualitative from quantitative data and discrete from continuous quantitative variables,

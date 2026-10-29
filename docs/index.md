@@ -41,8 +41,15 @@ At the end of this course you should
 
 # Course features
 
-This course is intended as a blended learning module in the study program of the Department of Geography at the University of Marburg.
-However, the provided units and spotlights can also be used independently.
+This material is designed primarily for self-study and preparation for subsequent courses. Other courses may link directly to a lesson. There are no scheduled teaching sessions, required submissions or formal examination in this material.
+
+Start with the route that matches your needs:
+
+- **New to R:** begin with [Unit 01]({{ "/unit01/unit01-01_Intro.html" | relative_url }}) and follow the units in order. Try each example, then use the independent tasks and suggested answers in the unit summaries.
+- **Returning to R:** try a [unit summary]({{ "/units.html" | relative_url }}#check-your-starting-point) first. If a check is difficult, follow its revisit links rather than repeating every familiar page.
+- **Looking up one task:** use the [task index]({{ "/units.html" | relative_url }}#find-a-task) or the site search. A lesson’s Before you start box names its prerequisites, setup and a concrete goal. Run the setup on that page before later code blocks.
+
+Work in R scripts; hints and possible solutions are available after you attempt the tasks. A matching result is a check, not a grade: explain why it is appropriate before moving on. Spotlights are optional. The batch-processing lesson is a preview to revisit after Unit 07.
 
 
 # Syllabus

@@ -9,6 +9,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 > “You can have data without information, but you cannot have information without data”  —  Daniel Keys Moran
 
 Almost all programming languages explicitly include the notion of data type, though different languages may use different terminology.

@@ -8,6 +8,8 @@ header:
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 
 ---
+
+{% include self-study-start.html %}
 Quantitative variables express counts or measured amounts. Their numerical values have a meaning beyond identifying a category: for example, 12 trees are three more than nine trees. A column of numeric category codes is still categorical.
 
 ## Quantitative Data ("numerical")

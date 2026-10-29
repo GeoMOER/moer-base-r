@@ -10,6 +10,8 @@ header:
 Try Exercise 1 yourself!
 
 <!--more-->
+
+{% include self-study-start.html %}
 Now it's your turn.
 
 <!-- <iframe src="https://h5p.org/h5p/embed/956362" width="1090" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script> -->
@@ -77,3 +79,21 @@ Each vector has ten entries. Entries in the same position belong to the same per
       Use the lowercase object names given above. Combine values with <code>c(...)</code>. Write heights and weights as numbers, using a decimal point where needed, and put each state label in quotation marks.
   </p>
 </div>
+
+## Choose and inspect structures
+
+Use the three ten-entry vectors above. Keep entries for each person together.
+
+1. Create `people`, a data frame with numeric columns `height_m` and `weight_kg` and a factor column `state`. Inspect `str()`, `dim()` and the levels; expect ten rows, three columns and seven state labels.
+2. Create a numeric matrix from just the height and weight vectors. Predict its dimensions and type, and explain why the mixed table is better kept as a data frame. Separately create an array from `1:12` with dimensions `2, 3, 2`; what does each dimension count?
+3. Make a list containing `people` and a separate character vector naming the two measurement units. Predict the list's length and why its components need not have equal lengths.
+4. Predict the type of `c(height[1], state[1])` and `as.matrix(people)` before trying them. What meaning or type information needs care when combining numbers with labels? Explain why `as.numeric(people$state)` does not recover state names.
+
+<details markdown="1">
+<summary>Hints</summary>
+
+Use `data.frame()`, `factor()`, `cbind()`, `array()` and `list()`. The matrix has two numeric columns; the mixed table does not. A factor code points to a level label. `str()` and `typeof()` help check your predictions.
+
+</details>
+
+**Self-check:** every original height and weight still belongs to the same state entry. Compare with the [worked solution]({{ '/unit03/unit03-06_Solution.html' | relative_url }}) after attempting the tasks; equivalent correct code is welcome.

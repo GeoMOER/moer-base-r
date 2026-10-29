@@ -93,6 +93,34 @@ feature_row:
   {% include archive-single.html %}
 {% endfor %}
 
+## Find a task {#find-a-task}
+
+| I want to… | Start here |
+|---|---|
+| Install R/RStudio and run commands | [First steps and setup]({{ '/unit01/unit01-01_Intro.html' | relative_url }}) |
+| Interpret types, categories and missing values | [Data types]({{ '/unit02/unit02-01_Intro.html' | relative_url }}) |
+| Choose a vector, table, matrix or list | [Object structures]({{ '/unit03/unit03-01_Intro.html' | relative_url }}) |
+| Select or change rows/columns | [Indexing]({{ '/unit04/unit04-01_Intro.html' | relative_url }}) |
+| Understand project paths and packages | [Work environment]({{ '/unit05/unit05-01_Intro.html' | relative_url }}) |
+| Import/export a table | [Data input and output]({{ '/unit06/unit06-01_Intro.html' | relative_url }}) |
+| Write a decision, loop or function | [Operations]({{ '/unit07/unit07-01_Intro.html' | relative_url }}) |
+| Sort, bind, join, edit text, group or reshape | [Table operations]({{ '/unit08/unit08-01_Intro.html' | relative_url }}) |
+| Choose and make a labelled plot | [Visualization]({{ '/unit09/unit09-01_Intro.html' | relative_url }}) |
+
+## Check your starting point {#check-your-starting-point}
+
+Already familiar with some R? Attempt a summary’s independent task before deciding which lessons to revisit. Each summary supplies checks and explanations; no submission is required.
+
+- [Unit 01]({{ '/unit01/unit01-07_summary.html' | relative_url }}#practice)
+- [Unit 02]({{ '/unit02/unit02-07_summary.html' | relative_url }}#practice)
+- [Unit 03]({{ '/unit03/unit03-07_Summary.html' | relative_url }}#practice)
+- [Unit 04]({{ '/unit04/unit04-04_summary.html' | relative_url }}#practice)
+- [Unit 05]({{ '/unit05/unit05-04_summary.html' | relative_url }}#practice)
+- [Unit 06]({{ '/unit06/unit06-05_summary.html' | relative_url }}#practice)
+- [Unit 07]({{ '/unit07/unit07-11_summary.html' | relative_url }}#practice)
+- [Unit 08]({{ '/unit08/unit08-05_summary.html' | relative_url }}#practice)
+- [Unit 09]({{ '/unit09/unit09-10_summary.html' | relative_url }}#practice)
+
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}

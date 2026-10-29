@@ -10,9 +10,11 @@ header:
   caption: "Photo by [Franki Chamaki](https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) [from unsplash](https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
-You can now choose an R object for a task, inspect its structure, and recognize when combining or converting values changes their type.
+Check that you can choose an R object for a task, inspect its structure, and recognize when combining or converting values changes their type.
 
 <!--more-->
+
+{% include self-study-start.html %}
 
 ## What you learned
 
@@ -53,11 +55,29 @@ The data frame has four rows and three columns: `dim(observations)` returns `4 3
 
 Conversions can change meaning or lose information. Combining numbers and text in an atomic vector converts the numbers to text. Converting a mixed data frame to a matrix can do the same. `as.numeric()` applied directly to a factor returns its internal codes, not numeric values represented by its labels. Inspect the object and the result before continuing.
 
+## Try it yourself {#practice}
+
+Complete the [object-structure exercise]({{ '/unit03/unit03-05_Exercise.html' | relative_url }}), including the table, matrix/array, list and conversion tasks. Predict each result's type and dimensions before running it; use the stated checks before opening the solution.
+
+**Ready to continue:** you can choose a structure, inspect it, and explain a type change rather than relying only on its printed appearance.
+
 ## Check your understanding
+
+Try these questions before opening the suggested answers.
 
 1. Which object would hold numeric measurements, site names, and habitat categories in one table?
 2. Which object would hold that table together with a separate description and a vector of a different length?
 3. Predict the type of `c(1, "two")`. Why is a factor's integer code different from its category label?
+
+<details markdown="1">
+<summary>Suggested answers</summary>
+
+1. Use a data frame, with a numeric measurement column, character names and a factor if categories have defined levels. Columns can differ in type while retaining the same row count.
+2. Use a list: its components can hold a data frame, a description and a vector of another length. An atomic matrix would require one common type and rectangular dimensions.
+3. `c(1, "two")` is character because its elements need a common type. Factor integer codes identify positions in `levels()`; they are not the category labels or measurements. Use `as.character()` to recover labels before deciding whether they represent numbers.
+
+</details>
+
 
 Revisit [object types]({{ '/unit03/unit03-03_types_of_objects.html' | relative_url }}) and [converting objects]({{ '/unit03/unit03-04_convert.html' | relative_url }}) if needed.
 

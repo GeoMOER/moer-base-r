@@ -9,6 +9,8 @@ header:
 ---
 **The Four Horsemen of Measurement** - hear their names: Nominal, Ordinal, Interval, Ratio.
 <!--more-->
+
+{% include self-study-start.html %}
 ---
 
 Qualitative (categorical) variables describe which category an observation belongs to. Their measurement level can be nominal or ordinal.

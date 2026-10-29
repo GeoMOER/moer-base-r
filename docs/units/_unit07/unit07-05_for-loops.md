@@ -9,6 +9,8 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
+{% include self-study-start.html %}
+
 For loops repeat a block of code for each element in a sequence. The sequence is evaluated when the loop starts, so its length determines the number of iterations.
 
 The sequence can be defined directly or stored in a variable before the loop starts. Here, the loop iterates over the values from 7 to 10:

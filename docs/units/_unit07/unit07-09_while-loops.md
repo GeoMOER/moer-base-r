@@ -7,7 +7,11 @@ header:
   caption: "Photo by [Christopher Kuszajewski](https://pixabay.com/de/users/kuszapro-369349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=583537)"
 ---
 
+{% include self-study-start.html %}
+
 Like for loops, while loops repeat a block of code. A while loop checks a condition before each iteration and continues while it is `TRUE`. The number of iterations does not need to be known in advance.
+
+If a loop runs unintentionally in RStudio, use the Console Stop button or press Esc. After it stops, inspect the condition and update before trying again. Interrupting a loop does not undo changes made in earlier iterations. See the [RStudio Console guide](https://docs.posit.co/ide/user/ide/guide/code/console.html) for the interrupt control.
 
 In this example, the loop continues while `a <= b` and stops once `a > b`:
 
@@ -59,19 +63,18 @@ The variable `c` is reset to 10 after each inner loop. Otherwise, later inner lo
 
 ----
 
-A `repeat` loop continues until an explicit `break` statement exits it. Unlike a while loop, it does not check a condition before entering the body. Here is the basic structure:
+A `repeat` loop continues until an explicit `break` exits it. Unlike `while`, it enters the body before checking your exit condition. This complete example stops after printing 1, 2 and 3:
 
 ```r
+counter <- 0
 repeat {
-  # Code to be executed in each iteration
-  
-  if (condition) {
-    break  # Terminate the loop if the condition is met
-  }
+  counter <- counter + 1
+  print(counter)
+  if (counter >= 3) break
 }
-
 ```
 
+`counter` ends at 3. Predict what changes if the exit value is 2; then try it. Do not remove the update or exit to test whether an infinite loop really runs forever. The [summary practice]({{ '/unit07/unit07-11_summary.html' | relative_url }}#practice) asks you to construct a separate bounded `while` loop.
 
 ## Test what you've learned so far!
 

@@ -13,6 +13,8 @@ This Spotlight introduces HTML and CSS, then shows how to use CSS to customise t
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 ## Basics of web development
 HTML, CSS and JavaScript have complementary roles in web development.
 

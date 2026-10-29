@@ -12,6 +12,8 @@ See if you were right in exercise 1!
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 <!-- ### Task 1
 use `help(mean)`, `help(sqrt)`, `?log`
 
@@ -88,3 +90,37 @@ state
 ---
 
 <!-- Congratulations! This was the last exercise for this chapter. -->
+
+## Choose and inspect structures: one solution
+
+Run the vector definitions above first. These are illustrative people; keep the order and units from the task.
+
+```r
+people <- data.frame(height_m = height, weight_kg = weight,
+                      state = factor(state))
+str(people)
+dim(people)
+levels(people$state)
+measurements <- cbind(height_m = height, weight_kg = weight)
+dim(measurements)
+typeof(measurements)
+two_slices <- array(1:12, dim = c(2, 3, 2))
+dim(two_slices)
+profile <- list(people = people, units = c(height = "m", weight = "kg"))
+length(profile)
+str(profile)
+```
+
+`people` is 10-by-3, with two numeric columns and a factor with seven levels. `measurements` is a 10-by-2 double matrix; one row still represents one person. The array has two rows, three columns and two slices. `profile` has two components even though one is a ten-row table and the other contains two labels.
+
+```r
+mixed_values <- c(height[1], state[1])
+typeof(mixed_values)
+mixed_table <- as.matrix(people)
+typeof(mixed_table)
+class(people$state)
+as.numeric(people$state)
+as.character(people$state)
+```
+
+Both combined objects use character storage. In `mixed_table`, the state labels are preserved as text, but numeric columns are also coerced to text and the factor class is lost. The factor's numeric codes identify levels, not measurements or state names. Inspect labels with `as.character()`; there is no meaningful numeric state measurement to recover here.

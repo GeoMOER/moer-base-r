@@ -13,6 +13,8 @@ Official data need careful import and interpretation. In this example, you will 
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 ## What do these data describe?
 
 **Destatis** is the short name of Germany's Federal Statistical Office (*Statistisches Bundesamt*). We use its report **Flächenerhebung nach Art der tatsächlichen Nutzung 2024**, meaning **Survey of land area by actual use, 2024**. The observations refer to **December 31, 2024**; the report was published on **November 21, 2025**. The reporting year and publication year describe different things.
@@ -271,6 +273,26 @@ identical(land_use, restored)
 `write.csv()` uses commas between fields and decimal points, so this output format differs from the semicolon-separated input. CSV does not store R column types; specify them when importing it again so that regional codes keep their leading zeros. RDS preserves the R object's types. Neither filename alone records the source definitions: keep the year, units, category mapping, and source notes with the data.
 
 The important result is a documented preparation process: choose the right source sheet, understand its labels, preserve identifiers, handle unavailable cells explicitly, select comparable observations, and check the numerical and substantive meaning before analysis.
+
+## Try another reporting area
+
+Using the prepared `land_use` table, select the record whose `region_code` is `"02"`. Show only its code, name and settlement percentage. Predict the number of rows and explain why adding its vegetation and forest percentages would give an unsuitable total.
+
+<details markdown="1">
+<summary>Hint and possible solution</summary>
+
+Use a comparison on the character identifier to select the row, and a character vector of column names to select the fields:
+
+```r
+hamburg <- land_use[land_use$region_code == "02",
+                    c("region_code", "region_name", "settlement_pct")]
+hamburg
+dim(hamburg)
+```
+
+Expect one row and three columns: code `"02"`, name `"Hamburg"` and settlement share `46.3` percent. Preserve the leading zero: this code identifies a reporting area rather than a measured quantity. Forest is part of vegetation, so adding both percentages counts forest area twice. Check these meanings as well as the dimensions before using the result.
+
+</details>
 
 ## Sources
 

@@ -9,6 +9,8 @@ header:
 ---
 
 <!--more-->
+
+{% include self-study-start.html %}
 ## What is a Pie Chart?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">

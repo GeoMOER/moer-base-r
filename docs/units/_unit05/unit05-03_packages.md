@@ -13,6 +13,8 @@ header:
 > “Good things come in small packages.” — Proverb
 <!--more-->
 
+{% include self-study-start.html %}
+
 Numerous packages that can be accessed online contain additional functions for analyzing data with regard to questions from various specialist areas; further custom functions can be created.   
 
 Packages are the fundamental units of reproducible R code. They include reusable R functions, the documentation that describes how to use them, and sample data.
@@ -59,25 +61,9 @@ The second option is to activate a package through the window by simply putting 
 
 # Multiple packages
 
-Combining both lines installs and loads the package in one step.
+Install only packages needed for a task, then attach them in each session that uses their short function names. The screenshots above use `ggplot2` as an interface example; specialist packages such as `dismo`, `ggmap` and `randomForest` are not requirements for this Base R course. There is no need to install a catalogue before starting.
 
-```
-install.packages("ggplot2")
-library("ggplot2")
-```
-You can also line up every important package you will need for your project.
-But be patient. Fetching and installing packages may take some time.
-
-```
-install.packages("ggplot2")
-install.packages("dismo")
-install.packages("ggmap")
-install.packages("randomForest")
-library("dismo")
-library("ggmap")
-library("ggplot2")
-library("randomForest")
-```
+For an actual course use, follow the optional `reshape2` example below. It supports the wide/long reshaping task in Unit 08.
 
 <div class="course-info">
   <p><strong>Hint:</strong> Mind the order: first install - then activate through library.</p>
@@ -86,3 +72,26 @@ library("randomForest")
 # Working with a package
 
 Make sure you read the documentation of the package. This gives a brief overview of the functions and some comments about the features of the methods. Note that if you click on a package the package window will move to the Help window. There you can find a description of the method and which arguments are necessary to run the function.
+
+## One package workflow for this course
+
+Most core examples use functions supplied with R. If you plan to do [Unit 08 reshaping]({{ '/unit08/unit08-07-aggregate.html' | relative_url }}), install `reshape2` once if it is not installed yet:
+
+```r
+# Run once if needed; this downloads and installs the package.
+install.packages("reshape2")
+```
+
+In a session where it is already installed, try a small call without attaching the package. The `::` notation selects its exported function explicitly:
+
+```r
+wide_example <- data.frame(site = c("A", "B"), spring = c(10, 7),
+                            autumn = c(12, 9))
+long_example <- reshape2::melt(wide_example, id.vars = "site",
+                               variable.name = "season", value.name = "height_cm")
+nrow(long_example)
+is.data.frame(long_example)
+packageVersion("reshape2")
+```
+
+The first checks return 4 and `TRUE`; the version depends on the installation. Restart R and rerun this block: `reshape2::melt()` still works when the package is installed, even without `library(reshape2)`. To call it simply as `melt()`, first attach the package with `library(reshape2)` in that session. The reshaping lesson explains the arguments and the meaning of each output row.

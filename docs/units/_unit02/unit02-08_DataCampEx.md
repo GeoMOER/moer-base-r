@@ -9,6 +9,8 @@ It is time for DATA CAMP exercises!
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 * R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as a comment.
 * Write directly in the `script.R` window on the left. The comments are telling you what to do.
 * When you are ready press `Submit` and every line of code is interpreted and executed by R and you get a message whether or not your code was correct.

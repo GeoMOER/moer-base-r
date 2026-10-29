@@ -11,6 +11,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 Before asking others for help, it is generally a good idea to try to help yourself first. R includes extensive facilities for accessing documentation and searching for help. Specialized and general search engines can also help you find information about R.
 
 ## *help()* and *?*
@@ -71,7 +73,7 @@ Note, that use of generative AI (e.g., ChatGPT and other LLMs) is banned when po
 ---
 ### Google: "searchme": site:moer-base-r
 
-<p>Although this page itself does not contain a search function for keywords, it can still be searched to a limited extent with the help of Google. To do this, enter the word to be searched for in quotation marks with a colon and the keyword <i>site:</i> plus the URL of the Base R page. By the way this works for every site on the web. The prerequisite, however, is that it is already indexed on Google with all its subpages, which is not always the case. <br> <br>
+<p>Use the site search to find course keywords first. You can also search indexed course pages with Google. To do this, enter the word to be searched for in quotation marks with a colon and the keyword <i>site:</i> plus the URL of the Base R page. By the way this works for every site on the web. The prerequisite, however, is that it is already indexed on Google with all its subpages, which is not always the case. <br> <br>
 
 For example, if you want to search for the word "ratio", it looks like this:
 </p>

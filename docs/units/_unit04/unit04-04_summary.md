@@ -10,9 +10,11 @@ header:
   caption: "Photo by [Maksym Kaharlytskyi](https://unsplash.com/@qwitka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) from [Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 
-You can now select and replace parts of an object by position, name, or condition, while checking the structure of the result.
+Check that you can select and replace parts of an object by position, name, or condition, while checking the structure of the result.
 
 <!--more-->
+
+{% include self-study-start.html %}
 
 ## What you learned
 
@@ -46,11 +48,61 @@ The result contains sites A and C, with heights 12 and 18 cm. The explicit `!is.
 
 You can also put an indexed expression on the left of `<-` to replace selected values. Check the selection first so that you change the intended entries. `subset()` provides another way to select rows and columns; `sample()` selects a random sample. Use `set.seed()` when an example's random selection needs to be reproducible.
 
+## Try it yourself {#practice}
+
+Use the table below. Select known temperatures of at least 10 °C, excluding site W; retain a table with columns `site` and `temperature_c`. Then make a copy of the original table and change only site E's temperature to 13 °C. Check that the original is unchanged.
+
+```r
+readings <- data.frame(site = c("N", "S", "E", "W"),
+                       temperature_c = c(7, NA, 12, 15))
+```
+
+Expected selection: one row, site E at 12 °C; the modified copy has E at 13 °C and retains all four rows.
+
+<details markdown="1">
+<summary>Hint</summary>
+
+Combine the known-value check, comparison and site exclusion with `&`. Put the row condition before the comma. Assign the original table to a new name before replacing a value.
+
+</details>
+<details markdown="1">
+<summary>Compare a possible solution</summary>
+
+```r
+keep <- !is.na(readings$temperature_c) &
+        readings$temperature_c >= 10 & readings$site != "W"
+chosen <- readings[keep, c("site", "temperature_c"), drop = FALSE]
+changed <- readings
+changed$temperature_c[changed$site == "E"] <- 13
+chosen
+dim(chosen)
+changed
+readings
+```
+
+`dim(chosen)` is `1 2`; the S measurement remains missing in both full tables. Selecting and inspecting the intended row before replacement helps avoid changing another observation.
+
+</details>
+
+**Ready to continue:** you can select by position/name/condition, replace a chosen value and check the result's structure.
+
 ## Check your understanding
+
+Try these questions before opening the suggested answers.
 
 1. Explain the difference between `observations[1, ]` and `observations[, 1]`.
 2. How would you select only site C using its name rather than its row number?
 3. Why do `my_list[1]` and `my_list[[1]]` sometimes give very different results?
+
+<details markdown="1">
+<summary>Suggested answers</summary>
+
+1. `observations[1, ]` selects the first row; `observations[, 1]` selects the first column and normally returns a vector. Use `drop = FALSE` when you need a one-column data frame.
+2. Use `observations[observations$site == "C", , drop = FALSE]`. Here the site labels contain no missing values. A name-based condition keeps its meaning after row reordering.
+3. Single brackets return a list containing the selected component. Double brackets extract that component, which may itself be a vector, data frame or another list.
+
+</details>
+
 
 Revisit [indexing]({{ '/unit04/unit04-02_index.html' | relative_url }}) and [subsetting]({{ '/unit04/unit04-03_subsetting.html' | relative_url }}) for more examples.
 

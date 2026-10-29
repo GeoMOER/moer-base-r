@@ -11,6 +11,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 ## #Hashtag and Run!
 
 Outside quoted text, **#** starts a comment in R. The text after it on the same line is not executed. Use comments to explain your code to yourself and others.

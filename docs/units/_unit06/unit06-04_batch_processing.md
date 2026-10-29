@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 This lesson uses the working-directory and path skills from Unit 05 and previews the [for-loop lesson in Unit 07]({{ '/unit07/unit07-05_for-loops.html' | relative_url }}). If loops are new to you, read that lesson first or return here after Unit 07. In the example, `file_path` takes each value from `file_paths` in turn, and the statements inside the braces run once for each file.
 
 Before running the code, replace `"~/data/test"` with your own working folder. Create its `input` and `output` subfolders, put a few small test files in `input`, and ensure that `output` is writable. Repeating the run overwrites output files with the same names.

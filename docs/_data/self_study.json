@@ -1,0 +1,506 @@
+{
+  "units": {
+    "unit01": {
+      "needs": [],
+      "note": "No previous R programming is required.",
+      "setup": "Use R/RStudio for runnable examples; this unit explains the setup.",
+      "summary": "/unit01/unit01-07_summary.html"
+    },
+    "unit02": {
+      "needs": [
+        {
+          "url": "/unit01/unit01-04_first_steps.html",
+          "label": "first commands and objects"
+        }
+      ],
+      "setup": "Use R for code examples; no data files are needed.",
+      "summary": "/unit02/unit02-07_summary.html"
+    },
+    "unit03": {
+      "needs": [
+        {
+          "url": "/unit02/unit02-05_types_of_data.html",
+          "label": "R storage types"
+        },
+        {
+          "url": "/unit02/unit02-06_convert.html",
+          "label": "type checks and conversion"
+        }
+      ],
+      "setup": "No data files are needed. Create the objects on this page in the order shown.",
+      "summary": "/unit03/unit03-07_Summary.html"
+    },
+    "unit04": {
+      "needs": [
+        {
+          "url": "/unit03/unit03-03_types_of_objects.html",
+          "label": "vectors, tables, matrices and lists"
+        }
+      ],
+      "setup": "No data files are needed. Run each object definition before its indexing examples.",
+      "summary": "/unit04/unit04-04_summary.html"
+    },
+    "unit05": {
+      "needs": [
+        {
+          "url": "/unit01/unit01-04_first_steps.html",
+          "label": "running R commands"
+        }
+      ],
+      "setup": "Use your own project folder. Path strings illustrating another computer must be adapted.",
+      "summary": "/unit05/unit05-04_summary.html"
+    },
+    "unit06": {
+      "needs": [
+        {
+          "url": "/unit04/unit04-02_index.html",
+          "label": "selecting table columns"
+        },
+        {
+          "url": "/unit05/unit05-02_wenvironment.html",
+          "label": "project folders and relative paths"
+        }
+      ],
+      "setup": "Keep input files in Data/ and practice outputs in Output/, relative to your project root.",
+      "summary": "/unit06/unit06-05_summary.html"
+    },
+    "unit07": {
+      "needs": [
+        {
+          "url": "/unit03/unit03-03_types_of_objects.html",
+          "label": "R objects"
+        },
+        {
+          "url": "/unit04/unit04-02_index.html",
+          "label": "indexing"
+        }
+      ],
+      "setup": "No data files are needed. Run setup and code blocks from the top of this page.",
+      "summary": "/unit07/unit07-11_summary.html"
+    },
+    "unit08": {
+      "needs": [
+        {
+          "url": "/unit04/unit04-03_subsetting.html",
+          "label": "table selection"
+        },
+        {
+          "url": "/unit07/unit07-06_functions.html",
+          "label": "function calls and returned values"
+        }
+      ],
+      "setup": "No input files are needed. Build the example tables on this page before modifying them.",
+      "summary": "/unit08/unit08-05_summary.html"
+    },
+    "unit09": {
+      "needs": [
+        {
+          "url": "/unit03/unit03-03_types_of_objects.html",
+          "label": "vectors and data frames"
+        },
+        {
+          "url": "/unit08/unit08-02_sorting.html",
+          "label": "row order"
+        }
+      ],
+      "setup": "Use R’s built-in data or the vectors supplied on this page. Run a base plot before adding layers.",
+      "summary": "/unit09/unit09-10_summary.html"
+    },
+    "unit99": {
+      "needs": [],
+      "note": "These are optional extensions; choose only a topic you need.",
+      "setup": "Each Spotlight states its own software and account requirements."
+    }
+  },
+  "pages": {
+    "unit01-01_Intro": {
+      "unit": "unit01",
+      "check": "Distinguish the R language from the RStudio interface and choose the next setup step."
+    },
+    "unit01-02_Installation": {
+      "unit": "unit01",
+      "check": "Open RStudio and check that an R command runs in its Console.",
+      "setup": "Start with the installers linked below; install R before RStudio."
+    },
+    "unit01-03_GUI": {
+      "unit": "unit01",
+      "check": "Locate the script editor, Console, Environment and Help/Plots tools.",
+      "needs": [
+        {
+          "url": "/unit01/unit01-02_Installation.html",
+          "label": "an installed R/RStudio"
+        }
+      ],
+      "setup": "Open RStudio; no data files are needed."
+    },
+    "unit01-04_first_steps": {
+      "unit": "unit01",
+      "check": "Create an object, run a calculation and distinguish commands from printed output.",
+      "needs": [
+        {
+          "url": "/unit01/unit01-03_GUI.html",
+          "label": "the RStudio panes"
+        }
+      ],
+      "setup": "Use an R script or the Console. Type only runnable code, not the output blocks."
+    },
+    "unit01-05_selfhelp": {
+      "unit": "unit01",
+      "check": "Find help for one unfamiliar function and prepare a small reproducible question."
+    },
+    "unit01-06_helpfiles": {
+      "unit": "unit01",
+      "check": "Find what a function accepts and returns in its help page."
+    },
+    "unit01-07_summary": {
+      "unit": "unit01",
+      "check": "Recreate a calculation from a saved script and locate its function help."
+    },
+    "unit01-08_DataCampEx": {
+      "unit": "unit01",
+      "check": "Predict arithmetic/assignment results, then compare the exercise feedback.",
+      "setup": "Use the embedded browser exercises. For local practice, run the corresponding commands in R."
+    },
+    "unit02-01_Intro": {
+      "unit": "unit02",
+      "check": "Separate the meaning of data from its storage in R."
+    },
+    "unit02-02_levels_of_measurement": {
+      "unit": "unit02",
+      "check": "Classify a variable’s measurement level and justify the choice."
+    },
+    "unit02-03_qualitative": {
+      "unit": "unit02",
+      "check": "Distinguish unordered categories from meaningful category rankings."
+    },
+    "unit02-04_quantitative": {
+      "unit": "unit02",
+      "check": "Distinguish counts from measurements and consider what their numbers mean."
+    },
+    "unit02-05_types_of_data": {
+      "unit": "unit02",
+      "check": "Choose an R storage type for a quantity or identifier."
+    },
+    "unit02-06_convert": {
+      "unit": "unit02",
+      "check": "Predict a conversion and inspect any changed or newly missing values."
+    },
+    "unit02-07_summary": {
+      "unit": "unit02",
+      "check": "Convert a height column while preserving the meaning of its station codes."
+    },
+    "unit02-08_DataCampEx": {
+      "unit": "unit02",
+      "check": "Inspect the class of an object and explain numerical versus text values.",
+      "setup": "Use the embedded browser exercises; no input files are needed."
+    },
+    "unit03-01_Intro": {
+      "unit": "unit03",
+      "check": "Choose a structure for a table, a numeric rectangle or a mixed collection."
+    },
+    "unit03-03_types_of_objects": {
+      "unit": "unit03",
+      "check": "Construct and inspect object types, dimensions and factor labels."
+    },
+    "unit03-04_convert": {
+      "unit": "unit03",
+      "check": "Explain type changes when combining objects or converting factor labels."
+    },
+    "unit03-05_Exercise": {
+      "unit": "unit03",
+      "check": "Choose and inspect a table, matrix/array and list without separating observations."
+    },
+    "unit03-06_Solution": {
+      "unit": "unit03",
+      "check": "Compare your predictions and checks with one complete solution.",
+      "needs": [
+        {
+          "url": "/unit03/unit03-05_Exercise.html",
+          "label": "an attempt at the exercise"
+        }
+      ],
+      "setup": "The vector definitions are included here so the solution runs from its top."
+    },
+    "unit03-07_Summary": {
+      "unit": "unit03",
+      "check": "Explain which structure you need and what a conversion changes."
+    },
+    "unit04-01_Intro": {
+      "unit": "unit04",
+      "check": "Choose an index by position, name or condition."
+    },
+    "unit04-02_index": {
+      "unit": "unit04",
+      "check": "Select or replace entries while keeping track of dimensions and return types."
+    },
+    "unit04-03_subsetting": {
+      "unit": "unit04",
+      "check": "Select table rows using conditions and check what was retained.",
+      "needs": [
+        {
+          "url": "/unit04/unit04-02_index.html",
+          "label": "row/column indexing"
+        },
+        {
+          "url": "/unit07/unit07-02_operators.html",
+          "label": "comparison/logical operators if unfamiliar"
+        }
+      ]
+    },
+    "unit04-04_summary": {
+      "unit": "unit04",
+      "check": "Filter known measurements and change a chosen value in a copy."
+    },
+    "unit05-01_Intro": {
+      "unit": "unit05",
+      "check": "Distinguish objects in memory from files and project paths."
+    },
+    "unit05-02_wenvironment": {
+      "unit": "unit05",
+      "check": "Explain where a relative path starts and how a project folder is organised."
+    },
+    "unit05-03_packages": {
+      "unit": "unit05",
+      "check": "Distinguish installation, attachment and an explicit package::function call.",
+      "setup": "The install/attach screenshots are illustrations. The optional worked example needs reshape2 and internet for installation."
+    },
+    "unit05-04_summary": {
+      "unit": "unit05",
+      "check": "Reopen a project, run a script and explain the session information.",
+      "setup": "Use your own RStudio project. Its file-free check does not require an input CSV."
+    },
+    "unit06-01_Intro": {
+      "unit": "unit06",
+      "check": "Choose import/export checks before using a table for analysis."
+    },
+    "unit06-02_csv": {
+      "unit": "unit06",
+      "check": "Identify separators, decimal marks and the header in a text table."
+    },
+    "unit06-03_data_import": {
+      "unit": "unit06",
+      "check": "Inspect an import and compare CSV and RDS round trips.",
+      "setup": "Save the supplied Quakes CSV as Data/quakes.csv. Create Output/ and start from the project root."
+    },
+    "unit06-03b_destatis": {
+      "unit": "unit06",
+      "check": "Preserve identifiers, select appropriate geography and explain missing/rounded values.",
+      "needs": [
+        {
+          "url": "/unit06/unit06-03_data_import.html",
+          "label": "a complete import workflow"
+        }
+      ],
+      "setup": "Save the supplied Destatis CSV as Data/destatis-land-use-2024.csv. Run this page from the import step; do not reuse Quakes settings blindly."
+    },
+    "unit06-04_batch_processing": {
+      "unit": "unit06",
+      "check": "Explain the validated one-file operation that the loop repeats.",
+      "needs": [
+        {
+          "url": "/unit06/unit06-03_data_import.html",
+          "label": "one-file import/export"
+        },
+        {
+          "url": "/unit07/unit07-05_for-loops.html",
+          "label": "for loops"
+        }
+      ],
+      "setup": "This is a preview. Skip and return after Unit 07 if loops are new; folder names in templates need your own small test inputs."
+    },
+    "unit06-05_summary": {
+      "unit": "unit06",
+      "check": "Adapt export settings and verify the saved values and structure.",
+      "setup": "Use Data/quakes.csv from the import lesson. Practice writes new files under Output/."
+    },
+    "unit07-01_Intro": {
+      "unit": "unit07",
+      "check": "Connect comparisons, decisions, repetition and returned results."
+    },
+    "unit07-02_operators": {
+      "unit": "unit07",
+      "check": "Choose comparison and logical operators for the intended decision."
+    },
+    "unit07-03_decisions_loops": {
+      "unit": "unit07",
+      "check": "Trace how a condition selects a branch or controls repetition."
+    },
+    "unit07-04_if-then-else": {
+      "unit": "unit07",
+      "check": "Test smaller/equal/greater cases and explain which branch runs."
+    },
+    "unit07-05_for-loops": {
+      "unit": "unit07",
+      "check": "Predict an iteration and collect one result per input value."
+    },
+    "unit07-06_functions": {
+      "unit": "unit07",
+      "check": "Define a function’s inputs, default arguments and returned value.",
+      "needs": [
+        {
+          "url": "/unit07/unit07-04_if-then-else.html",
+          "label": "single-value decisions"
+        }
+      ]
+    },
+    "unit07-07_apply": {
+      "unit": "unit07",
+      "check": "Choose a row/column/group application and inspect the result structure.",
+      "needs": [
+        {
+          "url": "/unit07/unit07-06_functions.html",
+          "label": "functions and returns"
+        },
+        {
+          "url": "/unit04/unit04-02_index.html",
+          "label": "matrix/table indexing"
+        }
+      ]
+    },
+    "unit07-08_lapply": {
+      "unit": "unit07",
+      "check": "Compare list-returning application with a loop and explain local assignments.",
+      "needs": [
+        {
+          "url": "/unit07/unit07-07_apply.html",
+          "label": "the apply family"
+        }
+      ],
+      "setup": "Create df at the top, then run sections in order. The repeated loop task is a comparison, not another required dataset."
+    },
+    "unit07-09_while-loops": {
+      "unit": "unit07",
+      "check": "Predict how the condition changes and how to interrupt unintended repetition."
+    },
+    "unit07-10_loop_exercise": {
+      "unit": "unit07",
+      "check": "Construct and compare stored vector/list results across all branches.",
+      "needs": [
+        {
+          "url": "/unit07/unit07-04_if-then-else.html",
+          "label": "branches"
+        },
+        {
+          "url": "/unit07/unit07-05_for-loops.html",
+          "label": "for loops"
+        },
+        {
+          "url": "/unit07/unit07-08_lapply.html",
+          "label": "returned list results"
+        }
+      ],
+      "setup": "Save practice in an R script; no submission. Try the eight tasks before opening hints/solutions."
+    },
+    "unit07-11_summary": {
+      "unit": "unit07",
+      "check": "Write a reusable decision and explain how a bounded loop exits."
+    },
+    "unit08-01_Intro": {
+      "unit": "unit08",
+      "check": "Choose sorting, binding, key matching, grouping or reshaping for a task."
+    },
+    "unit08-02_sorting": {
+      "unit": "unit08",
+      "check": "Keep rows intact and show what a secondary key does when values tie."
+    },
+    "unit08-03_binding": {
+      "unit": "unit08",
+      "check": "Distinguish adding observations from matching attributes by identifiers."
+    },
+    "unit08-04_merging": {
+      "unit": "unit08",
+      "check": "Specify keys and check duplicate matches and unmatched observations."
+    },
+    "unit08-05_summary": {
+      "unit": "unit08",
+      "check": "Check text keys, join/group observations and explain their table layout.",
+      "setup": "Tables are supplied below. Only the final reshape check needs the installed reshape2 package."
+    },
+    "unit08-06-string": {
+      "unit": "unit08",
+      "check": "Find, replace or split text and distinguish positions from logical matches."
+    },
+    "unit08-07-aggregate": {
+      "unit": "unit08",
+      "check": "Distinguish a group summary from a changed layout and declare the observation unit.",
+      "needs": [
+        {
+          "url": "/unit04/unit04-02_index.html",
+          "label": "tables and columns"
+        },
+        {
+          "url": "/unit05/unit05-03_packages.html",
+          "label": "optional package workflow"
+        }
+      ],
+      "setup": "The aggregation example uses built-in mtcars. The wide/long example additionally needs the installed reshape2 package."
+    },
+    "unit09-01_Intro": {
+      "unit": "unit09",
+      "check": "Choose a plot for a category count, distribution, time series or relationship."
+    },
+    "unit09-02_creating": {
+      "unit": "unit09",
+      "check": "Build a labelled graph and explain what each added layer contributes.",
+      "setup": "Create both car-count vectors first. Run layers in order on the same plot; no data download is needed."
+    },
+    "unit09-03_histogram_density": {
+      "unit": "unit09",
+      "check": "Compare distribution views and explain bin/bandwidth sensitivity."
+    },
+    "unit09-04_dotplot": {
+      "unit": "unit09",
+      "check": "Explain what one Cleveland dotchart point and row represent."
+    },
+    "unit09-05_barplot": {
+      "unit": "unit09",
+      "check": "Distinguish counts from supplied summaries and label the category comparison."
+    },
+    "unit09-06_boxplot": {
+      "unit": "unit09",
+      "check": "Interpret the median, hinges, whiskers and potential-outlier markers."
+    },
+    "unit09-07_linechart": {
+      "unit": "unit09",
+      "check": "Sort a series meaningfully and retain original group identifiers."
+    },
+    "unit09-08_piechart": {
+      "unit": "unit09",
+      "check": "Identify a single whole and judge whether its parts are easier to compare as bars."
+    },
+    "unit09-09_scatterplot": {
+      "unit": "unit09",
+      "check": "Plot paired measurements and distinguish an observed association from causation.",
+      "setup": "Use built-in mtcars. Make the points plot before optional fitted/smoothed overlays."
+    },
+    "unit09-10_summary": {
+      "unit": "unit09",
+      "check": "Produce a suitable labelled chart and state one interpretation limit."
+    },
+    "sl01_Intro": {
+      "unit": "unit99",
+      "check": "Choose one optional extension without treating every Spotlight as required."
+    },
+    "sl02_github": {
+      "unit": "unit99",
+      "check": "For your chosen client, distinguish a local commit from a pushed commit.",
+      "setup": "Optional: choose Desktop, command line or RStudio. Use a practice repository you control; hosting on GitHub requires your own account."
+    },
+    "sl03_css": {
+      "unit": "unit99",
+      "check": "Render and inspect one intentional style change in an existing R Markdown workflow.",
+      "needs": [
+        {
+          "url": "/cheatsheet.html",
+          "label": "existing R Markdown/HTML rendering skills"
+        }
+      ],
+      "setup": "Optional: use an Rmd that already renders to HTML. CSS styling does not require JavaScript."
+    },
+    "sl04_opsi": {
+      "unit": "unit99",
+      "check": "Verify your personal package library after restarting on a suitable university PC.",
+      "setup": "Optional and institution-specific: a Marburg Windows PC, university account and mapped H: drive are required."
+    }
+  }
+}

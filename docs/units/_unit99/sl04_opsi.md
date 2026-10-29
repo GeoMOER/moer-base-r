@@ -13,6 +13,8 @@ This guide is intended for members of the University of Marburg who want to use 
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 ## Install R packages in your user account on University of Marburg OPSI PCs {#install-r-packages-on-uni-marburg-opsi-pcs-in-your-own-account}
 
 [OPSI](https://opsi.org/en/) is a system for managing computers and deploying software. This guide concerns R on the university's OPSI-managed Windows PCs.

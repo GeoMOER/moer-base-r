@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 At the end of this unit, you should know
 
 * what arithmetic, relational, and logical operators do,

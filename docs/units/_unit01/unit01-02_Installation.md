@@ -10,6 +10,8 @@ header:
 *How to install R and RStudio?*
 <!--more-->
 
+{% include self-study-start.html %}
+
 
 ## Installing R
 Go and visit [cran.r-project.org](https://cran.r-project.org/) to learn more about R or choose your operating system and go directly to the download page. R is available for the following systems:

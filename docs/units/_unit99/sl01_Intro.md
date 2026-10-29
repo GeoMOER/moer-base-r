@@ -13,6 +13,8 @@ The spotlights cover additional topics that complement the course units.
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 * [The many faces of GitHub]({{ '/unit99/sl02_github.html' | relative_url }}): Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio.
 * [CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }}): HTML and CSS basics, followed by styling R Markdown output.
 * [R packages on Marburg OPSI PCs]({{ '/unit99/sl04_opsi.html' | relative_url }}): a personal R package library in your university account.

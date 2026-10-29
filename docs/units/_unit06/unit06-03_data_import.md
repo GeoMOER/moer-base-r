@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 
 ## Importing data via buttons
 

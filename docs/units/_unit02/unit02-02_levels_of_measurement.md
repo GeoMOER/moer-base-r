@@ -8,6 +8,8 @@ header:
 **The Four Horsemen of Measurement** - hear their names: Nominal, Ordinal, Interval, Ratio.
 <!--more-->
 
+{% include self-study-start.html %}
+
 > “The Four Horsemen whose Ride presages the end of the world are known to be Death, War, Famine, and Pestilence. But even less significant events have their own Horsemen. For example, the Four Horsemen of the Common Cold are Sniffles, Chesty, Nostril, and Lack of Tissues; the Four Horsemen whose appearance foreshadows any public holiday are Storm, Gales, Sleet, and Contra-flow.” — Terry Pratchett, Interesting Times: The Play
 
 ---

@@ -10,9 +10,11 @@ header:
   caption: "Photo by [Gerd Altmann](https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4705451) [from Pixabay](https://pixabay.com/)"
 ---
 
-You can now choose a basic plot for a question, label it clearly, and interpret what the display does and does not show.
+Check that you can choose a basic plot for a question, label it clearly, and interpret what the display does and does not show.
 
 <!--more-->
+
+{% include self-study-start.html %}
 
 ## What you learned
 
@@ -50,11 +52,55 @@ The histogram shows frequencies in intervals. The box plot compresses the distri
 
 By default, R's box plot box spans its lower and upper hinges, which summarize the lower and upper quarters of the data. Hinges can differ slightly from `quantile()` quartiles in small samples. Whiskers extend to the most extreme observations within 1.5 times the hinge spread from the box; they do not necessarily reach the minimum and maximum. Points beyond the whiskers are potential outliers, not proof of a measurement error.
 
+## Try it yourself {#practice}
+
+Choose and create a plot for each question: how many observations belong to each land cover; how temperature changes over three days; and how tree height relates to trunk diameter. Use informative labels and units. Explain one feature and one limitation of each display.
+
+```r
+cover <- c("forest", "water", "forest", "grassland")
+days <- c(3, 1, 2)
+temperature_c <- c(12, 10, 9)
+diameter_cm <- c(10, 15, 20)
+height_m <- c(4, 7, 9)
+```
+
+<details markdown="1">
+<summary>Compare possible plots</summary>
+
+```r
+barplot(table(cover), main = "Land-cover observations",
+        xlab = "Land cover", ylab = "Number of observations")
+time_order <- order(days)
+plot(days[time_order], temperature_c[time_order], type = "b",
+     main = "Temperature over three days", xlab = "Day",
+     ylab = "Temperature (degrees C)")
+plot(diameter_cm, height_m, main = "Tree dimensions",
+     xlab = "Trunk diameter (cm)", ylab = "Tree height (m)")
+```
+
+The counts are forest 2, grassland 1 and water 1. Temperatures in day order are 10, 9 and 12 °C; connecting the input row order would misrepresent time. The tree points increase together, but three observations do not establish causation or a general population relationship. Run the plots separately and use the Plots history to compare them.
+
+</details>
+
+**Ready to continue:** you can justify a chart choice, produce a labelled plot and describe what its data do and do not support.
+
 ## Check your understanding
+
+Try these questions before opening the suggested answers.
 
 1. Which plot would you choose for land-cover counts, a temperature time series, and the relationship between tree height and trunk diameter?
 2. Why can changing histogram bins or a density curve's bandwidth change your impression of a distribution?
 3. What would you check in the source data before explaining a point beyond a box plot whisker?
+
+<details markdown="1">
+<summary>Suggested answers</summary>
+
+1. Use a bar plot of category counts, a line chart with time in order, and a scatterplot of diameter against height, respectively. State the units and what each point or bar represents.
+2. Bins and bandwidths control how much local detail is visible. Compare reasonable settings before treating a peak or gap as a stable feature; neither display alone establishes a population pattern.
+3. Check units, source records, transcription, duplicates, missingness and the sampling context. The point may be valid. A boxplot flag is a reason to investigate, not an instruction to delete it.
+
+</details>
+
 
 Revisit [plot creation]({{ '/unit09/unit09-02_creating.html' | relative_url }}), [histograms and density]({{ '/unit09/unit09-03_histogram_density.html' | relative_url }}), and [box plots]({{ '/unit09/unit09-06_boxplot.html' | relative_url }}) if needed.
 

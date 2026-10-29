@@ -8,6 +8,8 @@ header:
   caption: "Photo by [Gerd Altmann](https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4705451) [from Pixabay](https://pixabay.com/)"
 ---
 
+{% include self-study-start.html %}
+
 ## What is a Dotplot?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">

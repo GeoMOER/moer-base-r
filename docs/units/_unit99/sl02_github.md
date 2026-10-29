@@ -9,9 +9,11 @@ header:
   caption: "[Gitbanner](https://github.com/mappum/gitbanner) [by Matt Bell](https://github.com/mappum) [on GitHub](https://github.com)"
 ---
 
-This Spotlight introduces Git and GitHub, with examples using GitHub Desktop, Git Bash and RStudio.
+This Spotlight introduces Git and GitHub, with examples using GitHub Desktop, Git Bash and RStudio. Read the Git/GitHub distinction once, then choose one client route: [Desktop](#github-desktop), [command line](#git-bash-console), or [RStudio](#github-in-rstudio). The routes are alternatives; you do not need to repeat the same repository workflow in every client.
 
 <!--more-->
+
+{% include self-study-start.html %}
 
 ## What is Git?
 Before you can understand what GitHub is, you must first understand the concept of Git:
@@ -210,7 +212,7 @@ To create an RStudio project from a GitHub repository, open the repository's pag
 
 ---
 
-You now know the basics of Git, GitHub Desktop, GitHub, Git Bash and Git integration in RStudio.
+For the client route you chose, check that you can distinguish a local commit from a pushed commit and locate the same file in the local and remote repositories. The command tables are reference material when you need another operation.
 
 {% include figure image_path="/assets/images/spotlights/github_austinpowers.jpg" caption="Live dangerously." alt="Austin Powers meme joking that committing without first pulling remote updates is living dangerously." %}
 

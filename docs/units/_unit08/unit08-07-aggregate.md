@@ -6,6 +6,8 @@ header:
   caption: "Photo by [congerdesign](https://pixabay.com/de/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384) [from Pixabay](https://pixabay.com/de/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1312384)"
 ---
 
+{% include self-study-start.html %}
+
 #### Aggregate
 
 Aggregation summarizes several observations within each group, for example with `sum()`, `mean()`, `min()`, or `max()`. The built-in `mtcars` data includes fuel consumption in miles per gallon (`mpg`) and the number of cylinders (`cyl`). The formula `mpg ~ cyl` asks `aggregate()` to calculate the mean `mpg` for each cylinder group:

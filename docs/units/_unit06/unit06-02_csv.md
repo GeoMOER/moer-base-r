@@ -12,6 +12,8 @@ header:
 > “Torture the data, and it will confess to anything.” – Ronald Coase
 <!--more-->
 
+{% include self-study-start.html %}
+
 ## An introduction to comma-separated values {#an-introduction-to-comma-seperated-values}
 
 ### What is a .csv-file?

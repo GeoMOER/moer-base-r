@@ -9,6 +9,8 @@ header:
 ---
 
 <!--more-->
+
+{% include self-study-start.html %}
 ## What is a Barplot?
 A bar plot compares values across categories. Each separate bar represents a category; its height or length represents a count or another clearly stated summary, such as a total or mean. Use `table()` when you need counts of observations. Use the supplied numeric values directly when they are already summaries.
 

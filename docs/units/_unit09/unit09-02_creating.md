@@ -11,6 +11,8 @@ header:
 > “No design works unless it embodies ideas that are held common by the people for whom the object is intended.” - Adrian Forty
 <!--more-->
 
+{% include self-study-start.html %}
+
 
 The use of R offers many advantages for data analysis. R is also a useful tool for creating scientific graphs. R makes it possible
 * to produce high quality graphs that are also suitable for professional printing.

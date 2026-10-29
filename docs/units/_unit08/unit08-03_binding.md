@@ -9,9 +9,13 @@ header:
 > “In God we trust, all others bring data.” — W Edwards Deming
 <!--more-->
 
+{% include self-study-start.html %}
+
 When thinking about combining two data frames one has to distinguish between
 merging them by the values given in a specific column or consecutively putting
 them together row by row.
+
+Unit 03 used binding to construct objects. Here, first decide whether you are adding observations or matching attributes, and check column names, types and units. Matching belongs in the [merge lesson]({{ "/unit08/unit08-04_merging.html" | relative_url }}).
 
 For the following examples, we will use these two data frames.
 
@@ -103,3 +107,14 @@ dfr
 
 add some day
 -->
+
+## Check row correspondence before adding columns
+
+The Z labels in `df1` and `df2` have different row orders. Before running the following call, predict which second-table value it would attach to the B row in the first table:
+
+```r
+by_position <- cbind(df1, second_X = df2$X)
+by_position
+```
+
+It attaches 200, whose Z label in `df2` is C. The matching B value is 500. `cbind()` aligns positions; it does not match Z. If Z identifies the same entities in both tables, use `merge(df1, df2, by = "Z")` and check key uniqueness. If you are adding observations with compatible columns instead, use `rbind()`. Similar names alone do not establish that units or observation meanings agree.

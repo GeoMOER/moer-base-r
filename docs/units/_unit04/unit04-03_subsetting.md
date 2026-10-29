@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 > “Big data is at the foundation of all of the megatrends that are happening today, from social to mobile to the cloud to gaming.” – Chris Lynch
 
 ---

@@ -1,0 +1,12 @@
+{%- assign study_key = page.path | split: '/' | last | remove: '.md' -%}
+{%- assign study_page = site.data.self_study.pages[study_key] -%}
+{%- assign study_unit = site.data.self_study.units[study_page.unit] -%}
+{%- assign study_needs = study_page.needs | default: study_unit.needs -%}
+{%- assign study_setup = study_page.setup | default: study_unit.setup -%}
+{%- if study_page -%}
+<div class="course-info self-study-start">
+  <p><strong>Before you start:</strong> {% if study_needs.size > 0 %}{% for item in study_needs %}<a href="{{ item.url | relative_url }}">{{ item.label | escape }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}.{% else %}{{ study_unit.note | escape }}{% endif %}<br>
+  <strong>Setup:</strong> {{ study_setup | escape }}<br>
+  <strong>Your check:</strong> {{ study_page.check | escape }}{% if study_unit.summary %} <a href="{{ study_unit.summary | relative_url }}#practice">Practise in the unit summary</a>.{% endif %}</p>
+</div>
+{%- endif -%}

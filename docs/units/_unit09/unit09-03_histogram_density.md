@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 
 ## What is a Histogram?
 <style>.unit p {text-align: justify;}</style>

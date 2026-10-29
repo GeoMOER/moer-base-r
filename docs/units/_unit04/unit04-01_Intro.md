@@ -8,6 +8,8 @@ header:
 *You will learn how to use indices to access data in R objects.*
 
 <!--more-->
+
+{% include self-study-start.html %}
 In the previous unit, you got an idea of how to address some elements of an object. Let's take a closer look now.
 At the end of this unit you should know how to
 

@@ -9,6 +9,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 At the end of this unit, you should be able to
 
 * recognize tabular data and choose separators, decimal marks and headers for a CSV import,

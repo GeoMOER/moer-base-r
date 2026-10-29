@@ -8,6 +8,8 @@ header:
 It is time for DATA CAMP exercises!
 
 <!--more-->
+
+{% include self-study-start.html %}
 Take your first steps with R. To test your knowledge up to now you can test yourself in the following exercises.
 
 * R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. You will find the task written as a comment.

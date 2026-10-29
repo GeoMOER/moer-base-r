@@ -10,6 +10,8 @@ header:
 > “Data is the new oil.” — Clive Humby
 <!--more-->
 
+{% include self-study-start.html %}
+
 Operators perform calculations, compare values, or combine logical values. Control structures use logical conditions to decide which code to run. Common examples include arithmetic operations such as addition (`+`), comparisons such as greater than (`>`), and Boolean operations such as AND (`&` or `&&` in R).
 
 | Operator  | Description                          | Example   |

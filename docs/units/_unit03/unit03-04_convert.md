@@ -7,6 +7,8 @@ header:
 ---
 <!--more-->
 
+{% include self-study-start.html %}
+
 > “Errors using inadequate data are much less than those using no data at all.” – Charles Babbage
 
 ---
@@ -22,28 +24,44 @@ header:
 | <b>from matrix</b>  | as.vector(mymatrix)  |  | as.data.frame(mymatrix) |
 | <b>from dataframe</b>  |  | as.matrix(myframe) | |
 
-The functions `rbind()` and `cbind()` can be used to bind vectors together. rbind (row bind)
-arranges the vectors row by row, cbind (column bind) column by column.
+## Combining vectors into rows or columns
 
+`rbind()` stacks the vectors as rows; `cbind()` places them side by side as columns. Predict the dimensions before running each call. The more detailed [Unit 08 binding lesson]({{ '/unit08/unit08-03_binding.html' | relative_url }}) later asks whether observations, names and units are compatible.
+
+```r
+v1 <- 1:3
+v2 <- 4:6
+by_rows <- rbind(v1, v2)
+by_columns <- cbind(v1, v2)
+dim(by_rows)
+dim(by_columns)
 ```
-v1 <- c(1:3)
-v2 <- c(4:6)
 
-rbind(v1,v2)
- [,1] [,2] [,3]
-v1 1 2 3
-v2 4 5 6
+The dimensions are `2 3` and `3 2`. Both remain numeric. A different type can change the result:
 
-cbind(v1,v2)
- v1 v2
-[1,] 1 4
-[2,] 2 5
-[3,] 3 6
+## Check what a conversion changes
+
+Before running this example, predict which columns can remain numeric after the conversion.
+
+```r
+sites <- data.frame(site = c("A", "B"), height_cm = c(12, 18))
+site_matrix <- as.matrix(sites)
+str(sites)
+typeof(site_matrix)
+site_matrix
 ```
-<!--more-->
 
-<!--
-## Further reading
+The data frame has a character column and a numeric column. The matrix needs one atomic type, so both columns become character; heights appear as `"12"` and `"18"`. Returning to a data frame with `as.data.frame(site_matrix)` does not automatically recover the numeric type. Keep the original object and inspect the result before calculating.
 
-add some day
--->
+## Factor codes and labels
+
+A factor stores codes that point into its levels. Numeric-looking labels need special care:
+
+```r
+category <- factor(c("20", "10", "20"), levels = c("10", "20"))
+as.numeric(category)
+as.character(category)
+as.numeric(as.character(category))
+```
+
+The three results are `2, 1, 2`; `"20", "10", "20"`; and `20, 10, 20`. Only use the final conversion if the labels really represent numeric quantities. For categories or identifiers, preserve the labels instead. This is why the same storage conversion can be appropriate for a measurement and inappropriate for a site code.

@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 In Unit 02, you learned how individual values are represented in R. This unit explains how vectors and other objects organize those values, and what can change when you combine or convert objects.
 
 At the end of this unit, you should be able to

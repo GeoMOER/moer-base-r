@@ -9,9 +9,11 @@ header:
 
 ---
 
-You can now describe what a variable means, identify its representation in R, and check a conversion before using the result.
+Check that you can describe what a variable means, identify its representation in R, and check a conversion before using the result.
 
 <!--more-->
+
+{% include self-study-start.html %}
 
 ## Summary
 
@@ -53,10 +55,53 @@ The type check returns `TRUE`. The missing-value check returns `FALSE FALSE TRUE
 
 `NA` marks a missing value; use `is.na(x)`, rather than `x == NA`, to find it. `NaN` marks an undefined numeric result, such as `0 / 0`, and is also detected by `is.na()`. `Inf` represents infinity. `NULL` represents the absence of an object or component and is not a placeholder for one missing observation.
 
+## Try it yourself {#practice}
+
+Predict the result of converting the recorded heights below to numbers. Then convert only the heights; keep the station codes unchanged. How can you distinguish the introduced missing value from a recorded zero?
+
+```r
+station <- c("003", "004", "005")
+recorded_height <- c("12.5", "unknown", "0")
+```
+
+<details markdown="1">
+<summary>Hint</summary>
+
+Use `as.numeric()` on the height text, then inspect `is.na()` and the original strings. Leave the identifier vector as character data.
+
+</details>
+<details markdown="1">
+<summary>Compare a possible solution</summary>
+
+```r
+height_cm <- as.numeric(recorded_height)
+height_cm
+is.na(height_cm)
+station
+```
+
+R warns about the unrecognised text. Heights are `12.5, NA, 0`, the missing-value check is `FALSE, TRUE, FALSE`, and the station labels still start with zeros. The zero is an observed value; the new `NA` records an unsuccessful conversion, whose meaning needs the source text.
+
+</details>
+
+**Ready to continue:** you can separate a variable's meaning from its storage type and explain what changed during a conversion.
+
 ## Check your understanding
+
+Try these questions before opening the suggested answers.
 
 1. Classify land cover, erosion severity, temperature in °C, and tree count by measurement level. Which quantitative example is discrete?
 2. Why should the station identifier `"003"` usually remain character data?
 3. What could happen if a text column containing `"unknown"` is converted to numeric? How would you check the result?
+
+<details markdown="1">
+<summary>Suggested answers</summary>
+
+1. Land cover is nominal; erosion severity is ordinal; Celsius temperature is interval; tree count is ratio and discrete. Recording a category as a number does not change its meaning.
+2. A station code is an identifier. Numeric conversion changes `"003"` to `3`, losing its leading zeros; arithmetic on the code is not meaningful.
+3. `as.numeric()` turns unrecognised text such as `"unknown"` into `NA` and warns. Keep the original text, inspect `is.na()` and compare newly missing positions with the source. An original zero is different from missing information.
+
+</details>
+
 
 Revisit [data types]({{ '/unit02/unit02-05_types_of_data.html' | relative_url }}) and [conversion]({{ '/unit02/unit02-06_convert.html' | relative_url }}) for the checks and special values.

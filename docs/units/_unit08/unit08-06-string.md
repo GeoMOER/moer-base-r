@@ -66,6 +66,8 @@ We use this slightly adjusted passage about the “Sam Vimes Boots theory of soc
 > "The reason that the rich were so rich, Vimes reasoned, was because they managed to spend less money. Take boots, for example. ... A man who could afford 50 dollars had a pair of boots that'd still be keeping his feet dry in ten years' time, while a poor man who could only afford cheap boots would have spent 100 dollars on boots in the same time and would still have wet feet"
 <!--more-->
 
+{% include self-study-start.html %}
+
 First, create `Quote` from exactly that text. `paste()` inserts one space between each part; the line breaks in the R code do not become part of the string. Run this block before the searches below:
 
 ```r
@@ -202,3 +204,26 @@ Here's a visualization of the principle:
 
 The process of extracting specific information from structured text is known as text mining or text data mining. It involves the analysis of large quantities of natural language text looking for patterns, keywords, or specific structures that provide valuable information. 
 Suppose we have a database of digitized text containing species descriptions. Each entry includes the name of the species, its characteristics, and information about where it is found. If the text follows a predictable structure and uses consistent terminology—for instance, always using "Habitat:" to indicate the natural home of the species—we can design an automated process to identify and extract this information. 
+
+## Try a new set of labels
+
+Before opening the solution, find which label below contains a literal hyphen, replace it with a space, and construct identifiers `site_1`, `site_2`, `site_3`. Check that you still have three labels and that no observation was reordered.
+
+```r
+plot_labels <- c("plot A", "plot-B", "plot C")
+```
+
+<details markdown="1">
+<summary>Compare a possible solution</summary>
+
+```r
+grep("-", plot_labels, fixed = TRUE)
+clean_labels <- gsub("-", " ", plot_labels, fixed = TRUE)
+site_ids <- paste("site", 1:3, sep = "_")
+clean_labels
+site_ids
+```
+
+The matching position is 2. Cleaned labels are `plot A`, `plot B`, `plot C`; the generated identifiers are `site_1`, `site_2`, `site_3`. `fixed = TRUE` requests literal matching, and `grep()` supplies positions rather than the text itself.
+
+</details>

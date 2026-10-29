@@ -10,6 +10,8 @@ header:
 
 <!--more-->
 
+{% include self-study-start.html %}
+
 R objects can store values of different types, such as character, integer, double, and logical. The type determines how the values are stored and which operations can be applied to them.
 
 R provides the following basic data structures:
@@ -23,6 +25,8 @@ R provides the following basic data structures:
 
 
 Atomic vectors store elements of one data type. R has six atomic vector types; here we focus on logical, integer, double, and character vectors. These types can also be used within more complex data structures.
+
+This compact lookup recalls [Unit 02 storage types]({{ "/unit02/unit02-05_types_of_data.html" | relative_url }}). Here, compare the type of each value with the structure that holds it: a numeric vector and a data frame can both contain numbers, but organize them differently.
 
 | Data type in R | Examples | Meaning |
 |----------------|----------|---------|
@@ -48,6 +52,8 @@ Instead, we could call it `all_animals`, `AllAnimals`, `allanimals`, `Allanimals
 
 Note that R distinguishes between upper and lower case for names. `allAnimals` and `AllAnimals` are not the same object and it is not possible to switch them.
 Avoid reusing names of existing functions, such as `mean`, to keep your code clear. These names are different from reserved words such as `if`. Choose meaningful names and keep them reasonably short.
+
+Before rereading the naming rules, predict whether `site_id` and `Site_id` refer to the same object. They do not: names are case sensitive.
 
 **How to define objects?**
 
@@ -475,17 +481,17 @@ treecover
 [1] Spruce Spruce Gap Beech Beech Oak Oak <NA>
 Levels: Gap Spruce Fir Beech Oak 
 ```
-If you are working with ordinal data, set ordered=T:
+Setting a display order for tree species does not give them a measurement order. Use `ordered = TRUE` only when the categories have a meaningful ranking, such as erosion severity:
 
 ```r
-treecover <- factor(c("Spruce", "Spruce","Gap","Beech","Beech","Oak","Oak","Birch"), levels=c("Gap","Spruce","Fir","Beech","Oak"), ordered=T)
-treecover
+erosion <- factor(c("high", "low", "medium", "low"),
+                  levels = c("low", "medium", "high"), ordered = TRUE)
+erosion
+levels(erosion)
 ```
 
-```text
-[1] Spruce Spruce Gap Beech Beech Oak Oak <NA>
-Levels: Gap<Spruce<Fir<Beech<Oak 
-```
+The values retain their original observation order; the declared ranking is `low < medium < high`. It does not say that the gap from low to medium equals the gap from medium to high. Compare this with the [measurement levels in Unit 02]({{ '/unit02/unit02-02_levels_of_measurement.html' | relative_url }}).
+
 -----
 
 

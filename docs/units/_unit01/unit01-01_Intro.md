@@ -8,6 +8,8 @@ header:
 *Setting up R and auxiliary programs for operating R and introducing a few tools if you get stuck.*
 <!--more-->
 
+{% include self-study-start.html %}
+
 R is a programming language designed by Ross Ihaka and Robert Gentleman in 1992. As an open-source language, which means that it is freely available for anyone to use, modify, and distribute, it became a popular tool for statistical analysis and data visualization with an active user community. It includes a wide range of statistical and graphical techniques, provides extensive tools for data manipulation, transformation, and cleaning and is highly extensible, allowing users to write their own functions and packages. This extensibility has led to a vast ecosystem of contributed packages for a wide range of specialized tasks and domains, including geography.
 In this course, you will prepare and analyze data by writing R code in scripts and running it in the console. Although this approach may seem intimidating to first-time users, it has the advantage of requiring thoughtful consideration of the analysis while simultaneously documenting all steps. Another advantage is that, in R, many analysis steps can be automated once they are defined.
 
@@ -39,11 +41,7 @@ RStudio is an integrated development environment (IDE) for R. It includes a cons
 
 ## What is the difference between R and RStudio?
 
-R (or simply R) is a programming language or a software environment as they call it for scientific computing and graphics and RStudio is an IDE for using R.
-
-R and RStudio are not two different versions of the same thing. One can't be substituted for the other. In fact, they work together. R is a programming language for statistical calculation. And RStudio is an Integrated Development Environment (IDE) that helps you develop programs in R. So if you want to learn more about them, you should start by learning R programming.
-
-You can use R without using RStudio, but you can't use RStudio without using R, so R comes first.
+R executes your commands; RStudio provides the editor, Console and other tools around it. You can use R without RStudio. Install R first, then RStudio for the workflow used here. As a quick check, explain which program performs `1 + 2` and which provides the Run button.
 
 Now that this is clear, we continue with the installation:
 

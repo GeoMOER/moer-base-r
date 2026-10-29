@@ -8,6 +8,8 @@ header:
   caption: "Photo by [Gerd Altmann](https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4705451) [from Pixabay](https://pixabay.com/)"
 ---
 
+{% include self-study-start.html %}
+
 ## What is a Line Chart?
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
@@ -22,6 +24,8 @@ header:
 </div>
 
 By default, `plot( )` plots the (x,y) points. Use the `type="n"` option in the `plot( )` command, to create the graph with axes, titles, etc., but without plotting the points.
+
+For general titles, axes, colours and symbols, use the [plot-parameter reference]({{ "/unit09/unit09-02_creating.html" | relative_url }}). The short table below is a local lookup for `type=`; you do not need to repeat the full plotting introduction.
 
  `type=` can take the following values:
 

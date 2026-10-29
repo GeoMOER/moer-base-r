@@ -7,6 +7,8 @@ header:
 ---
 <!--more-->
 
+{% include self-study-start.html %}
+
 > “Errors using inadequate data are much less than those using no data at all.” – Charles Babbage
 
 ---
