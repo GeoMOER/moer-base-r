@@ -20,6 +20,12 @@ There are many ways to create a scatterplot in R. The basic function is `plot(x,
 plot(mtcars$wt, mtcars$mpg, main="Scatterplot Example",
      xlab="Car Weight ", ylab="Miles Per Gallon ", pch=19)
 ```
+### Optional preview: fitted and smoothed lines
+
+The scatterplot above is sufficient for this unit's core task. Continue here if you want to preview tools used in later analysis courses. First run that plot: `abline()`, `lines()` and `legend()` add to an existing graph.
+
+`lm(y ~ x)` fits a straight-line model; the formula puts the response on the left and predictor on the right. The line below is a descriptive overlay, not evidence of causation. Drawing it does not check the model's assumptions. Formal inference requires checking the model and its residuals; see [R's linear-model documentation](https://stat.ethz.ch/R-manual/R-patched/library/stats/html/lm.html).
+
 ```
 # adding Regression lines and a legend
 abline(lm(mtcars$mpg~mtcars$wt), col="steelblue") # regression line (y~x)
@@ -31,7 +37,7 @@ legend("topright", legend=c("Regression", "LOWESS"),
 
 <div class="course-info">
   <p><strong>Info</strong>  <br>
-  LOWESS (Locally Weighted Scatterplot Smoothing), sometimes called LOESS (locally weighted smoothing), is a popular tool used in regression analysis that creates a smooth line through a timeplot or scatter plot to help you to see relationships between variables and foresee trends.
+  LOWESS (Locally Weighted Scatterplot Smoothing) draws a descriptive smooth through the observed relationship. It is related to LOESS, but <code>lowess()</code> and <code>loess()</code> are different R functions. The smooth depends on its settings and does not establish causation or justify forecasting beyond the observed data. See <a href="https://stat.ethz.ch/R-manual/R-patched/library/stats/html/lowess.html">the R documentation for lowess()</a>.
   </p>
 </div>
 

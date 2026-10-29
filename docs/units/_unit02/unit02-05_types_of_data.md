@@ -79,7 +79,7 @@ R distinguishes between a missing value, the null object, an undefined numerical
 
 Take the test to check if you understand everything correctly:
 
-The quiz uses general programming terms: *float* corresponds to `double` in R, *string* to `character`, and *boolean* to `logical`. It asks you to choose a suitable data type, rather than identify the default type of an R expression. Where the quiz uses `True`, write `TRUE` in R.
+The quiz uses R storage-type names: `integer`, `double`, `character` and `logical`. Choose a suitable type for the information described, rather than the default type of every possible R expression. For example, a whole-number count can use `integer`, but `typeof(3)` is `"double"`; use `3L` for an integer literal. Text needs quotation marks, and logical literals are `TRUE` and `FALSE`.
 
 <iframe title="Interactive quiz: data types" src="https://geomoer.github.io/moer-h5p-content/h5p-standalone-1.3.x/demo/base-r-unit02-05-data-types.html" width="1090" height="792" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 -----

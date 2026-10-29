@@ -69,15 +69,15 @@ plot(sport_cars, type="o", col="blue", ylim=max_range,
 
 {% include figure image_path="/assets/images/unit_images/u09/plot1.svg" caption="Print of Code chunk above" alt="Blue points joined by lines show seven sport-car counts, 1, 2, 4, 2, 6, 7 and 10, before axes and labels are added." %}
 
-Make x axis using Mon-Fri labels
+Make the x axis using Monday–Sunday labels
 ```
 axis(1, at=1:7, lab=c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
 ```
 {% include figure image_path="/assets/images/unit_images/u09/plot2.svg" caption="Print of Code chunk above" alt="The sport-car plot now has weekday labels Monday through Sunday on the horizontal axis." %}
 
-Make y axis with horizontal labels that display ticks at every 4 marks. 4*0:g_range[2] is equivalent to c(0,4,8,12).
+Make the y axis with horizontal labels and ticks every four counts. `seq(0, max_range[2], by = 4)` gives `0, 4, 8` for the current maximum of 10. Only ticks inside the plotting range are needed.
 ```
-axis(2, las=1, at=4*0:max_range[2])
+axis(2, las=1, at=seq(0, max_range[2], by = 4))
 ```
 {% include figure image_path="/assets/images/unit_images/u09/plot3.svg" caption="Print of Code chunk above" alt="The sport-car plot now has vertical-axis tick labels at 0, 4 and 8." %}
 
@@ -87,7 +87,7 @@ box()
 ```
 {% include figure image_path="/assets/images/unit_images/u09/plot4.svg" caption="Print of Code chunk above" alt="A rectangular border is added around the sport-car plot." %}
 
-Graph trucks with red dashed line and square points
+Graph family cars with a red dashed line and square points
 ```
 lines(family_cars, type="o", pch=22, lty=2, col="red")
 ```
@@ -106,7 +106,7 @@ title(ylab="Total", col.lab=rgb(0,0.5,0))
 ```
 {% include figure image_path="/assets/images/unit_images/u09/plot7.svg" caption="Print of Code chunk above" alt="The car plot gains green axis labels, Days horizontally and Total vertically." %}
 
-Create a legend at (1, g_range[2]) that is slightly smaller (cex) and uses the same line colors and points used by  the actual plots
+Create a legend at (1, max_range[2]) that is slightly smaller (cex) and uses the same line colors and points used by  the actual plots
 ```
 legend(1, max_range[2], c("Sport","Family"), cex=0.8,
        col=c("blue","red"), pch=21:22, lty=1:2);
@@ -122,7 +122,7 @@ max_range <- range(0, sport_cars, family_cars)
 plot(sport_cars, type="o", col="blue", ylim=max_range,
      axes=FALSE, ann=FALSE)
 axis(1, at=1:7, lab=c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
-axis(2, las=1, at=4*0:max_range[2])
+axis(2, las=1, at=seq(0, max_range[2], by = 4))
 box()
 lines(family_cars, type="o", pch=22, lty=2, col="red")
 title(main="Car Types on Streets", col.main="red", font.main=4)

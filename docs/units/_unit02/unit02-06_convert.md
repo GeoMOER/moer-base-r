@@ -43,41 +43,79 @@ The table below summarizes common checks and conversions*. The last row shows ho
 </div>
 
 <i>Example</i>
-```
+```r
 value <- 23.5
 
 is.numeric(value)
-[1] TRUE
+```
 
+```text
+[1] TRUE
+```
+
+```r
 is.character(value)
+```
+
+```text
 [1] FALSE
 ```
-```
+```r
 color <- c("blue","red","red","yellow")
 color
+```
+
+```text
 [1] "blue"   "red"    "red"    "yellow"
+```
 
+```r
 is.character(color)
-[1] TRUE
+```
 
+```text
+[1] TRUE
+```
+
+```r
 color.factor <- as.factor(color)
 color.factor
+```
+
+```text
 [1] blue   red    red    yellow
 Levels: blue red yellow
 ```
-
 Putting capital 'L' after an integer forces it to be stored as an integer.
-```
+```r
 is.numeric(1)
-[1] TRUE
+```
 
+```text
+[1] TRUE
+```
+
+```r
 is.integer(1)
+```
+
+```text
 [1] FALSE
+```
 
+```r
 is.numeric(1L)
-[1] TRUE
+```
 
+```text
+[1] TRUE
+```
+
+```r
 is.integer(1L)
+```
+
+```text
 [1] TRUE
 ```
 <!--more-->

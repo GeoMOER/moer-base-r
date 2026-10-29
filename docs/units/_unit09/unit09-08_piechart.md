@@ -19,18 +19,20 @@ Pie charts are often used for representation of distributions and proportions. T
 
 The basic syntax for creating a pie-chart using R is:
 
-`pie(x, labels, radius, main, col, clockwise)`
+`pie(x, labels = names(x), radius = 0.8, main = "Title", col = NULL, clockwise = FALSE)`
+
+This template names the optional arguments explicitly; supply a non-negative numeric vector for `x`.
 
 Following is the description of the parameters used:
 * x is a vector containing the numeric values used in the pie chart.
 * labels is used to give descriptions to the slices.
-* radius indicates the radius of the circle of the pie chart.(value between −1 and +1).
+* `radius` controls the size of the pie within a plotting square running from −1 to +1 on each axis. The default is `0.8`; use a smaller positive radius to leave more room for long labels.
 * main indicates the title of the chart.
 * col indicates the color palette.
 * clockwise is a logical value indicating if the slices are drawn clockwise or anti clockwise.
 
 ## Example with cars and data(iris):
-<div class="unit"><p>Pie charts are not recommended in the R documentation, and their features are somewhat limited. The authors recommend bar or dot plots over pie charts because people are able to judge length more accurately than volume. Pie charts are created with the function pie(x, labels=) where x is a non-negative numeric vector indicating the area of each slice and labels= notes a character vector of names for the slices.</p></div>
+<div class="unit"><p>Pie charts are not recommended in the R documentation, and their features are somewhat limited. The authors recommend bar or dot plots over pie charts because people are able to judge length more accurately than relative area. Pie charts are created with the function pie(x, labels=) where x is a non-negative numeric vector indicating the area of each slice and labels= notes a character vector of names for the slices.</p></div>
 
 ```
 # Create data for the graph.

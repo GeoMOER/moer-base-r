@@ -12,7 +12,7 @@ header:
 <style>.unit p {text-align: justify;}</style>
 <div class="unit">
 <img alt="Comic comparing expected automation savings with the reality of debugging and ongoing development, shown as work-over-time charts." src="{{ '/assets/images/unit_images/u09/linechart1.png' | relative_url }}" width="404" height="409" align="right" vspace="10" hspace="20">
-<p> A line chart is the graphical representation of the functional relationship of two (with 2D representation) or three (with 3D representation) characteristics as a diagram in line form, whereby changes or developments (for example within a certain period of time) can be represented. In contrast to the scatterplot, there can only be one pair or trio of values at a time.  If enough data points are collected during a measurement, these points are usually ordered on the x-coordinate and can be connected by drawing line segments between them. Line charts are usually used in identifying the trends in data.
+<p>A line chart connects observations in a meaningful order, often time. Within each series, sort the horizontal variable before drawing the connecting lines. The order should represent a sequence or progression in the data; do not connect unordered categories merely because there are many of them. Several series can share a plot when their lines are clearly identified.
 </p></div>
 
 <div class="course-info">
@@ -37,7 +37,7 @@ By default, `plot( )` plots the (x,y) points. Use the `type="n"` option in the `
 | n | does not produce any points or lines |
 
 ## Example with pressure: {#example-with-mtcars}
-By default the `plot()` function produces a scatter plot with dots. To make line graphs, pass the x and y vectors to `plot()`, and specify the `type = " "`:
+For these numeric vectors, `plot(x, y)` draws points by default. Set `type = "l"` to connect the observations with lines. The following calls compare the available types using the same ordered temperature series:
 ```
 plot(x = pressure$temperature, y = pressure$pressure)                  # 0.
 plot(x = pressure$temperature, y = pressure$pressure, type = "p")      # 1.
@@ -71,11 +71,11 @@ points(x = pressure$temperature, y = pressure$pressure/2, col = "darkgreen")
 {% include figure image_path="/assets/images/unit_images/u09/linechart3.gif" caption="Line chart with multiple colored lines." alt="Animated pressure-versus-temperature line plot from the pressure dataset; pressure rises sharply at higher temperatures." %}
 
 ## Example with Orange: {#example-with-orange}
-To demonstrate the creation of a more complex line chart, let's plot the growth of 5 orange trees over time. Each tree will have its own distinctive line. The data come from the dataset Orange.
+To demonstrate the creation of a more complex line chart, let's plot the growth of 5 orange trees over time. Each tree will have its own distinctive line. The data come from the dataset `Orange`. `Tree` is an ordered factor: its level order is `3, 1, 5, 2, 4`, not numeric label order. Converting it directly with `as.numeric()` would return internal codes and relabel the trees. Keep the labels for selection and for the legend:
 ```
-# convert factor to numeric for convenience
-Orange$Tree <- as.numeric(Orange$Tree)
-ntrees <- max(Orange$Tree)
+# Keep the original tree labels; use i only as a position
+trees <- levels(Orange$Tree)
+ntrees <- length(trees)
 ```
 ```
 # get the range for the x and y axis
@@ -87,14 +87,15 @@ yrange <- range(Orange$circumference)
 plot(xrange, yrange, type="n", xlab="Age (days)",
      ylab="Circumference (mm)" )
 colors <- rainbow(ntrees)
-linetype <- c(1:ntrees)
-plotchar <- seq(18,18+ntrees,1)
+linetype <- seq_len(ntrees)
+plotchar <- 17 + seq_len(ntrees)
 ```
 ```
 # add lines via for-loop
-for (i in 1:ntrees)
+for (i in seq_along(trees))
 {
-  tree <- subset(Orange, Tree==i)
+  tree <- Orange[Orange$Tree == trees[i], ]
+  tree <- tree[order(tree$age), ]
   lines(tree$age, tree$circumference, type="b", lwd=1.5,
         lty=linetype[i], col=colors[i], pch=plotchar[i])
 }
@@ -105,8 +106,10 @@ title("Tree Growth")
 
 
 # add a legend
-legend(xrange[1], yrange[2], 1:ntrees, cex=0.8, col=colors,
+legend(xrange[1], yrange[2], legend=trees, cex=0.8, col=colors,
        pch=plotchar, lty=linetype, title="Tree")
 ```
+
+The existing animation below illustrates the drawing steps using loop-position labels 1–5. Those positions correspond to original tree labels 3, 1, 5, 2 and 4, respectively. The corrected code above displays the original tree labels in its legend.
 
 {% include figure image_path="/assets/images/unit_images/u09/linechart4.gif" caption="Line chart with multiple colored lines." alt="Animated Orange dataset plot: five coloured lines connect trunk circumference measurements over age, with a Tree legend." %}

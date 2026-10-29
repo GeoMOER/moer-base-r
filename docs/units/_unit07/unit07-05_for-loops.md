@@ -109,10 +109,10 @@ for(i in seq(4)){
 ## [1] "D"
 ```
 
-To adapt the example to the length of `a`, pass `length(a)` to `seq()`:
+To obtain the positions of `a`, use `seq_along(a)`. If `a` is empty, it returns no positions, so the loop runs zero times:
 
 ```r
-for(i in seq(length(a))){
+for(i in seq_along(a)){
   print(a[i])
 }
 ```
@@ -128,12 +128,14 @@ for(i in seq(length(a))){
 
 
 
+For example, `seq_along(character())` and `seq_len(0)` both return `integer(0)`. In contrast, `seq(0)` returns `1, 0`, so `seq(length(a))` would still run a loop when `a` is empty.
+
 ## Modifying an existing variable in a loop
 A `for` loop can update an existing variable with `<-` in the environment where the loop runs. With `lapply()`, you collect the returned values and assign the result to a variable. Here, we use a `for` loop to add an "x" to each entry of variable `a`:
 
 ```r
 a <- c("A", "B", "C", "D")
-for(i in seq(length(a))){
+for(i in seq_along(a)){
   a[i] <- paste0(a[i], "x")
 }
 a
@@ -160,10 +162,10 @@ d <- c(10, 20, 30, 40, 50, 60, 70)
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 ```
 
-We want to convert the character values in `Cat1` and `Cat2` to lowercase and replace the numeric values in `Val1` and `Val2` with their square roots. The loop processes one column at a time, using `tolower()` for character columns and `sqrt()` for numeric columns. Instead of writing `seq(4)`, we can use `seq(ncol(df))` to get the column positions:
+We want to convert the character values in `Cat1` and `Cat2` to lowercase and replace the numeric values in `Val1` and `Val2` with their square roots. The loop processes one column at a time, using `tolower()` for character columns and `sqrt()` for numeric columns. Instead of writing `seq(4)`, we can use `seq_len(ncol(df))` to get the column positions, including no positions when the data frame has zero columns:
 
 ```r
-for(i in seq(ncol(df))){
+for(i in seq_len(ncol(df))){
   if(is.character(df[,i])){
     df[,i] <- tolower(df[,i])
     } else if(is.numeric(df[,i])){
@@ -197,7 +199,7 @@ For example, convert the elements of `a` to lowercase and store them in a new ve
 
 ```r
 test <- character()   # this is an empty character vector
-for(i in seq(length(a))){
+for(i in seq_along(a)){
   test <- c(test, tolower(a[i]))
 }
 
@@ -238,7 +240,7 @@ The new data frame has the same number of rows as `df`, given by `nrow(df)`. Its
 Let's start with the loop:
 
 ```r
-for(i in seq(ncol(df))){
+for(i in seq_len(ncol(df))){
   if(is.character(df[,i])){
     df_new[,i] <- tolower(df[,i])
     } else if(is.numeric(df[,i])){

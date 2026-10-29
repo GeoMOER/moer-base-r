@@ -13,7 +13,7 @@ Important information is Frequency Counts. This can be effectively assessed usin
 Recommended Plots are
 - Bar Plots: Ideal for displaying the frequency of different categories.
 - Pie Charts: Useful for showing the proportion of each category.
-- Dot Plots: Effective for comparing the frequency or count of categories, particularly when dealing with a large number of categories where a bar plot might become cluttered.
+- Cleveland Dotcharts: Compare a supplied numeric value, such as a count, across named categories. Each category gets its own row; sort the values to make comparisons easier.
 
 **Quantitative data** is numerical and permits a wider array of statistical analyses, such as mean (the average value), the median (the middle value in ordered data) and quantiles (indicating data spread).
 The __summary()__ function in R provides a quick statistical summary of these metrics.
@@ -24,7 +24,7 @@ Recommended Plots are:
 - Boxplots: Visualize medians, quartiles, and outliers.
 - Scatterplots: Ideal for relationships between two quantitative variables.
 - Line Charts: Best for trends over time.
-- Dot Plots: Particularly effective for small or moderate-sized datasets to highlight individual data points and distributions without binning data like histograms.
+- Cleveland Dotcharts: Compare one numeric value across named items, such as miles per gallon for car models. The dotchart lesson distinguishes these from stacked frequency dot plots and strip plots.
 
 The choice of plot should align with your data’s nature (continuous, categorical) and the specific insights you aim to communicate. 
 

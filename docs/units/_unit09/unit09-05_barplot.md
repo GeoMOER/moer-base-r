@@ -10,8 +10,9 @@ header:
 
 <!--more-->
 ## What is a Barplot?
-<p>The barplot is for <b>comparative representation</b> that illustrates the <b>frequency distribution</b> of a discrete (random) variable by means of non-contiguous columns standing vertically on the x-axis. The bar chart is particularly suitable for illustrating up to approx. 15 characteristics. With more categories, the clarity suffers and line charts are to be preferred. The bar chart is also not suitable in the case of metrically continuous data; then a histogram is preferable.
-</p></div>
+A bar plot compares values across categories. Each separate bar represents a category; its height or length represents a count or another clearly stated summary, such as a total or mean. Use `table()` when you need counts of observations. Use the supplied numeric values directly when they are already summaries.
+
+For many categories, consider sorting the bars, using horizontal bars, or using a Cleveland dotchart. Connecting unordered categories with lines would imply an order that the data do not have. To show the distribution of a numeric variable in intervals, use a histogram instead.
 
 Create barplots with the `barplot(values)` function, where *values* is a vector or matrix.
 * If *values* is a vector, the values determine the heights of the bars in the plot.

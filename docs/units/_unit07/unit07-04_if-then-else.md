@@ -81,15 +81,17 @@ An `if` branch runs when its condition is `TRUE`. You can also test whether a st
 ```r
 test <- a < b
 if (test == FALSE) {
-  print("a is larger than b")
+  print("a is greater than or equal to b")
 } else {
-  print("a is smaller than or equal b.")
+  print("a is smaller than b")
 }
 ```
 
 ```
-## [1] "a is larger than b"
+## [1] "a is greater than or equal to b"
 ```
+
+With `test <- a < b`, a `FALSE` result includes equality: `a` can be greater than **or equal to** `b`. Try values smaller than, equal to and greater than `b` to check both branches.
 
 If-then-else decisions are useful if your computation needs different workflows for different variable values.
 

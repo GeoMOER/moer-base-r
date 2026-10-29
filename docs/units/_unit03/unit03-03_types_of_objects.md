@@ -55,7 +55,8 @@ The assignment operator looks like an arrow (<-) and is used to assign values to
 In R there are several possibilities to define an object:
 
 ```r
-# Assign the value y to object x
+# Define a value, then assign it to x in either direction
+value_y <- 3
 x <- value_y
 value_y -> x
 ```
@@ -68,7 +69,10 @@ greeting <- "Hello World."
 
 #show content of object "greeting"
 greeting
-[1] Hello World.
+```
+
+```text
+[1] "Hello World."
 ```
 You could also use the "=" sign to assign objects. However, the = operator is conventionally used to specify named arguments in function calls. To avoid ambiguity and potential conflicts between function argument names and object names, using <- for assignment helps reduce the chance of errors.
 
@@ -83,30 +87,33 @@ When you want to create a vector with more than one element, you need to use the
 ```r
 apple <- c("red", "green","yellow")
 apple
-
-[1] "red"    "green"  "yellow"
 ```
 
+```text
+[1] "red"    "green"  "yellow"
+```
 A vector’s type can be checked with the `typeof()` function. apple is a word not a number therefore it is a character (in other words a string).
 
 ```r
 # Ask for the class of the vector
 apple <- c("red", "green","yellow")
 typeof(apple)
-
-[1] "character"
 ```
 
+```text
+[1] "character"
+```
 Another important property of a vector is its length. This is the number of elements in the vector and can be checked with the function `length()`. In this case the length is 3. The vector contains three values: "red", "green", and "yellow".
 
 ```r
 #Ask for the length of the vector
 apple <- c("red", "green","yellow")
 length(apple)
-
-[1] 3
 ```
 
+```text
+[1] 3
+```
 A vector can only contain values of the same data type.
 
 You can add elements, again by using c()
@@ -115,17 +122,20 @@ You can add elements, again by using c()
 #add an element
 apple <- c(apple, "brown")
 apple
-
-[1] "red"    "green"  "yellow"   "brown"
 ```
 
+```text
+[1] "red"    "green"  "yellow"   "brown"
+```
 If needed, you can also assign names to the single elements:
 
 ```r
 #add names
 names(apple) <- c("Col1","Col2","Col3","Col4")
 apple
+```
 
+```text
  Col1       Col2      Col3      Col4
 "red"    "green"  "yellow"   "brown"
 ```
@@ -135,7 +145,9 @@ If you need to repeat an element of a vector several times, you can use the  rep
 #repeat
 applebucket <- rep(apple,3)
 applebucket
+```
 
+```text
     Col1     Col2     Col3     Col4     Col1     Col2     Col3     Col4 
    "red"  "green" "yellow"  "brown"    "red"  "green" "yellow"  "brown" 
     Col1     Col2     Col3     Col4 
@@ -156,8 +168,10 @@ x <- c(1,2,3)
 y <- c(4,5,6)
 result <- x+y
 result
-[1] 5,7,9
+```
 
+```text
+[1] 5 7 9
 ```
 **Recycling**
 
@@ -183,7 +197,9 @@ d <- c(10, 20, 30, 40, 50, 60, 70) # create a vector called d
 df <- data.frame(Cat1 = a, Cat2 = b, Val1 = c, Val2 = d)
 
 print(df)
+```
 
+```text
    Cat1 Cat2 Val1 Val2
 1    A    X    1   10
 2    B    X    2   20
@@ -192,7 +208,6 @@ print(df)
 5    B    Y    5   50
 6    A    Y    6   60
 7    A    Y    7   70
-
 ```
 Data frames have column names (variable names) and row names (often called row labels or row names) that help identify and reference specific variables and observations. You can access columns using the __$__ operator or square brackets __[ ]__, and you can access rows by their index or labels. For more details, see Unit 04
 You can use functions like __str()__ to check the data type of the column.  __summary()__ summarizes the columns. For numeric variables, it provides basic summary statistics for that vector, including the minimum, 1st quartile, median, mean, 3rd quartile, and maximum values. Note that you can also apply this function to vectors!
@@ -202,13 +217,21 @@ With __nrow()__ and __ncol()__, you can return the number of rows and columns, r
 
 ```r
 str(df)
+```
+
+```text
 'data.frame':	7 obs. of  4 variables:
  $ Cat1: chr  "A" "B" "C" "A" ...
  $ Cat2: chr  "X" "X" "X" "X" ...
  $ Val1: num  1 2 3 4 5 6 7
  $ Val2: num  10 20 30 40 50 60 70
+```
 
+```r
 summary(df)
+```
+
+```text
      Cat1               Cat2                Val1          Val2   
  Length:7           Length:7           Min.   :1.0   Min.   :10  
  Class :character   Class :character   1st Qu.:2.5   1st Qu.:25  
@@ -216,32 +239,26 @@ summary(df)
                                        Mean   :4.0   Mean   :40  
                                        3rd Qu.:5.5   3rd Qu.:55  
                                        Max.   :7.0   Max.   :70  
+```
 
+```r
 head(df, n=3)
+```
+
+```text
   Cat1 Cat2 Val1 Val2
 1    A    X    1   10
 2    B    X    2   20
 3    C    X    3   30
-
 ```
-
 Columns can be attached using __cbind()__  or directly assigned:
 ```r
 BoolVec <- c(T,T,T,F,F,F,F)
 df_vers2 <- cbind(df,BoolVec)
 df_vers2
-  Cat1 Cat2 Val1 Val2 BoolVec
-1    A    X    1   10    TRUE
-2    B    X    2   20    TRUE
-3    C    X    3   30    TRUE
-4    A    X    4   40   FALSE
-5    B    Y    5   50   FALSE
-6    A    Y    6   60   FALSE
-7    A    Y    7   70   FALSE
+```
 
-
-df_vers3$BoolVec <- c(T,T,T,F,F,F,F)
-df_vers2
+```text
   Cat1 Cat2 Val1 Val2 BoolVec
 1    A    X    1   10    TRUE
 2    B    X    2   20    TRUE
@@ -252,6 +269,22 @@ df_vers2
 7    A    Y    7   70   FALSE
 ```
 
+```r
+df_vers3 <- df
+df_vers3$BoolVec <- c(T,T,T,F,F,F,F)
+df_vers3
+```
+
+```text
+  Cat1 Cat2 Val1 Val2 BoolVec
+1    A    X    1   10    TRUE
+2    B    X    2   20    TRUE
+3    C    X    3   30    TRUE
+4    A    X    4   40   FALSE
+5    B    Y    5   50   FALSE
+6    A    Y    6   60   FALSE
+7    A    Y    7   70   FALSE
+```
 -----
 
 # Matrix
@@ -262,10 +295,12 @@ A matrix is a two-dimensional rectangular data set. It can be created using a ve
 # Create a matrix.
 M = matrix(c('a','a','b','c','b','a'), nrow = 2, ncol = 3)
 print(M)
+```
+
+```text
     [,1] [,2] [,3]
 [1,] "a"  "b"  "b" 
 [2,] "a"  "c"  "a" 
-
 ```
 When we execute the above code, it produces the following result − Notice that by default, the first column is first filled from top to bottom, then the second column and so on.
 
@@ -277,9 +312,11 @@ it follows this pattern:
 To fill the matrix row by row instead, set `byrow = TRUE`.
 
 ```r
-
 M = matrix(c('a','a','b','c','b','a'), nrow = 2, ncol = 3, byrow = TRUE)
 M
+```
+
+```text
      [,1] [,2] [,3]
 [1,] "a"  "a"  "b"
 [2,] "c"  "b"  "a"
@@ -300,6 +337,9 @@ An array is created using the array() function. It takes vectors as input and us
 my.array <- array(1:24, dim=c(3,4,2))
 
 my.array
+```
+
+```text
 , , 1
    [,1] [,2] [,3] [,4]
 [1,]  1  4  7  10
@@ -311,7 +351,6 @@ my.array
 [2,]  14  17  20  23
 [3,]  15  18  21  24
 ```
-
 This array has three dimensions. Notice that, although the rows are given as the first dimension, the tables are filled column-wise. So, for arrays, R fills the columns, then the rows, and then the rest.
 
 ----
@@ -334,10 +373,9 @@ list1 <- list(c(2,5,3),21.3,sin)
 # Print the list.
 print(list1)
 ```
-
 When we execute the above code, it produces the following result:
 
-```r
+```text
 [[1]]
 [1] 2 5 3
 
@@ -352,10 +390,18 @@ Note that selecting list elements with single square brackets __[]__ preserves t
 
 ```r
 list1[1]
+```
+
+```text
 [[1]]
 [1] 2 5 3
+```
 
+```r
 list1[[1]]
+```
+
+```text
 [1] 2 5 3
 ```
 As with our other non-atomic object type, the data frame, we can name the elements and address these elements with __“$”__
@@ -364,9 +410,11 @@ As with our other non-atomic object type, the data frame, we can name the elemen
 names(list1) <- c("numbers","my.double","my.sin")
 
 list1$numbers
-[1] 2 5 3
 ```
 
+```text
+[1] 2 5 3
+```
 ----
 
 # Factors
@@ -379,20 +427,29 @@ A factor is created using the function `factor()`. Levels of a factor are inferr
 ```r
 treecover <- factor(c("Spruce", "Spruce","Gap","Beech","Beech","Oak","Oak"))
 treecover
+```
 
+```text
 [1] Spruce Spruce Gap Beech Beech Oak Oak
 Levels: Beech Gap Oak Spruce
 ```
-
 Here, we can see that factor *treecover* has seven elements and four levels. We can check if an object is a factor or not using `class()` function.
 
 Similarly, levels of a factor can be checked using the `levels()` function. 
 
 ```r
 class(treecover)
-[1] "factor"
+```
 
-> levels(treecover)
+```text
+[1] "factor"
+```
+
+```r
+levels(treecover)
+```
+
+```text
 [1] "Beech" "Gap" "Oak" "Spruce"
 ```
 By default, the levels are assigned alphabetically. You can change this order by directly naming the levels in your preferred order while setting the factor:
@@ -400,17 +457,21 @@ By default, the levels are assigned alphabetically. You can change this order by
 ```r
 treecover <- factor(c("Spruce", "Spruce","Gap","Beech","Beech","Oak","Oak"), levels=c("Gap","Spruce","Fir","Beech","Oak"))
 treecover
+```
 
+```text
 [1] Spruce Spruce Gap Beech Beech Oak Oak
 Levels: Gap Spruce Fir Beech Oak 
 ```
 When you define the factor levels explicitly, you are essentially specifying the allowed categories that this factor can have. This is a common practice, especially when you want to ensure that certain levels are present in the factor, or when you want to control the order of the levels.
-However, if you do not explicitly specify all the possible levels when creating a factor, R will, by default, assign missing values (NA) to any values that do not match the predefined levels. This behavior ensures that any values outside the defined levels are recognized as missing data.
+If you supply an explicit `levels` vector, input values outside that vector become `NA`. This differs from omitting the `levels` argument entirely: in that case, R derives the levels from the observed values. Inspect the result before treating a newly introduced `NA` as a missing source observation.
 
 ```r
 treecover <- factor(c("Spruce", "Spruce","Gap","Beech","Beech","Oak","Oak","Birch"), levels=c("Gap","Spruce","Fir","Beech","Oak"))
 treecover
+```
 
+```text
 [1] Spruce Spruce Gap Beech Beech Oak Oak <NA>
 Levels: Gap Spruce Fir Beech Oak 
 ```
@@ -419,7 +480,9 @@ If you are working with ordinal data, set ordered=T:
 ```r
 treecover <- factor(c("Spruce", "Spruce","Gap","Beech","Beech","Oak","Oak","Birch"), levels=c("Gap","Spruce","Fir","Beech","Oak"), ordered=T)
 treecover
+```
 
+```text
 [1] Spruce Spruce Gap Beech Beech Oak Oak <NA>
 Levels: Gap<Spruce<Fir<Beech<Oak 
 ```
