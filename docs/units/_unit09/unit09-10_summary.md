@@ -84,6 +84,104 @@ The counts are forest 2, grassland 1 and water 1. Temperatures in day order are 
 
 **Ready to continue:** you can justify a chart choice, produce a labelled plot and describe what its data do and do not support.
 
+## Optional transfer: from a CSV to an explained plot {#optional-transfer}
+
+**Question:** among the supplied seismic events with reported magnitude at least 5, how many events have each reported magnitude? Choose the operations yourself before opening the hints. This practice combines existing skills; there is no submission.
+
+**Start here, even if you entered this unit directly:** use an RStudio project with `Data/` and `Output/` folders, and start a fresh R session. [Download quakes.csv]({{ '/assets/data/quakes.csv' | relative_url }}) into `Data/quakes.csv`. It is the same 1,000-event, five-column teaching file used in Unit 06, with **four metadata lines, a header, semicolon separators and decimal commas**. The columns are latitude (`lat`, degrees), longitude (`long`, degrees), depth (`depth`, km), reported magnitude (`mag`) and number of reporting stations (`stations`). [Source and export notes]({{ '/assets/data/quakes-source.txt' | relative_url }}) document its origin and format.
+
+If needed, revisit [project-relative paths]({{ '/unit05/unit05-02_wenvironment.html' | relative_url }}#rprojects), [import/export]({{ '/unit06/unit06-03_data_import.html' | relative_url }}), [table selection]({{ '/unit04/unit04-02_index.html' | relative_url }}#start-with-a-small-table) and [group summaries]({{ '/unit08/unit08-07-aggregate.html' | relative_url }}#aggregate). You do not need objects saved from those units or any additional package.
+
+1. Import and inspect the file. Check its dimensions and column types before filtering.
+2. Add `source_row`, numbering the imported data rows from 1 to 1,000. Keep this column when selecting events with a known magnitude of at least 5. It is a reference to a row in this particular CSV, **not an official earthquake-event identifier**. Create it before filtering so that it still points back to the input record.
+3. Count the selected events within each distinct reported magnitude. State what one row of the count table represents, and check that the counts add to the number of selected events.
+4. Choose and make a plot of those counts with a title and labelled axes. Explain what its largest count means and one limitation of the data.
+5. Save the selected records and counts as two CSV files, and your plot as a PNG under `Output/`. Read the CSVs back and check that the values and source-row references are preserved. Keep the input file unchanged.
+
+<details markdown="1">
+<summary>Hint 1: import and retain row references</summary>
+
+Use `read.table()` with `skip = 4`, `header = TRUE`, `sep = ";"` and `dec = ","`. `dim()` should give `1000 5`. `seq_len(nrow(x))` generates one position per row of table `x`; assign those positions to a new column before making a filtered copy. Use a known-value check and `>= 5` together for the row condition.
+
+</details>
+
+<details markdown="1">
+<summary>Hint 2: count observations rather than summing magnitudes</summary>
+
+Use `aggregate(source_row ~ mag, data = your_selected_table, FUN = length)`. For each magnitude group, `length()` counts its row references. Rename the resulting second column to `n_events`: those values are counts, rather than source-row identifiers. A bar plot can show one count for each observed magnitude category.
+
+</details>
+
+<details markdown="1">
+<summary>Hint 3: save tables and a plot</summary>
+
+Use `write.csv(..., row.names = FALSE)` so that R does not add a row-name column. `png("Output/your-plot.png", ...)` opens a PNG graphics device: make the plot next, then call `dev.off()` to finish writing the image. When comparing an exported table, check its values and identifiers; ordinary row labels may be regenerated when reading a CSV.
+
+</details>
+
+<details markdown="1">
+<summary>Compare a complete worked solution</summary>
+
+Run this script from the project root with the downloaded file in `Data/`. It creates every object it uses and creates `Output/` if necessary:
+
+```r
+dir.create("Output", showWarnings = FALSE)
+quakes_all <- read.table("Data/quakes.csv", skip = 4, header = TRUE,
+                         sep = ";", dec = ",")
+dim(quakes_all)
+str(quakes_all)
+
+quakes_all$source_row <- seq_len(nrow(quakes_all))
+keep <- !is.na(quakes_all$mag) & quakes_all$mag >= 5
+quakes_selected <- quakes_all[keep, ]
+dim(quakes_selected)
+
+magnitude_counts <- aggregate(source_row ~ mag, data = quakes_selected,
+                              FUN = length)
+names(magnitude_counts)[2] <- "n_events"
+magnitude_counts
+sum(magnitude_counts$n_events) == nrow(quakes_selected)
+
+write.csv(quakes_selected, "Output/quakes-selected.csv", row.names = FALSE)
+write.csv(magnitude_counts, "Output/quakes-counts.csv", row.names = FALSE)
+selected_back <- read.csv("Output/quakes-selected.csv")
+counts_back <- read.csv("Output/quakes-counts.csv")
+identical(quakes_selected$source_row, selected_back$source_row)
+isTRUE(all.equal(quakes_selected, selected_back, check.attributes = FALSE))
+identical(magnitude_counts, counts_back)
+
+png("Output/quakes-magnitude-counts.png", width = 900, height = 500)
+barplot(magnitude_counts$n_events,
+        names.arg = format(magnitude_counts$mag, nsmall = 1),
+        main = "Supplied seismic events with reported magnitude >= 5",
+        xlab = "Reported magnitude", ylab = "Number of supplied events",
+        col = "lightblue")
+dev.off()
+```
+
+**Check the results:** the input has 1,000 rows and five numeric columns; `depth` and `stations` are integers. Adding `source_row` gives six columns. The selection has **198 rows and six columns**, retaining integer source-row references; the count table has **12 rows and two columns**, one row per observed magnitude and an integer event count. All four comparisons in the script should return `TRUE`. CSV reading can regenerate ordinary row labels; the explicit `source_row` values retain the connection to the input.
+
+| Reported magnitude | Number of supplied events |
+|---|---|
+| 5.0 | 47 |
+| 5.1 | 43 |
+| 5.2 | 29 |
+| 5.3 | 21 |
+| 5.4 | 20 |
+| 5.5 | 14 |
+| 5.6 | 9 |
+| 5.7 | 8 |
+| 5.9 | 2 |
+| 6.0 | 3 |
+| 6.1 | 1 |
+| 6.4 | 1 |
+
+A bar plot compares these counts without implying a time sequence. Each bar is an observed magnitude category; magnitudes absent from the selection are omitted. The largest count is **47 supplied events reported at magnitude 5.0**. This describes the supplied historical dataset near Fiji, not a complete worldwide earthquake catalogue or a current earthquake rate. The grouped counts do not establish why the events occurred.
+
+Open the three files under `Output/` and inspect the labels on the saved image. If the counts differ, check the import format and the `>= 5` condition before changing the plot. If row references differ, check that you created them before filtering and retained them during export.
+
+</details>
+
 ## Check your understanding
 
 Try these questions before opening the suggested answers.

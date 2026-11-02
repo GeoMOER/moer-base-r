@@ -12,6 +12,10 @@ header:
 
 {% include self-study-start.html %}
 
+<div class="course-info">
+  <p><strong>Optional preview:</strong> if loops are new to you, continue with the <a href="{{ '/unit06/unit06-05_summary.html' | relative_url }}">Unit 06 summary</a> and return here after <a href="{{ '/unit07/unit07-05_for-loops.html' | relative_url }}">for loops in Unit 07</a>. You can practise importing and exporting one file before automating several files.</p>
+</div>
+
 This lesson uses the working-directory and path skills from Unit 05 and previews the [for-loop lesson in Unit 07]({{ '/unit07/unit07-05_for-loops.html' | relative_url }}). If loops are new to you, read that lesson first or return here after Unit 07. In the example, `file_path` takes each value from `file_paths` in turn, and the statements inside the braces run once for each file.
 
 Before running the code, replace `"~/data/test"` with your own working folder. Create its `input` and `output` subfolders, put a few small test files in `input`, and ensure that `output` is writable. Repeating the run overwrites output files with the same names.

@@ -171,10 +171,33 @@ The `".."` fragment comes from the ellipsis in the passage. A simple split on a 
 If you want to match a pattern rather than one specific word, and target certain positions or characters, you can use regular expressions. Regular expressions are a sequence of characters that define a search pattern, mainly for the use in pattern matching with strings, or string matching. In R, regular expressions are used with several functions to identify, replace, or split strings according to specified patterns.
 
 
+Start with a small example before learning the pattern symbols. These three labels differ only in the middle character:
+
+```r
+labels <- c("plot.1", "plot-1", "plotA1")
+grep(".", labels)
+grep("\\.", labels)
+grep(".", labels, fixed = TRUE)
+```
+
+```text
+[1] 1 2 3
+[1] 1
+[1] 1
+```
+
+In a regular expression, `.` matches any single character, so every label matches. To search for an actual dot, the regex needs `\.`. In an R character string, a backslash must itself be escaped: type `"\\."` in your code. With `fixed = TRUE`, R searches for literal text instead, so `"."` is enough.
+
+**Try it:** replace the dot pattern with `"-"` and use `fixed = TRUE`. Predict the matching position first; it should be `2`. These are positions in the label vector, not character positions within each label.
+
+#### Optional pattern reference
+
+Use this catalogue when a task needs a pattern; you do not need to memorize it. The entries describe regex patterns, not complete quoted R strings. Double backslashes when writing them in ordinary R strings: for example, `"\\d"` passes `\d` to the regex engine. R uses extended regular expressions by default; `perl = TRUE` selects a Perl-compatible engine, with some different features. See [`?regex`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html) when choosing a pattern or engine.
+
 Metacharacter/Construct	Description
 1. **^**	Matches the beginning of a line
 2. **$**	Matches the end of a line
-3. **.**	Matches any single character except newline
+3. **.**	Matches any single character (with `perl = TRUE`, newline matching needs an additional option)
 4. **[...]**	Matches any one of the enclosed characters
 5. **[^...]**	Matches any character not enclosed
 6. **\*** 	Matches 0 or more occurrences of the preceding element

@@ -29,7 +29,14 @@ for(i in seq(7,10)){
 ```
 The loop assigns each value in the sequence to `i` in turn. Avoid changing `i` inside the loop, because the next iteration will assign the next sequence value to it.
 
-Of course, you can nest for loops:
+**Checkpoint — one iteration at a time:** before running the first loop, predict its four printed values. On the second iteration `i` is `8`. Now change only `print(i)` to `print(i * 2)` and run the loop again: expect `14`, `16`, `18`, `20`. The sequence still has four values; changing the calculation does not change the number of iterations.
+
+The next example combines two loops and a decision. It is an optional extension; you can continue with [a stored sequence](#a-stored-sequence) first and return when single loops feel familiar.
+
+<details markdown="1">
+<summary>Optional extension: trace a nested loop</summary>
+
+You can put a loop inside another loop:
 
 ```r
 for(i in seq(7, 10)){
@@ -61,6 +68,9 @@ for(i in seq(7, 10)){
 
 The `if` statement sets `lower_border` to `i + 1` when `i` is smaller than 10, and to 10 otherwise. The inner loop then assigns values from 10 down to `lower_border` to `j`.
 
+</details>
+
+<span id="a-stored-sequence"></span>
 You can also store the sequence in a vector before using it in a for loop. The `seq()` function used above returns such a vector:
 
 ```r

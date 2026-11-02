@@ -5,6 +5,8 @@ permalink: /cheatsheet.html
 
 On this page you will find a collection of useful PDF files and code snippets.
 
+These are optional lookup resources. Use the RStudio IDE and Base R sheets to find a reminder for a task you are practising; they are not a checklist of everything to learn at once. The Advanced R sheet covers additional topics beyond the core beginner workflow and can wait until you need that depth.
+
 <!--more-->
 
 ## <a href="{{ '/assets/data/cheatsheets/rstudio-ide.pdf' | relative_url }}" download="rstudio-ide.pdf">RStudio IDE Cheat Sheet</a>{:target="_blank"}

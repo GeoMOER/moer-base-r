@@ -15,6 +15,8 @@ header:
 If function calls or named arguments are new to you, first work through [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}) with its supplied three-row file. For a project-folder setup and a first path check, use [Work Environment]({{ '/unit05/unit05-02_wenvironment.html' | relative_url }}#rprojects). This page extends that workflow to other file formats and a real earthquake dataset.
 
 
+**Choose your route:** the core workflow starts at [Importing data via code](#importing-data-via-code), then uses the supplied Quakes CSV. Save the commands in a script so that you can repeat the import. The button-based route below is an optional alternative; you do not need to complete both routes or install `readr` for the code workflow.
+
 ## Importing data via buttons
 
 The data import features can be accessed from the environment pane or from the tools menu. The importers are grouped into 3 categories: Text data, Excel data and statistical data. To access this feature, use the "Import Dataset" dropdown from the "Environment" pane:

@@ -29,7 +29,7 @@ Check that you can organize an R project, distinguish objects in memory from fil
 | Absolute path | A location beginning at the filesystem root or drive. | A path from your own computer may not work for another person. |
 | Package | A collection of functions, documentation, and sometimes data. | Installation and loading are different steps. |
 
-Keep raw data, scripts, and generated output organized in separate folders, for example `Data/`, `Process/`, and `Output/`. Keep the raw data unchanged and record processing steps in scripts. When the project root is the working directory, a script saved in `Process/` still reads `Data/file.csv` relative to the project root, not relative to the script file.
+Keep unchanged inputs in `Data/` and generated exports, plots and reports in `Output/`. Record processing steps in scripts; a small project's script can sit beside its `.Rproj`. For a larger project, `Process/` is an optional place for scripts and intermediate work. When the project root is the working directory, a script saved in `Process/` still reads `Data/file.csv` relative to the project root, not relative to the script file.
 
 ## A short recap in R
 
@@ -52,7 +52,7 @@ Save scripts and required data rather than relying on a restored workspace to su
 
 ## Try it yourself {#practice}
 
-In an RStudio project, create `Data/`, `Process/` and `Output/` folders if needed. Save a script as `Process/session-check.R` that creates `marker <- 42` and calls `getwd()` and `sessionInfo()`. Close and reopen the `.Rproj`, restart R, and run the saved script. Construct the path to `Data/observations.csv` without reading a file.
+For this practice, try the larger-project arrangement: in an RStudio project, create `Data/`, `Process/` and `Output/` folders if needed. Save a script as `Process/session-check.R` that creates `marker <- 42` and calls `getwd()` and `sessionInfo()`. Close and reopen the `.Rproj`, restart R, and run the saved script. Construct the path to `Data/observations.csv` without reading a file.
 
 <details markdown="1">
 <summary>Compare the checks</summary>

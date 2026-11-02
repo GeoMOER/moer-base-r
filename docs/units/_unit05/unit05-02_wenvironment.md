@@ -67,11 +67,11 @@ The key elements of a project folder include:
 * a `Process/` folder and
 * an `Output/` folder.
 
-The `Data/` folder contains all data files which include all raw data files as well as all subsets and manipulated versions of these data files.
+Keep unchanged downloaded inputs in `Data/`. Save prepared tables and other generated results under different filenames in `Output/`, as in Unit 06, so that running a script does not overwrite its input.
 
-The `Process/` folder contains sub-directories with analysis files, e.g. R scripts and figures or maps that may be produced by the analyses.
+`Process/` is an optional arrangement for larger projects. It can contain scripts, intermediate working files and subfolders for figures or maps while you develop an analysis. In a small practice project, keeping the `.R` script beside the `.Rproj` file, as above, is sufficient.
 
-And an `Output/` folder stores the final reports e.g. .docx, .pdf, .Rmd files and presentations e.g. .pptx, or .html files.
+Use `Output/` for generated exports, plots, reports and presentations, for example CSV, RDS, PNG, PDF or HTML files. An `.Rmd` is an editable source document; keep it with your scripts and place its rendered report in the chosen output location. You do not need all these formats or subfolders for every task. Keep the working directory at the project root and use the same folder capitalization in your paths.
 
 
 ## Understanding the directory structures

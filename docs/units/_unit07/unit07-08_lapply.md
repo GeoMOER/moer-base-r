@@ -179,6 +179,8 @@ identical(loop_result, result_df)
 The comparison is `TRUE`. `lapply()` first collected a list that you converted to a table; the loop filled a copy of the table. Both retained the original `df`. Use the detailed outputs as a reference after making your prediction.
 
 ## Using variables defined outside the lapply loop
+**Optional depth:** the comparison above is sufficient for the basic `lapply()` workflow. This section explores how functions read surrounding variables and create local ones. Predict which values remain unchanged outside each call before inspecting the output. You can also continue to [returning data frames](#returning-data-frames-within-the-lapply-loop); that section uses the original `df` created at the top of this page.
+
 The function supplied to `lapply()` can read variables from the surrounding environment. Here, we define `var_outside` before the call and use it inside the function to multiply the square roots by 10:
 
 ```r

@@ -31,9 +31,36 @@ my.mean(X)
 mean(X)
 ```
 
-You can also define default argument values:
+## Add a default argument
+
+A default supplies a value when the caller omits an argument. Start with a function that adds two numbers:
 
 ```r
+my_function <- function(x, y = 10) {
+  result <- x + y
+  return(result)
+}
+my_function(5)
+my_function(5, 20)
+```
+
+```text
+[1] 15
+[1] 25
+```
+
+`x` receives `5`. In the first call, `y` uses its default of `10`; the second call supplies `20` instead. `return(result)` sends the calculated value back to the caller.
+
+**Try a change:** predict `my_function(2, y = 3)` before running it. Expect `5`. You changed the arguments in the call; the function definition still has the same default.
+
+## Extend a function to handle missing values
+
+**Optional extension:** the following example adds decisions and missing-value handling to `my.mean()`. First check that the initial version above and `mean()` both return `75` for `X <- 50:100`. If decisions are unfamiliar, revisit [if-then-else]({{ '/unit07/unit07-04_if-then-else.html' | relative_url }}).
+
+Here `na.rm` defaults to `TRUE`. Create `X` again so this extension has its own complete setup:
+
+```r
+X <- 50:100
 my.mean <- function(x, na.rm = TRUE){
   if(na.rm == TRUE){
     sum(x, na.rm = TRUE)/length(x[!is.na(x)])
@@ -46,31 +73,14 @@ my.mean <- function(x, na.rm = TRUE){
   }
 }
 
-X[sample(1:50, 4)] <- NA
+X[1:2] <- NA
 
 my.mean(X)
 my.mean(X, na.rm = FALSE)
 ```
-In this example, `na.rm` has the default value `TRUE`, specified in the argument list. If you call `my.mean()` without supplying `na.rm`, the function excludes missing values before calculating the mean. With `na.rm = FALSE`, the function takes the `else` branch. Here is another example:
+The fixed replacement removes `50` and `51`, leaving the values from `52` to `100`. With the default, the function divides their sum by the number of non-missing values and returns `76`. With `na.rm = FALSE`, it keeps the missing values, prints the diagnostic sentence and returns `NA`; the word “Error” in that printed text does not stop R. Compare the two results with `mean(X, na.rm = TRUE)` and `mean(X, na.rm = FALSE)`.
 
-```r
-my_function <- function(x, y = 10) {
-  result <- x + y
-  return(result)
-}
-
-```
-If the caller omits `y`, the function uses its default value of 10 and adds it to `x`.
-
-```r
-my_function(5)  # This will result in 15 (5 + 10)
-```
-You can override the default by supplying a value for `y` when calling the function:
-
-```r
-my_function(5, 20)  # This will result in 25 (5 + 20)
-
-```
+This is a teaching function for numeric vectors. If all values are missing, removing them leaves no values to average: the calculation gives `NaN`. Use the documented `mean()` function in your own analyses.
 
 ## Test what you've learned so far!
 

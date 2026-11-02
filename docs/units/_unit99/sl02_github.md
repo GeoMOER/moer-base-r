@@ -9,7 +9,7 @@ header:
   caption: "[Gitbanner](https://github.com/mappum/gitbanner) [by Matt Bell](https://github.com/mappum) [on GitHub](https://github.com)"
 ---
 
-This Spotlight introduces Git and GitHub, with examples using GitHub Desktop, Git Bash and RStudio. Read the Git/GitHub distinction once, then choose one client route: [Desktop](#github-desktop), [command line](#git-bash-console), or [RStudio](#github-in-rstudio). The routes are alternatives; you do not need to repeat the same repository workflow in every client.
+This Spotlight introduces Git and GitHub, with examples using GitHub Desktop, Git Bash and RStudio. Read the Git/GitHub distinction once, then choose one client route: [Desktop](#github-desktop), [command line](#git-bash-console), or [RStudio](#github-in-rstudio). The routes are alternatives; you do not need to repeat the same repository workflow in every client. Videos and linked tutorials are optional references for your chosen route.
 
 <!--more-->
 
@@ -80,12 +80,20 @@ If you want to get started with a project, you can create a repository in two wa
 
 *Second:*
 * Locally, create a repository with `git init` and make an initial commit after staging your files. Separately, create an empty repository on GitHub, without adding a README, licence or `.gitignore` there.
-* Connect the local repository to that existing remote with `git remote add origin https://github.com/[username]/[projectname].git`. This command records the remote address locally; it does not create a repository on GitHub.
+* Connect the local repository to that existing remote. Replace `[username]` and `[projectname]` in this template with your own values:
+
+  ```bash
+  git remote add origin https://github.com/[username]/[projectname].git
+  ```
+
+  This command records the remote address locally; it does not create a repository on GitHub.
 * Share your committed work with `git push -u origin [branch-name]`, replacing `[branch-name]` with your current branch name (shown by `git branch --show-current`). GitHub authentication is required. The push uploads your commits to the repository you created.
 
 See GitHub's instructions for [creating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) and Git's documentation for [`git remote add`](https://git-scm.com/docs/git-remote).
 
-**For a guided installation and setup, watch *Git & GitHub Crash Course For Beginners* from [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA).**
+If authentication fails, first check the remote address with `git remote -v`. For an HTTPS remote, use [GitHub's credential guidance](https://docs.github.com/en/get-started/git-basics/why-is-git-always-asking-for-my-credentials); for an SSH remote, use [GitHub's SSH troubleshooting](https://docs.github.com/en/authentication/troubleshooting-ssh). An account password is not accepted for Git operations over HTTPS; follow the documented authentication route for your client.
+
+**Optional video reference:** *Git & GitHub Crash Course For Beginners* from [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) provides a guided installation and setup.
 <iframe title="Video: Git and GitHub Crash Course for Beginners" width="560" height="315" src="https://www.youtube-nocookie.com/embed/SWYqp7iY_Tc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -124,7 +132,7 @@ __Step-by-step introduction to GitHub Desktop:__
 Further information: [Activity: Use the GitHub Desktop client](https://idratherbewriting.com/learnapidoc/pubapis_github_desktop_client.html)
 
 
-**GitHub Desktop introduction** *A quick intro for GitHub Desktop on Windows:*
+**Optional video reference:** *A quick intro for GitHub Desktop on Windows:*
 <iframe title="Video: introduction to GitHub Desktop on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/77W2JSL7-r8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -132,32 +140,38 @@ Further information: [Activity: Use the GitHub Desktop client](https://idratherb
 ## Git Bash {#git-bash-console}
 Git for Windows includes Git Bash, a Bash shell environment for running Git and other command-line programs. You can open it from the Windows Start menu or a folder's context menu. Bash stands for "Bourne Again Shell". A shell interprets typed commands; Git is a separate version control program that you can run from that shell. The Git commands are the same as those used in a terminal on Linux, macOS or other Unix systems.
 
+The table is an optional command reference. `URL`, `FILE`, `BRANCH`, `SOURCE` and `TARGET` below are placeholders: replace them with the repository URL, file or branch names for your task. For example, a complete clone template is:
+
+```bash
+git clone https://github.com/[username]/[repository-name].git
+```
+
 | Command | Description |
 | --------|-------------|
 | **Getting & Creating Projects** |
 | `git init` | Initialise a local Git repository |
-| `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+| `git clone URL` | Create a local copy of a remote repository |
 | **Basics** |
 | `git status` | Check status |
-| `git add [file-name.txt]` | Add a file to the staging area |
+| `git add FILE` | Add a file to the staging area |
 | `git add -A` | Stage all added, modified and deleted files |
-| `git commit -m "[commit message]"` | Commit changes |
-| `git rm -r [file-name.txt]` | Remove a file (or folder) |
+| `git commit -m "message"` | Commit changes with your own descriptive message |
+| `git rm -r FILE` | Remove a file (or folder) |
 | **Sharing & Updating Projects** |
-| `git push origin [branch name]` | Push a branch to your remote repository |
-| `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
+| `git push origin BRANCH` | Push a branch to your remote repository |
+| `git push -u origin BRANCH` | Push changes to remote repository (and remember the branch) |
 | `git push` | Push changes to remote repository (remembered branch) |
 | `git pull` | Fetch and integrate changes from the configured upstream branch (by merging or rebasing, depending on configuration) |
-| `git pull origin [branch name]` | Fetch the named remote branch and integrate it into the current local branch |
+| `git pull origin BRANCH` | Fetch the named remote branch and integrate it into the current local branch |
 | **Inspection & Comparison**  |
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
-| `git diff [source branch] [target branch]` | Preview changes before merging |
+| `git diff SOURCE TARGET` | Compare the two named branches before merging |
 
 <br>
 
-**Git Bash introduction** Learn how to upload files to GitHub using Git Bash on Windows in this video from [Amarindaz](https://www.youtube.com/channel/UCLMQ_EJIZ-OBNYFKr__JRuA).
+**Optional video reference:** learn how to upload files to GitHub using Git Bash on Windows in this video from [Amarindaz](https://www.youtube.com/channel/UCLMQ_EJIZ-OBNYFKr__JRuA).
 <iframe title="Video: uploading files with Git Bash on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2vASHVT0qKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
@@ -212,11 +226,11 @@ To create an RStudio project from a GitHub repository, open the repository's pag
 
 ---
 
-For the client route you chose, check that you can distinguish a local commit from a pushed commit and locate the same file in the local and remote repositories. The command tables are reference material when you need another operation.
+**Completion check for your chosen client:** change one sentence in a practice file, commit it with a descriptive message, and inspect that commit in your local history. Push it, then open the same file and commit on GitHub. A local commit records the change on your computer; pushing shares that commit with the remote. Check that your client reports no remaining uncommitted changes. You do not need to repeat the task with another client. The command tables are reference material when you need another operation.
 
 {% include figure image_path="/assets/images/spotlights/github_austinpowers.jpg" caption="Live dangerously." alt="Austin Powers meme joking that committing without first pulling remote updates is living dangerously." %}
 
-Continue with the next Spotlight, [CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }}).
+If styling HTML reports is useful to you, choose [CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }}) next. Otherwise, return to the [Spotlight overview]({{ '/unit99/sl01_Intro.html' | relative_url }}) or your current course unit.
 
 <!--
 ## Further reading

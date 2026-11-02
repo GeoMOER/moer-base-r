@@ -15,6 +15,8 @@ Official data need careful import and interpretation. In this example, you will 
 
 {% include self-study-start.html %}
 
+**Work in four milestones:** [import the source table](#land-use-import-and-inspect), check its [reporting-area identifiers](#identifier-checkpoint), [select and convert columns](#land-use-cleaning-decisions), then [validate and save](#check-meaning-before-calculating). Pause at each checkpoint before continuing. The name and category tables are lookup material for understanding the fields you select.
+
 ## What do these data describe?
 
 **Destatis** is the short name of Germany's Federal Statistical Office (*Statistisches Bundesamt*). We use its report **Flächenerhebung nach Art der tatsächlichen Nutzung 2024**, meaning **Survey of land area by actual use, 2024**. The observations refer to **December 31, 2024**; the report was published on **November 21, 2025**. The reporting year and publication year describe different things.
@@ -67,6 +69,8 @@ The arguments matter:
 - `fileEncoding = "UTF-8"` matches this teaching CSV and preserves names with German characters.
 - `check.names = FALSE` preserves the publisher's exact column names, which we use below to select columns.
 
+**Milestone 1 — did the import keep the source structure?** Expect 17 rows, 64 columns and 94 missing cells, with all columns initially stored as character data. If these differ, check that you downloaded the teaching CSV, kept its header, used `read.csv2()` and did not skip four lines. The [import settings](#land-use-import-and-inspect) above apply to this file.
+
 Inspect the reporting areas:
 
 ```r
@@ -81,6 +85,9 @@ head(destatis_raw[c("Schluesselnummer_Land", "Regionale_Gliederung")], 3)
 ```
 
 The identifier `"01"` must stay text. Converting it to a number would turn it into `1` and change its representation. The country aggregate is `"0"`; it is not a seventeenth state.
+
+<span id="identifier-checkpoint"></span>
+**Milestone 2 — can you distinguish a code from a quantity?** Before converting anything, find the code for Schleswig-Holstein and the code for Germany in the output above. Expect `"01"` and `"0"`, both character values. If the leading zero has disappeared, rerun the import with `colClasses = "character"`; adding a zero later would hide the original import mistake. The geography table below explains the remaining codes.
 
 ## Understand the German names
 
@@ -209,6 +216,16 @@ land_use[1:3, c("region_code", "region_name", "settlement_pct")]
 
 The percentage is now numeric, while `"01"` remains a character identifier. The working table contains 17 rows and ten selected columns. Its selected measurements are populated in this version, although other columns in the full source have empty cells.
 
+**Milestone 3 — did conversion affect only the intended fields?** Check the working table before calculating:
+
+```r
+dim(land_use)
+is.character(land_use$region_code)
+is.numeric(land_use$settlement_pct)
+```
+
+Expect `17 10`, `TRUE` and `TRUE`. The first three settlement shares should be `9.5`, `9.4` and `46.3`, as above. If a measurement remains text, revisit `measurement_columns` and `dec = ","`; if a code became numeric, recreate `land_use` from the unchanged `destatis_raw` and exclude identifiers from conversion.
+
 ## Check meaning before calculating
 
 ### Keep geographical levels separate
@@ -273,6 +290,8 @@ identical(land_use, restored)
 `write.csv()` uses commas between fields and decimal points, so this output format differs from the semicolon-separated input. CSV does not store R column types; specify them when importing it again so that regional codes keep their leading zeros. RDS preserves the R object's types. Neither filename alone records the source definitions: keep the year, units, category mapping, and source notes with the data.
 
 The important result is a documented preparation process: choose the right source sheet, understand its labels, preserve identifiers, handle unavailable cells explicitly, select comparable observations, and check the numerical and substantive meaning before analysis.
+
+**Milestone 4 — are the result and its meaning preserved?** You should have 16 state records in `states`, main-category totals between 99.9% and 100.1%, and `TRUE` from the RDS comparison. The saved `land_use` object still includes all 17 reporting areas; filtering `states` did not change it. If a check fails, revisit the [geographic and category checks](#check-meaning-before-calculating) before exporting. If saving fails, check the project root and the existence of `Output/`. Keep the source notes and units alongside the exported files.
 
 ## Try another reporting area
 

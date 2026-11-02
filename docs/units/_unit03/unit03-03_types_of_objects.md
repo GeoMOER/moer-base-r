@@ -12,6 +12,8 @@ header:
 
 {% include self-study-start.html %}
 
+**A route through this page:** start with [objects](#objects), [vectors](#vectors) and [data frames](#dataframe), then try the checkpoints. These are the main containers for the small examples in this course. Continue with [matrices](#matrix), [lists](#lists) and [factors](#factors) to see how their structures differ. The [multidimensional array example](#array) is optional depth; return to it when you need more than two dimensions. You can revisit each section as a reference without repeating the whole page.
+
 R objects can store values of different types, such as character, integer, double, and logical. The type determines how the values are stored and which operations can be applied to them.
 
 R provides the following basic data structures:
@@ -188,6 +190,20 @@ If you perform operations on vectors of different lengths, R will automatically 
 
 -----
 
+**Checkpoint — a vector's type and length:** after the examples above, `apple` contains four named colours. Predict its type and length, then check them. Does naming the elements change either property?
+
+<details markdown="1">
+<summary>Check your prediction</summary>
+
+```r
+typeof(apple)
+length(apple)
+```
+
+Expect `"character"` and `4`. Names label the elements; they do not add elements or change their stored values to another type. `applebucket` repeats all four elements three times, so its length is `12`.
+
+</details>
+
 # Dataframe
 A data frame is a two-dimensional data structure. It is a special case of a list which has each component of __equal length__.
 Each column represents a variable, which must have the same data type, and each row represents an observation or a case. Unlike matrices, however, data frames can hold columns of different data types (e.g., numeric, character, factor, date, etc.). This tabular structure makes data frames suitable for storing and working with structured data and allows you to represent real-world datasets with mixed data types in a single data structure. 
@@ -292,6 +308,21 @@ df_vers3
 7    A    Y    7   70   FALSE
 ```
 -----
+
+**Checkpoint — columns and observations:** predict the dimensions of `df` and `df_vers3`. What changed when you added `BoolVec`? Check the type of `df$Cat1` as well.
+
+<details markdown="1">
+<summary>Check the table structures</summary>
+
+```r
+dim(df)
+dim(df_vers3)
+typeof(df$Cat1)
+```
+
+Expect `7 4`, `7 5` and `"character"`. Adding a column kept the seven observations and added one variable. Each column has its own type: the character `Cat1` column and numeric `Val1` column can coexist in the same data frame.
+
+</details>
 
 # Matrix
 A matrix is a two-dimensional rectangular data set. It can be created using a vector input to the `matrix()` function.

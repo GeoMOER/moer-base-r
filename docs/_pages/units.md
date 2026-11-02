@@ -65,7 +65,7 @@ feature_row:
   - image_path: assets/images/unit_images/u08/grid.png
     alt: ""
     title: "Unit 08: Sorting & Merging"
-    excerpt:  "Introduction to sorting data."
+    excerpt: "Sort, bind and merge tables; work with strings, summarize groups and reshape data."
     url: "/unit08/unit08-01_Intro.html"
     btn_label: "Show me more"
     btn_class: "btn--primary"

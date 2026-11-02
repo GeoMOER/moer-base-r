@@ -15,9 +15,13 @@ The spotlights cover additional topics that complement the course units.
 
 {% include self-study-start.html %}
 
-* [The many faces of GitHub]({{ '/unit99/sl02_github.html' | relative_url }}): Git, GitHub, GitHub Desktop, Git Bash and Git in RStudio.
-* [CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }}): HTML and CSS basics, followed by styling R Markdown output.
-* [R packages on Marburg OPSI PCs]({{ '/unit99/sl04_opsi.html' | relative_url }}): a personal R package library in your university account.
+Choose the topic that helps with your current goal. The Spotlights are optional, independently usable extensions; you do not need to complete them in order.
+
+| Your goal | Starting point and prerequisites | A useful completion check |
+|---|---|---|
+| Keep a history of changes and share committed work | [The many faces of GitHub]({{ '/unit99/sl02_github.html' | relative_url }}). Use a practice repository you control; GitHub hosting needs your own account. Choose Desktop, command line or RStudio. | Find the same committed file locally and on GitHub, and explain the difference between commit and push. |
+| Change the appearance of an HTML report | [CSS in R Markdown]({{ '/unit99/sl03_css.html' | relative_url }}). The styling recipe needs an R Markdown document that already renders to HTML. | Render the small example and identify the intended style change. |
+| Keep packages available on Marburg university PCs | [R packages on Marburg OPSI PCs]({{ '/unit99/sl04_opsi.html' | relative_url }}). This route is specific to those PCs and their university-account drives. | Restart R and confirm the personal library path and an installed package, as described on the page. |
 
 
 ## Comments?

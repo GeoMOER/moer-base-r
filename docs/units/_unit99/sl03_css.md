@@ -15,6 +15,8 @@ This Spotlight introduces HTML and CSS, then shows how to use CSS to customise t
 
 {% include self-study-start.html %}
 
+**Choose your starting point:** the HTML/CSS explanation below introduces web styling. The [R Markdown recipe](#css-in-r-markdown) is an optional extension for people who already render `.Rmd` documents to HTML with the `rmarkdown` package. It does not add a requirement to the core R units. The linked tutorials and cheat sheet are optional references to consult when needed.
+
 ## Basics of web development
 HTML, CSS and JavaScript have complementary roles in web development.
 
@@ -190,6 +192,54 @@ This optional section assumes that you already know how to create an R Markdown 
 
 Learn at least the basics of CSS if you wish to customise the appearance of HTML documents. JavaScript is useful for adding scripted behaviour, but is not required for the styling examples below.
 For beginners, it is extremely important to understand selectors and precedence of rules in CSS, otherwise you may be confused why your custom CSS rules do not work as expected (they may not have enough precedence).
+
+### Try one complete stylesheet example
+
+Create a folder containing the following two files. Save both before rendering; the stylesheet path in the YAML is relative to the `.Rmd` file:
+
+```text
+style-practice/
+├── style-practice.Rmd
+└── style.css
+```
+
+Put this complete document in `style-practice.Rmd`:
+
+````markdown
+---
+title: "A small styling check"
+output:
+  html_document:
+    css: "style.css"
+---
+
+## My first styled note
+
+<p class="practice-note">This paragraph uses my stylesheet.</p>
+
+This ordinary paragraph keeps the document's default style.
+
+```{r}
+2 + 2
+```
+````
+
+Put this CSS in `style.css`:
+
+```css
+p.practice-note {
+  color: #184e77;
+  background-color: #eef6fc;
+  border-left: 4px solid #184e77;
+  padding: 12px;
+}
+```
+
+Open the `.Rmd` in RStudio and choose **Knit**. Alternatively, with the working directory set to this folder, run `rmarkdown::render("style-practice.Rmd")`. Open the generated `style-practice.html`: the note should have dark blue text, a pale blue background, a left border and padding. The ordinary paragraph keeps its default style, and the R chunk displays `4`.
+
+**Try a change:** increase the note's padding from `12px` to `24px`, save the CSS, and render again. More space should appear inside that note. If it does not, check that the CSS filename matches the YAML, both files are in the same folder, and you reopened the newly rendered HTML. The selector `p.practice-note` targets only paragraphs with that class. See the [R Markdown HTML styling documentation](https://pkg.yihui.org/rmarkdown-book/html-document#appearance-and-style) for the stylesheet option.
+
+### Optional reference: other ways to include styles
 
 To include a custom stylesheet in an R Markdown (`.Rmd`) document, use the `css` option in the YAML header, for example:
 

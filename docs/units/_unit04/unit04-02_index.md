@@ -21,6 +21,32 @@ There are multiple ways to access or replace values in vectors or other data str
 
 Note that brackets `[]` are used for indexing, whereas parentheses `( )` are used to call a function.
 
+## Start with a small table
+
+Suppose you want the sites where a known soil-depth measurement is at least 12 cm. Create this small illustrative table; no file or object from another unit is needed:
+
+```r
+observations <- data.frame(
+  site = c("A", "B", "C", "D"),
+  depth_cm = c(12, NA, 18, 9)
+)
+keep <- !is.na(observations$depth_cm) & observations$depth_cm >= 12
+keep
+selected <- observations[keep, c("site", "depth_cm"), drop = FALSE]
+selected
+```
+
+```text
+[1]  TRUE FALSE  TRUE FALSE
+  site depth_cm
+1    A       12
+3    C       18
+```
+
+`$depth_cm` selects that column. `!is.na()` marks known values, `>= 12` tests the threshold, and `&` requires both conditions. In `observations[rows, columns]`, the condition before the comma selects rows; the names after it select columns. `drop = FALSE` keeps a data frame even if you later select just one column. Site B is excluded because its depth is unknown.
+
+**Try a change:** predict the result if you replace `>= 12` with `> 12`, then rerun the selection. Only site C should remain, in a table with one row and two columns. Change the condition back before continuing. The sections below explain these indexing choices for different structures; the [nested-list example](#list) is a deeper reference for working with components inside components.
+
 ## Vector
 Here are some examples that show how elements of vectors can be obtained by indexing.
 
@@ -200,6 +226,8 @@ m
 ```
 
 ## List
+**Optional depth:** use this section when you need to extract something inside a list component. For ordinary table selection, continue to [Data.frame](#dataframe); its first code block creates the matrix it needs.
+
 Indexing lists can be a bit confusing as you can both refer to the elements of the list, or the elements of the data (perhaps a matrix) in one of the list elements. Note the difference that double brackets make. `e[3]` returns a list (of length 1), but `e[[3]]` returns what is inside that list element (a matrix in this case).
 
 ```
@@ -243,6 +271,8 @@ Indexing a data.frame can generally be done as for matrices and for lists.
 First create a data.frame from matrix `m`.
 
 ```
+m <- matrix(1:9, nrow = 3, ncol = 3, byrow = TRUE)
+colnames(m) <- c("a", "b", "c")
 d <- data.frame(m)
 class(d)
 
