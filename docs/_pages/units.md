@@ -98,6 +98,7 @@ feature_row:
 | I want to… | Start here |
 |---|---|
 | Install R/RStudio and run commands | [First steps and setup]({{ '/unit01/unit01-01_Intro.html' | relative_url }}) |
+| Read a function call and rerun a saved import | [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}) |
 | Interpret types, categories and missing values | [Data types]({{ '/unit02/unit02-01_Intro.html' | relative_url }}) |
 | Choose a vector, table, matrix or list | [Object structures]({{ '/unit03/unit03-01_Intro.html' | relative_url }}) |
 | Select or change rows/columns | [Indexing]({{ '/unit04/unit04-01_Intro.html' | relative_url }}) |

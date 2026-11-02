@@ -15,6 +15,8 @@ header:
 
 Before asking others for help, it is generally a good idea to try to help yourself first. R includes extensive facilities for accessing documentation and searching for help. Specialized and general search engines can also help you find information about R.
 
+**Start small:** enter `?sqrt` in the Console. Find **Arguments** to see what `sqrt()` accepts and **Value** to see what it returns. If the notation is unfamiliar, revisit [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}); the [next guide]({{ '/unit01/unit01-06_helpfiles.html' | relative_url }}) explains how to read a help page. The sections below are a reference for different ways to find help.
+
 ## *help()* and *?*
 
 The `help()` function and `?` help operator in R provide access to the documentation pages for R functions, data sets, and other objects, both for packages in the standard R distribution and for contributed packages. To access documentation for the standard `lm` (linear model) function, for example, enter the command `help(lm)` or `help("lm")`, or `?lm` or `?"lm"` (i.e., the quotes are optional).

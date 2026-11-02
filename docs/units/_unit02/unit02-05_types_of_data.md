@@ -62,6 +62,8 @@ The R data type `logical` stores the values `TRUE` and `FALSE`. These names must
 ### Missing and special values {#when-things-are-lost-null-values}
 R distinguishes between a missing value, the null object, an undefined numerical result, and infinity. These values have different meanings and should not all be called "NULL-values".
 
+The function `c()` combines values into an ordered collection called a **vector**. For example, `c(4, 8, 12)` contains three numbers. In the examples below, commas separate the values supplied to `c()`; it can also include a missing value. [Unit 03]({{ '/unit03/unit03-03_types_of_objects.html' | relative_url }}) develops vectors and other object structures in more detail. For the notation of a function call, revisit [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}).
+
 **NA** means "Not Available" and marks a missing value. For example, `c(4, NA, 8)` is a numeric vector whose second value is missing. Use `is.na()` to find missing values. Missing values can occur in different vector types, including numeric, character, and logical vectors.
 
 **NULL** is R's null object. It has length zero and is different from an element marked `NA`. Use `is.null()` to test whether an object is `NULL`.

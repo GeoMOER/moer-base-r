@@ -20,12 +20,41 @@ In R, the **workspace** contains the objects you have created in the global envi
 
 The **working directory** is a folder on your computer. R uses it as the starting point for relative file paths. The files in a folder and the R objects in your workspace are different things: reading a CSV file creates an object in R, while the CSV file remains on disk.
 
-An **RStudio project** organizes your work in a project folder and stores project settings in an `.Rproj` file. Opening the project sets the working directory to that folder. We return to projects at the end of this page.
+An **RStudio project** organizes your work in a project folder and stores project settings in an `.Rproj` file. Opening the project sets the working directory to that folder. Use this as your starting point for the course's file examples.
 
 {% include figure image_path="/assets/images/unit_images/u05/gui_rstudio_exp.png" caption="Work Environment in RStudio from Unit 1" alt="RStudio with four labelled panes: script editor at upper left, console at lower left, environment at upper right, and graphical output at lower right." %}
 
 
 For a reminder of the panes, revisit the [Unit 01 interface guide]({{ '/unit01/unit01-03_GUI.html' | relative_url }}). Here the new distinction is between objects in memory and files on disk: identify one of each in your own project before continuing.
+
+## Start with an RStudio project {#rprojects}
+
+If you already followed [First Steps]({{ '/unit01/unit01-04_first_steps.html' | relative_url }}#save-and-rerun-your-first-script), open that project's `.Rproj` file. Otherwise, choose **File > New Project > New Directory > New Project**, name the new directory `base-r-practice`, choose a location you can find again and click **Create Project**. If your course already provides a project, open that one instead.
+
+Create a `Data/` folder inside the project folder. <a href="{{ '/assets/data/example.csv' | relative_url }}" download="example.csv">Download example.csv</a> and save it there, keeping its name. This is the same small practice file used in [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}), with comma-separated columns and decimal points. Save your `.R` script beside the `.Rproj` file.
+
+```text
+base-r-practice/
+├── base-r-practice.Rproj
+├── first-import.R
+└── Data/
+    └── example.csv
+```
+
+Run these commands from the project folder:
+
+```r
+getwd()
+file.exists("Data/example.csv")
+trees <- read.table(file = "Data/example.csv", header = TRUE, sep = ",")
+dim(trees)
+```
+
+`getwd()` should show your own project folder. `file.exists()` should return `TRUE`, and `dim(trees)` should return `3 2`: three rows and two columns. If the file check is `FALSE`, reopen the correct `.Rproj` and check the filename and folder, including capitalization and an accidental extra extension. Keep the working directory at the project folder; `Data/` in the path already selects the data folder.
+
+**Check portability:** save your script, close and reopen the project via its `.Rproj`, then run the script from the top. The same relative path should work. Moving or sharing the whole project folder keeps that path usable as long as the internal arrangement stays the same. Create `Output/` inside the project folder when a later lesson asks you to save results.
+
+The remaining sections explain larger folder arrangements and alternative path choices. They use illustrative paths such as `C:/geomoer/Project1/`; adapt them to your computer if you try them. The supplied-file workflow above is the recommended starting route.
 
 # Project directory structure
 
@@ -46,6 +75,8 @@ And an `Output/` folder stores the final reports e.g. .docx, .pdf, .Rmd files an
 
 
 ## Understanding the directory structures
+
+The following reference example uses an illustrative file named `data.csv`, rather than the supplied `example.csv`. Its code and computer-specific paths are templates; the deliberately failing import explains why the starting folder matters.
 
 R resolves a relative file path from the current working directory. Saving or opening an R script in another folder does not by itself change the working directory.
 
@@ -72,7 +103,7 @@ getwd()
 
 The working directory is also the starting point for relative paths when writing files. A path such as `Data/data.csv` is still relative; including a folder name does not make it an absolute path.
 
-There are two options to resolve this problem.
+Besides opening a project and using a path relative to its root as above, there are two alternatives to resolve this illustrative problem.
 
 The first is to set the working directory to the folder that contains `data.csv` using the `setwd()` function, then read the file:
 ```r
@@ -128,7 +159,7 @@ By contrast, a relative path starts from the current working directory. From `C:
   </p>
 </div>
 
-## RStudio projects {#rprojects}
+## Further project details
 
 When you open an `.Rproj` file in RStudio, the working directory is set to the folder containing that file. For example, if `Project1.Rproj` is in `C:/geomoer/Project1/`, use a path relative to this project folder:
 

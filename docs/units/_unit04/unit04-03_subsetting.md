@@ -27,6 +27,8 @@ data[x,y]
 
 Now, let’s suppose we only need *mpg, hp* and *gear* to show the relationship between fuel consumption, horsepower and number of gears. However, we only need data separated by the kind of transmission (am): 0 = automatic, 1 = manual. Here’s the basic way to retrieve that data in R:
 
+In the selection below, `mtcars$am` accesses the transmission column. The comparison `mtcars$am == 1` returns `TRUE` for each manual car and `FALSE` otherwise; those logical values select rows. `==` tests equality, while `<-` assigns a result. `c(1, 4, 10)` combines the column positions to keep.
+
 ```
 #loading dataset mtcars
 data("mtcars")
@@ -58,6 +60,8 @@ The `subset()` function takes 3 arguments: the data frame you want subsetted, th
 manual3 <- subset(mtcars, am == 1, select = c(mpg, hp, gear))
 automatic3 <- subset(mtcars, am == 0, select = c(mpg, hp, gear))
 ```
+
+For the following examples, `>=` means “greater than or equal to” and `<` means “less than”. `&` combines conditions that must **both** be true for a row; `|` keeps rows where **at least one** condition is true. These comparisons produce logical row selections. [Unit 07's operator reference]({{ '/unit07/unit07-02_operators.html' | relative_url }}) covers the full set.
 
 In the following example, we select by different values:
 

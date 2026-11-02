@@ -20,7 +20,7 @@ There are multiple classes that are grouped together as "numeric" classes. The t
 
 Sometimes you may want to specifically store a vector as integers if you know that they will never be converted to doubles (used as ID values or indexing) since integers require less storage space. But if they are going to be used in any math that will convert them to double, then it will probably be quickest to just store them as doubles to begin with.
 
-The table below summarizes common checks and conversions*. The last row shows how to detect and assign missing values.
+The table below summarizes common checks and conversions*. The last row shows how to detect and assign missing values. In `x[2]`, square brackets select the second element of `x`; [Unit 04]({{ '/unit04/unit04-02_index.html' | relative_url }}) explains indexing in detail.
 
 | Type or value | Test | Conversion or assignment |
 |------------|-------------|-------------|

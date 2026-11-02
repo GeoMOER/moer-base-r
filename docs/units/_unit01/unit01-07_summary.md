@@ -23,6 +23,7 @@ Check that you can use RStudio to write and run a small R script, and find help 
 - The **Environment** pane shows objects in the current R session. The **Files**, **Plots**, **Packages**, and **Help** tabs support different tasks; their positions depend on your RStudio layout.
 - Use `<-` to assign a value to an object. Object names are case sensitive: `height` and `Height` are different names.
 - Functions take arguments in parentheses. Comments start with `#` and explain the code without being executed.
+- A named argument uses `name = value` inside a call; `<-` stores the returned result outside it. A project sets a consistent starting folder for relative paths such as `Data/example.csv`.
 
 ## A short recap in R
 
@@ -94,7 +95,7 @@ Try these questions before opening the suggested answers.
 </details>
 
 
-Revisit [first steps]({{ '/unit01/unit01-04_first_steps.html' | relative_url }}) and [reading help files]({{ '/unit01/unit01-06_helpfiles.html' | relative_url }}) if needed.
+Revisit [saving and rerunning your first script]({{ '/unit01/unit01-04_first_steps.html' | relative_url }}#save-and-rerun-your-first-script), [function syntax and the supplied import practice]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}#practice), and [reading help files]({{ '/unit01/unit01-06_helpfiles.html' | relative_url }}) if needed.
 
 ## Test GUI
 

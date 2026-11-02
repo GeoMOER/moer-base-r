@@ -47,7 +47,7 @@
           "label": "running R commands"
         }
       ],
-      "setup": "Use your own project folder. Path strings illustrating another computer must be adapted.",
+      "setup": "Open your RStudio project; this unit supplies a practice file for Data/ and explains relative paths.",
       "summary": "/unit05/unit05-04_summary.html"
     },
     "unit06": {
@@ -135,14 +135,25 @@
     },
     "unit01-04_first_steps": {
       "unit": "unit01",
-      "check": "Create an object, run a calculation and distinguish commands from printed output.",
+      "check": "Save, close, reopen and rerun your first R script after restarting R.",
       "needs": [
         {
           "url": "/unit01/unit01-03_GUI.html",
           "label": "the RStudio panes"
         }
       ],
-      "setup": "Use an R script or the Console. Type only runnable code, not the output blocks."
+      "setup": "Use R and RStudio. Create or open a project and save first-steps.R as shown below."
+    },
+    "unit01-04a_r_syntax": {
+      "unit": "unit01",
+      "needs": [
+        {
+          "url": "/unit01/unit01-04_first_steps.html",
+          "label": "saving and running a first script"
+        }
+      ],
+      "setup": "Use R/RStudio with your project open. Download example.csv into Data/ as shown below.",
+      "check": "Explain the import call, recreate its three-row table from a saved script, and use help to read only two rows."
     },
     "unit01-05_selfhelp": {
       "unit": "unit01",
@@ -150,7 +161,14 @@
     },
     "unit01-06_helpfiles": {
       "unit": "unit01",
-      "check": "Find what a function accepts and returns in its help page."
+      "check": "Find what a function accepts and returns in its help page.",
+      "needs": [
+        {
+          "url": "/unit01/unit01-04a_r_syntax.html",
+          "label": "function calls, arguments and returned values"
+        }
+      ],
+      "setup": "Use R or RStudio to open ?read.table; no input file is needed to read the help."
     },
     "unit01-07_summary": {
       "unit": "unit01",
@@ -257,7 +275,7 @@
     },
     "unit05-02_wenvironment": {
       "unit": "unit05",
-      "check": "Explain where a relative path starts and how a project folder is organised."
+      "check": "Reopen a project and read the supplied Data/example.csv using a relative path; verify three rows and two columns."
     },
     "unit05-03_packages": {
       "unit": "unit05",

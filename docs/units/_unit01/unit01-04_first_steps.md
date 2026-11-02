@@ -13,6 +13,27 @@ header:
 
 {% include self-study-start.html %}
 
+## Save and rerun your first script {#save-and-rerun-your-first-script}
+
+A script keeps your commands in a file so you can inspect, change and run them again. We will keep scripts and, later, data together in an **RStudio project**. If you already have a course project, open its `.Rproj` file and use that folder for this practice.
+
+1. In RStudio, choose **File > New Project > New Directory > New Project**. Name the directory `base-r-practice`, choose a location you can find again, and click **Create Project**. RStudio creates the folder and a file named `base-r-practice.Rproj` inside it.
+2. Choose **File > New File > R Script**. A blank tab opens in the script editor. Enter the code below, including the comment.
+3. Choose **File > Save As** and save the file as `first-steps.R` inside your project folder, beside the `.Rproj` file. The `.R` extension identifies an R script.
+
+```r
+# My first saved R script
+hello <- "Welcome to R"
+hello
+1 + 2
+```
+
+Select all four lines in the script editor and click **Run**, or press **Ctrl+Enter** on Windows/Linux or **Cmd+Enter** on macOS. R runs them in order. The Console displays `"Welcome to R"` and `3`; `hello` also appears in the Environment pane. The next section explains the comment and assignment arrow.
+
+**Check that the file is enough:** save it, close its editor tab, then use **File > Open File** to reopen `first-steps.R`. Choose **Session > Restart R**, select all its lines and run them again. You should get the same results. Reopening a script displays the saved code; running it recreates its objects.
+
+For this practice, use **Tools > Project Options > General** to turn off restoring `.RData` at startup and set saving the workspace on exit to **Never**. Continue saving your `.R` files. This makes the script the record of your work, without relying on objects left over from an earlier session. Next time, open the `.Rproj` first, then your script.
+
 ## #Hashtag and Run!
 
 Outside quoted text, **#** starts a comment in R. The text after it on the same line is not executed. Use comments to explain your code to yourself and others.
@@ -40,6 +61,8 @@ The following is a console transcript, not a block to paste into a script. The `
 >
 ```
 Here, you’ll also see on the left hand side the “>” symbol which means that R is ready to receive a new command. If a “+” is visible instead, this means that the command has not yet been completed, e.g. a parenthesis has not been closed.
+
+If the Console keeps showing `+`, press **Esc** to cancel the unfinished command, then check the complete line in your script for a missing quote or closing parenthesis. If you see `object 'hello' not found`, run the line creating `hello` before displaying it. Correct the saved script and rerun its lines from the top.
 
 ## Creating scalar objects and simple arithmetic operations
 
@@ -115,7 +138,7 @@ That [1] next to your result is a reminder that this line begins with the first 
 
 ### Assigning values to objects
 
-And now you have reached the core concept of every object-based programming language: assigning objects. This fundamental operation is remarkably straightforward. You type in the name of the object-to-be, an assignment operator, and the content you'd like to assign. In R, there are two assignment operators: <- and =. The <- operator is the more common and recommended way to assign objects in R. It's considered good practice because it makes your code more readable and is less likely to be confused with the equality operator ==, which is used for comparison.
+Assignment gives a name to a value so you can use it again. Write the object name, the assignment arrow `<-`, and the expression whose result you want to store. R also permits `=` for some assignments; this course uses `<-`. In the next lesson, you will see how `=` supplies a named argument inside a function call, while `==` tests equality.
 
 
 ```r
@@ -152,3 +175,5 @@ c
 ```
 
 Assignment stores a result under a name. Typing that name, or calling `print(a)`, displays the stored value.
+
+**Ready to continue:** your reopened script recreates its results after restarting R. Continue with [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}) to read a function call and import a small supplied file.

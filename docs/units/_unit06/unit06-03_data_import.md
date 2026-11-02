@@ -12,6 +12,8 @@ header:
 
 {% include self-study-start.html %}
 
+If function calls or named arguments are new to you, first work through [R Syntax]({{ '/unit01/unit01-04a_r_syntax.html' | relative_url }}) with its supplied three-row file. For a project-folder setup and a first path check, use [Work Environment]({{ '/unit05/unit05-02_wenvironment.html' | relative_url }}#rprojects). This page extends that workflow to other file formats and a real earthquake dataset.
+
 
 ## Importing data via buttons
 
